@@ -11,166 +11,146 @@
   --secondary-white: #e4d7cf;
   --secondary-yellow: #ffd166;
   --secondary-purple: #cdb4db;
-  --neutral-1: #141416; /* best  dark */
-  --neutral-2: #23262f;
-  --neutral-3: #353945;
-  --neutral-4: #777e90;
-  --neutral-5: #b1b5c3;
-  --neutral-6: #e6e8ec;
-  --neutral-7: #f4f5f6;
+  --Neutrals-1: #141416; /* best  dark */
+  --Neutrals-2: #23262f;
+  --Neutrals-3: #353945;
+  --Neutrals-4: #777e90;
+  --Neutrals-5: #b1b5c3;
+  --Neutrals-6: #e6e8ec;
+  --Neutrals-7: #f4f5f6;
+  --Neutrals-8: #fcfcfd;
 }
 
 * {
   outline: none;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-html,
-body,
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-}
-
-ul,
-ol {
   list-style: none;
-}
-
-button {
-  border: none;
-}
-
-a {
   text-decoration: none;
+  box-sizing: border-box;
+}
+button {
+  /* border: none; */
 }
 
 /************************************************  */
 /*? Common Start */
-
+header {
+  background-color: var(--Neutrals-8);
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 48px 160px;
+}
 /*! Common End */
 
 /*? Header Start */
-.header .container {
-  margin: 0 auto;
-  height: 144px;
-  padding: 48px 160px;
-}
-
-.header .container .navbar {
+/*   font-family: 'SF Pro Display', sans-serif; */
+/*   font-family: "Poppins", sans-serif;      */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 84px;
 }
 
-.logoMenu {
+.navbar .navbarLeft {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   column-gap: 48px;
 }
 
-.navbar .logoMenu .logo {
+.navbar .navbarLeft .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 8px;
 }
-
-.navbar .logoMenu .logo span {
-  display: block;
-  /* height: 32px;
-  width: 127px; */
+.navbar .navbarLeft .logo p {
+  color: var(--Neutrals-2);
+  /* Body 1 (Bold) */
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 32px; /* 133.333% */
   letter-spacing: -0.48px;
-  color: var(--neutral-2);
 }
 
-.logoMenu .headerDivider {
+.navbar .navbarLeft .headerDivider {
   width: 1px;
   height: 48px;
-  background-color: var(--neutral-6);
+  background-color: var(--Neutrals-6);
 }
 
-.logoMenu nav ul {
+.navbar .navbarLeft ul {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   column-gap: 32px;
 }
 
-.logoMenu nav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 8px;
-}
-
-.logoMenu nav ul li a {
-  font-family: "SF Pro Display", sans-serif;
+.navbar .navbarLeft ul li a {
+  color: var(--Neutrals-4);
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px; /* 114.286% */
-  color: var(--neutral-4);
 }
 
-.logoMenu nav ul li a:has(img) {
-  display: block;
+.navbar .navbarLeft ul li:nth-child(4) a{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-
-.logoMenu nav ul li a p {
+.navbar .navbarLeft ul li:nth-child(4) a p{
   padding: 4px 8px;
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; /* 114.286% */
-  color: var(--neutral-4);
 }
-.navicon {
+
+.navbar .navbarRight {
   display: flex;
   align-items: center;
-  justify-content: center;
   column-gap: 64px;
 }
 
-.navicon .socialIcons ul {
+
+.navbar .navbarRight .sosialIcons ul {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   column-gap: 24px;
 }
+.navbar .navbarRight .sosialIcons ul li a{
+  display: flex;
+  align-items: center;
+}
 
-.btn {
+
+.navbar .navbarRight > li.freebtn  {
   display: flex;
   padding: 12px 16px;
   justify-content: center;
   align-items: center;
   border-radius: 90px;
-  border: 2px solid var(--neutral-6);
-}
+  border: 2px solid var(--Neutrals-6);
+} 
 
-.btn button {
-  font-family: "SF Pro Display", sans-serif;
-  color: var(--neutral-2);
+
+ .navbar .navbarRight > li.freebtn a  {
+  color: var(--Neutrals-2);
   text-align: center;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px;
-  background-color: transparent;
-}
+  line-height: 16px; /* 114.286% 
+} 
+
 
 /*! Header End */
+section {
+  display: none;
+}
