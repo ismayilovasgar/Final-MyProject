@@ -155,6 +155,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 16px; /* 114.286% */
+  background-color: #fff;
 }
 
 .bars {
@@ -325,6 +326,40 @@ aside .col-left .leftBox .btnServices .bookLight {
 .substance {
   padding: 136px 0;
 }
+.substance .bound {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.substance .bound .headings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: center;
+}
+.substance .bound .headings h2 {
+  color: var(--Neutrals-2);
+  text-align: center;
+  width: 544px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+
+.substance .bound .headings p {
+  width: 544px;
+  color: var(--Neutrals-3);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
 .substance .boxes {
   display: flex;
   align-items: center;
@@ -348,5 +383,56 @@ aside .col-left .leftBox .btnServices .bookLight {
 }
 .substance .boxes .box-4 {
   background-color: var(--Primary-4);
+}
+
+.substance .bound .step-cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+.substance .bound .step-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  row-gap: 32px;
+}
+.substance .bound .step-cards .card .bottomContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.substance .bound .step-cards .card h3 {
+  color: var(--Neutrals-4);
+
+  /* Caption 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 166.667% */
+}
+
+.substance .bound .step-cards .card h4 {
+  color: var(--Neutrals-2);
+  text-align: center;
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.substance .bound .step-cards .card p {
+  color: var(--Neutrals-3);
+  text-align: center;
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
 /*! Substance End */
