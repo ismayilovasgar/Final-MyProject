@@ -31,16 +31,16 @@
 }
 /** Root End */
 /*? Common Start */
-header {
+.header {
   background-color: var(--Neutrals-8);
+  padding: 48px;
 }
 
 .container {
   max-width: 100%;
-  width: 1440px;
+  width: 1120px;
   margin: 0 auto;
   /* border: 1px solid red; */
-  padding: 48px 160px;
 }
 
 /*! Common End */
