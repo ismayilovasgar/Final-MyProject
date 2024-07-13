@@ -31,10 +31,6 @@
 }
 /** Root End */
 /*? Common Start */
-.header {
-  background-color: var(--Neutrals-8);
-  padding: 48px;
-}
 
 .container {
   max-width: 100%;
@@ -48,6 +44,11 @@
 /*? Header Start */
 /*   font-family: 'SF Pro Display', sans-serif; */
 /*   font-family: "Poppins", sans-serif;      */
+
+.header {
+  background-color: var(--Neutrals-8);
+  padding: 48px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
