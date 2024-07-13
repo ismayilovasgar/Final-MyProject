@@ -3,14 +3,14 @@
 
 /** Root Start */
 :root {
-  --primary-orange: #ff592c;
-  --primary-purple: #9757d7;
-  --primary-red: #ef466f;
-  --primary-green: #45b26b;
-  --secondary-blue: #3772ff;
-  --secondary-white: #e4d7cf;
-  --secondary-yellow: #ffd166;
-  --secondary-purple: #cdb4db;
+  --Primary-1: #ff592c;
+  --Primary-2: #9757d7;
+  --Primary-3: #ef466f;
+  --Primary-4: #45b26b;
+  --Secondary-1: #3772ff;
+  --Secondary-2: #e4d7cf;
+  --Secondary-3: #ffd166;
+  --Secondary-4: #cdb4db;
   --Neutrals-1: #141416; /* best  dark */
   --Neutrals-2: #23262f;
   --Neutrals-3: #353945;
@@ -29,9 +29,6 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-body {
-  width: 100vw;
-}
 /** Root End */
 /*? Common Start */
 
@@ -39,7 +36,6 @@ body {
   max-width: 90%;
   width: 1120px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 button {
   border: none;
@@ -54,7 +50,6 @@ button {
 .header {
   width: 100%;
   background-color: var(--Neutrals-8);
-  border: 1px solid red;
   margin: 0 auto;
 }
 .navbar {
@@ -62,7 +57,7 @@ button {
   justify-content: space-between;
   align-items: center;
   column-gap: 84px;
-  /* margin: 48px 0; */
+  margin: 48px 0;
 }
 
 .navbar .navbarLeft {
@@ -167,33 +162,55 @@ button {
 }
 
 /*! Header End */
-/*? Intro Hero Start */
-.col-6 {
-  flex-basis: 50%;
-}
+/*?  Hero Section Start */
 
-.introParent {
+aside {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-.heroRight img {
+aside .col {
+  /* flex-basis: 50%; */
+  height: 880px;
+  position: relative;
+}
+aside .col-right {
+  width: 720px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+aside .col-right img {
   object-fit: cover;
   width: 100%;
+  position: absolute;
+  top: 97px;
+  left: 31.32px;
+  background: transparent;
 }
-.contentHead {
+aside .col-left .leftBox {
+  position: relative;
+  width: 545px;
+}
+aside .col-left .leftBox {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
+  row-gap: 40px;
+  position: absolute;
+  top: 204px;
+}
+aside .col-left .leftBox .headings {
+  display: flex;
+  flex-direction: column;
   row-gap: 20px;
 }
-.headings {
+
+aside .col-left .leftBox .headings .upHead {
   display: flex;
   flex-direction: column;
-  align-items: start;
   row-gap: 12px;
 }
-.headings p:first-child {
+aside .col-left .leftBox .headings .upHead p:nth-child(1) {
   color: var(--Neutrals-4);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -202,8 +219,7 @@ button {
   line-height: 16px; /* 100% */
   text-transform: uppercase;
 }
-
-.headings p:nth-child(2) {
+aside .col-left .leftBox .headings .upHead p:nth-child(2) {
   color: var(--Neutrals-2);
   font-family: "SF Pro Display", sans-serif;
   font-size: 64px;
@@ -212,8 +228,7 @@ button {
   line-height: 64px; /* 100% */
   letter-spacing: -1.28px;
 }
-
-.headings + p {
+aside .col-left .leftBox .headings .bottomHead {
   color: var(--Neutrals-4);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -221,4 +236,117 @@ button {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-/*!  Hero Header End */
+
+aside .col-left .imgFrm {
+  position: absolute;
+  left: 0;
+  bottom: 96px;
+  padding: 20px;
+  border-radius: 64px;
+  border: 2px solid var(--Neutrals-6);
+  background-color: transparent;
+}
+
+aside .col-left .leftBox .btnServices {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  column-gap: 16px;
+  height: 48px;
+}
+aside .col-left .leftBox .btnServices .btn-pd-1 {
+  padding: 16px 24px;
+  border-radius: 90px;
+}
+aside .col-left .leftBox .btnServices .downloadColor {
+  background: var(--Primary-1);
+
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+aside .col-left .leftBox .btnServices .bookLight {
+  border: 2px solid var(--Neutrals-6);
+  background-color: #fff;
+
+  color: var(--Neutrals-2);
+  text-align: center;
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+
+/*!  Hero Section End */
+/*? Supports Start */
+.supports .supportSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.supports .supportSection p {
+  color: var(--Neutrals-2);
+  text-align: center;
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.supports .supportSection .teamLogo ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.supports .supportSection .teamLogo ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supports .supportSection .teamLogo ul li a {
+  display: block;
+  height: 100%;
+}
+
+/*! Supports End */
+/*? Substance Start */
+.substance {
+  padding: 136px 0;
+}
+.substance .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+.substance .boxes .box {
+  padding: 28px;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.substance .boxes .box-1 {
+  background-color: var(--Secondary-1);
+}
+.substance .boxes .box-2 {
+  background-color: var(--Primary-2);
+}
+.substance .boxes .box-3 {
+  background-color: var(--Primary-3);
+}
+.substance .boxes .box-4 {
+  background-color: var(--Primary-4);
+}
+/*! Substance End */
