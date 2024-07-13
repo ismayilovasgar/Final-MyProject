@@ -573,7 +573,7 @@ aside .col-left .leftBox .btnServices .bookLight {
 .bookPoster .detailSide .cardContent .card {
   display: flex;
   column-gap: 24px;
-  padding: 24px;
+  padding: 24px 0px;
 }
 .bookPoster .detailSide .cardContent .card .backFrame {
   display: flex;
