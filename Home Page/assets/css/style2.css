@@ -887,7 +887,6 @@ section.workoutDetail {
 /*! WorkoutDetail End  */
 /* ? TrainerDetail Start   */
 
-/* ! TrainerDetail End   */
 :root {
   --trainer-col-gap: 32px;
   --trainer-col-count: 3;
@@ -1028,3 +1027,58 @@ section.workoutDetail {
   align-items: center;
   row-gap: 4px;
 }
+/* ! TrainerDetail End   */
+/* ? quotes Start   */
+
+.quotes .frame {
+  padding: 136px 192px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  align-items: center;
+}
+.quotes .frame .quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.quotes .frame .quote .author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px 0px;
+}
+
+.quotes .frame .quote .divider {
+  background-color: var(--Neutrals-6, #e6e8ec);
+  height: 2px;
+  width: 100%;
+}
+.quotes .frame .quote .author p {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  /* Headline 3 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.4px;
+}
+
+.quotes .frame .slide-btns .arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.quotes .frame .slide-btns .arrows button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* ! quotes End   */
