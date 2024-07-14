@@ -33,8 +33,8 @@
 /*? Common Start */
 
 .container {
-  max-width: 90%;
-  width: 1120px;
+  max-width: 1120px;
+  width: 90%;
   margin: 0 auto;
 }
 button {
@@ -504,7 +504,7 @@ aside .col-left .leftBox .btnServices .bookLight {
 /*? BookClassPoster Start */
 .bookPoster {
   padding: 136px 160px 136px 80px;
-  background: var(--Neutrals-7);
+  background-color: var(--Neutrals-7);
 }
 .bookPoster .detailPoster {
   display: flex;
@@ -669,3 +669,355 @@ aside .col-left .leftBox .btnServices .bookLight {
   line-height: 16px; /* 100% */
 }
 /*! BookClassPoster End */
+/*? ExperienceDetail Start  */
+.expSection {
+  background-color: var(--Neutrals-8);
+}
+.expParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 80px;
+  padding: 136px 0;
+}
+.expParent .titleContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+}
+.expParent .titleContent p {
+  color: var(--Neutrals-4, #777e90);
+  /* Hairline 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+  text-transform: uppercase;
+}
+.expParent .titleContent h2 {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+.expParent .cardList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 83px;
+}
+.expParent .cardList .cardDivider {
+  width: 1px;
+  height: 300px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.expParent .cardList .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 32px;
+}
+.expParent .cardList .card h3 {
+  color: var(--Neutrals-2);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.expParent .cardList .card p {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+/*! ExperienceDetail End  */
+/*? WorkoutDetail Start  */
+section.workoutDetail {
+  background-color: var(--Neutrals-8);
+  margin: 0 auto;
+  padding: 136px 0;
+}
+.workoutDetail .workoutFrame {
+  display: flex;
+  flex-direction: column;
+  row-gap: 128px;
+}
+
+.workoutDetail .workoutFrame .topHead {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.workoutDetail .workoutFrame .topHead > span {
+  color: var(--Neutrals-5, #b1b5c3);
+
+  /* Hairline 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+
+.workoutDetail .workoutFrame .topHead .rightHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  width: 528px;
+}
+.workoutDetail .workoutFrame .topHead .mainHeading p {
+  color: var(--Neutrals-2, #23262f);
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+.workoutDetail .workoutFrame .topHead .auxHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.workoutDetail .workoutFrame .topHead .auxHeading span {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding: 0 80px 0 0;
+}
+
+.workoutDetail .workoutFrame .bottomHead {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 74px;
+}
+.workoutDetail .workoutFrame .bottomHead .vrtclCardList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 48px;
+}
+/*
+.workoutDetail .workoutFrame .bottomHead .vrtclCardList .card {
+   display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: flex-start; 
+
+}
+*/
+.workoutDetail .workoutFrame .bottomHead .card > span {
+  padding: 2px 12px;
+  border-radius: 100px;
+  color: var(--Neutrals-8, #fcfcfd);
+
+  /* Caption (Bold) */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.workoutDetail .workoutFrame .bottomHead .card:nth-child(1) > span {
+  background-color: var(--Primary-2);
+}
+.workoutDetail .workoutFrame .bottomHead .card:nth-child(2) > span {
+  background-color: var(--Primary-3);
+}
+.workoutDetail .workoutFrame .bottomHead .card:nth-child(3) > span {
+  background-color: var(--Primary-4);
+}
+
+.workoutDetail .bottomHead .card span.summary {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.workoutDetail .bottomHead .card .detailContent p {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.workoutDetail .bottomHead .card .detailContent p span {
+  display: block;
+}
+.workoutDetail .bottomHead .vrtclCardList .card .detailContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 24px 0 0 0;
+}
+
+.workoutDetail .workoutFrame .bottomHead .rightImgContent {
+  width: 740px;
+  height: 650px;
+  background-color: var(--Neutrals-5);
+}
+/*! WorkoutDetail End  */
+/* ? TrainerDetail Start   */
+
+/* ! TrainerDetail End   */
+:root {
+  --trainer-col-gap: 32px;
+  --trainer-col-count: 3;
+}
+.trainerDetail .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 80px;
+  padding: 136px 0;
+}
+
+.trainerDetail .frame .navTitle {
+  display: flex;
+  flex-direction: column;
+  width: 544px;
+  row-gap: 40px;
+}
+
+.trainerDetail .frame .navTitle .headText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  text-align: center;
+}
+.trainerDetail .frame .navTitle .headText h4 {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+.trainerDetail .frame .navTitle .headText P {
+  color: var(--Neutrals-3, #353945);
+  text-align: center;
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.trainerDetail .frame .navTitle ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.trainerDetail .frame .navTitle ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  transition: all 0.9s ease-in;
+}
+
+.trainerDetail .frame .navTitle ul li a {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Button 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+}
+.trainerDetail .frame .navTitle ul li:hover {
+  background-color: var(--Neutrals-3, #353945);
+  border-radius: 100px;
+}
+.trainerDetail .frame .navTitle ul li:hover a {
+  color: white;
+}
+.trainerDetail .frame .trainers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 64px 32px;
+  width: 100%;
+}
+
+.trainerDetail .frame .trainers .trainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / var(--trainer-col-count) - var(--trainer-col-gap));
+  text-align: center;
+}
+.trainerDetail .frame .trainers .trainer img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+}
+
+.trainerDetail .frame .trainerInfo h4 {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.trainerDetail .frame .trainerInfo p {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.trainerDetail .frame .trainerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+}
