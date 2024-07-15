@@ -1111,3 +1111,156 @@ section.workoutDetail {
   cursor: pointer;
 }
 /* ! quotes End   */
+/* ? siteDetails Start   */
+
+.siteDetails .cardList {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 32px;
+  padding: 136px 0;
+}
+.siteDetails .cardList .card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  flex-basis: 25%;
+}
+.siteDetails .cardList .card .topContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 64px;
+}
+.siteDetails .cardList .card .topContent h3 {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: -1.28px;
+}
+.siteDetails .cardList .card span.divider {
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.siteDetails .cardList .card .bottomContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.siteDetails .cardList .card .bottomContent .Statement {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.siteDetails .cardList .card .bottomContent .info {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+/* ! siteDetails End   */
+/* ? anySpace Start   */
+
+.anySpace .frame {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 136px 0;
+  text-align: center;
+}
+.anySpace .frame .headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  row-gap: 20px;
+  transform: translateX(50%);
+}
+/* .anySpace .frame .headings .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.anySpace .frame .headings h2 {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+.anySpace .frame .headings p {
+  color: var(--Neutrals-3, #353945);
+  text-align: center;
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.anySpace .frame .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 24px;
+}
+.anySpace .frame .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33%;
+  width: 100%;
+  row-gap: 80px;
+}
+.anySpace .frame .card .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.anySpace .frame .card .profile .avatar {
+  border-radius: 50%;
+  background-color: var(--Neutrals-4);
+  width: 160px;
+  height: 160px;
+}
+.anySpace .frame .card p {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  /* Body 1 (Bold) */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+/* ! anySpace End   */
