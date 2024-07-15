@@ -1179,7 +1179,7 @@ section.workoutDetail {
   display: flex;
   flex-direction: column;
   row-gap: 80px;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   padding: 136px 0;
   text-align: center;
@@ -1192,14 +1192,7 @@ section.workoutDetail {
   justify-content: center;
   width: 50%;
   row-gap: 20px;
-  transform: translateX(50%);
 }
-/* .anySpace .frame .headings .center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 .anySpace .frame .headings h2 {
   color: var(--Neutrals-2, #23262f);
@@ -1227,7 +1220,7 @@ section.workoutDetail {
 
 .anySpace .frame .cards {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   column-gap: 24px;
 }
@@ -1235,7 +1228,7 @@ section.workoutDetail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-basis: 33%;
   width: 100%;
   row-gap: 80px;
@@ -1255,6 +1248,7 @@ section.workoutDetail {
 .anySpace .frame .card p {
   color: var(--Neutrals-2, #23262f);
   text-align: center;
+  padding: 0px 10%;
 
   /* Body 1 (Bold) */
   font-family: Poppins;
@@ -1264,3 +1258,188 @@ section.workoutDetail {
   line-height: 32px; /* 133.333% */
 }
 /* ! anySpace End   */
+/* ? plans Start   */
+.plans .frame {
+  display: flex;
+  column-gap: 32px;
+  padding: 136px 0;
+}
+.plans .frame .leftMenu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  width: 448px;
+}
+.plans .frame .leftMenu .texts h2 {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+.plans .frame .leftMenu .texts span {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.24px;
+}
+
+.plans .frame .texts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.plans .frame .texts .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 16px;
+}
+.plans .frame .texts .details .plan {
+  display: flex;
+  column-gap: 12px;
+  justify-content: flex-start;
+}
+.plans .frame .texts .details .plan p {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.plans .frame .leftMenu .choosePlan {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+.plans .frame .leftMenu .choosePlan button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 90px;
+}
+.plans .frame .leftMenu .choosePlan .choose {
+  background-color: var(--Primary-1, #ff592c);
+  /*  */
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+.plans .frame .leftMenu .choosePlan .request {
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  /*  */
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+/* ! plans End   */
+/* ? anyWhere  Start  */
+.anyWhere .frame {
+  padding: 80px 0px 136px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anyWhere .frame .content {
+  padding: 136px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 48px;
+}
+
+.anyWhere .frame .content .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 32px;
+}
+.anyWhere .frame .content .head > span {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  width: 450px;
+  padding: 0 10px;
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.anyWhere .frame .content .head .toptitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.anyWhere .frame .content .toptitle span:first-child {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+
+  /* Hairline 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+.anyWhere .frame .content .toptitle span:nth-child(2) {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  /* Headline 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: -1.28px;
+}
+
+.anyWhere .frame .content a {
+  padding: 16px 24px;
+  border-radius: 90px;
+  background-color: var(--Primary-1, #ff592c);
+}
+
+.anyWhere .frame .content a span {
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+/* ! anyWhere  End */
