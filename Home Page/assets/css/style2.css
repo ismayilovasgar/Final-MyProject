@@ -1556,9 +1556,10 @@ footer .right-menu .sub-bottom-menu > span {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
+  padding: 0 8px 0 0;
 }
 
-footer .right-menu .sub-bottom-menu .arrow {
+footer .right-menu .sub-bottom-menu .arrow form {
   display: flex;
   column-gap: 18px;
   justify-content: flex-end;
@@ -1575,7 +1576,7 @@ footer .right-menu .sub-bottom-menu .arrow a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 4px;
+  padding: 4px;
   background-color: var(--Primary-1);
   border-radius: 50%;
 }
