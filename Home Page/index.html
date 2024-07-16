@@ -12,58 +12,79 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
-<body>
+<body class="darkmode">
     <!--? Header Start  -->
-    <div class="header">
+    <div class="header lightmode">
         <div class="container">
-            <div class="navbar">
+            <div class="wrapper">
+                <div class="navbar lightmode">
 
-                <div class="navbarLeft">
-                    <div class="logo">
-                        <img src="./assets/images/header-model/logo.svg" alt="">
-                        <p class="body1Bold">Fitness Pro</p>
+                    <div class="overlapLeft">
+                        <div class="navbarLeft">
+                            <div class="logo">
+                                <img src="./assets/images/header-model/logo.svg" alt="">
+                                <p class="body1Bold">Fitness Pro</p>
+                            </div>
+                            <div class="overlap">
+                                <div class="headerDivider"></div>
+                            </div>
+                            <div class="overlap">
+                                <ul class="navMenu">
+                                    <li><a class="btnMenu" href="#">Download</a></li>
+                                    <li><a class="btnMenu" href="#">Features</a></li>
+                                    <div class="overlap">
+                                        <li class="classDropdown">
+                                            <a class="btnMenu itemCenter" href="#">
+                                                <p class="btnMenu">Class</p>
+                                                <img src="./assets/images/header-model/bottom-arrow.svg" alt="">
+                                            </a>
+
+                                            <div id="dropdownMenu">
+                                                <ul>
+                                                    <li><a class="body2Bold blueIcon" href="#">
+                                                            <img src="./assets/images/header-model/youtube_blue.svg"
+                                                                alt="">
+                                                            <span>Program Video</span> </a>
+                                                    </li>
+                                                    <li><a class="body2Bold orangeIcon" href="#">
+                                                            <img src="./assets/images/header-model/premium_orange.svg"
+                                                                alt="">
+                                                            <span>Premium Class</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                    </div>
+                                    <li><a class="btnMenu" href="#">Lifestyle</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="headerDivider"></div>
-                    <ul class="navMenu">
-                        <li><a class="btnMenu" href="#">Download</a></li>
-                        <li><a class="btnMenu" href="#">Features</a></li>
-                        <li><a class="btnMenu itemCenter" href="#">
-                                <p class="btnMenu">Class</p>
-                                <img src="./assets/images/header-model/bottom-arrow.svg" alt="">
-                            </a>
-                            <ul>
-                                <li><a href="#"><img src="./assets/images/header-model/youtube_blue.svg" alt="">
-                                        <p>Prpgram Video</p>
-                                    </a></li>
-                                <li><a href="#"><img src="./assets/images/header-model/premium_orange.svg" alt="">
-                                        <p>Premium Class</p>
-                                    </a></li>
-                            </ul>
 
-                        </li>
-                        <li><a class="btnMenu" href="#">Lifestyle</a></li>
-                    </ul>
-                </div>
+                    <div class="overlapRight">
+                        <div class="navbarRight">
+                            <div class="sosialIcons">
+                                <ul>
+                                    <li><a href="#"><img src="./assets/images/header-model/facebook.svg" alt=""></a>
+                                    </li>
+                                    <li><a href="#"><img src="./assets/images/header-model/twitter.svg" alt=""></a>
+                                    </li>
+                                    <li><a href="#"><img src="./assets/images/header-model/instagram.svg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                <div class="navbarRight">
-                    <div class="sosialIcons">
-                        <ul>
-                            <li><a href="#"><img src="./assets/images/header-model/facebook.svg" alt=""></a></li>
-                            <li><a href="#"><img src="./assets/images/header-model/twitter.svg" alt=""></a></li>
-                            <li><a href="#"><img src="./assets/images/header-model/instagram.svg" alt=""></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="freebtn">
-                        <button>
-                            <a class="btnSmall" href="#">Get free trial</a>
-                        </button>
-                        <button class="bars">
+                            <div class="freebtn">
+                                <button>
+                                    <a class="btnSmall" href="#">Get free trial</a>
+                                </button>
+                                <!-- <button class="bars">
                             <a href="#"><img src="./assets/images/header-model/bars.svg" alt="bars"></a>
-                        </button>
-                    </div>
+                        </button> -->
+                            </div>
 
-                    <!-- <ul class="freebtn">
+                            <!-- <ul class="freebtn">
                         <li>
                             <a href="#">Get free trial</a>
                         </li>
@@ -72,13 +93,16 @@
                         </li>
                     </ul> -->
 
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     <!--! Header End -->
     <!--? sideSection Start  -->
-    <section class="heroHeaderFitness">
+    <section class="heroHeaderFitness lightmode">
         <div class="container">
             <div class="wrapper">
                 <div class="row">
@@ -88,8 +112,12 @@
 
                                 <div class="headings">
                                     <div class="upHead">
-                                        <p class="hrlineLarge">Train smarter. get stronger</p>
-                                        <p class="hline1">Simple fitness <br> experience for <br> everyone.</p>
+                                        <p class="hrlineLarge trainSmart">Train smarter. get stronger</p>
+                                        <div class="hline1 simpleFitness">
+                                            <p class="hline1"> Simple fitness</p>
+                                            <p class="hline1">experience for</p>
+                                            <p class="hline1"> everyone.</p>
+                                        </div>
                                     </div>
                                     <p class="bottomHead body2">
                                         Track your workouts, get better results, and be the best <br> version of you.
@@ -131,7 +159,7 @@
     </section>
     <!--! sideSection End  -->
     <!--? supportSection Start  -->
-    <section class="supports">
+    <section class="supports lightmode">
         <div class="container">
             <div class="supportSection body2Bold">
                 <p>Trusted by more than 2M users worldwide</p>
@@ -152,7 +180,7 @@
     </section>
     <!--! supportSection End  -->
     <!--? stepsSection Start  -->
-    <div class="substance">
+    <div class="substance lightmode">
         <div class="container">
             <div class="bound">
                 <div class="headings">
@@ -184,38 +212,42 @@
 
                     </div>
                 </div>
-                <div class="step-cards">
+                <div class="step_cards">
 
                     <div class="card">
-                        <h3>Step 1</h3>
+                        <h3 class="captionThinBold">Step 1</h3>
                         <div class="bottomContent">
-                            <h4>Download</h3>
-                                <p>Fitness Pro tracks your workouts, get better results, and be the best version of you.
+                            <h4 class="body2Bold">Download</h3>
+                                <p class="caption">Fitness Pro tracks your workouts, get better results, and be the best
+                                    version of you.
                                 </p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <h3>Step 2</h3>
+                        <h3 class="captionThinBold">Step 2</h3>
                         <div class="bottomContent">
-                            <h4>Choose your trainner</h4>
-                            <p>Fitness Pro tracks your workouts, get better results, and be the best version of you.</p>
+                            <h4 class="body2Bold">Choose your trainner</h4>
+                            <p class="caption">Fitness Pro tracks your workouts, get better results, and be the best
+                                version of you.</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <h3>Step 3</h3>
+                        <h3 class="captionThinBold">Step 3</h3>
                         <div class="bottomContent">
-                            <h4>Set the goals</h4>
-                            <p>Fitness Pro tracks your workouts, get better results, and be the best version of you.</p>
+                            <h4 class="body2Bold">Set the goals</h4>
+                            <p class="caption">Fitness Pro tracks your workouts, get better results, and be the best
+                                version of you.</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <h3>Step 4</h3>
+                        <h3 class="captionThinBold">Step 4</h3>
                         <div class="bottomContent">
-                            <h4>Workout time</h4>
-                            <p>Fitness Pro tracks your workouts, get better results, and be the best version of you.</p>
+                            <h4 class="body2Bold">Workout time</h4>
+                            <p class="caption">Fitness Pro tracks your workouts, get better results, and be the best
+                                version of you.</p>
                         </div>
                     </div>
 
@@ -228,7 +260,7 @@
 
     <!--! stepsSection End  -->
     <!--? introSection Start  -->
-    <section class="intro">
+    <section class="intro lightmode">
         <div class="container">
             <div class="content-frame">
 
@@ -251,56 +283,57 @@
     <!--! introSection End  -->
     <!--? BookClassPoster Start  -->
 
-    <section class="bookPoster">
+    <section class="bookPoster softlightmode">
         <!-- <div class="container"> -->
         <div class="detailPoster">
             <div class="imgSide">
                 <img src="./assets/images/bookClassPoster/Light.png" alt="">
             </div>
-            <div class="detailSide">
-                <div class="headTitle">
+            <div class="detailSide lightmode">
+                <div class="headTitle ">
                     <h2>Book a class</h2>
                     <p>Track your workouts, get better results, and be the best version of you. Less thinking, more
                         lifting.
                     </p>
                 </div>
-
-                <div class="cardContent">
-                    <div class="card">
-                        <div class="imgContent">
-                            <div class="backFrame">
-                                <img src="./assets/images/bookClassPoster/Filled.svg" alt="">
+                <div class="overlap">
+                    <section class="cardContent ">
+                        <div class="card">
+                            <div class="imgContent">
+                                <div class="backFrame">
+                                    <img src="./assets/images/bookClassPoster/Filled.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="statementContent">
+                                <h3>For Beginners</h3>
+                                <p>You never workout before, it's now a <br> good start</p>
                             </div>
                         </div>
-                        <div class="statementContent">
-                            <h3>For Beginners</h3>
-                            <p>You never workout before, it's now a <br> good start</p>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="imgContent">
-                            <div class="backFrame">
-                                <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
+                        <div class="card">
+                            <div class="imgContent">
+                                <div class="backFrame">
+                                    <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="statementContent">
+                                <h3>Advanced classes</h3>
+                                <p>You never workout before, it's now a <br> good start</p>
                             </div>
                         </div>
-                        <div class="statementContent">
-                            <h3>Advanced classes</h3>
-                            <p>You never workout before, it's now a <br> good start</p>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="imgContent">
-                            <div class="backFrame">
-                                <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
+                        <div class="card">
+                            <div class="imgContent">
+                                <div class="backFrame">
+                                    <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="statementContent">
+                                <h3>Premium (limited)</h3>
+                                <p>You never workout before, it's now a <br> good start</p>
                             </div>
                         </div>
-                        <div class="statementContent">
-                            <h3>Premium (limited)</h3>
-                            <p>You never workout before, it's now a <br> good start</p>
-                        </div>
-                    </div>
+                    </section>
                 </div>
 
                 <p> <span class="colorDiscount">10% Discount</span> if you're already using the <span
@@ -317,7 +350,7 @@
     </section>
     <!--! BookClassPoster End  -->
     <!--? ExperienceDetail Start  -->
-    <section class="expSection">
+    <section class="expSection lightmode">
         <div class="container">
             <div class="expParent">
                 <div class="titleContent">
@@ -355,7 +388,7 @@
     </section>
     <!--! ExperienceDetail End  -->
     <!--? WorkoutDetail Start  -->
-    <section class="workoutDetail">
+    <section class="workoutDetail lightmode">
         <div class="container">
             <div class="workoutFrame">
                 <div class="topHead">
@@ -443,7 +476,7 @@
 
     <!--? TrainerDetail Start  -->
 
-    <section class="trainerDetail">
+    <section class="trainerDetail lightmode">
         <div class="container">
             <div class="frame">
 
@@ -530,7 +563,7 @@
     </section>
     <!--! TrainerDetail End  -->
     <!--? quotes Start  -->
-    <section class="quotes">
+    <section class="quotes lightmode">
         <div class="container">
             <div class="frame">
                 <div class="quote">
@@ -558,7 +591,7 @@
     </section>
     <!--! quotes End  -->
     <!--? siteDetails Start  -->
-    <section class="siteDetails">
+    <section class="siteDetails lightmode">
         <div class="container">
             <div class="cardList">
 
@@ -627,7 +660,7 @@
     </section>
     <!--! siteDetails End  -->
     <!--? anySpace Start  -->
-    <section class="anySpace">
+    <section class="anySpace softlightmode">
         <div class="container">
             <div class="frame">
                 <div class="headings">
@@ -669,7 +702,7 @@
     </section>
     <!--! anySpcae End  -->
     <!--? plans Start  -->
-    <section class="plans">
+    <section class="plans lightmode">
         <div class="container">
             <div class="frame">
                 <div class="leftMenu">
@@ -719,7 +752,7 @@
     </section>
     <!--! anySpcae End  -->
     <!--? anyWhere  Start  -->
-    <section class="anyWhere">
+    <section class="anyWhere lightmode">
         <div class="container">
             <div class="frame">
 
@@ -752,7 +785,7 @@
     </section>
     <!--! anyWhere  End  -->
     <!--? footer Start -->
-    <footer>
+    <footer class="lightmode">
         <div class="container">
             <div class="frame">
 

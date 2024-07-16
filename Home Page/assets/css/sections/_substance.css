@@ -17,23 +17,14 @@
   color: var(--Neutrals-2);
   text-align: center;
   width: 544px;
-  /* font-family: "SF Pro Display", sans-serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px; 
-    letter-spacing: -0.96px; */
+  
 }
 
 .substance .bound .headings p {
   color: var(--Neutrals-3);
   text-align: center;
   width: 544px;
-  /* font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; */
+
 }
 
 .substance .boxes {
@@ -61,46 +52,46 @@
   background-color: var(--Primary-4);
 }
 
-.substance .bound .step-cards {
+.substance .bound .step_cards{
   display: flex;
   justify-content: space-between;
   column-gap: 32px;
 }
-.substance .bound .step-cards .card {
+.substance .bound .step_cards .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   row-gap: 32px;
 }
-.substance .bound .step-cards .card .bottomContent {
+.substance .bound .step_cards .card .bottomContent {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
 }
-.substance .bound .step-cards .card h3 {
+.substance .bound .step_cards .card h3 {
   color: var(--Neutrals-4);
 
   /* Caption 2 (Bold) */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;  */
 }
 
-.substance .bound .step-cards .card h4 {
+.substance .bound .step_cards .card h4 {
   color: var(--Neutrals-2);
   text-align: center;
 
   /* Body 2 (Bold) */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;  */
 }
-.substance .bound .step-cards .card p {
+.substance .bound .step_cards .card p {
   color: var(--Neutrals-3);
   text-align: center;
 
@@ -109,6 +100,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px; 
 }
 /*! Substance End */

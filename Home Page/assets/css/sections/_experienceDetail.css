@@ -1,7 +1,4 @@
 /*? ExperienceDetail Start  */
-.expSection {
-  background-color: var(--Neutrals-8);
-}
 .expParent {
   display: flex;
   flex-direction: column;

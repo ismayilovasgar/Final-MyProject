@@ -1,37 +1,47 @@
 /*?  Hero Section Start */
-.wrapper {
+.heroHeaderFitness .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 100px;
+  padding: 102px 0 0 0;
 }
-
-.wrapper .row .frame {
+.heroHeaderFitness .row .frame {
   display: flex;
   justify-content: space-between;
 }
-
-.wrapper .row .frame .col-left {
+.heroHeaderFitness .row .frame .col-left {
   align-self: center;
 }
-
-.wrapper .row .frame .leftBox {
+.heroHeaderFitness .row .frame .leftBox {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
 }
 
-.wrapper .row .frame .btnServices {
+.heroHeaderFitness .leftBox .upHead {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin: 0px 0px 40px 0px;
+}
+.heroHeaderFitness .leftBox .upHead + p {
+  color: var(--Neutrals-4, #777e90);
+}
+
+.heroHeaderFitness .leftBox .upHead .trainSmart {
+  color: var(--Neutrals-4, #777e90);
+}
+
+.heroHeaderFitness .wrapper .row .frame .btnServices {
   display: flex;
   column-gap: 16px;
 }
-
-.wrapper .row .frame .btnServices .downloadBtn {
+.heroHeaderFitness .wrapper .row .frame .btnServices .downloadBtn {
   color: var(--Neutrals-8, #fcfcfd);
   background-color: var(--Primary-1, #ff592c);
 }
-
-.wrapper .row .frame .btnServices .bookBtn {
+.heroHeaderFitness .wrapper .row .frame .btnServices .bookBtn {
   color: var(--Neutrals-2, #23262f);
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
@@ -88,5 +98,4 @@
   left: 56px;
 } */
 /**  Elave */
-
 /*!  Hero Section End */

@@ -4,8 +4,7 @@
 
 .header {
   width: 100%;
-  background-color: var(--Neutrals-8);
-  margin: 48px auto;
+  margin: 0px auto;
 }
 
 .navbar {
@@ -13,6 +12,11 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 84px;
+  position: fixed;
+  padding: 48px 0;
+  top: 0px;
+  width: 1120px;
+  z-index: 200;
 }
 
 .navbar .navbarLeft {
@@ -32,23 +36,62 @@
 .navbar .navbarLeft .headerDivider {
   width: 1px;
   height: 48px;
-  background-color: var(--Neutrals-6);
 }
 
-.navbar .navbarLeft ul {
+.navbar .navbarLeft ul.navMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 32px;
 }
+.navbar .navbarLeft ul.navMenu .classDropdown {
+  position: relative;
+}
 
-.navbar .navbarLeft ul li:nth-child(4) a {
+.navbar .navbarLeft ul.navMenu .classDropdown a.btnMenu {
   display: flex;
   align-items: center;
 }
-.navbar .navbarLeft ul li:nth-child(4) a p {
+.navbar .navbarLeft ul.navMenu .classDropdown a.btnMenu p {
   padding: 4px 8px;
 }
+/** Dropdown Menu */
+.navbar .navbarLeft #dropdownMenu {
+  position: absolute;
+  left: 0px;
+  width: 250%;
+  display: none;
+}
+.navbar .navbarLeft #dropdownMenu li a {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  color: var(--Neutrals-4, #777e90);
+}
+
+.navbar .navbarLeft #dropdownMenu li a img {
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.navbar .navbarLeft #dropdownMenu .blueIcon img {
+  background-color: var(--Secondary-1, #3772ff);
+}
+
+.navbar .navbarLeft #dropdownMenu .orangeIcon img {
+  background-color: var(--Primary-1, #ff592c);
+}
+
+.navbar .navbarLeft .classDropdown:hover #dropdownMenu {
+  display: block;
+}
+
+.navbar .navbarLeft #dropdownMenu li:hover {
+  background-color: var(--Neutrals-6);
+}
+/** DropdownMenu */
 
 .navbar .navbarRight {
   display: flex;
@@ -57,13 +100,13 @@
   column-gap: 64px;
 }
 
-.navbar .navbarRight .sosialIcons ul {
+.navbar .navbarRight .sosialIcons > ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 24px;
 }
-.navbar .navbarRight .sosialIcons ul li > a {
+.navbar .navbarRight .sosialIcons > ul li > a {
   display: flex;
   align-items: center;
 }
@@ -84,11 +127,10 @@
 
 .navbar .navbarRight .freebtn a {
   display: block;
-  background-color: #fff;
 }
 
 .bars {
-  display: none !important;
+  display: none;
 }
 
 /*! Header End */
