@@ -1,0 +1,140 @@
+/*? WorkoutDetail Start  */
+section.workoutDetail {
+  background-color: var(--Neutrals-8);
+  margin: 0 auto;
+  padding: 136px 0;
+}
+.workoutDetail .workoutFrame {
+  display: flex;
+  flex-direction: column;
+  row-gap: 128px;
+}
+
+.workoutDetail .workoutFrame .topHead {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.workoutDetail .workoutFrame .topHead > span {
+  color: var(--Neutrals-5, #b1b5c3);
+
+  /* Hairline 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+
+.workoutDetail .workoutFrame .topHead .rightHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  width: 528px;
+}
+.workoutDetail .workoutFrame .topHead .mainHeading p {
+  color: var(--Neutrals-2, #23262f);
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+.workoutDetail .workoutFrame .topHead .auxHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.workoutDetail .workoutFrame .topHead .auxHeading span {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding: 0 80px 0 0;
+}
+
+.workoutDetail .workoutFrame .bottomHead {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 74px;
+}
+.workoutDetail .workoutFrame .bottomHead .vrtclCardList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 48px;
+}
+/*
+  .workoutDetail .workoutFrame .bottomHead .vrtclCardList .card {
+     display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    justify-content: flex-start; 
+  
+  }
+  */
+.workoutDetail .workoutFrame .bottomHead .card > span {
+  padding: 2px 12px;
+  border-radius: 100px;
+  color: var(--Neutrals-8, #fcfcfd);
+
+  /* Caption (Bold) */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.workoutDetail .workoutFrame .bottomHead .card:nth-child(1) > span {
+  background-color: var(--Primary-2);
+}
+.workoutDetail .workoutFrame .bottomHead .card:nth-child(2) > span {
+  background-color: var(--Primary-3);
+}
+.workoutDetail .workoutFrame .bottomHead .card:nth-child(3) > span {
+  background-color: var(--Primary-4);
+}
+
+.workoutDetail .bottomHead .card span.summary {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.workoutDetail .bottomHead .card .detailContent p {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.workoutDetail .bottomHead .card .detailContent p span {
+  display: block;
+}
+.workoutDetail .bottomHead .vrtclCardList .card .detailContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 24px 0 0 0;
+}
+
+.workoutDetail .workoutFrame .bottomHead .rightImgContent {
+  width: 740px;
+  height: 650px;
+  background-color: var(--Neutrals-5);
+}
+/*! WorkoutDetail End  */

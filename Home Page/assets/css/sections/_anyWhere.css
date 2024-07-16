@@ -1,0 +1,85 @@
+/* ? anyWhere  Start  */
+.anyWhere .frame {
+  padding: 80px 0px 136px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anyWhere .frame .content {
+  padding: 136px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 48px;
+}
+
+.anyWhere .frame .content .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 32px;
+}
+.anyWhere .frame .content .head > span {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  width: 450px;
+  padding: 0 10px;
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.anyWhere .frame .content .head .toptitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.anyWhere .frame .content .toptitle span:first-child {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+
+  /* Hairline 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+.anyWhere .frame .content .toptitle span:nth-child(2) {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  /* Headline 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: -1.28px;
+}
+
+.anyWhere .frame .content a {
+  padding: 16px 24px;
+  border-radius: 90px;
+  background-color: var(--Primary-1, #ff592c);
+}
+
+.anyWhere .frame .content a span {
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+/* ! anyWhere  End */

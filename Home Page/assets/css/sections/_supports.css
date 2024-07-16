@@ -1,0 +1,36 @@
+/*? Supports Start */
+.supports .supportSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.supports .supportSection p {
+  color: var(--Neutrals-2);
+  text-align: center;
+
+  /* Body 2 (Bold) */
+  /* font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;   */
+}
+
+.supports .supportSection .teamLogo ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.supports .supportSection .teamLogo ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supports .supportSection .teamLogo ul li a {
+  display: block;
+  height: 100%;
+}
+
+/*! Supports End */
