@@ -63,7 +63,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
+.anySpace .frame .card img {
+  position: absolute;
+}
+
+.anySpace .frame .card .handgripcolor {
+  top: 12px;
+  left: 15px;
+}
+
+.anySpace .frame .card .left_hand_icon {
+  top: 60px;
+  left: -10px;
+}
+.anySpace .frame .card .right_hand_icon {
+  top: 20 px;
+  right: 20px;
+}
+
 .anySpace .frame .card .profile .avatar {
   border-radius: 50%;
   background-color: var(--Neutrals-4);
