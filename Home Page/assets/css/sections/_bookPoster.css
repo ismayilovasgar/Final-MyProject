@@ -2,7 +2,7 @@
 .bookPoster {
   padding: 136px 160px 136px 80px;
 }
-.bookPoster .detailPoster {
+.bookPoster .detailPoster .overlap {
   display: flex;
   column-gap: 32px;
 }
@@ -12,7 +12,6 @@
   flex-direction: column;
   row-gap: 24px;
   align-items: flex-start;
-  padding: 48px;
   padding: 48px;
   border-radius: 20px;
 
@@ -42,12 +41,12 @@
   color: var(--Neutrals-2);
 
   /* Headline 2 */
-  font-family: "SF Pro Display", sans-serif;
+  /* font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
-  letter-spacing: -0.96px;
+  line-height: 56px; 
+  letter-spacing: -0.96px; */
 }
 
 .bookPoster .detailSide .headTitle p {
@@ -57,7 +56,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .bookPoster .detailSide .cardContent {
@@ -105,7 +104,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .bookPoster .detailSide .cardContent .statementContent p {
@@ -114,7 +113,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 }
 .bookPoster .detailSide p span.boldPro {
   color: var(--Neutrals-2, #23262f);
@@ -145,7 +144,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 }
 
 .bookPoster .detailSide button {
@@ -161,6 +160,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px; /* 100% */
+  line-height: 16px;
 }
 /*! BookClassPoster End */

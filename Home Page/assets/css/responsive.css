@@ -39,11 +39,28 @@
   .intro .content-frame .intro-content .introHeadings {
     width: 390px;
   }
-
   .intro .content-frame .introImgFrame img {
     width: 100%;
     object-fit: cover;
   }
+  /** bookPoster */
+  .bookPoster {
+    padding: 40px 30px;
+  }
+
+  .bookPoster .detailPoster .detailSide {
+    padding: 20px;
+    flex-basis: 50%;
+  }
+  .bookPoster .detailPoster .imgSide {
+    flex-basis: 50%;
+  }
+  .bookPoster .detailPoster .imgSide img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* ------------------------------------------------------------ */
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1270px) {
