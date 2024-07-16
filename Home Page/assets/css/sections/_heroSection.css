@@ -1,25 +1,60 @@
 /*?  Hero Section Start */
-aside {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 100px;
+}
+
+.wrapper .row .frame {
   display: flex;
   justify-content: space-between;
 }
-aside .col {
-  /* flex-basis: 50%; */
-  height: 880px;
+
+.wrapper .row .frame .col-left {
+  align-self: center;
 }
-aside .col-right {
-  position: relative;
-  width: 720px;
+
+.wrapper .row .frame .leftBox {
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.wrapper .row .frame .btnServices {
+  display: flex;
+  column-gap: 16px;
+}
+
+.wrapper .row .frame .btnServices .downloadBtn {
+  color: var(--Neutrals-8, #fcfcfd);
+  background-color: var(--Primary-1, #ff592c);
+}
+
+.wrapper .row .frame .btnServices .bookBtn {
+  color: var(--Neutrals-2, #23262f);
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+
+.heroHeaderFitness .wrapper .btnRow {
+  text-align: center;
+  margin: 0 0 100px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.heroHeaderFitness .wrapper .btnRow img {
+  padding: 20px;
+  border-radius: 64px;
+  text-align: center;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
 /** Elave */
-aside .col-right .mainImgContainer {
+/* .wrapper .col-right .mainImgContainer {
   position: absolute;
   top: 97px;
   left: 31.32px;
 }
-aside .col-right .img_pos {
+.wrapper .col-right .img_pos {
   position: absolute;
 }
 .img1 {
@@ -51,71 +86,7 @@ aside .col-right .img_pos {
   background: #b11d1d;
   bottom: 78px;
   left: 56px;
-}
-
-/*  */
-aside .col-left .leftBox {
-  width: 545px;
-}
-aside .col-left .leftBox {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 40px;
-  /* position: absolute;
-    top: 204px; */
-}
-aside .col-left .leftBox .headings {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-aside .col-left .leftBox .headings .upHead {
-  display: flex;
-  flex-direction: column;
-  row-gap: 12px;
-}
-
-aside .col-left .leftBox .headings .upHead p:nth-child(2) {
-  color: var(--Neutrals-2);
-}
-aside .col-left .leftBox .headings .bottomHead {
-  color: var(--Neutrals-4);
-}
-
-aside .col-left .imgFrm {
-  /* position: absolute;
-    left: 0;
-    bottom: 96px; */
-  /* margin: 0 0 96px 0; */
-  padding: 20px;
-  border-radius: 64px;
-  border: 2px solid var(--Neutrals-6);
-  background-color: transparent;
-}
-
-aside .col-left .leftBox .btnServices {
-  display: flex;
-  justify-content: flex-start;
-  text-align: center;
-  column-gap: 16px;
-  height: 48px;
-}
-aside .col-left .leftBox .btnServices .btn-pd-1 {
-  padding: 16px 24px;
-  border-radius: 90px;
-}
-aside .col-left .leftBox .btnServices .downloadColor {
-  background: var(--Primary-1);
-  color: var(--Neutrals-8, #fcfcfd);
-  text-align: center;
-}
-aside .col-left .leftBox .btnServices .bookLight {
-  border: 2px solid var(--Neutrals-6);
-  background-color: #fff;
-  color: var(--Neutrals-2);
-  text-align: center;
-}
+} */
+/**  Elave */
 
 /*!  Hero Section End */

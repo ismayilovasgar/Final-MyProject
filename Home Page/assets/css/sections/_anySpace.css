@@ -67,6 +67,7 @@
 }
 .anySpace .frame .card img {
   position: absolute;
+  background-color: transparent;
 }
 
 .anySpace .frame .card .handgripcolor {

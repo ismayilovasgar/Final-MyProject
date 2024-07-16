@@ -13,7 +13,15 @@
   width: 90%;
   margin: 0 auto;
 }
+
 button {
   border: none;
+  background-color: transparent;
+}
+
+.rounded_90 {
+  border-radius: 90px;
+  padding: 16px 24px;
+  text-align: center;
 }
 /*! Common End */
