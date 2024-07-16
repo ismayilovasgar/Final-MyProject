@@ -1,0 +1,59 @@
+/* Mobile */
+@media screen and (max-width: 767px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and( max-width:1023px ) {
+  .header {
+    display: none !important;
+  }
+}
+
+/*? Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  /** Navbar */
+  .navbar {
+    column-gap: 10px;
+  }
+  .navbar .navbarLeft {
+    column-gap: 20px;
+  }
+  .navbar .navbarRight {
+    column-gap: 40px;
+  }
+
+  /** Supports  */
+  .supports .supportSection .teamLogo ul li img {
+    width: 120px;
+  }
+
+  /** Substance */
+
+  .substance .boxes > img {
+    width: 110px;
+  }
+  .substance .bound .step_cards .card p {
+    padding: 0px 7px;
+  }
+  /** Intro */
+  .intro .content-frame .intro-content .introHeadings {
+    width: 390px;
+  }
+
+  .intro .content-frame .introImgFrame img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1270px) {
+  .navbar .navbarLeft .logo > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1271px) and (max-width: 1440px) {
+  .navbar {
+    background-color: rgb(71, 187, 17);
+  }
+}

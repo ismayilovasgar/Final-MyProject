@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
 }
 .supports .supportSection .teamLogo ul li {
   display: flex;

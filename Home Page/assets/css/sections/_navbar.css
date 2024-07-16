@@ -3,8 +3,8 @@
 /*   font-family: "Poppins", sans-serif;      */
 
 .header {
-  width: 100%;
   margin: 0px auto;
+  padding: 48px 0;
 }
 
 .navbar {
@@ -12,11 +12,6 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 84px;
-  position: fixed;
-  padding: 48px 0;
-  top: 0px;
-  width: 1120px;
-  z-index: 200;
 }
 
 .navbar .navbarLeft {
@@ -36,6 +31,7 @@
 .navbar .navbarLeft .headerDivider {
   width: 1px;
   height: 48px;
+  background-color: var(--Neutrals-6, #e6e8ec);
 }
 
 .navbar .navbarLeft ul.navMenu {

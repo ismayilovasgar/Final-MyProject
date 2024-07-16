@@ -17,14 +17,12 @@
   color: var(--Neutrals-2);
   text-align: center;
   width: 544px;
-  
 }
 
 .substance .bound .headings p {
   color: var(--Neutrals-3);
   text-align: center;
   width: 544px;
-
 }
 
 .substance .boxes {
@@ -33,6 +31,7 @@
   justify-content: center;
   column-gap: 24px;
 }
+
 .substance .boxes .box {
   padding: 28px;
   text-align: center;
@@ -52,7 +51,7 @@
   background-color: var(--Primary-4);
 }
 
-.substance .bound .step_cards{
+.substance .bound .step_cards {
   display: flex;
   justify-content: space-between;
   column-gap: 32px;
@@ -96,10 +95,10 @@
   text-align: center;
 
   /* Caption */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;  */
 }
 /*! Substance End */

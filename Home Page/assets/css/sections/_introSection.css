@@ -1,6 +1,7 @@
 /*? introSection Start */
 .intro .content-frame {
   display: flex;
+  justify-content: space-between;
   column-gap: 32px;
 }
 .intro .content-frame .intro-content {
@@ -19,24 +20,24 @@
   color: var(--Neutrals-2);
 
   /* Headline 1 */
-  font-family: "SF Pro Display", sans-serif;
+  /* font-family: "SF Pro Display", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px; /* 100% */
-  letter-spacing: -1.28px;
+  line-height: 64px; 
+  letter-spacing: -1.28px; */
 }
 
 .intro .content-frame .intro-content .introHeadings p {
   color: var(--Neutrals-4);
 
   /* Body 1 */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: -0.24px;
+  line-height: 32px; 
+  letter-spacing: -0.24px; */
 }
 .intro .content-frame .intro-content button {
   padding: 16px 24px;

@@ -1,17 +1,23 @@
 /* Mobile */
-/* @media screen and (max-width: 767px) {
-} */
+@media screen and (max-width: 767px) {
+}
 
 /* Tablet */
-/* @media screen and (min-width: 768px) and( max-width:1023px ) {
+@media screen and (min-width: 768px) and( max-width:1023px ) {
   .header {
     display: none !important;
   }
-} */
+}
 
 /* Desktop */
-@media screen and (min-width: 1024px) {
-  .bars {
-    display: none;
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    /* background-color: red; */
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .navbar {
+    /* background-color: red; */
   }
 }
