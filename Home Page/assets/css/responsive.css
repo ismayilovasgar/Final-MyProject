@@ -1,11 +1,78 @@
-/* Mobile  */
-@media screen and (max-width: 767px) {
-  .navbar .navbarRight .getBtnAndBar ul li:first-child {
-    display: none;
+/* Desktop  Start*/
+
+@media screen and (min-width: 1101px) and (max-width: 1270px) {
+  .navbar .navbarLeft .logo > p {
+    font-size: 16px;
   }
-  /* .navbar .navbarRight .openCloseBtns .closeBtn {
-    display: block;
-  } */
+  .bookPoster {
+    /* padding: 40px 30px; */
+  }
+  .bookPoster {
+    padding: 136px 40px 136px 40px;
+  }
+
+  .bookPoster .detailPoster .detailSide {
+    padding: 15px;
+    flex-basis: 55%;
+  }
+  .bookPoster .detailPoster .imgSide {
+    flex-basis: 45%;
+  }
+  .bookPoster .detailPoster .imgSide img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  /** Navbar */
+  .navbar {
+    column-gap: 10px;
+  }
+  .navbar .navbarLeft {
+    column-gap: 20px;
+  }
+  .navbar .navbarRight {
+    column-gap: 40px;
+  }
+
+  /** Supports  */
+  .supports .supportSection .teamLogo ul li img {
+    width: 120px;
+  }
+
+  /** Substance */
+
+  .substance .boxes > img {
+    width: 110px;
+  }
+  .substance .bound .step_cards .card p {
+    padding: 0px 7px;
+  }
+  /** Intro */
+  .intro .content-frame .intro-content .introHeadings {
+    width: 390px;
+  }
+  .intro .content-frame .introImgFrame img {
+    width: 100%;
+    object-fit: cover;
+  }
+  /** bookPoster */
+  .bookPoster {
+    padding: 40px 30px;
+  }
+
+  .bookPoster .detailPoster .detailSide {
+    padding: 15px 0px;
+    flex-basis: 50%;
+  }
+  .bookPoster .detailPoster .imgSide {
+    flex-basis: 50%;
+  }
+  .bookPoster .detailPoster .imgSide img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /* Tablet Start */
@@ -102,84 +169,150 @@
   }
 
   /** BookClassPoster Start */
-  .bookPoster .detailPoster .detailSide {
-    padding: 10px;
+  .bookPoster {
+    padding: 112px 0px;
+  }
+
+  /** Quotes Start */
+  .quotes .frame {
+    padding: 0px 80px 112px 80px;
+  }
+  .quotes .frame .quote .author p {
+    text-align: justify;
+    font-size: 36px;
+  }
+
+  /** Footer */
+
+  footer .frame .top-menu .left-menu img {
+    margin: 0px 48px 136px 0px;
   }
 }
-/* Tablet End */
 
-/*? Desktop */
-@media screen and (min-width: 1024px) and (max-width: 1100px) {
-  /** Navbar */
+/* Mobile Responsive Start */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 440px;
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  /* Header */
+
+  .header {
+    margin: 0px auto;
+    padding: 48px 32px 24px 32px;
+  }
   .navbar {
-    column-gap: 10px;
+    display: flex;
+    column-gap: 0px;
   }
-  .navbar .navbarLeft {
-    column-gap: 20px;
-  }
-  .navbar .navbarRight {
-    column-gap: 40px;
+  .navbar .navbarLeft .logo {
+    column-gap: 8px;
   }
 
-  /** Supports  */
-  .supports .supportSection .teamLogo ul li img {
-    width: 120px;
+  .navbar .navbarRight .getBtnAndBar ul li:first-child {
+    display: none;
   }
-
-  /** Substance */
-
-  .substance .boxes > img {
-    width: 110px;
-  }
-  .substance .bound .step_cards .card p {
-    padding: 0px 7px;
-  }
-  /** Intro */
-  .intro .content-frame .intro-content .introHeadings {
-    width: 390px;
-  }
-  .intro .content-frame .introImgFrame img {
-    width: 100%;
-    object-fit: cover;
-  }
-  /** bookPoster */
-  .bookPoster {
-    padding: 40px 30px;
-  }
-
-  .bookPoster .detailPoster .detailSide {
-    padding: 15px;
-    flex-basis: 40%;
-  }
-  .bookPoster .detailPoster .imgSide {
-    flex-basis: 60%;
-  }
-  .bookPoster .detailPoster .imgSide img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-@media screen and (min-width: 1101px) and (max-width: 1270px) {
   .navbar .navbarLeft .logo > p {
-    font-size: 16px;
-  }
-  .bookPoster {
-    padding: 40px 30px;
-  }
-  .bookPoster {
-    padding: 136px 40px 136px 40px;
+    color: var(--Neutrals-2, #23262f);
+
+    /* Body 1 (Bold) */
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.48px;
   }
 
-  .bookPoster .detailPoster .detailSide {
-    padding: 15px;
-    flex-basis: 40%;
+  /** Hero Header Start */
+  .heroHeaderFitness .row .frame {
+    display: flex;
+    flex-direction: column;
   }
-  .bookPoster .detailPoster .imgSide {
-    flex-basis: 60%;
+  .heroHeaderFitness .wrapper .row .frame .btnServices {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
   }
-  .bookPoster .detailPoster .imgSide img {
+  .heroHeaderFitness .wrapper .row .frame div.simpleFitness {
+    display: none;
+  }
+  .heroHeaderFitness .wrapper .mobil_text {
+    display: block;
+    color: var(--Neutrals-2, #23262f);
+    /* Headline 2 */
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+  }
+  .heroHeaderFitness .wrapper .row .trainSmart {
+    color: var(--Neutrals-4, #777e90);
+
+    /* Hairline 2 */
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+    text-transform: uppercase;
+  }
+
+  /* Supports */
+  .supports .supportSection p {
+    color: var(--Neutrals-2, #23262f);
+    text-align: center;
+
+    /* Caption (Bold) */
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .supports .supportSection .teamLogo ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .supports .supportSection > p:not(.support_mobil_text) {
+    display: none;
+  }
+  .supports .supportSection > p.support_mobil_text {
+    display: block;
+    color: var(--Neutrals-2, #23262f);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  /** Intro Section Start */
+  .intro .content_frame {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .intro .content_frame .introImgFrame {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /** BookPoster  */
+  .bookPoster .detailPoster .overlap {
+    display: flex;
+    flex-direction: column;
+  }
+  .bookPoster .detailSide button {
     width: 100%;
-    object-fit: cover;
+    text-align: center;
   }
 }

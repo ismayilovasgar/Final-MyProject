@@ -461,6 +461,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
 .heroHeaderFitness .row .frame .col-left {
   align-self: center;
 }
@@ -561,6 +562,9 @@ button {
 .heroHeaderFitness .col-right .tablet_container {
   display: none;
 }
+.heroHeaderFitness .headings .mobil_text {
+  display: none;
+}
 /** Elave */
 
 /*!  Hero Section End */
@@ -590,6 +594,9 @@ button {
 .supports .supportSection .teamLogo ul li a {
   display: block;
   height: 100%;
+}
+.supports .supportSection > p.support_mobil_text {
+  display: none;
 }
 
 /*! Supports End */
@@ -766,11 +773,12 @@ button {
 /* @import "./sections/_bookPoster.css"; */
 /*? BookClassPoster Start */
 .bookPoster {
-  padding: 136px 160px 136px 80px;
+  padding: 136px 0px;
 }
 
 .bookPoster .detailPoster .overlap {
   display: flex;
+  justify-content: space-between;
   column-gap: 32px;
 }
 
@@ -785,13 +793,11 @@ button {
 }
 
 .bookPoster .detailPoster .imgSide {
-  width: 620px;
-  height: 748px;
+  flex-basis: 80%;
 }
 
 .bookPoster .detailPoster .imgSide img {
   width: 100%;
-  height: 748px;
   object-fit: cover;
 }
 
@@ -1707,7 +1713,7 @@ footer .frame .top-menu .left-menu ul li a {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px; /* 114.286% */
+  line-height: 16px;
 }
 
 footer .middle-menu {
@@ -1732,7 +1738,7 @@ footer .middle-menu ul li {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 }
 footer .middle-menu ul.main-ul {
   display: flex;
