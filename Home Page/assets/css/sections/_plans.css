@@ -2,6 +2,7 @@
 .plans .frame {
   display: flex;
   column-gap: 32px;
+  justify-content: space-between;
   padding: 136px 0;
 }
 .plans .frame .leftMenu {
@@ -12,25 +13,11 @@
 }
 .plans .frame .leftMenu .texts h2 {
   color: var(--Neutrals-2, #23262f);
-
   /* Headline 2 */
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px; /* 116.667% */
-  letter-spacing: -0.96px;
 }
 .plans .frame .leftMenu .texts span {
   color: var(--Neutrals-4, #777e90);
-
   /* Body 1 */
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: -0.24px;
 }
 
 .plans .frame .texts {
@@ -52,13 +39,7 @@
 }
 .plans .frame .texts .details .plan p {
   color: var(--Neutrals-4, #777e90);
-
   /* Body 2 (Bold) */
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 150% */
 }
 
 .plans .frame .leftMenu .choosePlan {
@@ -70,41 +51,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 24px;
-  border-radius: 90px;
 }
-.plans .frame .leftMenu .choosePlan .choose {
+.plans .frame .leftMenu .choosePlan button:nth-child(1) {
   background-color: var(--Primary-1, #ff592c);
-  /*  */
   color: var(--Neutrals-8, #fcfcfd);
   text-align: center;
   /* Button 1 */
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; /* 100% */
 }
-.plans .frame .leftMenu .choosePlan .request {
+.plans .frame .leftMenu .choosePlan button:nth-child(2) {
   border: 2px solid var(--Neutrals-6, #e6e8ec);
-  /*  */
+
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   /* Button 1 */
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; /* 100% */
 }
 .plans .frame .rigtMenu .wrapper {
   display: flex;
-  width: 678px;
+  max-width: 625px;
+  padding: 0 10px 0px 10px;
 }
 .plans .frame .rigtMenu .wrapper img {
-  /* width: 300px; */
-  /* object-fit: cover; */
-  align-items: stretch;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ! plans End   */
