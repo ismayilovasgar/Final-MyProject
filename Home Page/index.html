@@ -73,24 +73,21 @@
                                 </ul>
                             </div>
 
-                            <div class="freebtn">
-                                <button>
-                                    <a class="btnSmall" href="#">Get free trial</a>
-                                </button>
-
+                            <div class="openCloseBtns">
+                                <div class="getBtnAndBar">
+                                    <ul>
+                                        <li>
+                                            <a class="btnSmall" href="#">Get free trial</a>
+                                        </li>
+                                        <li class="bars">
+                                            <a href="#"><img src="./assets/images/header-model/bars.svg" alt="bars"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="closeBtn">
+                                    <a class=""><img src="./assets/images/header-model/close_icon.svg" alt=""></a>
+                                </div>
                             </div>
-                            <button class="bars">
-                                <a href="#"><img src="./assets/images/header-model/bars.svg" alt="bars"></a>
-                            </button>
-
-                            <!-- <ul class="freebtn">
-                        <li>
-                            <a href="#">Get free trial</a>
-                        </li>
-                        <li class="bars">
-                            <a href="#"><img src="./assets/images/header-model/bars.svg" alt="bars"></a>
-                        </li>
-                    </ul> -->
 
                         </div>
                     </div>
@@ -106,6 +103,7 @@
             <div class="wrapper">
                 <div class="row">
                     <div class="frame">
+
                         <div class="col col-left">
                             <div class="leftBox">
 
@@ -116,6 +114,9 @@
                                             <p class="hline1"> Simple fitness</p>
                                             <p class="hline1">experience for</p>
                                             <p class="hline1"> everyone.</p>
+                                            <!-- <p class="hline1">
+                                                Simple fitness experience for everyone.
+                                            </p> -->
                                         </div>
                                     </div>
                                     <p class="bottomHead body2">
@@ -128,31 +129,43 @@
                                     <button class="rounded_90 downloadBtn btnDefFont">Download App</button>
                                     <button class="rounded_90 bookBtn btnDefFont  itemCenter">Book a class</button>
                                 </div>
+
                             </div>
                         </div>
 
                         <div class="col col-right">
-                            <div class="circle_button">
-                                <!-- Elave -->
-                                <!-- <img src="./assets/images/heroSection/Light.svg" alt=""> -->
-                                <!-- <div class="img_pos img2 ">
-                            <img src="./assets/images/heroSection/ball.svg" alt="">
-                        </div>
-                        <div class="img_pos img3">
-                            <img src="./assets/images/heroSection/ball.svg" alt="">
-                        </div>
-                        <div class="img_pos img4">
-                            <img src="./assets/images/heroSection/ball.svg" alt="">
-                        </div> -->
-                                <img src="./assets/images/heroSection/whole_img.png" alt="">
+                            <!-- Elave -->
+                            <div class="imgs_container">
+                                <img class="main_image" src="./assets/images/heroSection/Light.svg" alt="">
+
+                                <div class="img_common imgbasketball ">
+                                    <img src="./assets/images/heroSection/basketballcolor.png" alt="">
+                                </div>
+                                <div class="img_common imgball">
+                                    <img src="./assets/images/heroSection/BallColor.png" alt="">
+                                </div>
                             </div>
 
+                            <div class="tablet_container">
+                                <!-- <img src="./assets/images/heroSection/whole_img.png" alt=""> -->
+                                <img class="main_image" src="./assets/images/heroSection/Light.svg" alt="">
+
+                                <div class="img_common imgbasketball ">
+                                    <img src="./assets/images/heroSection/basketballcolor.png" alt="">
+                                </div>
+                                <div class="img_common imgball">
+                                    <img src="./assets/images/heroSection/BallColor.png" alt="">
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
                 <div class="btnRow">
                     <img src="./assets/images/heroSection/arrow.svg" alt="">
                 </div>
+
             </div>
         </div>
     </section>
@@ -160,21 +173,33 @@
     <!--? supportSection Start  -->
     <section class="supports lightmode">
         <div class="container">
-            <div class="supportSection body2Bold">
-                <p>Trusted by more than 2M users worldwide</p>
+            <div class="wrapper">
 
-                <nav class="teamLogo">
-                    <ul>
-                        <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 01.svg" alt=""></a></li>
-                        <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 02.svg" alt=""></a></li>
-                        <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 03.svg" alt=""></a></li>
-                        <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 04.svg" alt=""></a></li>
-                        <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 05.svg" alt=""></a></li>
-                        <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 06.svg" alt=""></a></li>
-                    </ul>
-                </nav>
+                <div class="supportSection body2Bold">
+                    <p>Trusted by more than 2M users worldwide</p>
+                    <nav class="teamLogo">
+                        <ul>
+                            <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 01.svg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 02.svg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 03.svg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 04.svg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 05.svg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="/Home Page/assets/images/supportSection/logo 06.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
 
             </div>
+
+        </div>
+
         </div>
     </section>
     <!--! supportSection End  -->
@@ -253,20 +278,31 @@
                 </div>
 
             </div>
+
+            <div class="navigations">
+                <ul>
+                    <li>
+                        <img src="./assets/images/supportSection/previousarrow.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/images/supportSection/nextarrow.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
     <!--! stepsSection End  -->
     <!--? introSection Start  -->
     <section class="intro lightmode">
         <div class="container">
-            <div class="content-frame">
+            <div class="content_frame">
 
-                <div class="intro-content">
+                <div class="intro_content">
                     <div class="introHeadings">
                         <h2 class="hline1">Train smarter, get stronger.</h2>
                         <p class="body1">Fitness Pro helps track your workouts, get better results, and be the best
-                            version of you.
-                            Less thinking, more lifting 🔥🏀</p>
+                            version of you.Less thinking, more lifting 🔥🏀</p>
                     </div>
                     <button class="btnDefFont">Start free trial</button>
                 </div>
@@ -282,71 +318,73 @@
     <!--? BookClassPoster Start  -->
 
     <section class="bookPoster softlightmode">
-        <!-- <div class="container"> -->
-        <div class="detailPoster">
-            <div class="overlap">
-                <div class="imgSide">
-                    <img src="./assets/images/bookClassPoster/Light.png" alt="">
-                </div>
+        <div class="container">
+            <div class="detailPoster">
+                <div class="overlap">
 
-                <div class="detailSide lightmode">
-                    <div class="headTitle ">
-                        <h2 class="hline2">Book a class</h2>
-                        <p class="body2">Track your workouts, get better results, and be the best version of you. Less
-                            thinking, more
-                            lifting.
+                    <div class="imgSide">
+                        <img src="./assets/images/bookClassPoster/Light.png" alt="">
+                    </div>
+
+                    <div class="detailSide lightmode">
+                        <div class="headTitle ">
+                            <h2 class="hline2">Book a class</h2>
+                            <p class="body2">Track your workouts, get better results, and be the best version of you.
+                                Less
+                                thinking, more
+                                lifting.
+                            </p>
+                        </div>
+
+                        <div class="overlap">
+                            <section class="cardContent ">
+                                <div class="card">
+                                    <div class="imgContent">
+                                        <div class="backFrame">
+                                            <img src="./assets/images/bookClassPoster/Filled.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="statementContent">
+                                        <h3 class="body2Bold">For Beginners</h3>
+                                        <p class="caption">You never workout before, it's now a <br> good start</p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="imgContent">
+                                        <div class="backFrame">
+                                            <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="statementContent">
+                                        <h3 class="body2Bold">Advanced classes</h3>
+                                        <p class="caption">You never workout before, it's now a <br> good start</p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="imgContent">
+                                        <div class="backFrame">
+                                            <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="statementContent">
+                                        <h3 class="body2Bold">Premium (limited)</h3>
+                                        <p class="caption">You never workout before, it's now a <br> good start</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <p class="caption"><span class="colorDiscount">10% Discount</span> if you're already using the
+                            <span class="captionBolder">Fitness Pro </span>on App Store
                         </p>
+
+                        <button class="btnDefFont">Book a class</button>
                     </div>
-
-                    <div class="overlap">
-                        <section class="cardContent ">
-                            <div class="card">
-                                <div class="imgContent">
-                                    <div class="backFrame">
-                                        <img src="./assets/images/bookClassPoster/Filled.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="statementContent">
-                                    <h3 class="body2Bold">For Beginners</h3>
-                                    <p class="caption">You never workout before, it's now a <br> good start</p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="imgContent">
-                                    <div class="backFrame">
-                                        <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="statementContent">
-                                    <h3 class="body2Bold">Advanced classes</h3>
-                                    <p class="caption">You never workout before, it's now a <br> good start</p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="imgContent">
-                                    <div class="backFrame">
-                                        <img src="./assets/images/bookClassPoster/mediaFilled.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="statementContent">
-                                    <h3 class="body2Bold">Premium (limited)</h3>
-                                    <p class="caption">You never workout before, it's now a <br> good start</p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <p class="caption"> <span class="colorDiscount">10% Discount</span> if you're already using the
-                        <span class="captionBolder">Fitness Pro </span>on App Store
-                    </p>
-
-                    <button class="btnDefFont">Book a class</button>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </section>
     <!--! BookClassPoster End  -->
     <!--? ExperienceDetail Start  -->

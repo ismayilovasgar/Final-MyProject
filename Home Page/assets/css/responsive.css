@@ -1,25 +1,112 @@
 /* Mobile  */
 @media screen and (max-width: 767px) {
-  #myhero01 {
-    color: red;
+  .navbar .navbarRight .getBtnAndBar ul li:first-child {
+    display: none;
   }
+  /* .navbar .navbarRight .openCloseBtns .closeBtn {
+    display: block;
+  } */
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header .navbar .navbarLeft .logo > p {
-    /* font-size: 12px; */
+/* Tablet Start */
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 864px;
+    width: 88%;
+    margin: 0 auto;
   }
-
+  /** Navbar */
   .header .navbar .navbarLeft .navMenu,
   .header .navbar .navbarLeft .headerDivider,
   .header .navbar .sosialIcons {
     display: none;
   }
-  .navbar .navbarRight .freebtn .bars {
+
+  .navbar .navbarRight .openCloseBtns .bars {
     display: block;
   }
+  .header {
+    margin: 0px auto;
+    padding: 64px 0;
+  }
+  /** HeorSection */
+  .heroHeaderFitness .row .frame {
+    column-gap: 32px;
+  }
+  .heroHeaderFitness .row .frame .col-left {
+    max-width: 410px;
+  }
+  .heroHeaderFitness .row .col-right .imgs_container {
+    display: none;
+  }
+  .heroHeaderFitness .col-right .imgs_container img {
+    position: static;
+  }
+  /* Tablet IMG Design */
+  .heroHeaderFitness .row .col-right .tablet_container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 560px;
+  }
+  .heroHeaderFitness .col-right .tablet_container img {
+    position: absolute;
+  }
+  .heroHeaderFitness .col-right .img_common {
+    position: relative;
+  }
+  .heroHeaderFitness .col-right .main_image {
+    width: 310px;
+    height: 360px;
+    left: 19px;
+    top: 59px;
+  }
+  .heroHeaderFitness .col-right .imgbasketball {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    right: 0px;
+    top: 190px;
+  }
+  .heroHeaderFitness .col-right .imgbasketball img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .heroHeaderFitness .col-right .imgball {
+    width: 57px;
+    height: 57px;
+    top: 281px;
+    left: 60px;
+  }
+
+  .heroHeaderFitness .col-right .imgball img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+  .heroHeaderFitness .col-right .tablet_container {
+    display: block;
+  }
+
+  /** Substance */
+  .substance .navigations {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s linear;
+  }
+
+  /** introSection */
+  .intro .content_frame {
+    column-gap: 2px;
+  }
+
+  /** BookClassPoster Start */
+  .bookPoster .detailPoster .detailSide {
+    padding: 10px;
+  }
 }
+/* Tablet End */
 
 /*? Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1100px) {
@@ -71,14 +158,28 @@
     width: 100%;
     object-fit: cover;
   }
-  /** Plans */
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1270px) {
   .navbar .navbarLeft .logo > p {
     font-size: 16px;
   }
-}
+  .bookPoster {
+    padding: 40px 30px;
+  }
+  .bookPoster {
+    padding: 136px 40px 136px 40px;
+  }
 
-@media screen and (min-width: 1271px) and (max-width: 1440px) {
+  .bookPoster .detailPoster .detailSide {
+    padding: 15px;
+    flex-basis: 40%;
+  }
+  .bookPoster .detailPoster .imgSide {
+    flex-basis: 60%;
+  }
+  .bookPoster .detailPoster .imgSide img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
