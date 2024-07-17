@@ -1,11 +1,23 @@
-/* Mobile */
+/* Mobile  */
 @media screen and (max-width: 767px) {
+  #myhero01 {
+    color: red;
+  }
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and( max-width:1023px ) {
-  .header {
-    display: none !important;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header .navbar .navbarLeft .logo > p {
+    /* font-size: 12px; */
+  }
+
+  .header .navbar .navbarLeft .navMenu,
+  .header .navbar .navbarLeft .headerDivider,
+  .header .navbar .sosialIcons {
+    display: none;
+  }
+  .navbar .navbarRight .freebtn .bars {
+    display: block;
   }
 }
 
@@ -60,8 +72,6 @@
     object-fit: cover;
   }
   /** Plans */
-
-  /*! ------------------------------------------------------------ */
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1270px) {
@@ -71,7 +81,4 @@
 }
 
 @media screen and (min-width: 1271px) and (max-width: 1440px) {
-  .navbar {
-    background-color: rgb(71, 187, 17);
-  }
 }
