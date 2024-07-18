@@ -93,6 +93,15 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
+.dispal_none {
+  display: none;
+}
+.dispal_block {
+  display: block;
+}
+.dispal_flex {
+  display: block;
+}
 /*! Common End */
 /*? typography start */
 .hero {
@@ -363,6 +372,9 @@ button {
 .navbar .navbarLeft ul.navMenu .classDropdown a.btnMenu p {
   padding: 4px 8px;
 }
+.openCloseBtns img {
+  cursor: pointer;
+}
 
 /** Dropdown Menu */
 .navbar .navbarLeft #dropdownMenu {
@@ -440,12 +452,122 @@ button {
 }
 
 .navbar .navbarRight .openCloseBtns .bars {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: none;
+}
+.navbar .navbarRight .openCloseBtns .bars img {
+  display: block;
 }
 
 .navbar .navbarRight .openCloseBtns .closeBtn {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: none;
 }
+/* <!--  --> */
+/* <!-- Table Mode --> */
+
+.tabletMenu .overlap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.tabletMenu .overlap .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.tabletMenu .overlap .menu nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 48px;
+}
+.tabletMenu .overlap .menu nav ul li {
+  min-width: 200px;
+}
+.tabletMenu .overlap .menu nav ul li a {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Headline 3 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.4px;
+}
+.tabletMenu .overlap .menu nav ul .tClassDropdown span {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 3 */
+  font-family: "SF Pro Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.4px;
+}
+
+.tabletMenu .overlap .menu nav ul .tClassDropdown a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabletMenu .overlap .subMenu {
+  height: 521px;
+  background-color: #353945;
+}
+.tabletMenu .overlap .menu .contact {
+  min-width: 336px;
+}
+.tabletMenu .overlap .menu .contact > ul.rightside {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  row-gap: 32px;
+}
+
+.tabletMenu .overlap .menu .contact .tIcons .iconItem {
+  display: flex;
+  column-gap: 48px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tabletMenu .overlap .menu .contact .tIcons .iconItem a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabletMenu .overlap .menu .contact > ul.rightside p {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 1 */
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.24px;
+  margin: 0px 0px 8px 0px;
+}
+.tabletMenu .overlap .menu .contact > ul.rightside span {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+/* <!-- Table Mode --> */
 
 /*! Header End */
 /* @import "./sections/_heroSection.css"; */

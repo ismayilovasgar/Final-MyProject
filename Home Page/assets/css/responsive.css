@@ -1,5 +1,4 @@
 /* Desktop  Start*/
-
 @media screen and (min-width: 1101px) and (max-width: 1270px) {
   .navbar .navbarLeft .logo > p {
     font-size: 16px;
@@ -89,12 +88,15 @@
   }
 
   .navbar .navbarRight .openCloseBtns .bars {
-    display: block;
+    display: flex;
   }
+
   .header {
     margin: 0px auto;
     padding: 64px 0;
   }
+  /**Tablet Hidden Navbar */
+
   /** HeorSection */
   .heroHeaderFitness .row .frame {
     column-gap: 32px;
@@ -191,8 +193,8 @@
 /* Mobile Responsive Start */
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 440px;
-    width: 88%;
+    max-width: 620px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -227,11 +229,15 @@
   /** Hero Header Start */
   .heroHeaderFitness .wrapper {
     row-gap: 48px;
-    padding: 0px;
+    padding: 64px 0px;
   }
   .heroHeaderFitness .row .frame {
     display: flex;
     flex-direction: column;
+  }
+  .heroHeaderFitness .row .frame .col-left {
+    max-width: 300px;
+    width: 100%;
   }
   .heroHeaderFitness .wrapper .row .frame .btnServices {
     display: flex;
@@ -300,6 +306,8 @@
   .intro .content_frame {
     display: flex;
     flex-direction: column-reverse;
+    row-gap: 32px;
+    padding: 0px;
   }
   .intro .content_frame .introImgFrame {
     padding: 0px;
