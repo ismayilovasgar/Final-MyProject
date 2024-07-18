@@ -197,7 +197,6 @@
   }
 
   /* Header */
-
   .header {
     margin: 0px auto;
     padding: 48px 32px 24px 32px;
@@ -226,6 +225,10 @@
   }
 
   /** Hero Header Start */
+  .heroHeaderFitness .wrapper {
+    row-gap: 48px;
+    padding: 0px;
+  }
   .heroHeaderFitness .row .frame {
     display: flex;
     flex-direction: column;
