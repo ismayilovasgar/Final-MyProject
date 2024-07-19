@@ -193,13 +193,13 @@
 /* Mobile Responsive Start */
 @media screen and (max-width: 767px) {
   .outbound {
-    display: none !important;
+    display: none;
   }
   .container {
     max-width: 620px;
     width: 100%;
     margin: 0 auto;
-  }
+  } 
 
   /* Header */
   .header {

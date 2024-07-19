@@ -825,8 +825,64 @@ button {
 
 /** <!-- Table End --> */
 /* <!-- Mobile Mode --> */
-.mobileMenu {
+/* .mobileMenu {
   display: none;
+} */
+.mobileMenu .nav_links {
+  margin: 64px 0px 208px 0px;
+}
+.mobileMenu .nav_links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileMenu .nav_links ul li {
+  height: 64px;
+  padding: 15px 0px;
+}
+
+.mobileMenu .nav_links ul li a {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 1 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.mobileMenu .nav_links > ul > li:nth-child(4) > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobileMenu .nav_links ul li:nth-child(4) ul {
+  display: none;
+}
+
+.mobileMenu .searchBar .frame ul.bottomSearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+.mobileMenu .searchBar .frame ul.bottomSearchBar li a {
+  display: block;
+  padding: 16px 24px;
+  color: var(--Neutrals-2);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.mobileMenu .searchBar .frame ul.bottomSearchBar li img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mobileMenu .searchBar .frame ul.bottomSearchBar li {
 }
 /* <!-- Mobile Mode --> */
 
