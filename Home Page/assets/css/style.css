@@ -93,13 +93,13 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
-.dispal_none {
+.display_none {
   display: none;
 }
-.dispal_block {
+.display_block {
   display: block;
 }
-.dispal_flex {
+.display_flex {
   display: block;
 }
 /*! Common End */
@@ -470,7 +470,10 @@ button {
   display: none;
 }
 /* <!--  --> */
-/* <!-- Table Mode --> */
+/** <!-- Table Mode --> */
+.outbound {
+  display: none;
+}
 
 .tabletMenu .overlap {
   display: flex;
@@ -489,7 +492,7 @@ button {
   row-gap: 48px;
 }
 .tabletMenu .overlap .menu nav ul li {
-  min-width: 200px;
+  width: 181px;
 }
 .tabletMenu .overlap .menu nav ul li a {
   color: var(--Neutrals-4, #777e90);
@@ -502,27 +505,16 @@ button {
   line-height: 48px; /* 120% */
   letter-spacing: -0.4px;
 }
-.tabletMenu .overlap .menu nav ul .tClassDropdown span {
+.tabletMenu .overlap .menu nav ul a:hover {
   color: var(--Neutrals-2, #23262f);
-
-  /* Headline 3 */
-  font-family: "SF Pro Display";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px; /* 120% */
-  letter-spacing: -0.4px;
 }
 
-.tabletMenu .overlap .menu nav ul .tClassDropdown a {
+.tabletMenu .overlap .menu .navlinks ul .tClassDropdown a {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tabletMenu .overlap .subMenu {
-  height: 521px;
-  background-color: #353945;
-}
+
 .tabletMenu .overlap .menu .contact {
   min-width: 336px;
 }
@@ -567,7 +559,208 @@ button {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
 }
-/* <!-- Table Mode --> */
+.tabletMenu .subMenu {
+  height: 521px;
+  /* background-color: #9293967c; */
+}
+.tabletMenu ul.tabletLifestyle a {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+}
+.tabletMenu ul.tabletLifestyle a:hover {
+  color: var(--Neutrals-2, #23262f);
+}
+/* SubMenu */
+.tabletMenu .subMenu .tframe .toverlap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+}
+.tabletMenu .subMenu .tframe .topMenu {
+  display: flex;
+  justify-content: space-between;
+}
+.subMenu .tframe .topMenu .achieves {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  width: 50%;
+}
+.subMenu .tframe .topMenu .achieves .type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subMenu .tframe .topMenu .achieves .type > p {
+  color: var(--Neutrals-2, #23262f);
+  width: clamp(40%, 100%, 180px);
+  /* Body 1 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+.subMenu .tframe .topMenu .achieves .links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.subMenu .tframe .topMenu .achieves .links ul li {
+  padding: 16px;
+}
+.subMenu .tframe .topMenu .achieves .links ul li a {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+}
+.subMenu .tframe .topMenu .achieves .links ul li .youtube {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--Secondary-1);
+}
+.subMenu .tframe .topMenu .achieves .links ul li .premium {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--Primary-1);
+}
+
+.subMenu .tframe .topMenu .menuDivider {
+  width: 1px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+  height: 338px;
+}
+
+.subMenu .tframe .topMenu .minifeatures {
+  padding: 32px;
+  width: 50%;
+}
+.subMenu .tframe .topMenu .minifeatures .featureFrame {
+  display: flex;
+  gap: 32px 40px;
+}
+.subMenu .tframe .topMenu .minifeatures .featurecard {
+  display: flex;
+  column-gap: 32px;
+  width: clamp(40%, 270px, 340px);
+  height: 120px;
+}
+
+.subMenu .tframe .topMenu .minifeatures .featurecard > img {
+  width: 120px;
+  height: 140px;
+  object-fit: cover;
+}
+.subMenu .tframe .topMenu .minifeatures .featureContent {
+  display: flex;
+  flex-direction: column;
+}
+.subMenu .tframe .topMenu .minifeatures .featureContent span:nth-child(1) {
+  color: var(--Neutrals-8, #fcfcfd);
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--Neutrals-2, #23262f);
+  /* Hairline 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+  text-transform: uppercase;
+}
+
+.subMenu .tframe .topMenu .minifeatures .featureContent span:nth-child(2) {
+  color: var(--Neutrals-8, #fcfcfd);
+  padding: 8px;
+  /* Hairline 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+  text-transform: uppercase;
+}
+.subMenu .tframe .topMenu .minifeatures .featureContent .detail {
+  display: flex;
+  row-gap: 16px;
+}
+
+.subMenu .tframe .trainers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 32px;
+}
+.subMenu .tframe .trainers > p {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 1 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+
+.subMenu .tframe .trainers .cardlist {
+  display: flex;
+  justify-content: space-between;
+}
+.subMenu .tframe .trainers .card .card_concept {
+  display: flex;
+  column-gap: 16px;
+}
+
+.subMenu .tframe .trainers .card .card_concept img {
+  border-radius: 56px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.subMenu .tframe .trainers .card .card_concept .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.subMenu .tframe .trainers .card .card_concept .content .fullname {
+  display: flex;
+  column-gap: 4px;
+}
+
+.subMenu .tframe .trainers .card .card_concept .content .fullname span {
+  display: block;
+  text-align: center;
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.subMenu .tframe .trainers .card .card_concept .trainerInfo p {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+/** <!-- Table End --> */
+/* <!-- Mobile Mode --> */
+.mobileMenu {
+  display: none;
+}
+/* <!-- Mobile Mode --> */
 
 /*! Header End */
 /* @import "./sections/_heroSection.css"; */

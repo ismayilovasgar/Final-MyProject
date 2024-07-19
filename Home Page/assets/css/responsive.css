@@ -192,6 +192,9 @@
 
 /* Mobile Responsive Start */
 @media screen and (max-width: 767px) {
+  .outbound {
+    display: none !important;
+  }
   .container {
     max-width: 620px;
     width: 100%;
