@@ -647,35 +647,37 @@ button {
 }
 .subMenu .tframe .topMenu .minifeatures .featurecard {
   display: flex;
+  align-items: center;
   column-gap: 32px;
-  width: clamp(40%, 270px, 340px);
   height: 120px;
 }
 
-.subMenu .tframe .topMenu .minifeatures .featurecard > img {
-  width: 120px;
-  height: 140px;
-  object-fit: cover;
-}
 .subMenu .tframe .topMenu .minifeatures .featureContent {
   display: flex;
   flex-direction: column;
+  row-gap: 12px;
 }
-.subMenu .tframe .topMenu .minifeatures .featureContent span:nth-child(1) {
-  color: var(--Neutrals-8, #fcfcfd);
-  padding: 8px;
+.subMenu .tframe .topMenu .minifeatures .featureContent .top_content {
+  display: flex;
+  column-gap: 4px;
+}
+.subMenu .minifeatures .featureContent .top_content span:nth-child(1) {
   border-radius: 4px;
   background-color: var(--Neutrals-2, #23262f);
+  color: var(--Neutrals-8, #fcfcfd);
+  padding: 8px;
   /* Hairline 2 */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 100% */
+  line-height: 12px;
   text-transform: uppercase;
 }
 
-.subMenu .tframe .topMenu .minifeatures .featureContent span:nth-child(2) {
+.subMenu .minifeatures .featureContent .top_content span:nth-child(2) {
+  border-radius: 4px;
+  background: var(--Primary-4, #45b26b);
   color: var(--Neutrals-8, #fcfcfd);
   padding: 8px;
   /* Hairline 2 */
@@ -683,12 +685,78 @@ button {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 100% */
+  line-height: 12px;
   text-transform: uppercase;
 }
+
 .subMenu .tframe .topMenu .minifeatures .featureContent .detail {
   display: flex;
-  row-gap: 16px;
+  column-gap: 16px;
+}
+.subMenu .tframe .topMenu .minifeatures .featureContent .detail .detailAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.subMenu .tframe .featureContent .detail .detailAvatar img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.subMenu .tframe .featureContent .detail .fullname {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(1) {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) {
+  display: flex;
+  column-gap: 4px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) span {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(1) {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) {
+  display: flex;
+  column-gap: 4px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) span {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .subMenu .tframe .trainers {

@@ -41,6 +41,7 @@ tClassDropdown.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
+//* Function For Screen Size changes
 function resizeFn() {
   // if (window.screen.width > 767 && window.screen.width <= 1023)
   //    alert("Tablet");
