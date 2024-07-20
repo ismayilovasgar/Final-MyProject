@@ -1,1 +1,384 @@
 @import "./reset.css";
+:root {
+  --Primary-1: #ff592c;
+  --Primary-2: #9757d7;
+  --Primary-3: #ef466f;
+  --Primary-4: #45b26b;
+  --Secondary-1: #3772ff;
+  --Secondary-2: #e4d7cf;
+  --Secondary-3: #ffd166;
+  --Secondary-4: #cdb4db;
+  --Neutrals-1: #141416;
+  --Neutrals-2: #23262f;
+  --Neutrals-3: #353945;
+  --Neutrals-4: #777e90;
+  --Neutrals-5: #b1b5c3;
+  --Neutrals-6: #e6e8ec;
+  --Neutrals-7: #f4f5f6;
+  --Neutrals-8: #fcfcfd;
+}
+.btn_pad {
+  padding: 16px 24px;
+  border-radius: 90px;
+  text-align: center;
+
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.btn_orange {
+  background-color: var(--Primary-1, #ff592c);
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+}
+
+.light_btn {
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+}
+.dark_light_btn {
+  border: 2px solid var(--Neutrals-4, #777e90);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+/* ****************************************************** */
+
+/*? Features Hero Start */
+
+.FeaturesPage .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 50px;
+  width: 100%;
+}
+
+.FeaturesPage .wrapper .fTopSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentTexts {
+  border: 1px solid darkblue;
+  width: clamp(410px, 100%, 450px);
+  height: 376px;
+}
+
+.contentPhoto {
+  border: 1px solid darkred;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: clamp(510px, 100%, 880px);
+}
+
+.contentPhoto img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.contentTexts .texts p:nth-child(1) {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Hairline 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: clamp(416px, 100%, 448px);
+}
+.contentTexts .texts p:nth-child(2) {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+  margin: 12px 0px 40px 0px;
+  width: clamp(416px, 100%, 448px);
+}
+.contentTexts .texts p:nth-child(3) {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  width: clamp(416px, 100%, 448px);
+}
+/*! Features Hero End */
+
+/*? introSection Start */
+.intro .content_frame {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+.intro .content_frame .intro_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 32px;
+  min-width: 300px;
+  max-width: 400px;
+}
+.intro .content_frame .intro_content .introHeadings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.intro .content_frame .intro_content .introHeadings h2 {
+  color: var(--Neutrals-2);
+  /* Headline 1 */
+}
+
+.intro .content_frame .intro_content .introHeadings p {
+  color: var(--Neutrals-4);
+  /* Body 1 */
+}
+.intro .content_frame .intro_content button {
+  padding: 16px 24px;
+  border-radius: 90px;
+  background-color: var(--Primary-1);
+  color: var(--Neutrals-8);
+  text-align: center;
+}
+
+.intro .content_frame .introImgFrame {
+  padding: 5px;
+}
+.intro .content_frame .introImgFrame img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*! introSection End */
+/* ? ExperienceDetail Start  */
+
+.expParent {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 80px; */
+
+  /* width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px; */
+  padding: 0px 0px 136px 0px;
+}
+.expParent .titleContent {
+  max-width: 580px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.expParent .titleContent p {
+  margin: 0px 0px 12px 0px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.expParent .titleContent h2 {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SFProDisplay", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+.expParent .cardList {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.expParent .cardList .cardLeft {
+  padding: 34px 83px 34px 0px;
+  flex: 0 0 31%;
+}
+
+.expParent .cardList .cardMiddle {
+  padding: 34px 83px;
+  flex: 0 0 38%;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: #e6e8ec;
+}
+
+.expParent .cardList .cardRight {
+  padding: 34px 0 34px 83px;
+  flex: 0 0 31%;
+}
+.expParent .cardList .cardIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0px 0px 32px 0px;
+}
+
+.expParent .cardList .card h3 {
+  color: var(--Neutrals-2);
+  margin: 0px 0px 32px 0px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.expParent .cardList .card p {
+  color: var(--Neutrals-4, #777e90);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*? ProgramSection Start */
+
+/*! ProgramSection End */
+
+.programSection {
+  background-color: var(--Neutrals-7, #f4f5f6);
+  padding: 136px 0px;
+}
+
+.programSection .wrapper {
+  display: flex;
+  align-items: center;
+  padding: 48px 76px 64px;
+  border-radius: 24px;
+  background-color: var(--Neutrals-8, #fcfcfd);
+
+  /* depth/4 */
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+}
+.programSection .wrapper .prgramCol:nth-child(1) {
+  flex: 0 0 372px;
+  padding-bottom: 40px;
+}
+.programSection .prgramCol:nth-child(1) h3 {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Hairline 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+  padding-left: 24px;
+}
+
+.programSection .programList ul li:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+
+.programSection .programList > ul li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #23262f;
+  transition: background-color 0.2s;
+}
+.programSection .programList .programIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  /* padding: 12px; */
+  margin-right: 20px;
+  border-radius: 12px;
+}
+
+.programSection .programList .programArrow {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.programSection .programList .programIcon img {
+  max-width: 24px;
+  max-height: 24px;
+}
+.programSection .programList ul li:nth-child(1) .programIcon {
+  background-color: var(--Primary-4);
+}
+.programSection .programList ul li:nth-child(2) .programIcon {
+  background-color: var(--Primary-2);
+}
+.programSection .programList ul li:nth-child(3) .programIcon {
+  background-color: var(--Secondary-1);
+}
+
+.programSection .wrapper .prgramCol:nth-child(2) {
+  flex-grow: 1;
+  padding: 0px 0px 0px 20px;
+  text-align: center;
+}
+
+.programSection .prgramCol:nth-child(2) .programView {
+  margin-bottom: 42px;
+}
+.programSection .prgramCol:nth-child(2) .programView img {
+  max-width: 400px;
+  vertical-align: middle;
+  border: none;
+}
+.programSection .prgramCol:nth-child(2) .programInfo {
+  max-width: 380px;
+  margin: 0 auto 24px;
+  color: #777e90;
+  outline: none;
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.programSection .prgramCol:nth-child(2) > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
