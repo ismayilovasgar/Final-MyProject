@@ -382,3 +382,105 @@
   justify-content: center;
   align-items: center;
 }
+/*     ? WorkoutDetail Start  */
+.fWorkoutDetail {
+  padding: 136px 0px;
+}
+
+.fWorkoutDetail .row:not(:nth-child(2)) {
+  margin: 0px 0px 128px 0px;
+}
+.fWorkoutDetail .row {
+  display: flex;
+  margin: 0 -12px;
+}
+.fWorkoutDetail .row .aboutCol {
+  flex: 0 0 calc(50% - 24px);
+  width: calc(50% - 24px);
+  margin: 0 12px;
+}
+
+.fWorkoutDetail .uprow .aboutCol h2 {
+  margin: 0px 0px 20px 0px;
+
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.96px;
+}
+
+.fWorkoutDetail .uprow .aboutCol p {
+  max-width: 450px;
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.fWorkoutDetail .downrow .leftCol .cardList {
+  max-width: 260px;
+}
+.fWorkoutDetail .downrow .leftCol .cardItem:not(:last-child) {
+  margin: 0px 0px 48px 0px;
+}
+.fWorkoutDetail .downrow .leftCol .cardItem .cardNumber {
+  display: inline-block;
+  padding: 2px 12px;
+  margin: 0px 0px 24px 0px;
+  border-radius: 100px;
+  color: var(--Neutrals-8, #fcfcfd);
+
+  /* Caption (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.fWorkoutDetail .downrow .leftCol .cardItem:nth-child(1) .cardNumber {
+  background-color: var(--Primary-2);
+}
+.fWorkoutDetail .downrow .leftCol .cardItem:nth-child(2) .cardNumber {
+  background-color: var(--Primary-3);
+}
+
+.fWorkoutDetail .downrow .leftCol .cardItem:nth-child(3) .cardNumber {
+  background-color: var(--Primary-4);
+}
+.fWorkoutDetail .downrow .leftCol .cardItem .cardSubtitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.fWorkoutDetail .downrow .leftCol .cardItem .cardContent {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Caption */
+  font-family: "Poppins" sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.fWorkoutDetail .downrow .rightCol .imgBg {
+  position: relative;
+  background-color: var(--Neutrals-6);
+  border-radius: 24px;
+}
+.fWorkoutDetail .downrow .rightCol .imgBg > img {
+  border-radius: 24px;
+}
+/*      ! WorkoutDetail End  */
