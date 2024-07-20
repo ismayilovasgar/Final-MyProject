@@ -1,0 +1,319 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98772,98773,98775,98770,98771");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 
+@import "./basic/_reboot.css"; +
+@import "./basic/_common.css"; +
+@import "./basic/_typography.css"; +
+@import "./basic/_border.css";
+@import "./basic/_grid.css"; +
+@import "./basic/_border.css";  +
+*/
+
+/** reboot css */
+/*? Root Start */
+:root {
+  --Primary-1: #ff592c;
+  --Primary-2: #9757d7;
+  --Primary-3: #ef466f;
+  --Primary-4: #45b26b;
+  --Secondary-1: #3772ff;
+  --Secondary-2: #e4d7cf;
+  --Secondary-3: #ffd166;
+  --Secondary-4: #cdb4db;
+  --Neutrals-1: #141416;
+  --Neutrals-2: #23262f;
+  --Neutrals-3: #353945;
+  --Neutrals-4: #777e90;
+  --Neutrals-5: #b1b5c3;
+  --Neutrals-6: #e6e8ec;
+  --Neutrals-7: #f4f5f6;
+  --Neutrals-8: #fcfcfd;
+}
+
+.darkMode {
+  --Primary-1: #ff592c;
+  --Primary-2: #9757d7;
+  --Primary-3: #ef466f;
+  --Primary-4: #45b26b;
+  --Secondary-1: #3772ff;
+  --Secondary-2: #e4d7cf;
+  --Secondary-3: #ffd166;
+  --Secondary-4: #cdb4db;
+  --Neutrals-1: #141416;
+  --Neutrals-2: #fcfcfd;
+  --Neutrals-3: #353945;
+  --Neutrals-4: #777e90;
+  --Neutrals-5: #b1b5c3;
+  --Neutrals-6: #e6e8ec;
+  --Neutrals-7: #f4f5f6;
+  --Neutrals-8: #fcfcfd;
+}
+
+.lightmode {
+  background-color: var(--Neutrals-8, #fcfcfd);
+  /* background-color: var(--Neutrals-1, #141416); */
+}
+.darkmode {
+  background-color: var(--Neutrals-1, #141416);
+}
+
+.softlightmode {
+  background-color: var(--Neutrals-8, #fcfcfd);
+  /* background-color: var(--Neutrals-2, #23262f); */
+}
+
+.softdarkmode {
+  background-color: var(--Neutrals-2, #23262f);
+}
+/*! Root End */
+/*? Common Start */
+* {
+  /* outline: none; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1120px;
+  width: 88%;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.rounded_90 {
+  border-radius: 90px;
+  padding: 16px 24px;
+  text-align: center;
+}
+.display_none {
+  display: none;
+}
+.display_block {
+  display: block;
+}
+.display_flex {
+  display: block;
+}
+/*! Common End */
+/*? typography start */
+.hero {
+  color: var(--Neutrals-2, #23262f);
+  /* Hero */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px; /* 100% */
+  letter-spacing: -1.92px;
+}
+/** Head Lines */
+.hline1 {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: -1.28px;
+}
+
+.hline2 {
+  color: var(--Neutrals-2, #23262f);
+  /* Headline 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+.hline3 {
+  color: var(--Neutrals-2, #23262f);
+  /* Headline 3 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.4px;
+}
+
+.hline4 {
+  color: var(--Neutrals-2, #23262f);
+  /* Headline 4 */
+  font-size: 32px;
+  font-family: "SF Pro Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.32px;
+}
+
+/** Body */
+.body1 {
+  color: var(--Neutrals-2);
+  /* Body 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.24px;
+}
+.body1Bold {
+  color: var(--Neutrals-2);
+  /* Body 1 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+
+.body2 {
+  color: var(--Neutrals-2, #23262f);
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.body2Bold {
+  color: var(--Neutrals-2, #23262f);
+  /* Body 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+/** Caption */
+.caption {
+  color: var(--Neutrals-2, #23262f);
+  /* Caption */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.captionBold {
+  color: var(--Neutrals-2, #23262f);
+  /* Caption (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+.captionBolder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.captionThin {
+  color: var(--Neutrals-2, #23262f);
+  /* Caption 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+.captionThinBold {
+  color: var(--Neutrals-2, #23262f);
+  /* Caption 2 (Bold) */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 166.667% */
+}
+
+/** HairLines */
+.hrlineLarge {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Hairline 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+
+.hrlineSmall {
+  color: var(--Neutrals-2, #23262f);
+  /* Hairline 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+  text-transform: uppercase;
+}
+
+.btnDefFont {
+  color: var(--Neutrals-2, #23262f);
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+
+.btnSmall {
+  color: var(--Neutrals-2, #23262f);
+  /* Button 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+}
+
+.btnMenu {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Button 2 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+}
+/*! typography end */
+/*? border start */
+.border_1 {
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+/*! border end */
+/*? grid start */
+.itemCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

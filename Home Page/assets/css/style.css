@@ -825,23 +825,26 @@ button {
 
 /** <!-- Table End --> */
 /* <!-- Mobile Mode --> */
-/* .mobileMenu {
+.mobileMenu {
   display: none;
-} */
-.mobileMenu .nav_links {
-  margin: 64px 0px 208px 0px;
 }
-.mobileMenu .nav_links ul {
+.mobileMenu .nav_links {
+  margin: 64px 0px 0px 0px;
+}
+.mobileMenu .nav_links ul li a:hover {
+  color: var(--Neutrals-2);
+}
+.mobileMenu .nav_links > ul {
   display: flex;
   flex-direction: column;
 }
 
-.mobileMenu .nav_links ul li {
-  height: 64px;
-  padding: 15px 0px;
+.mobileMenu .nav_links > ul > li {
+  padding: 16px 0px;
+  position: relative;
 }
 
-.mobileMenu .nav_links ul li a {
+.mobileMenu .nav_links ul > li a {
   color: var(--Neutrals-4, #777e90);
 
   /* Body 1 (Bold) */
@@ -851,13 +854,45 @@ button {
   font-weight: 600;
   line-height: 32px;
 }
-.mobileMenu .nav_links > ul > li:nth-child(4) > a {
+.mobileMenu .nav_links ul > li.super_dropdown:hover .mobileDropdown {
+  display: block;
+}
+.mobileMenu .nav_links .super_dropdown > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobileMenu .nav_links .super_dropdown > a i.fa-arrow-down {
+  color: var(--Neutrals-4);
+  font-size: 22px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobileMenu .nav_links ul.mobileDropdown {
+  padding: 0px 0px 0px 2px;
+  display: none;
+}
+.mobileMenu .nav_links ul.mobileDropdown li {
+  padding: 16px 56px 16px 0px;
+}
+.mobileMenu .nav_links ul.mobileDropdown li a {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 10px;
 }
-.mobileMenu .nav_links ul li:nth-child(4) ul {
-  display: none;
+.mobileMenu .nav_links .super_dropdown > ul img.youtube {
+  padding: 6px;
+  background-color: var(--Secondary-1);
+  border-radius: 32px;
+}
+
+.mobileMenu .nav_links .super_dropdown > ul img.lighting {
+  padding: 6px;
+  background-color: var(--Primary-1);
+  border-radius: 32px;
 }
 
 .mobileMenu .searchBar .frame ul.bottomSearchBar {
@@ -867,8 +902,7 @@ button {
   padding: 24px 0px;
 }
 
-.mobileMenu .searchBar .frame ul.bottomSearchBar li a {
-  display: block;
+.mobileMenu .searchBar .frame ul.bottomSearchBar > li button {
   padding: 16px 24px;
   color: var(--Neutrals-2);
   font-family: "SF Pro Display", sans-serif;
@@ -876,14 +910,16 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  text-align: center;
 }
+
 .mobileMenu .searchBar .frame ul.bottomSearchBar li img {
   width: 100%;
   object-fit: cover;
 }
 
-.mobileMenu .searchBar .frame ul.bottomSearchBar li {
-}
 /* <!-- Mobile Mode --> */
 
 /*! Header End */
@@ -1113,13 +1149,6 @@ button {
 }
 .substance .bound .step_cards .card h3 {
   color: var(--Neutrals-4);
-
-  /* Caption 2 (Bold) */
-  /* font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;  */
 }
 
 .substance .bound .step_cards .card h4 {
