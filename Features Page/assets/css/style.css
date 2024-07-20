@@ -475,12 +475,34 @@
   line-height: 24px; /* 171.429% */
 }
 
-.fWorkoutDetail .downrow .rightCol .imgBg {
+.fWorkoutDetail .downrow .rightCol .about_bg {
   position: relative;
   background-color: var(--Neutrals-6);
   border-radius: 24px;
 }
-.fWorkoutDetail .downrow .rightCol .imgBg > img {
+.fWorkoutDetail .downrow .rightCol .about_bg > img {
   border-radius: 24px;
+}
+.fWorkoutDetail .downrow .rightCol .about_bg img {
+  width: 100%;
+}
+.fWorkoutDetail .downrow .rightCol .about_bg .about_photo {
+  position: absolute;
+  pointer-events: none;
+}
+
+.fWorkoutDetail .downrow .rightCol .about_bg .about_photo:nth-child(1) {
+  top: 11%;
+  left: -31%;
+  width: 68%;
+}
+
+.fWorkoutDetail .downrow .rightCol .about_bg .about_photo:nth-child(2) {
+  top: 9.5%;
+  left: 25%;
+  width: 23%;
+}
+.fWorkoutDetail .rightCol .about_bg .about_photo:nth-child(1) .iconDark {
+  display: none;
 }
 /*      ! WorkoutDetail End  */
