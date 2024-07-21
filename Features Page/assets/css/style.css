@@ -926,3 +926,129 @@
   border-radius: 24px;
 }
 /*! fLifeStyle End */
+/*? Advantages Start */
+.fAdvantages {
+  margin: 136px 0px;
+}
+.fAdvantages .advantagesHead {
+  margin: 0 auto 80px auto;
+  max-width: 636px;
+}
+.fAdvantages .advantagesHead h2 {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin: 0 auto 20px;
+}
+.fAdvantages .advantagesHead p {
+  color: var(--Neutrals-3, #353945);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 450px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.fAdvantages .advantagesList {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+.fAdvantages .advantagesList .advantagesItem {
+  margin: 0 auto;
+}
+.fAdvantages .advantagesList .advantagesPreview {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--Neutrals-5, #b1b5c3);
+  margin: 0 auto;
+}
+.fAdvantages .advantagesList .advantagesPreview img {
+  width: 100%;
+  object-fit: cover;
+}
+.fAdvantages .advantagesList .advantagesItem p {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  max-width: 290px;
+  margin: 80px auto 0 auto;
+}
+/*! Advantages End */
+/* ? fOffers Start */
+.fOffers .offerDetail {
+  margin: 0px auto 136px auto;
+  padding: 136px 0px 0px 0px;
+  width: 928px;
+  text-align: center;
+}
+.fOffers .offerDetail p:nth-child(1) {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+  margin: 0px auto 16px auto;
+}
+.fOffers .offerDetail h2 {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: -1.28px;
+
+  max-width: 690px;
+  margin: 0 auto 32px auto;
+  padding: 0px 40px;
+}
+.fOffers .offerDetail p:nth-child(3) {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  max-width: 452px;
+  margin: 0 auto;
+}
+
+.fOffers .offerDetail > .offferBtn {
+  display: inline-block;
+  border-radius: 90px;
+  background: var(--Primary-1, #ff592c);
+  padding: 16px 24px;
+  /*  */
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 48px auto 0 auto;
+}
+/*!  fOffers End*/
