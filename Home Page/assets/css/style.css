@@ -51,16 +51,16 @@
 }
 
 .lightmode {
-  background-color: var(--Neutrals-8, #fcfcfd);
-  /* background-color: var(--Neutrals-1, #141416); */
+  /* background-color: var(--Neutrals-8, #fcfcfd); */
+  background-color: var(--Neutrals-1, #141416);
 }
 .darkmode {
   background-color: var(--Neutrals-1, #141416);
 }
 
 .softlightmode {
-  background-color: var(--Neutrals-8, #fcfcfd);
-  /* background-color: var(--Neutrals-2, #23262f); */
+  /* background-color: var(--Neutrals-8, #fcfcfd); */
+  background-color: var(--Neutrals-2, #23262f);
 }
 
 .softdarkmode {
