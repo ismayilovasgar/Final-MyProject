@@ -1712,7 +1712,9 @@ section.workoutDetail {
 /*! WorkoutDetail End  */
 
 /* @import "./sections/_quotes.css"; */
+
 /* ? quotes Start   */
+
 .quotes .frame {
   padding: 136px 192px;
   display: flex;
