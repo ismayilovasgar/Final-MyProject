@@ -826,164 +826,155 @@
 
 /*! intro End */
 
-/*? BookClassPoster Start */
+/*? BookPoster Start */
 .bookPoster {
-  padding: 136px 0px;
+  margin: 136px 0px;
+  background: var(--Neutrals-7, #f4f5f6);
 }
 
-.bookPoster .detailPoster .overlap {
+.bookPoster .wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 32px;
 }
 
-.bookPoster .detailPoster .detailSide {
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
-  align-items: flex-start;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+.bookPoster .bookGallery {
+  width: calc(50% - 16px);
+  /* box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1); */
 }
 
-.bookPoster .detailPoster .imgSide {
-  flex-basis: 80%;
-}
-
-.bookPoster .detailPoster .imgSide img {
+.bookPoster .bookGallery img {
   width: 100%;
   object-fit: cover;
 }
 
-.bookPoster .detailSide .headTitle {
+.bookPoster .bookMenu {
+  width: calc(50% - 16px);
+  padding: 48px;
+  border-radius: 20px;
+  background-color: var(--Neutrals-8, #fcfcfd);
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+}
+
+.bookPoster .bookMenu h2.bookTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+.bookPoster .bookMenu p.bookInfo {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 24px 0px;
+}
+
+.bookPoster .wrapper .bookList {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
-  align-items: flex-start;
+  row-gap: 4px;
 }
 
-.bookPoster .detailSide .headTitle h2 {
-  color: var(--Neutrals-2);
-}
-
-.bookPoster .detailSide .headTitle p {
-  color: var(--Neutrals-4);
-}
-
-.bookPoster .detailSide .cardContent {
+.bookPoster .wrapper .bookList .bookItem {
   display: flex;
-  flex-direction: column;
-}
-
-.bookPoster .detailSide .cardContent .card {
-  display: flex;
-  column-gap: 24px;
-  padding: 24px 0px;
-}
-.bookPoster .detailSide .cardContent .card .backFrame {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  padding: 8px;
+  /* justify-content: space-between; */
+  column-gap: 24px;
+  padding: 24px;
 }
-
-.bookPoster .detailSide .cardContent .card:nth-child(1) .backFrame {
+.bookPoster .wrapper .bookList .bookIcon {
+  padding: 8px;
+  border-radius: 40px;
+  align-self: flex-start;
+}
+.bookPoster .bookList .bookItem:nth-child(1) .bookIcon {
   background-color: var(--Primary-4, #45b26b);
 }
-.bookPoster .detailSide .cardContent .card:nth-child(2) .backFrame {
+.bookPoster .bookList .bookItem:nth-child(2) .bookIcon {
   background-color: var(--Primary-2, #9757d7);
 }
-.bookPoster .detailSide .cardContent .card:nth-child(3) .backFrame {
+.bookPoster .bookList .bookItem:nth-child(3) .bookIcon {
   background-color: var(--Secondary-1, #3772ff);
 }
-
-.bookPoster .detailSide .cardContent .card .backFrame img {
-  color: transparent;
+.bookPoster .bookList .bookIcon img {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
-
-.bookPoster .detailSide .cardContent .statementContent {
-  display: flex;
-  row-gap: 4px;
-  flex-direction: column;
-}
-
-.bookPoster .detailSide .cardContent .statementContent h3 {
+.bookPoster .bookItem .bookDetails .bookSubtitle {
   color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
 }
+.bookPoster .bookItem .bookDetails .bookContent {
+  min-width: 260px;
+  margin: 4px 0px 0px 0px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bookPoster .wrapper p.bookNote {
+  margin: 24px 0px;
+  color: var(--Neutrals-4, #777e90);
 
-.bookPoster .detailSide .cardContent .statementContent p {
-  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
-.bookPoster .detailSide p span.boldPro {
-  color: var(--Neutrals-2, #23262f);
-}
-.bookPoster .detailSide .statementContent p {
-  color: var(--Neutrals-4, #777e90);
-}
-.bookPoster .detailSide p .colorDiscount {
+.bookPoster .wrapper p.bookNote .bookGreen {
   color: var(--Primary-4, #45b26b);
-  text-align: center;
-
-  /* Caption (Bold) */
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
-
-.bookPoster .detailSide button {
-  border-radius: 90px;
-  background: var(--Primary-1, #ff592c);
-  align-self: flex-end;
-  padding: 16px 24px;
-  color: var(--Neutrals-8, #fcfcfd);
-  text-align: right;
+.bookPoster .wrapper p.bookNote .bookBlack {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
+/*! BookPoster End */
 
-.bookPoster .detailSide > p.caption {
+/*? details Start  */
+.details .detailsHead {
+  max-width: 600px;
+  margin: 0px auto 80px auto;
+}
+.details .detailsHead .stageSmall {
+  text-align: center;
   color: var(--Neutrals-4, #777e90);
-}
-
-.bookPoster .detailSide > p span.captionBolder {
-  font-weight: 600;
-  color: var(--Neutrals-2);
-}
-
-/*! BookClassPoster End */
-
-/* @import "./sections/_experienceDetail.css"; */
-/*? ExperienceDetail Start  */
-.expParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 80px;
-  padding: 136px 0;
-}
-.expParent .titleContent {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  align-items: center;
-}
-.expParent .titleContent p {
-  color: var(--Neutrals-4, #777e90);
-  /* Hairline 2 */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 100% */
+  line-height: 12px;
   text-transform: uppercase;
 }
-.expParent .titleContent h2 {
+.details .detailsHead .detailsTitle {
+  margin: 8px auto 0px auto;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-  /* Headline 2 */
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -991,44 +982,39 @@
   line-height: 56px; /* 116.667% */
   letter-spacing: -0.96px;
 }
-.expParent .cardList {
+.details .detailsList {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   column-gap: 83px;
 }
-.expParent .cardList .cardDivider {
-  width: 1px;
+.details .detailsList span.divider {
   height: 300px;
-  background-color: var(--Neutrals-6, #e6e8ec);
+  display: block;
+  width: 1px;
+  background-color: var(--Neutrals-6);
 }
-.expParent .cardList .card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 32px;
-}
-.expParent .cardList .card h3 {
-  color: var(--Neutrals-2);
-
-  /* Body 2 (Bold) */
+.details .detailsList .detailsItem .detailsCategory {
+  margin: 32px 0px;
+  color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
 }
-.expParent .cardList .card p {
+.details .detailsList .detailsItem .detailsContent {
   color: var(--Neutrals-4, #777e90);
 
   /* Caption */
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24px; /* 171.429% */
 }
-/*! ExperienceDetail End  */
+
+/*! details End  */
 
 /* @import "./sections/_trainerDetail.css"; */
 /* ? TrainerDetail Start   */
