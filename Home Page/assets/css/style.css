@@ -51,16 +51,16 @@
 }
 
 .lightmode {
-  /* background-color: var(--Neutrals-8, #fcfcfd); */
-  background-color: var(--Neutrals-1, #141416);
+  background-color: var(--Neutrals-8, #fcfcfd);
+  /* background-color: var(--Neutrals-1, #141416); */
 }
 .darkmode {
   background-color: var(--Neutrals-1, #141416);
 }
 
 .softlightmode {
-  /* background-color: var(--Neutrals-8, #fcfcfd); */
-  background-color: var(--Neutrals-2, #23262f);
+  background-color: var(--Neutrals-8, #fcfcfd);
+  /* background-color: var(--Neutrals-2, #23262f); */
 }
 
 .softdarkmode {
@@ -923,6 +923,87 @@ button {
 
 /*! Header End */
 /* @import "./sections/_heroSection.css"; */
+/* !Hero */
+.heroo .wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 30px;
+}
+.heroo .wrapp .left-coll {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 60px 0 0 0;
+  width: 40%;
+}
+.heroo .wrapp .left-coll .p {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Hairline 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+.heroo .wrapp .left-coll .h2 {
+  color: var(--Neutrals-2, #23262f);
+
+  /* Headline 1 */
+  font-family: "SF Pro Display";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: -1.28px;
+  margin: 12px 0px 40px 0px;
+}
+
+.heroo .wrapp .left-coll .pp {
+  color: var(--Neutrals-4, #777e90);
+
+  /* Body 2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin: 0px 0px 40px 0px;
+}
+.heroo .wrapp .left-coll .btnss_bottomm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 40px;
+}
+.heroo .wrapp .left-coll .btnss_bottomm button {
+  padding: 16px 24px;
+  color: var(#14148b);
+  text-align: center;
+
+  /* Button 1 */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+.heroo .wrapp .left-coll .bottom_arrow_btn {
+  margin: 140px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroo .wrapp .right-coll {
+  width: 60%;
+}
+.heroo .wrapp .right-coll img {
+  width: 100%;
+}
 /*?  Hero Section Start */
 .heroHeaderFitness .wrapper {
   display: flex;
@@ -1164,7 +1245,6 @@ button {
 .substance .bound .step_cards .card p {
   color: var(--Neutrals-3);
   text-align: center;
-
 }
 .substance .navigations {
   margin: 64px 0px 0px 0px;
