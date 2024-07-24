@@ -957,6 +957,9 @@
 /*! BookPoster End */
 
 /*? details Start  */
+.details {
+  background-color: var(--Neutrals-8, #fcfcfd);
+}
 .details .detailsHead {
   max-width: 600px;
   margin: 0px auto 80px auto;
@@ -1015,8 +1018,94 @@
 }
 
 /*! details End  */
+/*? homeAbout Start */
+.homeAbout {
+  margin: 136px 0px;
+}
+.homeAbout .aboutRow {
+  display: flex;
+  justify-content: space-between;
+}
+.homeAbout .aboutRow .aboutCol {
+  width: 50%;
+}
+.homeAbout .topRow .aboutCol p.stage {
+  color: var(--Neutrals-5, #b1b5c3);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.homeAbout .topRow .aboutCol h2.aboutTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+.homeAbout .topRow .aboutCol p.aboutInfo {
+  margin: 20px 0px 0px 0px;
+  max-width: 450px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.homeAbout .bottomRow {
+  margin: 128px 0px 0px 0px;
+}
+.homeAbout .bottomRow .aboutList {
+  width: 262px;
+}
+.homeAbout .bottomRow .aboutItem:nth-child(2) {
+  margin: 48px 0px;
+}
 
-/* @import "./sections/_trainerDetail.css"; */
+.homeAbout .bottomRow .aboutItem:nth-child(1) .aboutNumber {
+  background: var(--Primary-2, #9757d7);
+}
+.homeAbout .bottomRow .aboutItem:nth-child(2) .aboutNumber {
+  background: var(--Primary-3, #9757d7);
+}
+.homeAbout .bottomRow .aboutItem:nth-child(3) .aboutNumber {
+  background: var(--Primary-4, #9757d7);
+}
+.homeAbout .bottomRow .aboutItem .aboutNumber {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 100px;
+  color: var(--Neutrals-8, #fcfcfd);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.homeAbout .bottomRow .aboutItem h2.aboutSubtitle {
+  margin: 24px 0px 16px 0px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.homeAbout .bottomRow .aboutItem p.aboutContent {
+  color: var(--Neutrals-4, #777e90);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+/*! homeAbout End */
 /* ? TrainerDetail Start   */
 :root {
   --trainer-col-gap: 32px;
