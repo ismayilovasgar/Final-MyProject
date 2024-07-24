@@ -1027,7 +1027,8 @@
   justify-content: space-between;
 }
 .homeAbout .aboutRow .aboutCol {
-  width: 50%;
+  margin: 0px 12px;
+  width: calc(50% - 24px);
 }
 .homeAbout .topRow .aboutCol p.stage {
   color: var(--Neutrals-5, #b1b5c3);
@@ -1105,6 +1106,51 @@
   font-weight: 400;
   line-height: 24px; /* 171.429% */
 }
+.homeAbout .bottomRow .aboutCol .aboutBackground {
+  position: relative;
+  border-radius: 24px;
+  height: 100%;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+
+.homeAbout .bottomRow .aboutBackground img.pillBox {
+  position: absolute;
+  width: 75%;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+}
+
+.homeAbout .bottomRow .aboutBackground .platePreview {
+  position: absolute;
+  top: 1.5%;
+  left: -31%;
+  width: 64.5%;
+  pointer-events: none;
+}
+.homeAbout .bottomRow .aboutBackground .platePreview img {
+  width: 100%;
+}
+.homeAbout .bottomRow .aboutBackground .playPreview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+  border-radius: 50%;
+  background: #fcfcfd;
+}
+/* .homeAbout .bottomRow .aboutBackground .playPreview img {
+  width: 24px;
+  height: 24px;
+} */
+
 /*! homeAbout End */
 /* ? TrainerDetail Start   */
 :root {
