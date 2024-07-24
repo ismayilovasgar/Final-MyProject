@@ -1233,13 +1233,20 @@
 
 .trainers .trainersList .listWrap .trainerItem .profile {
   margin: 0px auto 24px auto;
+  border-radius: 16px;
   width: 160px;
   height: 160px;
   border-radius: 16px;
   background: var(--Neutrals-6, #e6e8ec);
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 .trainers .trainersList .listWrap .trainerItem .profile img {
   width: 100%;
+  border-radius: 16px;
+}
+.trainers .trainersList .trainerItem:hover .profile {
+  box-shadow: 0 0 0 2px #ff592c;
 }
 
 .trainers .trainersList .listWrap .trainerItem .trainerName {
@@ -1323,7 +1330,8 @@
 .quality {
   margin: 0px 0px 136px 0px;
 }
-/* .quality .qualityList {
+/* 
+.quality .qualityList {
   display: flex;
   margin: 0px -16px;
 }
@@ -1332,7 +1340,8 @@
   flex: 0 0 calc(25% - 32px);
   width: calc(25% - 32px);
   margin: 0 16px;
-} */
+}
+*/
 .quality .qualityList {
   display: flex;
   justify-content: space-between;
@@ -1375,112 +1384,58 @@
   line-height: 24px;
 }
 /* ! quality End   */
-/* ? anySpace Start   */
-.anySpace .frame {
-  display: flex;
-  flex-direction: column;
-  row-gap: 80px;
-  align-items: center;
-  justify-content: center;
-  padding: 136px 0;
-  text-align: center;
+/* ? advantages  Start   */
+.advantages {
+  margin: 136px 0px;
 }
-.anySpace .frame .headings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 50%;
-  row-gap: 20px;
+.advantages .advantagesHead {
+  margin: 0px auto 80px auto;
+  width: 636px;
 }
-
-.anySpace .frame .headings h2 {
+.advantages .advantagesHead h2.advantagesTitle {
+  margin: 0px 0 20px 0;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
 
-  /* Headline 2 */
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  line-height: 56px;
   letter-spacing: -0.96px;
 }
-.anySpace .frame .headings p {
+.advantages .advantagesHead p.advantagesInfo {
+  margin: 0 auto;
+  width: 453px;
   color: var(--Neutrals-3, #353945);
   text-align: center;
-
-  /* Body 2 */
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
-
-.anySpace .frame .cards {
+.advantages .advantagesList {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   column-gap: 24px;
+  justify-content: space-between;
 }
-.anySpace .frame .cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  flex-basis: 33%;
-  width: 100%;
-  row-gap: 80px;
+.advantages .advantagesItem .profile {
+  text-align: center;
+  margin: 0px 0px 36px 0px;
 }
-.anySpace .frame .card .profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.anySpace .frame .card img {
-  position: absolute;
-  background-color: transparent;
-}
-
-.anySpace .frame .card .handgripcolor {
-  top: 12px;
-  left: 15px;
-}
-
-.anySpace .frame .card .left_hand_icon {
-  top: 60px;
-  left: -10px;
-}
-.anySpace .frame .card .right_hand_icon {
-  top: 20 px;
-  right: 20px;
-}
-
-.anySpace .frame .card .profile .avatar {
-  border-radius: 50%;
-  background-color: var(--Neutrals-4);
-  width: 160px;
-  height: 160px;
-}
-.anySpace .frame .card p {
+.advantages .advantagesItem p.advantagesSubtitle {
+  width: 293px;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-  padding: 0px 10%;
 
-  /* Body 1 (Bold) */
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 133.333% */
 }
-/* ! anySpace End   */
-
-/* @import "./sections/_plans.css"; */
+/* ! advantages  End   */
 /* ? plans Start   */
 .plans .frame {
   display: flex;
