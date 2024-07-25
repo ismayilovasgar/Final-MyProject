@@ -606,9 +606,12 @@
   text-align: center;
   margin: 0px auto 64px auto;
 }
-
-.community p.subtitle {
+.community .communityBottom {
+  width: 586px;
   text-align: center;
+  margin: 0 auto;
+}
+.community p.subtitle {
   margin: 0px auto 12px auto;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
@@ -621,7 +624,6 @@
 .community h2.communityTitle {
   margin: 0px auto 20px auto;
   color: var(--Neutrals-2, #23262f);
-  text-align: center;
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -633,7 +635,6 @@
 .community p.communityText {
   max-width: 456px;
   margin: 0px auto 80px auto;
-  text-align: center;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
