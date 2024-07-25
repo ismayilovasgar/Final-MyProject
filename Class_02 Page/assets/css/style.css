@@ -596,7 +596,7 @@
 
 /*? Communtiy Start */
 .community {
-  margin: 112px 0;
+  padding: 0px 0px 136px 0px;
 }
 .some-icon-dark {
   display: none;
@@ -607,48 +607,39 @@
   margin: 0px auto 64px auto;
 }
 
-.community span.subtitle {
-  display: block;
+.community p.subtitle {
   text-align: center;
   margin: 0px auto 12px auto;
   color: var(--Neutrals-4, #777e90);
-  text-align: center;
-
-  /* Hairline 2 */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 100% */
+  line-height: 12px;
   text-transform: uppercase;
 }
-.community h2 {
+.community h2.communityTitle {
   margin: 0px auto 20px auto;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-
-  /* Headline 2 */
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  line-height: 56px;
   letter-spacing: -0.96px;
 }
 
-.community .communityText {
+.community p.communityText {
   max-width: 456px;
   margin: 0px auto 80px auto;
   text-align: center;
   color: var(--Neutrals-4, #777e90);
-  text-align: center;
-
-  /* Body 2 */
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .community form {
@@ -659,35 +650,33 @@
   padding: 8px 8px 8px 16px;
   max-width: 355px;
   margin: 0px auto 16px auto;
-  text-align: center;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
 .community form input {
   appearance: none;
   border: none;
-  color: (var(--Neutrals-2), #23262f);
+  color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  height: 20px;
-  width: 237px;
+  height: 24px;
+  width: 100%;
 }
 .community form button {
   padding: 4px;
-  text-align: center;
   border-radius: 50%;
   background-color: var(--Primary-1, #ff592c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.community .communityNot {
-  max-width: 231px;
+.community .communityNote {
   margin: 0 auto;
   color: var(--Neutrals-5, #b1b5c3);
   text-align: center;
-
-  /* Caption 2 */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -695,9 +684,8 @@
   line-height: 20px;
 }
 
-.community .communityNot a {
+.community .communityNote a {
   color: var(--Primary-1, #ff592c);
-  /* Caption 2 (Bold) */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
