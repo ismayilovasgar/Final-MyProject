@@ -666,7 +666,7 @@
   height: 24px;
   width: 100%;
 }
-.community form button {
+.community form.subscription button {
   padding: 4px;
   border-radius: 50%;
   background-color: var(--Primary-1, #ff592c);
@@ -675,9 +675,7 @@
   align-items: center;
 }
 .community .communityNote {
-  margin: 0 auto;
   color: var(--Neutrals-5, #b1b5c3);
-  text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
