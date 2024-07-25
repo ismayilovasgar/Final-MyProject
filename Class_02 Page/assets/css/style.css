@@ -673,6 +673,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in;
+}
+.community form.subscription button:hover {
+  background-color: #f83500;
+  cursor: pointer;
 }
 .community .communityNote {
   color: var(--Neutrals-5, #b1b5c3);
