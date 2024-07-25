@@ -1240,6 +1240,63 @@ img {
 } */
 
 /* ! fWorkout End   */
+
+/* ? workouts Start   */
+.workouts {
+  margin: 136px 0;
+  background-color: var(--Neutrals-8, #fcfcfd);
+}
+.workouts .workoutsFrame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 32px;
+}
+.workouts .workoutsFrame .workoutsWrap {
+  width: 40%;
+}
+.workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
+  color: var(--Neutrals-2, #23262f);
+}
+.workouts .workoutsFrame .workoutsWrap p.workoutsInfo {
+  color: var(--Neutrals-4, #777e90);
+  margin: 32px 0px;
+}
+
+.workouts .workoutsFrame ul li {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.workouts .workoutsFrame ul li:before {
+  display: inline-block;
+  vertical-align: bottom;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin: 0px 12px 0px 0px;
+  background-image: url("../images/workouts/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.workouts .workoutsFrame ul li:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+  margin: 48px 0px 0px 0px;
+}
+.workouts .workoutsFrame .workoutsWrap .workoutsBtns button:first-child {
+  margin: 0px 12px 0px 0px;
+}
+.workouts .workoutsFrame .workoutsGallery {
+  width: 60%;
+}
+/* ! workouts End   */
+
 /*? fLifeStyle Start */
 .fLifeStyle {
   margin: 0px 0px 136px 0px;
