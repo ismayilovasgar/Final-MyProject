@@ -1436,81 +1436,59 @@
   line-height: 32px; /* 133.333% */
 }
 /* ! advantages  End   */
-/* ? plans Start   */
-.plans .frame {
+/* ? workouts Start   */
+.workouts {
+  margin: 136px 0;
+  background-color: var(--Neutrals-8, #fcfcfd);
+}
+.workouts .workoutsFrame {
   display: flex;
-  column-gap: 32px;
   justify-content: space-between;
-  padding: 136px 0;
-}
-.plans .frame .leftMenu {
-  display: flex;
-  flex-direction: column;
-  row-gap: 48px;
-  max-width: 448px;
-}
-.plans .frame .leftMenu .texts h2 {
-  color: var(--Neutrals-2, #23262f);
-  /* Headline 2 */
-}
-.plans .frame .leftMenu .texts span {
-  color: var(--Neutrals-4, #777e90);
-  /* Body 1 */
-}
-
-.plans .frame .texts {
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-}
-
-.plans .frame .texts .details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 16px;
-}
-.plans .frame .texts .details .plan {
-  display: flex;
-  column-gap: 12px;
-  justify-content: flex-start;
-}
-.plans .frame .texts .details .plan p {
-  color: var(--Neutrals-4, #777e90);
-  /* Body 2 (Bold) */
-}
-
-.plans .frame .leftMenu .choosePlan {
-  display: flex;
-  column-gap: 12px;
   align-items: center;
+  column-gap: 32px;
 }
-.plans .frame .leftMenu .choosePlan button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.workouts .workoutsFrame .workoutsWrap {
+  width: 40%;
 }
-.plans .frame .leftMenu .choosePlan button:nth-child(1) {
-  background-color: var(--Primary-1, #ff592c);
-  color: var(--Neutrals-8, #fcfcfd);
-  text-align: center;
-  /* Button 1 */
-}
-.plans .frame .leftMenu .choosePlan button:nth-child(2) {
-  border: 2px solid var(--Neutrals-6, #e6e8ec);
-
+.workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
   color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  /* Button 1 */
 }
-.plans .frame .rigtMenu .wrapper {
-  display: flex;
-  max-width: 625px;
-  padding: 0 10px 0px 10px;
+.workouts .workoutsFrame .workoutsWrap p.workoutsInfo {
+  color: var(--Neutrals-4, #777e90);
+  margin: 32px 0px;
 }
-.plans .frame .rigtMenu .wrapper img {
-  width: 100%;
-  object-fit: cover;
+
+.workouts .workoutsFrame ul li {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.workouts .workoutsFrame ul li:before {
+  display: inline-block;
+  vertical-align: bottom;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin: 0px 12px 0px 0px;
+  background-image: url("../images/workouts/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.workouts .workoutsFrame ul li:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+  margin: 48px 0px 0px 0px;
+}
+.workouts .workoutsFrame .workoutsWrap .workoutsBtns button:first-child {
+  margin: 0px 12px 0px 0px;
+}
+.workouts .workoutsFrame .workoutsGallery {
+  width: 60%;
 }
 
 /* ! plans End   */
