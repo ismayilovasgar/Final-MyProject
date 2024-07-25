@@ -592,6 +592,7 @@
 /* <!-- Mobile Mode --> */
 
 /*! Header End */
+
 /*? heroHeader Start */
 .heroHeader {
   background: var(--Neutrals-8, #fcfcfd);
@@ -667,6 +668,7 @@
   width: 100%;
 }
 /*! heroHeader End */
+
 /*? clients Start */
 .clients .clientsTitle p {
   margin: 0px 0px 40px 0px;
@@ -684,7 +686,7 @@
   align-items: center;
 }
 
-/*! Supports End */
+/*! clients End */
 /*? steps Start */
 .steps {
   margin: 136px 0;
@@ -1007,6 +1009,7 @@
 }
 
 /*! details End  */
+
 /*? homeAbout Start */
 .homeAbout {
   margin: 136px 0px;
@@ -1373,6 +1376,7 @@
   line-height: 24px;
 }
 /* ! quality End   */
+
 /* ? advantages  Start   */
 .advantages {
   margin: 136px 0px;

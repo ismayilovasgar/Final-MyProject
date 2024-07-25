@@ -1,15 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98772,98773,98775,98770,98771");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* 
-@import "./basic/_reboot.css"; +
-@import "./basic/_common.css"; +
-@import "./basic/_typography.css"; +
-@import "./basic/_border.css";
-@import "./basic/_grid.css"; +
-@import "./basic/_border.css";  +
-*/
-
 /** reboot css */
 /*? Root Start */
 
@@ -51,7 +42,7 @@
 /*! Root End */
 /*? Common Start */
 * {
-  /* outline: none; */
+  outline: none;
   padding: 0;
   margin: 0;
   list-style: none;
