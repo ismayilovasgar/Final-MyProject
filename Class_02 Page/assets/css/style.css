@@ -704,14 +704,13 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(50%, -50%); */
   border: 1px solid red;
-  background-color: #353945;
+  background-color: var(--Neutrals-3);
+  z-index: 1;
 }
 
 .popupTrainer {
+  opacity: 1;
   position: absolute;
   margin: 0px auto;
   width: 550px;
