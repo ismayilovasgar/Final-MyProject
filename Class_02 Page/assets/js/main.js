@@ -8,3 +8,15 @@ const header = document.querySelector("div.header");
 const tClassDropdown = document.querySelector(".tClassDropdown");
 const subMenu = document.querySelector(".tabletMenu .subMenu ");
 const outbound = document.querySelector(".outbound");
+//
+const popupContent = document.querySelector(".popupContent"),
+  trainer = document.querySelector(".trainers .listWrap .trainerItem"),
+  mfpclose = document.querySelector(".mfpClose");
+
+trainer.addEventListener("click", (e) => {
+  popupContent.style.display = "block";
+});
+
+mfpclose.addEventListener("click", (e) => {
+  popupContent.style.display = "none";
+});
