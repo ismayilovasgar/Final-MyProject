@@ -699,56 +699,37 @@
 
 /*! Communtiy End */
 
-/* Class Modal */
+/** Class Modal */
 .popupContent {
   position: relative;
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%); */
   border: 1px solid red;
   background-color: #353945;
 }
 
-/* .popupContent::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  border: 1px solid red;
-  position: relative;
-  z-index: 500;
-  opacity: 0.5;
-  isolation: isolate;
-  background: var(--Neutrals-1, #141416);
-} */
-/* .popupBack {
-  position: absolute;
-  border: 1px solid darkgreen;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: -2;
-  background: var(--Neutrals-1, #141416);
-} */
-
 .popupTrainer {
   position: absolute;
-  margin: 45px auto;
-  text-align: center;
+  margin: 0px auto;
   width: 550px;
-  height: 885px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 50;
+  background-color: var(--Neutrals-8, #fcfcfd);
   border-radius: 16px;
-  background: var(--Neutrals-8, #fcfcfd);
   box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
 }
+.popupContent .popupContainer {
+  width: 452px;
+  max-width: 90%;
+  margin: 0 auto;
+}
 .popupTrainer .trainerTop {
-  padding: 64px 64px 48px 64px;
+  margin: 64px 0px 48px 0px;
 }
 .popupTrainer .trainerTop .trainerAvatar {
   margin: 0 auto;
@@ -837,22 +818,23 @@
   cursor: pointer;
 }
 .popupTrainer .trainerSlider {
-  margin: 0 64px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   column-gap: 32px;
 }
-.trainerPreview {
+.popupTrainer .trainerSlider a {
+  width: calc(50% - 16px);
+}
+.popupTrainer .trainerSlider .trainerPreview {
   position: relative;
 }
-
-.trainerPreview img {
+.popupTrainer .trainerSlider .trainerPreview img {
   border-radius: 16px;
   width: 100%;
   display: block;
 }
-.trainerPreview p {
+.popupTrainer .trainerSlider .trainerPreview p {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -910,7 +892,6 @@
   display: inline-flex;
   column-gap: 8px;
   color: var(--Neutrals-3, #353945);
-
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -918,7 +899,7 @@
   line-height: 20px;
 }
 .popupTrainer .bottomBtns {
-  padding: 64px;
+  margin: 64px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -927,4 +908,19 @@
   display: inline-flex;
   column-gap: 20px;
   align-items: center;
+}
+.popupTrainer button.mfpClose {
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  z-index: 100;
+  background-color: var(--Neutrals-8);
+  cursor: pointer;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+}
+.popupTrainer button.mfpClose img {
+  display: block;
 }
