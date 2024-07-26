@@ -11,12 +11,32 @@ const outbound = document.querySelector(".outbound");
 //
 const popupContent = document.querySelector(".popupContent"),
   trainer = document.querySelector(".trainers .listWrap .trainerItem"),
-  mfpclose = document.querySelector(".mfpClose");
+  mfpclose = document.querySelector(".mfpClose"),
+  body = document.querySelector("body");
 
 trainer.addEventListener("click", (e) => {
   popupContent.style.display = "block";
+  disable();
+  body.style.overflow = "hidden";
 });
 
 mfpclose.addEventListener("click", (e) => {
   popupContent.style.display = "none";
+  body.style.overflow = "auto";
+
+  enable();
 });
+
+function preventScroll(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+}
+
+function disable() {
+  body.addEventListener("wheel", preventScroll);
+}
+
+function enable() {
+  body.removeEventListener("wheel", preventScroll);
+}

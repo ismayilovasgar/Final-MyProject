@@ -707,11 +707,20 @@
   background-color: hsla(5, 90%, 4%, 0.2);
   backdrop-filter: blur(16px);
   display: none;
+  overscroll-behavior: none;
 }
+body {
+}
+
 .popupContent {
   position: fixed;
-  inset: 0;
-  background-color: hsla(5, 90%, 4%, 0.2);
+  top: 80%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  scroll-behavior: auto;
+  transform: translate(-50%, -50%);
+  background-color: hsla(7, 63%, 38%, 0.2);
   backdrop-filter: blur(16px);
   display: none;
   /* position: relative;
