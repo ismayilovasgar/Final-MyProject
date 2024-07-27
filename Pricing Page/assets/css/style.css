@@ -98,7 +98,9 @@
   border: 2px solid #b1b5c3;
   cursor: pointer;
 } */
-
+:root {
+  --basis: 350px;
+}
 .pricingTable .row {
   display: flex;
   justify-content: space-between;
@@ -106,17 +108,33 @@
 }
 
 .pricingTable .pricingHead .pricingCol:nth-child(1) {
+  position: relative;
   padding: 48px 32px;
-  width: 350px;
+  /* width: 350px; */
   height: 256px;
   align-self: flex-end;
+  flex: 0 0 var(--basis);
 }
+.pricingTable .pricingCol .pricingCategory {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
 .pricingTable .pricingHead .pricingCol:nth-child(2),
 .pricingTable .pricingHead .pricingCol:nth-child(3),
 .pricingTable .pricingHead .pricingCol:nth-child(4) {
   padding: 48px 32px;
-  width: calc((100% - 350px) / 3);
+  /* width: calc((100% - var(--basis)) / 3); */
   height: 256px;
+  flex: 1 1;
 }
 
 .pricingTable .pricingCol .pricingPackage {
@@ -135,7 +153,7 @@
 }
 
 .pricingTable .pricingCol:nth-child(4) .pricingPackage {
-  color: var(--Primary-1, #ff592c);
+  color: var(--Primary-3, #ef466f);
 }
 
 .pricingDescription {
@@ -164,6 +182,7 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.24px;
+  align-self: flex-start;
 }
 
 .pricingCost span.amount {
