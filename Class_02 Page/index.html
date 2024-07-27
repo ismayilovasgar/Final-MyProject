@@ -313,7 +313,7 @@
                 <p class="trainerInfo">From all over the world, we select and provide you a team of seasoned trainers.
                     What's more, the 1-on-1 live practice mode helps you quickly get great results.
                 </p>
-                <div class="trainerNav">
+                <div class="trainerNav" style="display: none;">
                     <ul>
                         <li><a class="active" href="#">Yoga</a></li>
                         <li><a href="#">Fitness & Gym</a></li>
@@ -321,12 +321,15 @@
                         <li><a href="#">Running</a></li>
                     </ul>
                 </div>
-                <select class="select js-tabs-select" style="display: none;">
-                    <option>Yoga</option>
-                    <option>Fitness &amp; Gym</option>
-                    <option>Gymnastics</option>
-                    <option>Running</option>
-                </select>
+                <div class="select_box">
+                    <select class="" style="display: block;">
+                        <option>Yoga</option>
+                        <option>Fitness&amp;Gym</option>
+                        <option>Gymnastics</option>
+                        <option>Running</option>
+                    </select>
+                    <img src="./assets/images/selectBox/arrow.svg" alt="">
+                </div>
             </div>
             <div class="trainersList">
                 <div class="listWrap">
@@ -550,7 +553,7 @@
     <!-- Class Modal -->
 
     <script src="./assets/js/main.js"></script>
-    
+
 </body>
 
 </html>

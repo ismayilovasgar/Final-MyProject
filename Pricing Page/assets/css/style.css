@@ -1,0 +1,186 @@
+.pricing {
+  margin: 136px auto;
+}
+
+.pricing .stage {
+  margin: 0 auto 16px auto;
+  text-align: center;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.pricing .pricingTitle {
+  margin: 0 auto 80px auto;
+  max-width: 550px;
+  text-align: center;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+}
+
+/* Table */
+/* 
+.pricingRow {
+  display: flex;
+}
+.pricingCol {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+}
+
+.pricingCol:first-child {
+  flex: 0 0 350px;
+}
+.pricingCol:not(:first-child) {
+  padding-bottom: 54px;
+  text-align: center;
+}
+
+.pricingCol:nth-child(3) {
+  border-radius: 24px;
+  background: #fcfcfd;
+}
+
+.pricingHead {
+  min-height: 256px;
+  padding: 48px 32px 44px;
+}
+
+.pricingCategory {
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777e90;
+}
+.pricingParameter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px;
+  border-bottom: 1px solid #e6e8ec;
+}
+.pricingLabel {
+  margin-right: auto;
+  font-weight: 600;
+}
+.pricingHint {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 2px solid #b1b5c3;
+  cursor: pointer;
+} */
+
+.pricingTable .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pricingTable .pricingHead .pricingCol:nth-child(1) {
+  padding: 48px 32px;
+  width: 350px;
+  height: 256px;
+  align-self: flex-end;
+}
+.pricingTable .pricingHead .pricingCol:nth-child(2),
+.pricingTable .pricingHead .pricingCol:nth-child(3),
+.pricingTable .pricingHead .pricingCol:nth-child(4) {
+  padding: 48px 32px;
+  width: calc((100% - 350px) / 3);
+  height: 256px;
+}
+
+.pricingTable .pricingCol .pricingPackage {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.pricingTable .pricingCol:nth-child(2) .pricingPackage {
+  color: var(--Primary-2, #9757d7);
+}
+.pricingTable .pricingCol:nth-child(3) .pricingPackage {
+  color: var(--Primary-1, #ff592c);
+}
+
+.pricingTable .pricingCol:nth-child(4) .pricingPackage {
+  color: var(--Primary-1, #ff592c);
+}
+
+.pricingDescription {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 8px 0px 32px 0px;
+}
+.pricingCost {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+}
+.pricingCost span.symbol {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+
+.pricingCost span.amount {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+.pricingNote {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}

@@ -111,6 +111,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 80px 0px 0px 0px;
+  justify-content: space-between;
   column-gap: var(--platform-col-gap);
   row-gap: 80px;
 }
