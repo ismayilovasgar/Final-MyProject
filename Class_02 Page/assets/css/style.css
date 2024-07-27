@@ -596,7 +596,7 @@
 
 /*? Communtiy Start */
 .community {
-  padding: 0px 0px 136px 0px;
+  margin: 0px 0px 136px 0px;
 }
 .some-icon-dark {
   display: none;
@@ -709,7 +709,6 @@
   display: none;
   overscroll-behavior: none;
 }
-
 
 .popupContent {
   position: fixed;
