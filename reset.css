@@ -82,6 +82,11 @@ button {
 .btn_orange {
   color: var(--Neutrals-8, #fcfcfd);
   background-color: var(--Primary-1, #ff592c);
+  transition: 0.4s ease;
+}
+.btn_orange:hover {
+  background-color: #f83500;
+  cursor: pointer;
 }
 
 .rounded_90 {
