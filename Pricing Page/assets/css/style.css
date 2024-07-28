@@ -165,3 +165,291 @@
   background: #23262f;
   color: #fcfcfd;
 }
+/*? comment Start */
+.comment {
+  padding: 136px 0;
+}
+
+.comment .commentWrapper {
+  position: relative;
+}
+
+.comment .commentHead {
+  width: calc(50% - 16px);
+  margin: 0px 0px 80px auto;
+}
+.comment .commentHead h2.commentTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin: 0px 0px 20px 0px;
+}
+.comment .commentHead .commentInfo {
+  color: var(--Neutrals-3, #353945);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.comment .commentContent {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.comment .commentList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+  /* display: flex;
+  column-gap: 32px; */
+}
+.comment .commentItem {
+  text-align: center;
+}
+
+.comment .commentItem .commentPreview {
+  position: relative;
+  width: 256px;
+  height: 222px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+  margin: 0px 0px 24px 0px;
+  transition: all 0.5s ease-in;
+}
+.comment .commentItem .commentPreview img {
+  visibility: visible;
+}
+.comment .commentPreview::after {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--Neutrals-8, #fcfcfd);
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+  background-image: url("../images/comment/right_arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.1s ease-in, opacity 0.7s ease-in-out;
+}
+.comment .commentItem:hover .commentPreview img {
+  visibility: hidden;
+}
+.comment .commentItem:hover .commentPreview:after {
+  opacity: 1;
+  visibility: visible;
+}
+.comment .commentItem:hover .commentPreview {
+  background-color: var(--Neutrals-2);
+}
+.comment .commentItem:hover {
+  cursor: pointer;
+}
+.comment .commentItem .commentSubtitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0px 0px 8px 0px;
+}
+.comment .commentItem .commentInfo {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.comment button {
+  position: absolute;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+}
+.comment button.btnPrevious {
+  left: 0px;
+}
+
+.comment button.btnNext {
+  left: 44px;
+}
+.comment button i {
+  font-size: 24px;
+  display: block;
+  color: var(--Neutrals-4);
+}
+/*! comment End */
+/*? faq Start */
+.faq {
+  padding: 136px 0px;
+}
+.faq .faqTop {
+  margin: 0px 0px 80px 0px;
+}
+.faq .stageSmall {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin: 0px 0px 12px 0px;
+}
+.faq .faqTitle {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin: 0px 0px 20px 0px;
+}
+.faq .faqInfo {
+  margin: 0 auto 80px auto;
+  max-width: 640px;
+  color: var(--Neutrals-3, #353945);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.faq .faqInfo span {
+  color: var(--Primary-1, #ff592c);
+}
+
+.faq .faqNav {
+  margin: 0 auto;
+}
+.faq .faqNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+.faq .faqNav ul li {
+  padding: 6px 12px;
+  border-radius: 100px;
+}
+.faq .faqNav ul li a {
+  display: block;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.faq .faqNav ul li:hover {
+  background: var(--Neutrals-3, #353945);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+
+.faq .faqNav ul li:hover a {
+  color: var(--Neutrals-8, #fcfcfd);
+}
+.faq .faqWrap .faqItem {
+  border-top: 1px solid var(--Neutrals-4);
+}
+
+.faq .faqWrap .faqItemHead {
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq .faqWrap .faqItemHead p {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 420px;
+}
+.faq .faqWrap .faqItemHead i {
+  font-size: 24px;
+  color: var(--Neutrals-4);
+}
+.faq .faqWrap .faqItemHead i.fa-angle-up {
+  display: none;
+}
+
+.faq .faqItemBody {
+  padding: 8px 0px 32px 0px;
+  /* display: none; */
+}
+.active_block {
+  display: block;
+}
+.faq .faqItemBody .faqRow {
+  display: grid;
+  grid-template-columns: 34% 38%;
+  column-gap: 28%;
+}
+.faq .faqItemBody .faqRow .faqPreview img {
+  width: 100%;
+  object-fit: cover;
+}
+.faq .faqItemBody .faqSubtitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.faq .faqItemBody .faqContent {
+  margin: 20px 0px 24px 0px;
+}
+.faq .faqItemBody .faqContent p {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.faq .faqItemBody .faqContent p:first-child {
+  margin-bottom: 24px;
+}
+.faq .faqItemBody button {
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+/*! faq End */
