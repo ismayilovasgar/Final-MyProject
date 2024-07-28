@@ -91,3 +91,107 @@
   font-weight: 700;
   line-height: 16px;
 }
+.post .postTabs {
+  padding-bottom: 80px;
+}
+
+.post .postTabs .postNav {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.post .postTabs .postNav a {
+  padding: 6px 12px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 100px;
+  border: transparent;
+  background-color: transparent;
+  transition: all 0.8s ease;
+}
+.post .postTabs .postNav a:hover,
+.post .postTabs .postNav a.active {
+  border-radius: 100px;
+  background-color: var(--Neutrals-3, #353945);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+
+.postBox .postList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px 32px;
+}
+.postBox .postItem .postPreview {
+  margin: 0px 0px 32px 0px;
+}
+.postBox .postItem .postPreview img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.postBox .postItem .postStatus {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.postBox .postItem .postStatus.fitness {
+  background: var(--Primary-1, #ff592c);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+.postBox .postItem .postStatus.yoga {
+  background: var(--Primary-4, #45b26b);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+.postBox .postItem .postStatus.new {
+  background: var(--Primary-3, #ef466f);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+.postBox .postItem .postStatus.featured {
+  background: var(--Neutrals-2, #23262f);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+
+.postBox .postItem .postSubtitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.postBox .postItem .postFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.postBox .postItem .postUser {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.postBox .postItem .postFoot .postAuthor,
+.postBox .postItem .postFoot .postDate {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
