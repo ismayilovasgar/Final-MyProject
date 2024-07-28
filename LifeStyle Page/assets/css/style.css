@@ -241,3 +241,108 @@
   background-color: var(--Neutrals-2);
   color: var(--Neutrals-8);
 }
+
+/*? Communtiy Start */
+.community {
+  margin: 0px 0px 136px 0px;
+}
+.some-icon-dark {
+  display: none;
+}
+
+.community .communityPreview {
+  text-align: center;
+  margin: 0px auto 64px auto;
+}
+.community .communityBottom {
+  width: 586px;
+  text-align: center;
+  margin: 0 auto;
+}
+.community p.subtitle {
+  margin: 0px auto 12px auto;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.community h2.communityTitle {
+  margin: 0px auto 20px auto;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+.community p.communityText {
+  max-width: 456px;
+  margin: 0px auto 80px auto;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.community form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 18px;
+  padding: 8px 8px 8px 16px;
+  max-width: 355px;
+  margin: 0px auto 16px auto;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.community form input {
+  appearance: none;
+  border: none;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  height: 24px;
+  width: 100%;
+}
+.community form.subscription button {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--Primary-1, #ff592c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+.community form.subscription button:hover {
+  background-color: #f83500;
+  cursor: pointer;
+}
+.community .communityNote {
+  color: var(--Neutrals-5, #b1b5c3);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.community .communityNote a {
+  color: var(--Primary-1, #ff592c);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/*! Communtiy End */
