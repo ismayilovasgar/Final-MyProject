@@ -41,44 +41,289 @@
 
     <section class="catalog">
         <div class="container">
+
             <div class="catalogHead">
                 <div class="catalogTitle">Find a class that fit with you</div>
+                <form action="" class="catalogSearch">
+                    <button type="submit" class="catalogResult">
+                        <img src="./assets/images/catalog/search.svg" alt="">
+                    </button>
+                </form>
+
+                <!-- 
                 <form action="" class="catalogSearch">
                     <input class="catalogInput" type="text" placeholder="Find a class">
                     <button type="submit" class="catalogResult">
                         <img src="./assets/images/catalog/search.svg" alt="">
                     </button>
-                </form>
+                </form> 
+                -->
+
             </div>
+
             <div class="catalogWrap">
 
-                <select name="" id="">
-                    <option value="newest">Newest</option>
-                    <option value="oldest">Oldest</option>
-                </select>
+                <div class="catalogTop">
+                    <select name="" id="">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
 
+                    <div class="catalogNav">
+                        <a class="cataloglink active" href="#">Yoga</a>
+                        <a class="cataloglink" href="#">Fitness &amp; Gym</a>
+                        <a class="cataloglink" href="#">Mindfulness</a>
+                        <a class="cataloglink" href="#">Gymnastics</a>
+                    </div>
 
-                <div class="catalogNav">
-                    <a class="cataloglink active" href="#">Yoga</a>
-                    <a class="cataloglink" href="#">Fitness &amp; Gym</a>
-                    <a class="cataloglink" href="#">Mindfulness</a>
-                    <a class="cataloglink" href="#">Gymnastics</a>
+                    <button class="catalogFilter">
+                        <div class="catalogText">Filter</div>
+
+                        <img class="closeFilter" src="./assets/images/catalog/close.svg" alt="">
+                    </button>
                 </div>
 
-
-                <button class="catalogFilter">
-                    <div class="catalogText">Filter</div>
-
-                    <img class="closeFilter" src="./assets/images/catalog/close.svg" alt="">
-                </button>
-
+                <div class="catalogSorting">
+                    <div class="catalogCell">
+                        <div class="cataloglabel">Style</div>
+                        <select name="style" id="">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                        </select>
+                    </div>
+                    <!--  -->
+                    <div class="catalogCell">
+                        <div class="cataloglabel">Style</div>
+                        <select name="style" id="">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                        </select>
+                    </div>
+                    <!--  -->
+                    <div class="catalogCell">
+                        <div class="cataloglabel">Style</div>
+                        <select name="style" id="">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                        </select>
+                    </div>
+                    <!--  -->
+                    <div class="catalogCell">
+                        <div class="cataloglabel">Style</div>
+                        <select name="style" id="">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                        </select>
+                    </div>
+                </div>
 
             </div>
 
-            <div class="catalogList"></div>
-            <div class="catalogBtn"></div>
+            <div class="catalogList">
 
+                <div class="card">
+                    <div class="cardPreview">
+                        <img src="./assets/images/catalogList/card-pic-1.png" alt="">
+                        <div class="cardStatus yoga">yoga</div>
+                    </div>
+
+                    <div class="cardHead">
+                        <div class="cardUser">
+                            <div class="cardAvatar">
+                                <img src="./assets/images/catalogList/cardUserAvatar-1.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <div class="cardTitle">7-days barre body</div>
+                                <div class="cardTrainer">
+                                    <span class="firstName">FistName</span>
+                                    <span class="lastName">LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardLevel beginner">Beginner</div>
+                    </div>
+
+                    <div class="cardParameters">
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/youtube.svg" alt=""> 7
+                        </div>
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/people.svg" alt=""> 160
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div class="cardPreview">
+                        <img class="backPreview" src="./assets/images/catalogList/card-pic-2.png" alt="">
+                        <div class="cardStatus fitness">fitness</div>
+                        <div class="playSmall">
+                            <img src="./assets/images/catalogList/playSmall.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="cardHead">
+                        <div class="cardUser">
+                            <div class="cardAvatar">
+                                <img src="./assets/images/catalogList/cardUserAvatar-2.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <div class="cardTitle">Sweet and tone</div>
+                                <div class="cardTrainer">
+                                    <span class="firstName">FistName</span>
+                                    <span class="lastName">LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardLevel advanced">advanced</div>
+                    </div>
+
+                    <div class="cardParameters">
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/youtube.svg" alt=""> 7
+                        </div>
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/people.svg" alt=""> 160
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div class="cardPreview">
+                        <img src="./assets/images/catalogList/card-pic-1.png" alt="">
+                        <div class="cardStatus fitness">fitness</div>
+                    </div>
+
+                    <div class="cardHead">
+                        <div class="cardUser">
+                            <div class="cardAvatar">
+                                <img src="./assets/images/catalogList/cardUserAvatar-3.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <div class="cardTitle">Baseline Bootcamp</div>
+                                <div class="cardTrainer">
+                                    <span class="firstName">FistName</span>
+                                    <span class="lastName">LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardLevel intermediate">intermediate</div>
+                    </div>
+
+                    <div class="cardParameters">
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/youtube.svg" alt=""> 7
+                        </div>
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/people.svg" alt=""> 160
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div class="cardPreview">
+                        <img src="./assets/images/catalogList/card-pic-4.png" alt="">
+                        <div class="cardStatus yoga">yoga</div>
+                    </div>
+
+                    <div class="cardHead">
+                        <div class="cardUser">
+                            <div class="cardAvatar">
+                                <img src="./assets/images/catalogList/cardUserAvatar-4.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <div class="cardTitle">Beach run 7</div>
+                                <div class="cardTrainer">
+                                    <span class="firstName">FistName</span>
+                                    <span class="lastName">LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardLevel beginner">Beginner</div>
+                    </div>
+
+                    <div class="cardParameters">
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/youtube.svg" alt=""> 7
+                        </div>
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/people.svg" alt=""> 160
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div class="cardPreview">
+                        <img src="./assets/images/catalogList/card-pic-5.png" alt="">
+                        <div class="cardStatus fitness">fitness</div>
+                    </div>
+
+                    <div class="cardHead">
+                        <div class="cardUser">
+                            <div class="cardAvatar">
+                                <img src="./assets/images/catalogList/cardUserAvatar-5.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <div class="cardTitle">Train 360</div>
+                                <div class="cardTrainer">
+                                    <span class="firstName">FistName</span>
+                                    <span class="lastName">LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardLevel intermediate">intermediate</div>
+                    </div>
+
+                    <div class="cardParameters">
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/youtube.svg" alt=""> 7
+                        </div>
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/people.svg" alt=""> 160
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div class="cardPreview">
+                        <img src="./assets/images/catalogList/card-pic-6.png" alt="">
+                        <div class="cardStatus fitness">fitness</div>
+                    </div>
+
+                    <div class="cardHead">
+                        <div class="cardUser">
+                            <div class="cardAvatar">
+                                <img src="./assets/images/catalogList/cardUserAvatar-6.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <div class="cardTitle">Power Yoga Sculpt</div>
+                                <div class="cardTrainer">
+                                    <span class="firstName">FistName</span>
+                                    <span class="lastName">LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardLevel advanced">advanced</div>
+                    </div>
+
+                    <div class="cardParameters">
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/youtube.svg" alt=""> 7
+                        </div>
+                        <div class="cardParameter">
+                            <img src="./assets/images/catalogList/people.svg" alt=""> 160
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="catalogBtn">
+                <button class="">
+                    <p> Discover more</p><i class="fa-solid fa-angle-down"></i>
+                </button>
+            </div>
         </div>
+
     </section>
 
 </body>
