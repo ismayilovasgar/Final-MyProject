@@ -1,0 +1,265 @@
+:root {
+  --columg-gap: 96px;
+}
+
+.description .descriptionWrapper {
+  padding: 80px 0px 136px 0px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: var(--columg-gap);
+}
+
+.description .descriptionLeftCol {
+  /* border: 2px solid red; */
+  width: 60%;
+}
+
+.description .descriptionRightCol {
+  width: calc(40% - var(--columg-gap));
+  /* border: 2px solid red; */
+}
+
+.descriptionLeftCol .descriptionDetails {
+  margin-bottom: 16px;
+}
+.descriptionLeftCol .descriptionDetails span {
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  color: var(--Neutrals-8, #fcfcfd);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.descriptionLeftCol .descriptionDetails span:nth-child(1) {
+  margin-right: 4px;
+  background-color: var(--Primary-1);
+}
+
+.descriptionLeftCol .descriptionDetails span:nth-child(2) {
+  background: var(--Primary-4, #45b26b);
+}
+
+.descriptionLeftCol h2.descroptionTitle {
+  margin-bottom: 8px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+.descriptionLeftCol .descriptionInfo {
+  margin-bottom: 48px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+.descriptionLeftCol .descriptionPreview img {
+  width: 100%;
+  object-fit: 100%;
+}
+
+/*  */
+
+.interesting .catalogList {
+  padding: 80px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.catalogList .card .cardPreview {
+  position: relative;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.catalogList .card .cardPreview img.backPreview {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.catalogList .card:hover {
+  cursor: pointer;
+}
+.catalogList .card:hover .cardPreview {
+  overflow: hidden;
+  border-color: var(--Primary-1);
+}
+
+.catalogList .card:hover .cardPreview img.backPreview {
+  transform: scale(1.1);
+}
+.catalogList .card .cardPreview .cardStatus {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  padding: 8px;
+  color: var(--Neutrals-8, #fcfcfd);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.catalogList .card .cardPreview .playSmall {
+  position: absolute;
+  padding: 12px;
+  background-color: var(--Neutrals-5);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+  background: var(--Neutrals-8);
+}
+.catalogList .card .cardPreview .playSmall img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: 5;
+}
+.catalogList .card .cardPreview .cardStatus.yoga {
+  background-color: var(--Primary-4);
+}
+.catalogList .card .cardPreview .cardStatus.fitness {
+  background-color: var(--Primary-1);
+}
+
+.catalogList .card .cardHead {
+  margin: 20px 0px 12px 0px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--Neutrals-6);
+  display: flex;
+  justify-content: space-between;
+}
+.catalogList .card .cardHead .cardUser {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+.catalogList .card .cardHead .cardUser .cardAvatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--Neutrals-4);
+  border-radius: 50%;
+}
+.catalogList .card .cardHead .cardUser .cardAvatar img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.catalogList .card .cardHead .cardTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalogList .card .cardHead .cardTrainer {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.catalogList .card .cardHead .cardTrainer span {
+  display: inline-block;
+}
+.catalogList .card .cardHead .cardTrainer span.firstName {
+  margin-right: 4px;
+}
+
+.catalogList .card .cardHead .cardLevel {
+  align-self: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 4px;
+}
+.catalogList .card .cardHead .cardLevel.beginner {
+  border: 2px solid var(--Primary-4);
+  color: var(--Primary-4);
+}
+.catalogList .card .cardHead .cardLevel.intermediate {
+  border: 2px solid var(--Primary-2);
+  color: var(--Primary-2);
+}
+.catalogList .card .cardHead .cardLevel.advanced {
+  border: 2px solid var(--Primary-1);
+  color: var(--Primary-1);
+}
+
+.catalogList .card .cardParameters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.catalogList .card .cardParameters .cardParameter {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  color: var(--Neutrals-3, #353945);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.catalogBtn {
+  text-align: center;
+}
+.catalogBtn button.discoverMore {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  padding: 12px 16px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6);
+  transition: all 0.4s ease-in;
+}
+
+.catalogBtn p {
+  text-align: right;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  transition: all 0.4s ease-in;
+}
+.catalogBtn i {
+  font-size: 16px;
+  transition: all 0.4s ease-in;
+}
+.catalogBtn button:hover {
+  background-color: #141416;
+  cursor: pointer;
+}
+.catalogBtn button:hover p,
+.catalogBtn button:hover i {
+  color: #e6e8ec;
+}
