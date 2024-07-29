@@ -1,5 +1,6 @@
 :root {
   --columg-gap: 96px;
+  --group-column-gap: 32px;
 }
 
 .description .descriptionWrapper {
@@ -46,7 +47,7 @@
 .descriptionLeftCol h2.descroptionTitle {
   margin-bottom: 8px;
   color: var(--Neutrals-2, #23262f);
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -67,12 +68,113 @@
 .descriptionLeftCol .descriptionPreview img {
   width: 100%;
   object-fit: 100%;
+  border-radius: 16px;
+}
+/*  */
+.descriptionRightCol .descriptionGroup .descriptionItem {
+  display: flex;
+  column-gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.descriptionRightCol .descriptionGroup .descriptionItem .left {
+  width: 46%;
+  display: flex;
+  column-gap: 12px;
+}
+
+.descriptionGroup .descriptionItem .left span {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.descriptionGroup .descriptionItem > span {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.descriptionGroup .descriptionItem:nth-child(3) > span {
+  color: var(--Primary-4, #45b26b);
+}
+/*  */
+
+.descriptionRightCol .descriptionText {
+  padding-top: 40px;
+  margin-top: 40px;
+  border-top: 1px solid var(--Neutrals-6, #e6e8ec);
+}
+
+.descriptionRightCol .descriptionText p {
+  color: var(--Neutrals-3, #353945);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.descriptionRightCol .descriptionText p:nth-child(2) {
+  margin-top: 24px;
+}
+.descriptionRightCol ul.descriptionList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+
+.descriptionRightCol ul.descriptionList li {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8px;
+}
+
+.descriptionRightCol ul.descriptionList li span {
+  position: relative;
+  color: var(--Neutrals-1, #141416);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.descriptionRightCol .desriptionBtns {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.descriptionRightCol .desriptionBtns .btnLock {
+  padding: 12px;
+  border-radius: 40px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.descriptionRightCol .desriptionBtns button:not(.btnLock) {
+  width: 292px;
 }
 
 /*  */
-
+.interesting .interestingTitle {
+  margin-bottom: 64px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
 .interesting .catalogList {
-  padding: 80px 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
@@ -88,6 +190,7 @@
   border-radius: 12px;
   object-fit: cover;
   width: 100%;
+  height: 297px;
   transition: all 0.5s ease;
 }
 
@@ -103,7 +206,7 @@
   transform: scale(1.1);
 }
 .catalogList .card .cardPreview .cardStatus {
-  position: fixed;
+  position: absolute;
   top: 8px;
   left: 8px;
   padding: 8px;
@@ -228,10 +331,12 @@
   font-weight: 600;
   line-height: 20px;
 }
-.catalogBtn {
+
+.interestingBtn {
+  margin-top: 64px;
   text-align: center;
 }
-.catalogBtn button.discoverMore {
+.interestingBtn button.discoverMore {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -242,7 +347,7 @@
   transition: all 0.4s ease-in;
 }
 
-.catalogBtn p {
+.interestingBtn p {
   text-align: right;
   font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
@@ -251,15 +356,15 @@
   line-height: 16px;
   transition: all 0.4s ease-in;
 }
-.catalogBtn i {
+.interestingBtn i {
   font-size: 16px;
   transition: all 0.4s ease-in;
 }
-.catalogBtn button:hover {
+.interestingBtn button:hover {
   background-color: #141416;
   cursor: pointer;
 }
-.catalogBtn button:hover p,
-.catalogBtn button:hover i {
+.interestingBtn button:hover p,
+.interestingBtn button:hover i {
   color: #e6e8ec;
 }
