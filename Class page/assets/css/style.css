@@ -14,11 +14,11 @@
 
 .description .descriptionLeftCol {
   /* border: 2px solid red; */
-  width: 60%;
+  width: calc(60% - (var(--columg-gap) * 0.6));
 }
 
 .description .descriptionRightCol {
-  width: calc(40% - var(--columg-gap));
+  width: calc(40% - (var(--columg-gap) * 0.4));
   /* border: 2px solid red; */
 }
 

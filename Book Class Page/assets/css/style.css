@@ -1,4 +1,7 @@
 /* ? portfolio Start */
+:root {
+  --column-gap: 32px;
+}
 .portfolio {
   padding: 40px 0px 136px 0px;
 }
@@ -55,11 +58,17 @@
 
 .portfolio .portfolioRow {
   padding: 136px 0px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .portfolio .portfolioRow .portfolioTrainer {
+  flex: 0 0 256px;
   text-align: center;
   padding: 24px 0px;
+  border-radius: 24px;
+  border: 1px solid var(--Neutrals-6, #e6e8ec);
+  background-color: var(--Neutrals-8, #fcfcfd);
 }
 .portfolioRow .portfolioTrainer .portfolioAvatar {
   margin: 32px 0px;
@@ -90,6 +99,157 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+.portfolioRow .portfolioWrap {
+  padding: 7px 64px 0px 32px;
+  flex-grow: 1;
+}
+.portfolioRow .portfolioWrap .portfolioList .portfolioItem {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.portfolioRow .portfolioWrap .portfolioItem span.portfolioParameter {
+  margin-left: 12px;
+  flex: 0 0 156px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.portfolioRow .portfolioWrap .portfolioItem span.portfolioContent {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.portfolioRow .portfolioWrap .portfolioItem:nth-child(3) span.portfolioContent {
+  color: var(--Primary-4, #45b26b);
+}
+.portfolioRow .portfolioWrap .portfolioNote {
+  padding-top: 32px;
+  margin-top: 32px;
+  border-top: 1px solid var(--Neutrals-6);
+  color: var(--Neutrals-3, #353945);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.portfolioRow .portfolioDetails {
+  padding-left: 64px;
+  border-left: 1px solid var(--Neutrals-6);
+  flex: 0 0 416px;
+}
+
+.portfolioRow .portfolioDetails .portfolioHead {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.portfolioRow .portfolioDetails .portfolioHead p {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.portfolioRow .portfolioDetails .portfolioBody .portfolioControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 90px;
+  background: var(--Neutrals-2, #23262f);
+}
+.portfolioDetails .portfolioBody .portfolioControl button img {
+  display: block;
+}
+.portfolioDetails .portfolioBody .portfolioControl button {
+  transition: all 0.2s ease;
+}
+.portfolioDetails .portfolioBody .portfolioControl button:nth-child(1):hover {
+  transform: translateX(-3px);
+  cursor: pointer;
+}
+.portfolioDetails .portfolioBody .portfolioControl button:nth-child(3):hover {
+  transform: translateX(3px);
+  cursor: pointer;
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioDate {
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: right;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioVariants {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.portfolioRow .portfolioDetails .portfolioBody .portfolioVariants button {
+  padding: 16px 24px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.portfolioRow .portfolioDetails .portfolioBody .portfolioBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioBook {
+  transition: all 0.25s ease-in-out;
+  width: 290px;
+  background-color: var(--Primary-1);
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioBook:hover {
+  cursor: pointer;
+  background-color: var(--Primary-1-hover);
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioLock {
+  padding: 12px;
+  border-radius: 40px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioLock:hover {
+  background-color: var(--Neutrals-2);
+  cursor: pointer;
+}
+.portfolioRow .portfolioDetails .portfolioBody .portfolioLock:hover i {
+  color: var(--Neutrals-6);
+}
+
+.portfolioRow .portfolioDetails .portfolioBody .portfolioLock i {
+  font-size: 18px;
+  display: block;
 }
 /* ! portfolio End */
 /* ? programs Start */
