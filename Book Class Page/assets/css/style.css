@@ -1,3 +1,4 @@
+/* ? portfolio Start */
 .portfolio {
   padding: 40px 0px 136px 0px;
 }
@@ -7,7 +8,7 @@
   max-width: 672px;
   text-align: center;
 }
-.portfolio .portfolioTop .portfolioStatus {
+.portfolioStatus {
   display: inline-block;
   padding: 8px 8px 6px 8px;
   border-radius: 4px;
@@ -19,10 +20,10 @@
   font-weight: 700;
   line-height: 12px;
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
 
 .portfolio .portfolioTop .portfolioTitle {
+  margin-top: 16px;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display" sans-serif;
@@ -44,9 +45,167 @@
   letter-spacing: -0.24px;
 }
 .portfolio .portfolioGallery {
-  padding: 0px 104px 0px 216px;
+  /* padding: 0px 104px 0px 216px; */
+  padding: 0px 9.287% 0px 19.2858%;
 }
 .portfolio .portfolioGallery img {
   width: 100%;
   object-fit: cover;
 }
+
+.portfolio .portfolioRow {
+  padding: 136px 0px;
+}
+
+.portfolio .portfolioRow .portfolioTrainer {
+  text-align: center;
+  padding: 24px 0px;
+}
+.portfolioRow .portfolioTrainer .portfolioAvatar {
+  margin: 32px 0px;
+}
+.portfolioRow .portfolioTrainer .portfolioAvatar img {
+  display: block;
+  margin: 0 auto;
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.portfolioRow .portfolioTrainer .portfolioMan {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.portfolioRow .portfolioTrainer .portfolioPosition {
+  margin-top: 4px;
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* ! portfolio End */
+/* ? programs Start */
+.programs {
+  margin: 0px 0px 136px 0px;
+}
+.programs .programsTop {
+  margin: 0px auto 0px auto;
+  width: 621px;
+  text-align: center;
+}
+.programs .programsTop h2.programsTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.32px;
+}
+.programs .programsTop p.programsInfo {
+  margin: 16px auto 0px auto;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.programs .programsTop .programsInfo .programsGreen {
+  color: var(--Primary-4, #45b26b);
+}
+.programs .programsTop .programsInfo .programsBlack {
+  color: var(--Neutrals-2, #23262f);
+}
+.programs .programsWrap {
+  margin: 80px auto;
+}
+.programs .programsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
+
+.programs .programsList .programsItem {
+  padding: 64px 32px;
+  border-radius: 20px;
+  background-color: var(--Neutrals-7, #f4f5f6);
+  transition: all 0.4s ease;
+}
+.programs .programsItem .programsIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.programs .programsItem:nth-child(1) .programsIcon {
+  background-color: var(--Primary-4);
+}
+.programs .programsItem:nth-child(2) .programsIcon {
+  background-color: var(--Primary-2);
+}
+.programs .programsItem:nth-child(3) .programsIcon {
+  background-color: var(--Secondary-1);
+}
+.programs .programsItem .programsSubtitle {
+  margin: 32px 0px 16px 0px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.programs .programsItem .programsContent {
+  margin: 0px 0px 32px 0px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.programs .programsItem a {
+  display: inline-block;
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  transition: all 0.4s ease;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.programs .programsItem a:hover {
+  background-color: var(--Primary-1);
+  color: var(--Neutrals-8, #fcfcfd);
+}
+.programs .programsItem:has(a:hover) {
+  background-color: var(--Neutrals-8, #fcfcfd);
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+}
+.programs .programsBtns {
+  /* margin: 48px 0px 0px 0px; */
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.programs .programsBtns button img {
+  display: block;
+}
+/* ! programs End */

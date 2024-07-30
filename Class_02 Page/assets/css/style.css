@@ -216,6 +216,7 @@
 /*! Programs End */
 /* ************************************************* */
 /*? programs Start */
+
 .programs {
   margin: 0px 0px 136px 0px;
 }
@@ -252,10 +253,9 @@
   margin: 80px auto;
 }
 .programs .programsList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .programs .programsList .programsItem {
