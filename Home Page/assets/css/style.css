@@ -961,7 +961,6 @@
 .bookPoster .wrapper .bookList .bookItem {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   column-gap: 24px;
   padding: 24px;
 }
@@ -1056,7 +1055,7 @@
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  line-height: 56px;
   letter-spacing: -0.96px;
 }
 .details .detailsList {
@@ -1086,15 +1085,12 @@
 }
 .details .detailsList .detailsItem .detailsContent {
   color: var(--Neutrals-4, #777e90);
-
-  /* Caption */
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 }
-
 /*! details End  */
 
 /*? homeAbout Start */
@@ -1764,7 +1760,7 @@ footer .bottom-bar span {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
 }
 footer .bottom-bar ul {
   display: flex;
@@ -1781,7 +1777,7 @@ footer .divider {
   height: 384px;
   background-color: var(--Neutrals-6, #e6e8ec);
 }
+
 footer .pad-80 {
   padding: 80px 0 0 0;
 }
-/* ! Footer End*/
