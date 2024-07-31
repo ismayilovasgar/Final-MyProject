@@ -1459,6 +1459,9 @@
 /* ! quality End   */
 
 /* ? advantages  Start   */
+:root {
+  --advantages_column-gap: 24px;
+}
 .advantages {
   margin: 136px 0px;
 }
@@ -1491,8 +1494,10 @@
 }
 .advantages .advantagesList {
   display: flex;
-  column-gap: 24px;
-  justify-content: space-between;
+  column-gap: var(--advantages_column-gap);
+}
+.advantages .advantagesItem {
+  width: calc((100% - (3 * var(--advantages_column-gap))) / 3);
 }
 .advantages .advantagesItem .profile {
   text-align: center;
