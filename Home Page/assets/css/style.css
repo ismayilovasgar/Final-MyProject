@@ -1418,13 +1418,11 @@
 }
 */
 .quality .qualityList {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 32px;
 }
-.quality .qualityList .qualityItem {
-  width: calc((100% - 96px) / 4);
-}
+
 .quality .qualityItem .qualityPreview {
   margin: 0px 0px 64px 0px;
 }
