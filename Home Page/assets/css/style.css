@@ -471,7 +471,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; 
+  line-height: 24px;
 }
 
 .subMenu .tframe .trainers .card .card_concept .trainerInfo p {
@@ -681,81 +681,166 @@
 /*! clients End */
 /*? steps Start */
 .steps {
-  margin: 136px 0;
+  padding: 136px 0;
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 
-.steps .headings {
-  margin: 0 auto 0 auto;
+.steps .stepsHead {
+  margin: 0 auto 80px;
   text-align: center;
   width: 545px;
 }
-.steps .headings h2 {
-  margin: 0px 0px 20px 0px;
+.steps .stepsHead h2 {
+  margin-bottom: 20px;
 }
 
-.steps .wrapper .headings h2 {
-  color: var(--Neutrals-2);
+.steps .stepsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+}
+.steps .stepsList .stepsItem {
+  position: relative;
   text-align: center;
-  width: 544px;
 }
 
-.steps .wrapper .headings p {
-  color: var(--Neutrals-3);
+.steps .stepsList .stepsItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  right: -79px;
+  width: 120px;
+  height: 2px;
+  /* background-image: -o-linear-gradient(
+    left,
+    #b1b5c3 0,
+    #b1b5c3 6px,
+    transparent 6px,
+    transparent 14px
+  ); */
+  background-image: linear-gradient(
+    90deg,
+    #b1b5c3 0,
+    #b1b5c3 6px,
+    transparent 6px,
+    transparent 14px
+  );
+  background-repeat: repeat-x;
+  background-size: 12px auto;
+}
+.steps .stepsList .stepsItem .stepsPreview {
+  position: relative;
   text-align: center;
-  width: 544px;
-}
-
-.steps .wrapper .boxes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 24px;
-  margin: 80px 0px;
-}
-
-.steps .boxes .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto 80px;
+  width: 80px;
+  height: 80px;
   padding: 28px;
   border-radius: 24px;
 }
+.steps .stepsList .stepsItem:nth-child(1) .stepsPreview:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #b1b5c3;
+}
+.steps .stepsList .stepsItem:nth-child(2) .stepsPreview:before,
+.steps .stepsList .stepsItem:nth-child(3) .stepsPreview:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -36px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #b1b5c3;
+}
 
-.steps .boxes .box-1 {
-  background-color: var(--Secondary-1);
-}
-.steps .boxes .box-2 {
-  background-color: var(--Primary-2);
-}
-.steps .boxes .box-3 {
-  background-color: var(--Primary-3);
-}
-.steps .boxes .box-4 {
-  background-color: var(--Primary-4);
-}
-
-.steps .wrapper .step_cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 32px;
+.steps .stepsList .stepsItem:nth-child(2) .stepsPreview:after,
+.steps .stepsList .stepsItem:nth-child(3) .stepsPreview:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #b1b5c3;
 }
 
-.steps .wrapper .step_cards .card h3 {
-  color: var(--Neutrals-4);
+.steps .stepsList .stepsItem:nth-child(4) .stepsPreview:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -36px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #b1b5c3;
+}
+
+.steps .stepsList .stepsItem:nth-child(1) .stepsPreview {
+  background-color: var(--Secondary-1, #3772ff);
+}
+.steps .stepsList .stepsItem:nth-child(2) .stepsPreview {
+  background-color: var(--Primary-2, #9757d7);
+}
+.steps .stepsList .stepsItem:nth-child(3) .stepsPreview {
+  background-color: var(--Primary-3, #ef466f);
+}
+.steps .stepsList .stepsItem:nth-child(4) .stepsPreview {
+  background-color: var(--Primary-4, #45b26b);
+}
+.steps .stepsList .stepsItem .stepsPreview img {
+  width: 100%;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.steps .stepsList .stepsItem .stepsNumber {
+  margin-bottom: 32px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.steps .stepsList .stepsItem .stepsSubtitle {
+  margin-bottom: 16px;
+  color: var(--Neutrals-2, #23262f);
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.steps .stepsList .stepsItem .stepsContent {
+  color: var(--Neutrals-3, #353945);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.steps .wrapper .step_cards .card h4 {
-  color: var(--Neutrals-2);
-  text-align: center;
-  margin: 32px auto 16px auto;
-}
-.steps .wrapper .step_cards .card p {
-  color: var(--Neutrals-3);
-  text-align: center;
-}
 .steps .navigations {
   display: none;
 
