@@ -50,8 +50,7 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-body {
-}
+
 .container {
   width: 1120px;
   max-width: 95%;
@@ -78,6 +77,8 @@ button {
   color: var(--Neutrals-2, #23262f);
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
+  transition: 0.4s ease;
+  cursor: pointer;
 }
 
 .btn_orange {

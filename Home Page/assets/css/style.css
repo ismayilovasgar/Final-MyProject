@@ -340,7 +340,6 @@
   background-color: var(--Neutrals-2, #23262f);
   color: var(--Neutrals-8, #fcfcfd);
   padding: 8px;
-  /* Hairline 2 */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -401,7 +400,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
 }
 .subMenu .tframe .featureContent .detail .fullname p:nth-child(1) {
   color: var(--Neutrals-2, #23262f);
@@ -507,8 +506,6 @@
 
 .mobileMenu .nav_links ul > li a {
   color: var(--Neutrals-4, #777e90);
-
-  /* Body 1 (Bold) */
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -641,21 +638,28 @@
   align-items: center;
   column-gap: 16px;
 }
-
+.heroHeader .wrap .contentCol button:nth-child(2):hover {
+  box-shadow: 0 0 0 2px #23262f inset;
+  background: var(--Neutrals-2);
+  color: var(--Neutrals-8);
+}
 .heroHeader .wrap .contentCol .button_arrow_bottom {
   margin: 140px 0 0 0;
   display: inline-block;
-  /* justify-content: center;
-  align-items: center; */
   padding: 20px;
   border-radius: 64px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
-.heroHeader .wrap .contentCol .button_arrow_bottom img {
+.heroHeader .wrap .contentCol .button_arrow_bottom i {
   width: 100%;
   display: block;
+  font-size: 16px;
+  color: var(--Neutrals-4);
 }
-
+/* .heroHeader .wrap .contentCol .button_arrow_bottom img {
+  width: 100%;
+  display: block;
+} */
 .heroHeader .wrap .previewCol {
   width: calc(60%- (var(--hero_column-gap) * 0.6));
 }
@@ -901,8 +905,11 @@
 /*! intro End */
 
 /*? BookPoster Start */
+:root {
+  --poster_column-gap: 32px;
+}
 .bookPoster {
-  margin: 136px 0px;
+  padding: 136px 0px;
   background: var(--Neutrals-7, #f4f5f6);
 }
 
@@ -911,11 +918,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 32px;
+  column-gap: var(--poster_column-gap);
 }
 
 .bookPoster .bookGallery {
-  width: calc(50% - 16px);
+  width: calc(50% - (var(--poster_column-gap) * 0.5));
   /* box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1); */
 }
 
@@ -925,7 +932,7 @@
 }
 
 .bookPoster .bookMenu {
-  width: calc(50% - 16px);
+  width: calc(50% - (var(--poster_column-gap) * 0.5));
   padding: 48px;
   border-radius: 20px;
   background-color: var(--Neutrals-8, #fcfcfd);
@@ -1027,10 +1034,22 @@
   font-weight: 500;
   line-height: 24px;
 }
+.bookPoster .wrapper .bookMenu .bookBtn > button {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin: 0 0 0 auto;
+}
 /*! BookPoster End */
 
 /*? details Start  */
+:root {
+  --details_column-gap: 83px;
+  --details_column-count: 5;
+  --details_divider-width: 1px;
+}
 .details {
+  padding: 136px 0px;
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 .details .detailsHead {
@@ -1059,19 +1078,23 @@
   letter-spacing: -0.96px;
 }
 .details .detailsList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 83px;
+  display: flex;
+  align-items: center;
+  column-gap: var(--details_column-gap);
+}
+.details .detailsList span.divider {
+  width: var(--details_divider-width);
+  height: 300px;
+  background-color: var(--Neutrals-6);
 }
 
-.details .detailsList .detailsItem:nth-child(1) {
-  border-right: 1px solid var(--Neutrals-6);
-  padding: 0px 83px 0px 0px;
+.details .detailsList .detailsItem {
+  width: calc(
+    (100% - ((var(--details_column-count) - 1) * var(--details_column-gap))) / 3
+  );
 }
-
-.details .detailsList .detailsItem:nth-child(3) {
-  border-left: 1px solid var(--Neutrals-6);
-  padding: 0px 0px 0px 83px;
+.details .detailsList .detailsItem .detailsIcon img {
+  display: block;
 }
 
 .details .detailsList .detailsItem .detailsCategory {
@@ -1095,15 +1118,15 @@
 
 /*? homeAbout Start */
 .homeAbout {
-  margin: 136px 0px;
+  padding: 136px 0px;
 }
 .homeAbout .aboutRow {
   display: flex;
   justify-content: space-between;
 }
 .homeAbout .aboutRow .aboutCol {
-  margin: 0px 12px;
-  width: calc(50% - 24px);
+  margin: 0px;
+  width: calc(50%);
 }
 .homeAbout .topRow .aboutCol p.stage {
   color: var(--Neutrals-5, #b1b5c3);
@@ -1299,11 +1322,11 @@
 .trainers .trainersList .listWrap .trainerItem {
   text-align: center;
 
-  /* width: calc(
-    (100% - ((var(--trainer-col-count)-1) * var(--trainer-col-gap))) /
+  width: calc(
+    (100% - ((var(--trainer-col-count) - 1) * var(--trainer-col-gap))) /
       var(--trainer-col-count)
-  ); */
-  width: calc((100% - 96px) / 3);
+  );
+  /* width: calc((100% - 96px) / 3); */
 }
 
 .trainers .trainersList .listWrap .trainerItem .profile {
@@ -1403,7 +1426,7 @@
 /* ! review End   */
 /* ? quality Start   */
 .quality {
-  margin: 0px 0px 136px 0px;
+  padding: 0px 0px 136px 0px;
 }
 /* 
 .quality .qualityList {
@@ -1421,6 +1444,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 32px;
+  align-items: start;
 }
 
 .quality .qualityItem .qualityPreview {
@@ -1461,9 +1485,10 @@
 /* ? advantages  Start   */
 :root {
   --advantages_column-gap: 24px;
+  --advantages_column-count: 3;
 }
 .advantages {
-  margin: 136px 0px;
+  padding: 136px 0px;
 }
 .advantages .advantagesHead {
   margin: 0px auto 80px auto;
@@ -1495,9 +1520,17 @@
 .advantages .advantagesList {
   display: flex;
   column-gap: var(--advantages_column-gap);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--advantages_column-gap); */
 }
 .advantages .advantagesItem {
-  width: calc((100% - (3 * var(--advantages_column-gap))) / 3);
+  width: calc(
+    (
+        100% -
+          (var(--advantages_column-gap) * (var(--advantages_column-count) - 1))
+      ) / (var(--advantages_column-count))
+  );
 }
 .advantages .advantagesItem .profile {
   text-align: center;
@@ -1518,7 +1551,7 @@
 
 /* ? workouts Start   */
 .workouts {
-  margin: 136px 0;
+  padding: 136px 0;
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 .workouts .workoutsFrame {
@@ -1574,15 +1607,14 @@
 
 /* ? offers  Start  */
 .offers {
-  margin: 80px auto 136px auto;
+  padding: 80px 0 136px 0;
 }
 .offers .frame {
-  padding: 136px 0px 0px 0px;
   margin: 0 auto;
   text-align: center;
 }
 .offers p.stage {
-  margin: 0px auto 16px auto;
+  margin: 136px auto 16px auto;
   color: var(--Neutrals-4, #777e90);
   text-align: center;
   font-family: "Poppins", sans-serif;
