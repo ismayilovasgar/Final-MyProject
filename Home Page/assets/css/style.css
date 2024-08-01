@@ -581,6 +581,7 @@
 /* <!-- Mobile Mode --> */
 
 /*! Header End */
+
 :root {
   --hero_column-gap: 30px;
 }
@@ -591,8 +592,6 @@
 .heroHeader .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
   column-gap: var(--hero_column-gap);
 }
 .heroHeader .wrap .contentCol {
@@ -604,7 +603,6 @@
 }
 .heroHeader .wrap .contentCol p.stage {
   color: var(--Neutrals-4, #777e90);
-
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
