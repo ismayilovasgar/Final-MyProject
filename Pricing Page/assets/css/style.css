@@ -1,5 +1,6 @@
 .pricing {
-  margin: 136px auto;
+  padding: 136px 0px;
+  background-color: var(--Neutrals-7);
 }
 
 .pricing .stage {
@@ -59,6 +60,10 @@
   padding: 0px 0px 64px 0px;
   flex: 1 1;
   text-align: center;
+}
+.pricingTable .row .pricingCol:nth-child(3) {
+  border-radius: 24px;
+  background: var(--Neutrals-8, #fcfcfd);
 }
 
 .pricingTable .pricingCol .pricingPackage {
@@ -404,7 +409,10 @@
 
 .faq .faqItemBody {
   padding: 8px 0px 32px 0px;
-  /* display: none; */
+  display: none;
+}
+.faq .faqItemBody.active {
+  display: block;
 }
 .active_block {
   display: block;
