@@ -1,6 +1,9 @@
 @import url("https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --hero_column-gap: 30px;
+}
 /*? heroHeader Start */
 .heroHeader {
   background: var(--Neutrals-8, #fcfcfd);
@@ -8,20 +11,17 @@
 .heroHeader .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  column-gap: 30px;
+  column-gap: var(--hero_column-gap);
 }
 .heroHeader .wrap .contentCol {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   margin: 60px 0 0 0;
-  width: 40%;
+  width: calc(40% - (var(--hero_column-gap) * 0.4));
 }
 .heroHeader .wrap .contentCol p.stage {
   color: var(--Neutrals-4, #777e90);
-
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -55,170 +55,36 @@
   align-items: center;
   column-gap: 16px;
 }
-
+.heroHeader .wrap .contentCol button:nth-child(2):hover {
+  box-shadow: 0 0 0 2px #23262f inset;
+  background: var(--Neutrals-2);
+  color: var(--Neutrals-8);
+}
 .heroHeader .wrap .contentCol .button_arrow_bottom {
   margin: 140px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   padding: 20px;
   border-radius: 64px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
-.heroHeader .wrap .contentCol .button_arrow_bottom img {
+.heroHeader .wrap .contentCol .button_arrow_bottom i {
   width: 100%;
-  object-fit: cover;
+  display: block;
+  font-size: 16px;
+  color: var(--Neutrals-4);
 }
 
 .heroHeader .wrap .previewCol {
-  width: 55%;
+  width: calc(60% - (var(--hero_column-gap) * 0.6));
 }
 .heroHeader .wrap .previewCol img {
   width: 100%;
-  object-fit: cover;
 }
 /*! heroHeader End */
-/*? Programs Start */
-/* .programs {
-  margin: 0px 0px 136px 0px;
-  position: relative;
-  overflow: hidden;
-}
-.programs .programsTop {
-  max-width: 621px;
-  margin: 0px auto 80px auto;
-  text-align: center;
-}
-.programs .programsTop h2 {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  margin: 0px 0px 16px 0px;
 
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.32px;
-}
-.programs .programsTop p {
-  color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.programs .programsTop p span.text_green {
-  color: var(--Primary-4, #45b26b);
-}
-.programs .programsTop p span.text_black {
-  color: var(--Neutrals-2, #23262f);
-}
-.programs .programsBottom .programsSlider {
-  position: relative;
-  padding: 80px 0px;
-}
-
-.programs .programsBottom .programsSlider .sliderTrack {
-  display: flex;
-  column-gap: 24px;
-}
-.programs .programsBottom .programItem {
-  padding: 64px 32px;
-  border-radius: 20px;
-  background-color: var(--Neutrals-7, #f4f5f6);
-  pointer-events: none;
-}
-.programs .programsBottom .programItem .programIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  padding: 8px;
-  border-radius: 40px;
-  margin: 0px 0px 32px 0px;
-}
-
-.programs .programsBottom .programItem:nth-child(1) .programIcon {
-  background-color: var(--Primary-4);
-}
-.programs .programsBottom .programItem:nth-child(2) .programIcon {
-  background-color: var(--Primary-2);
-}
-.programs .programsBottom .programItem:nth-child(3) .programIcon {
-  background-color: var(--Secondary-1);
-}
-.programs .programsBottom .programItem .programTexts {
-  margin: 32px 0px;
-}
-.programs .programsBottom .programItem .programSubtitle {
-  color: var(--Neutrals-2, #23262f);
-  font-family: "Poppins" sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-}
-.programs .programsBottom .programItem p {
-  color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 16px 0px 0px 0px;
-  width: 293px;
-}
-
-.programs .programsBottom .programItem a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 90px;
-  border: 2px solid var(--Neutrals-6, #e6e8ec);
-  padding: 14px 24px;
-  color: var(--Neutrals-2, #23262f);
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  pointer-events: auto;
-}
-
-.programs .programsBottom .programItem:has(a:hover) {
-  background-color: var(--Neutrals-7, #f4f5f6);
-  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
-}
-
-.programs .programsBottom .programItem a:hover {
-  background-color: var(--Primary-1);
-  color: var(--Neutrals-8, #fcfcfd);
-}
-
-.programs .programsBottom .programsSlider .arrow {
-  position: absolute;
-  bottom: 0px;
-  width: 24px;
-  height: 24px;
-  background: none;
-  border: none;
-  z-index: 5;
-}
-.programs .programsBottom .programsSlider .previousArrow {
-  left: calc(50% - 34px);
-}
-.programs .programsBottom .programsSlider .arrow {
-  right: calc(50% - 34px);
-} */
-/*! Programs End */
-/* ************************************************* */
 /*? programs Start */
-
 .programs {
-  margin: 0px 0px 136px 0px;
+  padding: 0px 0px 136px 0px;
 }
 .programs .programsTop {
   margin: 0px auto 0px auto;
@@ -259,9 +125,9 @@
 }
 
 .programs .programsList .programsItem {
+  background-color: var(--Neutrals-6);
   padding: 64px 32px;
   border-radius: 20px;
-  background-color: var(--Neutrals-8, #f4f5f6);
   transition: all 0.4s ease;
 }
 .programs .programsItem .programsIcon {
@@ -319,7 +185,7 @@
   color: var(--Neutrals-8, #fcfcfd);
 }
 .programs .programsItem:has(a:hover) {
-  background-color: var(--Neutrals-6);
+  background-color: var(--Neutrals-8, #f4f5f6);
 }
 .programs .programsBtns {
   margin: 48px 0px 0px 0px;
@@ -332,142 +198,14 @@
   display: block;
 }
 /*! programs End */
-/*? Trainers Start */
-/* 
-:root {
-  --columns-count: 4;
-  --row-gap: 32px;
-  --column-gap: 32px;
-}
-.trainers {
-  margin: 0px 0px 136px 0px;
-}
-.trainers .titleAndNav {
-  margin: 0 auto 80px auto;
-  max-width: 544px;
-}
-.trainers .titleAndNav h2 {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  margin: 0px 0px 20px 0px;
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px; 
-  letter-spacing: -0.96px;
-}
-.trainers .titleAndNav p {
-  color: var(--Neutrals-3, #353945);
-  padding: 0px 50px;
-  text-align: center;
-  margin: 0px 0px 40px 0px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-}
-.trainers .titleAndNav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 12px;
-}
-.trainers .titleAndNav ul li {
-  padding: 6px 12px;
-  text-align: center;
-}
-.trainers .titleAndNav ul li a {
-  display: block;
-  color: var(--Neutrals-4, #777e90);
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; 
-}
-.trainers .titleAndNav ul li:hover {
-  border-radius: 100px;
-  background-color: var(--Neutrals-3, #353945);
-  transition: 0.5s ease-in;
-}
-.trainers .titleAndNav ul li:hover a {
-  transition: 0.5s ease-in;
-  color: var(--Neutrals-8, #fcfcfd);
-}
-
-.trainers .trainerList .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: var(--column-gap);
-  row-gap: var(--row-gap);
-  
-}
-.trainers .trainerList .wrapper > a {
-  padding: 48px 0px;
-  border-radius: 24px;
-  border: 1px solid var(--Neutrals-6, #e6e8ec);
-  background: var(--Neutrals-8, #fcfcfd);
-  width: calc(
-    (100% - (var(--column-gap) * (var(--columns-count) - 1))) /
-      var(--columns-count)
-  );
-}
-.trainers .trainerList .trainer:hover {
-  cursor: pointer;
-  border-color: var(--Neutrals-5, #b1b5c3);
-}
-.trainers .trainerList .profilePreview {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  background-color: var(--Neutrals-6, #e6e8ec);
-  text-align: center;
-  margin: 0 auto;
-}
-.trainers .trainerList .profilePreview img {
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.trainers .trainerList .fullName {
-  text-align: center;
-}
-.trainers .trainerList span {
-  color: var(--Neutrals-2, #23262f);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px; 
-}
-.trainers .trainerList .trainer .trainerPosition {
-  color: var(--Neutrals-4, #777e90);
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-  margin: 4px 0px 0px 0px;
-} */
-/** display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  */
-/*! Trainers End */
 /*? trainers Start */
-
 :root {
   --rows-gap: 32px;
   --columns-gap: 32px;
   --columns-count: 4;
 }
 .trainers {
-  margin: 0 auto 136px auto;
+  padding: 0 0px 136px 0px;
 }
 .trainers .trainerHead {
   width: 544px;
@@ -565,27 +303,31 @@ option {
 }
 /*! Mobil Select Mode End */
 .trainers .trainersList .listWrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--rows-gap) var(--columns-gap);
+  /* 
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   column-gap: var(--columns-gap);
-  row-gap: var(--rows-gap);
+  row-gap: var(--rows-gap); 
+  */
 }
 
 .trainers .trainersList .listWrap .trainerItem {
-  display: block;
   border-radius: 24px;
   border: 1px solid var(--Neutrals-6, #e6e8ec);
   background: var(--Neutrals-8, #fcfcfd);
   box-shadow: inset 0 0 0 1px var(--Neutrals-6);
   text-align: center;
   padding: 48px 0px;
+  /* 
   width: calc(
     (100% - (var(--columns-gap) * (var(--columns-count) - 1))) /
       var(--columns-count)
-  );
-  /* width: calc((100% - 96px) / 4); */
+  ); 
+  */
   transition: 0.2s ease;
 }
 .trainers .trainersList .listWrap .trainerItem:hover {
