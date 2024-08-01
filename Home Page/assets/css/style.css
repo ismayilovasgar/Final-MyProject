@@ -1090,7 +1090,13 @@
 
 .details .detailsList .detailsItem {
   width: calc(
-    (100% - ((var(--details_column-count) - 1) * var(--details_column-gap))) / 3
+    (
+        100% -
+          (
+            ((var(--details_column-count) - 1) * var(--details_column-gap)) +
+              2px
+          )
+      ) / 3
   );
 }
 .details .detailsList .detailsItem .detailsIcon img {
