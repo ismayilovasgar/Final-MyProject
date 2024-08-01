@@ -1123,6 +1123,7 @@
 /*! details End  */
 
 /*? homeAbout Start */
+/* 
 .homeAbout {
   padding: 136px 0px;
 }
@@ -1208,8 +1209,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
-}
+  line-height: 24px; 
 .homeAbout .bottomRow .aboutCol .aboutBackground {
   position: relative;
   border-radius: 24px;
@@ -1249,8 +1249,112 @@
   box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
   border-radius: 50%;
   background: #fcfcfd;
+} */
+/* **** */
+
+:root {
+  --about_column-gap: 32px;
+}
+.homeAbout {
+  padding: 136px 0px;
 }
 
+.topRow {
+  display: flex;
+}
+.topRow .topCol {
+  width: 50%;
+}
+
+.topRow .topCol .aboutStage {
+  color: var(--Neutrals-5, #b1b5c3);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.topRow .topCol .aboutTitle {
+  margin-bottom: 20px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+.topRow .topCol .aboutInfo {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bottomRow {
+  margin-top: 128px;
+  column-gap: var(--about_column-gap);
+  display: flex;
+}
+.bottomRow .bottomLeftCol .aboutList {
+  max-width: 262px;
+}
+.homeAbout .bottomRow .bottomLeftCol {
+  width: calc(30% - (var(--about_column-gap) * 0.3));
+}
+.homeAbout .bottomRow .bottomRightCol {
+  width: calc(70% - (var(--about_column-gap) * 0.7));
+}
+.homeAbout .bottomRow .aboutItem:nth-child(2) {
+  margin: 48px 0px;
+}
+
+.bottomRow .aboutItem .aboutNumber {
+  display: inline-block;
+  padding: 0px 12px;
+  margin-bottom: 24px;
+  border-radius: 100px;
+  color: var(--Neutrals-8, #fcfcfd);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.homeAbout .bottomRow .aboutItem:nth-child(1) .aboutNumber {
+  background: var(--Primary-2, #9757d7);
+}
+.homeAbout .bottomRow .aboutItem:nth-child(2) .aboutNumber {
+  background: var(--Primary-3, #9757d7);
+}
+.homeAbout .bottomRow .aboutItem:nth-child(3) .aboutNumber {
+  background: var(--Primary-4, #9757d7);
+}
+.bottomRow .aboutItem .aboutSubtitle {
+  margin-bottom: 16px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.bottomRow .aboutItem .aboutContent {
+  padding-right: 35px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bottomRow .bottomRightCol .aboutPreview img {
+  width: 100%;
+  object-fit: cover;
+}
 /*! homeAbout End */
 /* ? trainers Start   */
 :root {
@@ -1569,7 +1673,7 @@
   column-gap: var(--workouts_column-gap);
 }
 .workouts .workoutsFrame .workoutsWrap {
-  width: calc(100% - (var(--workouts_column-gap) * 0.4));
+  width: calc(40% - (var(--workouts_column-gap) * 0.4));
 }
 .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
   color: var(--Neutrals-2, #23262f);
@@ -1609,7 +1713,11 @@
   margin: 0px 12px 0px 0px;
 }
 .workouts .workoutsFrame .workoutsGallery {
-  width: calc(100% - (var(--workouts_column-gap) * 0.6));
+  width: calc(60% - (var(--workouts_column-gap) * 0.6));
+}
+.workouts .workoutsFrame .workoutsGallery img {
+  width: 100%;
+  object-fit: cover;
 }
 /* ! workouts End   */
 

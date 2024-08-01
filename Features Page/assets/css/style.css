@@ -319,7 +319,6 @@
   margin-bottom: 16px;
 }
 .program .programLeftCol .programList ul li {
-  padding: 20px;
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 .program .programLeftCol .programList ul li:not(:last-child) {
@@ -335,6 +334,10 @@
   border-radius: 16px;
   transition: background-color 0.2s;
 }
+.program .programList > ul li > a:hover {
+  border-radius: 16px;
+  background-color: var(--Neutrals-7, #f4f5f6);
+}
 .program .programList > ul .programSubtitle {
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
@@ -349,6 +352,12 @@
   border-radius: 12px;
   padding: 12px;
   margin-right: 20px;
+  position: relative;
+}
+.program .programItemLeft {
+  display: flex;
+  /* column-gap: 20px; */
+  align-items: center;
 }
 .program .programList .programIcon img,
 .program .programList .programArrow img {
@@ -395,8 +404,10 @@
 /*! program End */
 
 /*? homeAbout Start */
-.homeAbout {
-  margin: 136px 0px;
+/* ***** */
+
+/* .homeAbout {
+  padding: 136px 0px;
 }
 .homeAbout .aboutRow {
   display: flex;
@@ -480,7 +491,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px; 
 }
 .homeAbout .bottomRow .aboutCol .aboutBackground {
   position: relative;
@@ -521,31 +532,34 @@
   box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
   border-radius: 50%;
   background: #fcfcfd;
+} */
+/* **** */
+
+:root {
+  --about_column-gap: 32px;
 }
-
-/*! homeAbout End */
-
-/*? WorkoutDetail Start  */
-/* 
-.fWorkoutDetail {
+.homeAbout {
   padding: 136px 0px;
 }
 
-.fWorkoutDetail .row:not(:nth-child(2)) {
-  margin: 0px 0px 128px 0px;
-}
-.fWorkoutDetail .row {
+.topRow {
   display: flex;
-  margin: 0 -12px;
 }
-.fWorkoutDetail .row .aboutCol {
-  flex: 0 0 calc(50% - 24px);
-  width: calc(50% - 24px);
-  margin: 0 12px;
+.topRow .topCol {
+  width: 50%;
 }
 
-.fWorkoutDetail .uprow .aboutCol h2 {
-  margin: 0px 0px 20px 0px;
+.topRow .topCol .aboutStage {
+  color: var(--Neutrals-5, #b1b5c3);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.topRow .topCol .aboutTitle {
+  margin-bottom: 20px;
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
@@ -554,27 +568,36 @@
   line-height: 56px;
   letter-spacing: -0.96px;
 }
-
-.fWorkoutDetail .uprow .aboutCol p {
-  max-width: 450px;
+.topRow .topCol .aboutInfo {
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;
+}
+.bottomRow {
+  margin-top: 128px;
+  column-gap: var(--about_column-gap);
+  display: flex;
+}
+.bottomRow .bottomLeftCol .aboutList {
+  max-width: 262px;
+}
+.homeAbout .bottomRow .bottomLeftCol {
+  width: calc(30% - (var(--about_column-gap) * 0.3));
+}
+.homeAbout .bottomRow .bottomRightCol {
+  width: calc(70% - (var(--about_column-gap) * 0.7));
+}
+.homeAbout .bottomRow .aboutItem:nth-child(2) {
+  margin: 48px 0px;
 }
 
-.fWorkoutDetail .downrow .leftCol .cardList {
-  max-width: 260px;
-}
-.fWorkoutDetail .downrow .leftCol .cardItem:not(:last-child) {
-  margin: 0px 0px 48px 0px;
-}
-.fWorkoutDetail .downrow .leftCol .cardItem .cardNumber {
+.bottomRow .aboutItem .aboutNumber {
   display: inline-block;
-  padding: 2px 12px;
-  margin: 0px 0px 24px 0px;
+  padding: 0px 12px;
+  margin-bottom: 24px;
   border-radius: 100px;
   color: var(--Neutrals-8, #fcfcfd);
   font-family: "Poppins", sans-serif;
@@ -582,17 +605,18 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-.fWorkoutDetail .downrow .leftCol .cardItem:nth-child(1) .cardNumber {
-  background-color: var(--Primary-2);
 }
-.fWorkoutDetail .downrow .leftCol .cardItem:nth-child(2) .cardNumber {
-  background-color: var(--Primary-3);
+.homeAbout .bottomRow .aboutItem:nth-child(1) .aboutNumber {
+  background: var(--Primary-2, #9757d7);
 }
-
-.fWorkoutDetail .downrow .leftCol .cardItem:nth-child(3) .cardNumber {
-  background-color: var(--Primary-4);
+.homeAbout .bottomRow .aboutItem:nth-child(2) .aboutNumber {
+  background: var(--Primary-3, #9757d7);
 }
-.fWorkoutDetail .downrow .leftCol .cardItem .cardSubtitle {
+.homeAbout .bottomRow .aboutItem:nth-child(3) .aboutNumber {
+  background: var(--Primary-4, #9757d7);
+}
+.bottomRow .aboutItem .aboutSubtitle {
+  margin-bottom: 16px;
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -600,201 +624,25 @@
   font-weight: 500;
   line-height: 24px;
 }
-.fWorkoutDetail .downrow .leftCol .cardItem .cardContent {
+
+.bottomRow .aboutItem .aboutContent {
+  padding-right: 35px;
   color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins" sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.fWorkoutDetail .downrow .rightCol .about_bg {
-  position: relative;
-  background-color: var(--Neutrals-6);
-  border-radius: 24px;
-}
-.fWorkoutDetail .downrow .rightCol .about_bg > img {
-  border-radius: 24px;
-}
-.fWorkoutDetail .downrow .rightCol .about_bg img {
-  width: 100%;
-}
-.fWorkoutDetail .downrow .rightCol .about_bg .about_photo {
-  position: absolute;
-  pointer-events: none;
-}
-
-.fWorkoutDetail .downrow .rightCol .about_bg .about_photo:nth-child(1) {
-  top: 11%;
-  left: -31%;
-  width: 68%;
-}
-
-.fWorkoutDetail .downrow .rightCol .about_bg .about_photo:nth-child(2) {
-  top: 9.5%;
-  left: 25%;
-  width: 23%;
-}
-.fWorkoutDetail .rightCol .about_bg .about_photo:nth-child(1) .iconDark {
-  display: none;
-}
-.fWorkoutDetail img {
-  vertical-align: middle;
-} */
-/*! WorkoutDetail End  */
-/* ? fQuotes Start */
-/* 
-.fQuotes {
-  padding: 0px 0px 64px 0px;
-}
-
-.fQuotes .wrapper {
-  max-width: 896px;
-
-  width: 100%;
-  margin: 0 auto;
-}
-.fQuotes .wrapper .overlap {
-  margin: 0 -12px;
-  text-align: center;
-}
-.fQuotes .wrapper .overlap .qSlider {
-  padding: 0px 0px 70px 0px;
-  
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  user-select: none;
-  touch-action: pan-y;
-}
-.fQuotes .wrapper .overlap .content {
-  visibility: visible;
-}
-
-.fQuotes .overlap .content .btn_prev {
-  left: calc(50% - 34px);
-}
-.fQuotes .overlap .content .prev_arrow {
-  bottom: 0;
-
-  position: absolute;
-  z-index: 5;
-  width: 24px;
-  height: 24px;
-  background: none;
-  font-size: 0;
-}
-
-.fQuotes .overlap .content .btn_next {
-  right: calc(50% - 34px);
-}
-.fQuotes .overlap .content .next_arrow {
-  bottom: 0;
-
-  position: absolute;
-  z-index: 5;
-  width: 24px;
-  height: 24px;
-  background: none;
-  font-size: 0;
-}
-.fQuotes .overlap .content .sliderList {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
-  height: 348px;
-}
-.fQuotes .overlap .content .sliderList .itemLogo {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
-  height: 348px;
-} 
-
-.fquotes .frame {
-  padding: 136px 192px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 48px;
-  align-items: center;
-}
-.fquotes .frame .quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 40px;
-}
-
-.fquotes .frame .quote .author {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px 0px;
-  padding: 0px 0px 40px 0px;
-  border-bottom: 1px solid var(--Neutrals-4);
-}
-
-.fquotes .frame .quote .author p {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px; 
-  letter-spacing: -0.4px;
-}
-.fquotes .frame .quote .q-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  row-gap: 4px;
-}
-
-.fquotes .frame .quote .q-info h4 {
-  color: var(--Neutrals-2, #23262f);
-
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-.fquotes .frame .quote .q-info p {
-  color: var(--Neutrals-4, #777e90);
-  text-align: center;
-
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
-
-.fquotes .frame .slide-btns .arrows {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
+.bottomRow .bottomRightCol .aboutPreview img {
+  width: 100%;
+  object-fit: cover;
 }
-.fquotes .frame .slide-btns .arrows button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}*/
-/* ! fQuotes End */
+/*! homeAbout End */
 
 /* ? review Start   */
 .review {
-  padding: 136px 0;
+  padding: 0px 0px 136px 0px;
 }
 .review .reviewItem {
   margin: 0 auto;
@@ -849,33 +697,6 @@
 }
 /* ! review End   */
 
-/* ? fClients Start   */
-/* 
-.fclients .clientsTitle {
-  margin-bottom: 40px;
-  text-align: center;
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-.fclients .clientsList {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fclients .clientsList .clientsLogo {
-  flex: 1;
-}
-.fclients .clientsList .clientsLogo img {
-  width: 100%;
-} */
-/* ! fClients End   */
-
 /*? clients Start */
 .clients .clientsTitle p {
   margin: 0px 0px 40px 0px;
@@ -895,125 +716,21 @@
 
 /*! clients End */
 
-/* ? fWorkout Start   */
-/* 
-.fworkouts {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 1096px;
-  padding: 112px 0;
-  overflow: hidden;
-}
-.fworkouts .workoutsGallery {
-  position: absolute;
-  top: 50%;
-  right: calc(50% - 663px);
-  width: 744px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-.fworkouts .workoutsPreview:first-child {
-  position: relative;
-  z-index: 1;
-}
-.fworkouts .workoutsPreview img {
-  width: 100%;
-}
-.fworkouts .darkIcon {
-  display: none;
-}
-.fworkouts .workoutsPreview:not(:first-child) {
-  position: absolute;
-}
-.fworkouts .workoutsPreview:nth-child(2) {
-  top: 10%;
-  left: 47%;
-  z-index: 2;
-  width: 13.5%;
-}
-.fworkouts .workoutsPreview:nth-child(3) {
-  top: 32%;
-  right: 2.5%;
-  z-index: 2;
-  width: 14.5%;
-}
-.fworkouts .workoutsWrap {
-  position: relative;
-  z-index: 3;
-  max-width: 450px;
-}
-
-.fworkouts .workoutsWrap h2 {
-  color: var(--Neutrals-2, #23262f);
-
-  font-family: "SF Pro Display";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px; 
-  letter-spacing: -0.96px;
-  margin-bottom: 32px;
-}
-
-.fworkouts .workoutsWrap p {
-  color: var(--Neutrals-4, #777e90);
-
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: -0.24px;
-
-  margin-bottom: 32px;
-}
-.fworkouts .workoutsList {
-  margin-bottom: 48px;
-}
-.fworkouts .workoutsList li:not(:last-child) {
-  margin-bottom: 16px;
-}
-.fworkouts .workoutsList li {
-  position: relative;
-  padding-left: 36px;
-
-  color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-.fworkouts ul.workoutsList li:before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: url("../images/fworkouts/Line.png") no-repeat 50% 50% / 100% auto;
-} */
-
-/* ! fWorkout End   */
-
 /* ? workouts Start   */
+:root {
+  --workouts_column-gap: 32px;
+}
 .workouts {
-  margin: 136px 0;
+  padding: 136px 0;
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 .workouts .workoutsFrame {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  column-gap: 32px;
+  column-gap: var(--workouts_column-gap);
 }
 .workouts .workoutsFrame .workoutsWrap {
-  width: 40%;
+  width: calc(40% - (var(--workouts_column-gap) * 0.4));
 }
 .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
   color: var(--Neutrals-2, #23262f);
@@ -1053,37 +770,39 @@
   margin: 0px 12px 0px 0px;
 }
 .workouts .workoutsFrame .workoutsGallery {
-  width: 60%;
+  width: calc(60% - (var(--workouts_column-gap) * 0.6));
+}
+.workouts .workoutsFrame .workoutsGallery img {
+  width: 100%;
+  object-fit: cover;
 }
 /* ! workouts End   */
 
-/*? fLifeStyle Start */
-.fLifeStyle {
-  margin: 0px 0px 136px 0px;
+/*? lifeStyle Start */
+.lifeStyle {
+  padding: 0px 0px 136px 0px;
 }
-.fLifeStyle .lifeStyleHead {
+.lifeStyle .lifeStyleHead {
   max-width: 544px;
   margin: 0px 0px 80px 0px;
 }
 
-.fLifeStyle .lifeStyleHead span {
+.lifeStyle .lifeStyleHead span {
   display: block;
 }
 
-.fLifeStyle .lifeStyleHead span:nth-child(1) {
+.lifeStyle .lifeStyleHead span:nth-child(1) {
   color: var(--Neutrals-4, #777e90);
-
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 100% */
+  line-height: 12px;
   text-transform: uppercase;
   margin: 0px 0px 32px 0px;
 }
-.fLifeStyle .lifeStyleHead span:nth-child(2) {
+.lifeStyle .lifeStyleHead span:nth-child(2) {
   color: var(--Neutrals-2, #23262f);
-
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -1092,57 +811,53 @@
   letter-spacing: -0.96px;
   margin: 0px 0px 20px 0px;
 }
-.fLifeStyle .lifeStyleHead span:nth-child(3) {
+.lifeStyle .lifeStyleHead span:nth-child(3) {
   color: var(--Neutrals-4, #777e90);
-
-  /* Body 1 */
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
   letter-spacing: -0.24px;
   margin: 0px 0px 20px 0px;
 }
-.fLifeStyle .lifeStyleHead a {
+.lifeStyle .lifeStyleHead a {
   display: inline-flex;
   align-items: center;
   justify-self: center;
-
   padding: 16px 24px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
-
   color: var(--Neutrals-2, #23262f);
   text-align: right;
-
-  /* Button 1 */
   font-family: "SF Pro Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px; /* 100% */
 }
-.fLifeStyle .lifeStyleHead a img {
+.lifeStyle .lifeStyleHead a img {
   margin: 0px 0px 0px 12px;
 }
 
-.fLifeStyle .listWrapper .row {
+.lifeStyle .listWrapper .row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.fLifeStyle .listWrapper .row:not(:last-child) {
+.lifeStyle .listWrapper .row .col {
+  width: 50%;
+}
+.lifeStyle .listWrapper .row:not(:last-child) {
   margin: 0px 0px 102px 0px;
 }
-.fLifeStyle .listWrapper .lifeStyleDetails {
+.lifeStyle .listWrapper .lifeStyleDetails {
   max-width: 256px;
 }
-.fLifeStyle .listWrapper .lifeStyleDetails span {
+.lifeStyle .listWrapper .lifeStyleDetails span {
   display: block;
 }
 
-.fLifeStyle .listWrapper .lifeStyleDetails span:nth-child(1) {
+.lifeStyle .listWrapper .lifeStyleDetails span:nth-child(1) {
   padding: 0px 0px 24px 0px;
   margin: 0px 0px 24px 0px;
   border-bottom: 2px solid var(--Neutrals-6, #e6e8ec);
@@ -1156,7 +871,7 @@
   line-height: 40px;
   letter-spacing: -0.32px;
 }
-.fLifeStyle .listWrapper .lifeStyleDetails span:nth-child(2) {
+.lifeStyle .listWrapper .lifeStyleDetails span:nth-child(2) {
   margin: 0px 0px 16px 0px;
 
   color: var(--Neutrals-2, #23262f);
@@ -1168,7 +883,7 @@
   font-weight: 600;
   line-height: 24px;
 }
-.fLifeStyle .listWrapper .lifeStyleDetails span:nth-child(3) {
+.lifeStyle .listWrapper .lifeStyleDetails span:nth-child(3) {
   color: var(--Neutrals-4, #777e90);
 
   /* Caption */
@@ -1179,86 +894,26 @@
   line-height: 24px; /* 171.429% */
 }
 
-.fLifeStyle .listWrapper .lifeStylePreview {
+.lifeStyle .listWrapper .lifeStylePreview {
   width: 544px;
   height: 402px;
   border-radius: 24px;
   background-color: var(--Secondary-1, #3772ff);
 }
-.fLifeStyle .listWrapper .lifeStylePreview img {
+.lifeStyle .listWrapper .lifeStylePreview img {
   width: 100%;
   object-fit: cover;
   border-radius: 24px;
 }
-/*! fLifeStyle End */
-/*? Advantages Start */
-/* 
-.fAdvantages {
-  margin: 136px 0px;
-}
-.fAdvantages .advantagesHead {
-  margin: 0 auto 80px auto;
-  max-width: 636px;
-}
-.fAdvantages .advantagesHead h2 {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  font-family: "SF Pro Display";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -0.96px;
-  margin: 0 auto 20px;
-}
-.fAdvantages .advantagesHead p {
-  color: var(--Neutrals-3, #353945);
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  width: 450px;
-  margin: 0 auto;
-  padding: 10px;
-}
-.fAdvantages .advantagesList {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 32px;
-}
-.fAdvantages .advantagesList .advantagesItem {
-  margin: 0 auto;
-}
-.fAdvantages .advantagesList .advantagesPreview {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: var(--Neutrals-5, #b1b5c3);
-  margin: 0 auto;
-}
-.fAdvantages .advantagesList .advantagesPreview img {
-  width: 100%;
-  object-fit: cover;
-}
-.fAdvantages .advantagesList .advantagesItem p {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  max-width: 290px;
-  margin: 80px auto 0 auto;
-} */
-/*! Advantages End */
+/*! lifeStyle End */
 
 /* ? advantages  Start   */
+:root {
+  --advantages_column-gap: 24px;
+  --advantages_column-count: 3;
+}
 .advantages {
-  margin: 136px 0px;
+  padding: 136px 0px;
 }
 .advantages .advantagesHead {
   margin: 0px auto 80px auto;
@@ -1288,10 +943,20 @@
   line-height: 24px;
 }
 .advantages .advantagesList {
-  display: flex;
-  column-gap: 24px;
-  justify-content: space-between;
+  /* display: flex;
+  column-gap: var(--advantages_column-gap); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--advantages_column-gap);
 }
+/* .advantages .advantagesItem {
+  width: calc(
+    (
+        100% -
+          (var(--advantages_column-gap) * (var(--advantages_column-count) - 1))
+      ) / (var(--advantages_column-count))
+  );
+} */
 .advantages .advantagesItem .profile {
   text-align: center;
   margin: 0px 0px 36px 0px;
@@ -1309,79 +974,16 @@
 }
 /* ! advantages  End   */
 
-/* ? fOffers Start */
-/* 
-.fOffers .offerDetail {
-  margin: 0px auto 136px auto;
-  padding: 136px 0px 0px 0px;
-  width: 928px;
-  text-align: center;
-}
-.fOffers .offerDetail p:nth-child(1) {
-  color: var(--Neutrals-4, #777e90);
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; 
-  text-transform: uppercase;
-  margin: 0px auto 16px auto;
-}
-.fOffers .offerDetail h2 {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px; 
-  letter-spacing: -1.28px;
-
-  max-width: 690px;
-  margin: 0 auto 32px auto;
-  padding: 0px 40px;
-}
-.fOffers .offerDetail p:nth-child(3) {
-  color: var(--Neutrals-4, #777e90);
-  text-align: center;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-  max-width: 452px;
-  margin: 0 auto;
-}
-
-.fOffers .offerDetail > .offferBtn {
-  display: inline-block;
-  border-radius: 90px;
-  background: var(--Primary-1, #ff592c);
-  padding: 16px 24px;
-  color: var(--Neutrals-8, #fcfcfd);
-  text-align: center;
-
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  margin: 48px auto 0 auto;
-} */
-/*!  fOffers End*/
-
+/* ? offers  Start  */
 .offers {
-  margin: 80px auto 136px auto;
+  padding: 80px 0 136px 0;
 }
 .offers .frame {
-  padding: 136px 0px 0px 0px;
   margin: 0 auto;
   text-align: center;
 }
 .offers p.stage {
-  margin: 0px auto 16px auto;
+  margin: 136px auto 16px auto;
   color: var(--Neutrals-4, #777e90);
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1419,3 +1021,4 @@
   display: inline-block;
   margin: 48px auto 0px auto;
 }
+/* ! offers  End */
