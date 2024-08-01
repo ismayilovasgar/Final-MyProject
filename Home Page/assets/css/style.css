@@ -1550,18 +1550,20 @@
 /* ! advantages  End   */
 
 /* ? workouts Start   */
+:root {
+  --workouts_column-gap: 32px;
+}
 .workouts {
   padding: 136px 0;
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 .workouts .workoutsFrame {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  column-gap: 32px;
+  column-gap: var(--workouts_column-gap);
 }
 .workouts .workoutsFrame .workoutsWrap {
-  width: 40%;
+  width: calc(100% - (var(--workouts_column-gap) * 0.4));
 }
 .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
   color: var(--Neutrals-2, #23262f);
@@ -1601,7 +1603,7 @@
   margin: 0px 12px 0px 0px;
 }
 .workouts .workoutsFrame .workoutsGallery {
-  width: 60%;
+  width: calc(100% - (var(--workouts_column-gap) * 0.6));
 }
 /* ! workouts End   */
 
