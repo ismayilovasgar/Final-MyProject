@@ -112,7 +112,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
 }
 
 .review .reviewItem .reviewPosition {
@@ -123,7 +123,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px; 
 }
 .review .reviewBtns {
   margin: 48px 0px 0px 0px;
@@ -137,6 +137,9 @@
 }
 /* ! review End   */
 /* ? story  Start */
+:root{
+  --story_column_gap:128px;
+}
 .story {
   padding: 136px 0px;
 }
@@ -153,12 +156,13 @@
 }
 .story .storyRow {
   display: flex;
+  column-gap: var(--story_column_gap);
 }
 .story .storyRow .storyCol:nth-child(1) {
-  width: 40%;
+  width:calc(40% - (var(--story_column_gap) * 0.4) );
 }
 .story .storyRow .storyCol:nth-child(2) {
-  width: 60%;
+  width:calc(60% - (var(--story_column_gap) * 0.6) );
   padding-left: 128px;
 }
 .story .storyPreview img {
