@@ -4,6 +4,7 @@
 }
 .portfolio {
   padding: 40px 0px 136px 0px;
+  background-color: var(--Neutrals-8, #fcfcfd);
 }
 
 .portfolio .portfolioTop {
@@ -48,8 +49,8 @@
   letter-spacing: -0.24px;
 }
 .portfolio .portfolioGallery {
-  /* padding: 0px 104px 0px 216px; */
-  padding: 0px 9.287% 0px 19.2858%;
+  padding: 0px 104px 0px 216px;
+  /* padding: 0px 9.287% 0px 19.2858%; */
 }
 .portfolio .portfolioGallery img {
   width: 100%;
@@ -57,7 +58,7 @@
 }
 
 .portfolio .portfolioRow {
-  padding: 136px 0px;
+  margin-top: 136px;
   display: flex;
   align-items: flex-start;
 }
@@ -254,7 +255,7 @@
 /* ! portfolio End */
 /* ? programs Start */
 .programs {
-  margin: 0px 0px 136px 0px;
+  padding-bottom: 136px;
 }
 .programs .programsTop {
   margin: 0px auto 0px auto;
@@ -286,7 +287,7 @@
   color: var(--Neutrals-2, #23262f);
 }
 .programs .programsWrap {
-  margin: 80px auto;
+  padding: 80px 0px;
 }
 .programs .programsList {
   display: grid;
