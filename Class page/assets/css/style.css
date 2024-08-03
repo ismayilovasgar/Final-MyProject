@@ -3,7 +3,7 @@
   --group-column-gap: 32px;
 }
 .description {
-  padding-bottom: 136px;
+  background-color: var(--Neutrals-8);
 }
 .description .descriptionWrapper {
   padding: 80px 0px 136px 0px;
@@ -168,6 +168,7 @@
 /*  */
 .interesting {
   position: relative;
+  padding-bottom: 136px;
 }
 .interesting .interestingTitle {
   margin-bottom: 64px;
