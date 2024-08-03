@@ -1,16 +1,15 @@
 /*? hero_download Start */
 :root {
-  --hero-col-gap: 112px;
+  --hero-col-gap: 22px;
 }
 .hero_download .hero_wrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   column-gap: var(--hero-col-gap);
 }
 
 .hero_download .hero_wrap .imagePreview {
-  width: calc(60% - var(--hero-col-gap));
+  width: calc(60% - ( var(--hero-col-gap) * 0.6));
 }
 
 .hero_download .hero_wrap .imagePreview img {
@@ -19,7 +18,7 @@
 }
 
 .hero_download .hero_wrap .text_content {
-  width: calc(40% - var(--hero-col-gap));
+  width: calc(40% - ( var(--hero-col-gap) * 0.4));
 }
 
 .hero_download .hero_wrap .text_content p.hero_stage {
