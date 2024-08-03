@@ -116,7 +116,7 @@
   color: var(--Neutrals-2, #23262f);
 }
 .programs .programsWrap {
-  margin: 80px auto;
+  padding: 80px 0px;
 }
 .programs .programsList {
   display: grid;
@@ -375,7 +375,7 @@ option {
 
 /*? Communtiy Start */
 .community {
-  margin: 0px 0px 136px 0px;
+  padding: 0px 0px 136px 0px;
 }
 .some-icon-dark {
   display: none;
