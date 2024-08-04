@@ -131,11 +131,103 @@
 .catalogWrap .catalogTop {
   padding-bottom: 32px;
   border-bottom: 1px solid var(--Neutrals-5);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+/*  */
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 18px;
+  width: 180px;
+  height: 48px;
+  padding: 8px 8px 8px 16px;
+  box-shadow: inset 0 0 0 2px #e6e8ec;
+  background: #fcfcfd;
+  border-radius: 12px;
+  border: none;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.select.focus {
+  border-color: var(--Neutrals-3);
+}
+.select span {
+  height: 20px;
+  width: 100%;
+  color: var(--Neutrals-2, #23262f);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.select .select_arrow {
+  border-radius: 50%;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-4);
+  padding: 4px;
+}
+.select .select_arrow i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in;
+}
+/* .select .select_arrow i.changeDirection {
+  display: flex;
+} */
+.select .select_arrow i.changeDirection {
+  transform: rotate(180deg);
+}
+.select .current {
+  display: block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ul.list {
+  display: none;
+  position: absolute;
+  bottom: -120%;
+  transform: translateY(50%);
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--Neutrals-8);
+  border-radius: 12px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+ul.list li {
+  width: 100%;
+  color: var(--Neutrals-2, #edeeee);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  min-height: auto;
+  padding: 10px 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+ul.list li:hover {
+  color: var(--Neutrals-3);
+  background-color: var(--Neutrals-7);
+}
+ul.list.show {
+  display: block;
+}
+/*  */
 .catalogTop .catalogNav a {
   display: inline-block;
   padding: 6px 12px;
