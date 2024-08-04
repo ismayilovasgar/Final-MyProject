@@ -83,6 +83,10 @@
 /*! heroHeader End */
 
 /*? programs Start */
+:root {
+  --programs_column-gap: 32px;
+  --programs_column-count: 3;
+}
 .programs {
   padding: 0px 0px 136px 0px;
 }
@@ -119,9 +123,12 @@
   padding: 80px 0px;
 }
 .programs .programsList {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 32px;
+  column-gap: 32px; */
+  display: flex;
+  align-items: center;
+  column-gap: var(--columns-gap);
 }
 
 .programs .programsList .programsItem {
@@ -129,6 +136,10 @@
   padding: 64px 32px;
   border-radius: 20px;
   transition: all 0.4s ease;
+  width: calc(
+    (100% - ((var(--programs_column-count) - 1) * var(--programs_column-gap))) /
+      var(--programs_column-count)
+  );
 }
 .programs .programsItem .programsIcon {
   width: 48px;

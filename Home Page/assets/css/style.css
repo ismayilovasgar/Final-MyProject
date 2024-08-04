@@ -1594,6 +1594,7 @@
 }
 .advantages {
   padding: 136px 0px;
+  background-color  : var(--Neutrals-7, #F4F5F6);
 }
 .advantages .advantagesHead {
   margin: 0px auto 80px auto;

@@ -166,6 +166,10 @@
 }
 
 /*  */
+:root {
+  --interesting_column_count: 3;
+  --interesting_column_gap: 32px;
+}
 .interesting {
   position: relative;
   padding-bottom: 136px;
@@ -196,17 +200,21 @@ button.direction {
   width: 24px;
   background-color: none;
 }
-button.direction i{
+button.direction i {
   color: var(--Neutrals-4);
 }
 .slickPrev {
   right: 44px;
 }
-.slickNext{
+.slickNext {
   right: 16px;
 }
 .catalogList .card {
-  width: 352px;
+  /* width: 352px; */
+  width: calc(
+    (100% - ((var(--interesting_column_count) - 1) * var(--interesting_column_gap))) /
+    var(--interesting_column_count)
+  );
 }
 .catalogList .card .cardPreview {
   position: relative;
