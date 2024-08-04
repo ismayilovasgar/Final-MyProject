@@ -141,24 +141,32 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-gap: 18px;
-  width: 180px;
   height: 48px;
   padding: 8px 8px 8px 16px;
   box-shadow: inset 0 0 0 2px #e6e8ec;
   background: #fcfcfd;
   border-radius: 12px;
-  border: none;
   opacity: 1;
   font-size: 14px;
   font-weight: 500;
   line-height: 48px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
-.select.focus {
+.nice-select {
+  column-gap: 18px;
+  width: 180px;
+}
+.sorting {
+  width: 100%;
+}
+.focus {
   border-color: var(--Neutrals-3);
 }
-.select span {
+.select input {
+  display: block;
+  height: 100%;
+  border: none;
+  appearance: none;
   height: 20px;
   width: 100%;
   color: var(--Neutrals-2, #23262f);
@@ -182,10 +190,11 @@
   height: 24px;
   transition: all 0.3s ease-in;
 }
-/* .select .select_arrow i.changeDirection {
-  display: flex;
-} */
+
 .select .select_arrow i.changeDirection {
+  transform: rotate(180deg);
+}
+.sorting .select_arrow i.changeDirection {
   transform: rotate(180deg);
 }
 .select .current {
@@ -195,7 +204,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-ul.list {
+.select ul.list {
   display: none;
   position: absolute;
   bottom: -120%;
@@ -288,10 +297,13 @@ ul.list.show {
   text-transform: uppercase;
 }
 
-.catalogSorting .catalogCell select {
-  /* padding: 8px 16px; */
-  width: 100%;
-  height: 48px;
+.catalogSorting .catalogCell .sorting .current {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 /*  */
 

@@ -77,21 +77,17 @@
 
         <div class="catalogWrap">
           <div class="catalogTop">
-
-            
             <div class="nice-select select">
-                <span class="current">Newest</span>
-                <div class="select_arrow">
-                    <i class="fa-solid fa-angle-down"></i>
-                    <!-- <i class="fa-solid fa-angle-up"></i> -->
-                </div>
-                <ul class="list">
-                    <li data-value="Newest" class="option selected">Newest</li>
-                    <li data-value="Oldest" class="option">Oldest</li>
-                </ul>
+              <input type="text" name="release" class="current" value="Newest"/>
+              <div class="select_arrow">
+                <i class="fa-solid fa-angle-down"></i>
+                <!-- <i class="fa-solid fa-angle-up"></i> -->
+              </div>
+              <ul class="list">
+                <li data-value="Newest" class="option selected">Newest</li>
+                <li data-value="Oldest" class="option">Oldest</li>
+              </ul>
             </div>
-          
-
 
             <div class="catalogNav">
               <a class="cataloglink active" href="#">Yoga</a>
@@ -112,37 +108,73 @@
           </div>
 
           <div class="catalogSorting">
+
             <div class="catalogCell">
               <div class="cataloglabel">Style</div>
-              <select name="style" id="">
-                <option value="1">1</option>
-                <option value="1">2</option>
-              </select>
+
+              <div class="select sorting">
+                <input type="text" name="style" class="current" value="AcroYoga"/>
+                <div class="select_arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="list">
+                  <li data-value="AcroYoga" class="option selected">AcroYoga</li>
+                  <li data-value="Mini Yoga" class="option">Mini Yoga</li>
+                </ul>
+              </div>
+              
             </div>
             <!--  -->
             <div class="catalogCell">
-              <div class="cataloglabel">Style</div>
-              <select name="style" id="">
-                <option value="1">1</option>
-                <option value="1">2</option>
-              </select>
-            </div>
+                <div class="cataloglabel">Time of Day</div>
+  
+                <div class="select sorting">
+                    <input type="text" name="timeofday" class="current" value="Morning"/>
+                    <div class="select_arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <ul class="list">
+                    <li data-value="Morning" class="option selected">Morning</li>
+                    <li data-value="Dinner" class="option">Dinner</li>
+                    <li data-value="Evening" class="option">Evening</li>
+                  </ul>
+                </div>
+                
+              </div>
             <!--  -->
             <div class="catalogCell">
-              <div class="cataloglabel">Style</div>
-              <select name="style" id="">
-                <option value="1">1</option>
-                <option value="1">2</option>
-              </select>
+                <div class="cataloglabel">Difficluty</div>
+  
+                <div class="select sorting">
+                    <input type="text" name="difficluty" class="current" value="Beginner"/>
+                    <div class="select_arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <ul class="list">
+                    <li data-value="Beginner" class="option selected">Beginner</li>
+                    <li data-value="intermediate" class="option">intermediate</li>
+                    <li data-value="Advanced" class="option">Advanced</li>
+                  </ul>
+                </div>
+                
+              </div>
+            <!--  -->
+          <div class="catalogCell">
+              <div class="cataloglabel">Intensity</div>
+
+              <div class="select sorting">
+                <input type="text" name="intensity" class="current" value="Level1"/>
+                <div class="select_arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="list">
+                  <li data-value="Level 1" class="option selected">Level 1</li>
+                  <li data-value="Level 2" class="option">Level 2</li>
+                </ul>
+              </div>
+              
             </div>
             <!--  -->
-            <div class="catalogCell">
-              <div class="cataloglabel">Style</div>
-              <select name="style" id="">
-                <option value="1">1</option>
-                <option value="1">2</option>
-              </select>
-            </div>
           </div>
         </div>
 
