@@ -1,0 +1,37 @@
+.accordion_li {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.accordion_header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  align-items: center;
+}
+.accordion_li.open .accordion_hide {
+  height: auto;
+}
+.accordion_header h5 {
+  color: var(--Dark-500, #0f1416);
+  /* Header-7 Bold */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.accordion .accordion_hide {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  transition: height 0.3s linear;
+}
+.accordion_hide img {
+  width: 100%;
+  object-fit: cover;
+}
