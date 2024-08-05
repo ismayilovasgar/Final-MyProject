@@ -20,13 +20,13 @@
     <div class="header ">
         <div class="container">
             <div class="wrapper">
-
-                <div class="navbar lightmode">
+                <div class="navbar">
                     <div class="overlapLeft">
                         <div class="navbarLeft">
                             <div class="logo">
-                                <img src="./assets/images/header-model/logo.svg" alt="">
-                                <p id="" class="body1Bold">Fitness Pro</p>
+                                <a href="#">
+                                    <img src="../Navbar/images/logo-dark.svg" alt="">
+                                </a>
                             </div>
                             <div class="headerDivider"></div>
                             <div class="overlap">
@@ -40,20 +40,7 @@
                                                 <img src="./assets/images/header-model/bottom-arrow.svg" alt="">
                                             </a>
 
-                                            <div id="dropdownMenu">
-                                                <ul>
-                                                    <li><a class="body2Bold blueIcon" href="#">
-                                                            <img src="./assets/images/header-model/youtube_blue.svg"
-                                                                alt="">
-                                                            <span>Program Video</span> </a>
-                                                    </li>
-                                                    <li><a class="body2Bold orangeIcon" href="#">
-                                                            <img src="./assets/images/header-model/premium_orange.svg"
-                                                                alt="">
-                                                            <span>Premium Class</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+
 
                                         </li>
                                     </div>
@@ -145,7 +132,42 @@
                 </div>
             </div>
             <!-- Mobile Mode -->
+
         </div>
+        <!-- Desktop Mode -->
+        <div class="desktopMode">
+            <div class="container">
+                <div class="headerRow">
+                    <div class="col leftCol">
+                        <div class="text">
+                            <p>Find a class to achieve your goals 🔥</p>
+                            <img class="ball-icon" src="./assets/images/desktopMode/frame908.png" alt="">
+                        </div>
+                        <ul class="linksItem">
+                            <li>
+                                <a href="'#">
+                                    <img src="./assets/images/header-model/youtube_blue.svg" alt="">
+                                    <p>Programs Videos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="'#">
+                                    <img src="./assets/images/header-model/youtube_blue.svg" alt="">
+                                    <p>Programs Videos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col rightCol">
+                        <div class="headerLine">
+                            <div class="headerCel"></div>
+                            <div class="headerCel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
     </div>
     <!-- Table Mode -->
     <div class="outbound">
@@ -386,7 +408,7 @@
     <!--! clients End  -->
     <!--? steps Start  -->
     <div class="steps lightmode">
-        <div class="container">
+        <div class="container swiper">
             <div class="wrapper">
                 <div class="stepsHead">
                     <h2 class="hline2">How it work</h2>
@@ -395,51 +417,110 @@
                         content blocks built in React Native.
                     </p>
                 </div>
+                <div class="myswiper swiper">
+                    <div class="stepsList swiper-wrapper">
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/donwload.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 1</div>
+                            <div class="stepsSubtitle">Download</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
+                        </div>
 
-                <div class="stepsList">
-                    <div class="stepsItem">
-                        <div class="stepsPreview">
-                            <img src="./assets/images/steps/donwload.svg" alt="">
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/key.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 2</div>
+                            <div class="stepsSubtitle">Choose your trainner</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
                         </div>
-                        <div class="stepsNumber">Step 1</div>
-                        <div class="stepsSubtitle">Download</div>
-                        <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the best
-                            version of you.
-                        </div>
-                    </div>
 
-                    <div class="stepsItem">
-                        <div class="stepsPreview">
-                            <img src="./assets/images/steps/key.svg" alt="">
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/media.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 3</div>
+                            <div class="stepsSubtitle">Set the goals</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
                         </div>
-                        <div class="stepsNumber">Step 2</div>
-                        <div class="stepsSubtitle">Choose your trainner</div>
-                        <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the best
-                            version of you.
-                        </div>
-                    </div>
 
-                    <div class="stepsItem">
-                        <div class="stepsPreview">
-                            <img src="./assets/images/steps/media.svg" alt="">
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/stopwatch.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 4</div>
+                            <div class="stepsSubtitle">Workout time</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
                         </div>
-                        <div class="stepsNumber">Step 3</div>
-                        <div class="stepsSubtitle">Set the goals</div>
-                        <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the best
-                            version of you.
-                        </div>
-                    </div>
 
-                    <div class="stepsItem">
-                        <div class="stepsPreview">
-                            <img src="./assets/images/steps/stopwatch.svg" alt="">
+                        <!--  -->
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/donwload.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 1</div>
+                            <div class="stepsSubtitle">Download</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
                         </div>
-                        <div class="stepsNumber">Step 4</div>
-                        <div class="stepsSubtitle">Workout time</div>
-                        <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the best
-                            version of you.
+
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/key.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 2</div>
+                            <div class="stepsSubtitle">Choose your trainner</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
                         </div>
+
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/media.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 3</div>
+                            <div class="stepsSubtitle">Set the goals</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
+                        </div>
+
+                        <div class="stepsItem swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/stopwatch.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 4</div>
+                            <div class="stepsSubtitle">Workout time</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be the
+                                best
+                                version of you.
+                            </div>
+                        </div>
+                        <!--  -->
+
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
             </div>
