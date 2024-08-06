@@ -587,11 +587,16 @@
   z-index: 500;
   height: 745px;
 }
+.desktopMode .headerRow {
+  border: 1px solid red;
+  border-radius: 20px;
+  display: flex;
+}
 .desktopMode .col {
   padding: 40px;
 }
 .desktopMode .leftCol {
-  width: 25%;
+  width: 28%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -622,7 +627,6 @@
 }
 
 .desktopMode .linksItem li a p {
-
   color: var(--Neutrals-2, #23262f);
 
   font-family: Poppins;
@@ -631,6 +635,27 @@
   font-weight: 600;
   line-height: 24px;
 }
+.desktopMode .linksItem li a img {
+  display: block;
+  padding: 4px;
+  border-radius: 50%;
+}
+.desktopMode .linksItem li:nth-child(1) a img {
+  background-color: var(--Secondary-1);
+}
+.desktopMode .headerLine {
+  display: flex;
+  column-gap: 40px;
+}
+.desktopMode .headerLine .headerCel{
+  width: 50%;
+  border: 1px solid blue;
+}
+.desktopMode .headerLine .leftCel .imagePreview img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /*! Header End */
 
 :root {
