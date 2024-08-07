@@ -52,3 +52,15 @@ function resizeFn() {
 }
 window.onresize = resizeFn;
 resizeFn();
+
+// Desktop
+// Class Page Dropdown
+const drapdownDesktopMode = document.querySelector(".desktopMode");
+const icons = document.querySelectorAll(".header li.classDropdown a i");
+const dclassDropdown = document.querySelector(".header li.classDropdown");
+dclassDropdown.addEventListener("click", (e) => {
+  icons.forEach((i) => {
+    i.classList.toggle("active");
+  });
+  drapdownDesktopMode.classList.toggle("active");
+});

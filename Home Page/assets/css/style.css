@@ -51,6 +51,15 @@
 .navbar .navbarLeft ul.navMenu .classDropdown a.btnMenu p {
   padding: 4px 8px;
 }
+.active {
+  display: block;
+}
+.navbar .navbarLeft ul.navMenu .classDropdown a i {
+  display: none;
+}
+.navbar .navbarLeft ul.navMenu .classDropdown a i.active {
+  display: block;
+}
 .openCloseBtns img {
   cursor: pointer;
 }
@@ -580,12 +589,19 @@
 }
 
 /* ?-- Desktop Mode --> */
+:root {
+  --desktopDropdown_column-gap: 40px;
+}
 .desktopMode {
+  display: none;
   position: absolute;
   width: 100%;
   background-color: var(--Neutrals-8);
   z-index: 500;
   height: 745px;
+}
+.desktopMode.active {
+  display: block;
 }
 .desktopMode .headerRow {
   /* border: 1px solid red; */
@@ -605,9 +621,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-right: 1px solid #e6e8ec;
+  border-bottom: 1px solid #e6e8ec;
 }
 .desktopMode .rightCol {
   width: 73%;
+  border-left: 1px solid var(--Neutrals-6);
+  border-bottom: 1px solid var(--Neutrals-6);
 }
 
 .desktopMode .leftCol .text p {
@@ -663,13 +683,24 @@
   column-gap: 40px;
 }
 .desktopMode .headerLine .headerCel {
-  width: 50%;
-  /* border: 1px solid blue; */
+  width: calc((50% - (var(--desktopDropdown_column-gap) * 0.5)));
 }
 .desktopMode .headerLine .leftCel .imagePreview {
   position: relative;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.desktopMode .headerLine .leftCel .imagePreview:hover {
+  border-color: var(--Primary-1);
+}
+.desktopMode .headerLine .leftCel .imagePreview > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .desktopMode .headerLine .leftCel .imagePreview img {
+  transition: all 0.4s ease;
   width: 100%;
   object-fit: cover;
   border-radius: 16px;
@@ -755,13 +786,24 @@
 }
 .desktopMode .rightCel .headerPhoto {
   width: 140px;
-  height: 20px;
+  height: 120px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+.desktopMode .rightCel .headerPhoto:hover {
+  border-color: var(--Primary-1);
+}
+.desktopMode .rightCel .headerPhoto:hover > img {
+  transform: scale(1.3);
 }
 .desktopMode .rightCel .headerPhoto img {
   width: 100%;
   display: block;
   object-fit: cover;
   border-radius: 8px;
+  transition: all 0.4s ease;
 }
 .desktopMode .rightCel .headerItem .headerDescription {
   align-self: center;
