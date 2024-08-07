@@ -583,26 +583,31 @@
 .desktopMode {
   position: absolute;
   width: 100%;
-  background-color: var(--Neutrals-6);
+  background-color: var(--Neutrals-8);
   z-index: 500;
   height: 745px;
 }
 .desktopMode .headerRow {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-radius: 20px;
   display: flex;
+}
+.desktopMode .borderWrapper {
+  border-radius: 24px;
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+  border: 1px solid #e6e8ec;
 }
 .desktopMode .col {
   padding: 40px;
 }
 .desktopMode .leftCol {
-  width: 28%;
+  width: 27%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .desktopMode .rightCol {
-  width: 75%;
+  width: 73%;
 }
 
 .desktopMode .leftCol .text p {
@@ -636,12 +641,22 @@
   line-height: 24px;
 }
 .desktopMode .linksItem li a img {
-  display: block;
   padding: 4px;
+  display: block;
+  height: 32px;
   border-radius: 50%;
 }
 .desktopMode .linksItem li:nth-child(1) a img {
   background-color: var(--Secondary-1);
+}
+.desktopMode .linksItem li:nth-child(2) a img {
+  background-color: var(--Primary-1);
+}
+.desktopMode .linksItem li {
+  border-radius: 8px;
+}
+.desktopMode .linksItem li:hover {
+  background-color: var(--Neutrals-7);
 }
 .desktopMode .headerLine {
   display: flex;
@@ -649,31 +664,50 @@
 }
 .desktopMode .headerLine .headerCel {
   width: 50%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+.desktopMode .headerLine .leftCel .imagePreview {
+  position: relative;
 }
 .desktopMode .headerLine .leftCel .imagePreview img {
   width: 100%;
   object-fit: cover;
+  border-radius: 16px;
 }
-.desktopMode .headerUser {
+.desktopMode .headerLine .leftCel .imagePreview .statusBlack {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--Neutrals-2, #23262f);
+  color: var(--Neutrals-8, #fcfcfd);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.desktopMode .leftCel .headerUser {
   padding: 24px 0px 12px 0px;
   display: flex;
   justify-content: space-between;
 }
-.desktopMode .headerUser .headerAvatar {
+.desktopMode .leftCel .headerUser .headerAvatar {
   margin-right: 16px;
   width: 40px;
   height: 40px;
   border-radius: 56px;
   background-color: var(--Neutrals-4, #e6e8ec);
 }
-.desktopMode .headerUser .headerAvatar img {
+
+.desktopMode .leftCel .headerUser .headerAvatar img {
   width: 100%;
   border-radius: 40px;
   object-fit: cover;
 }
-
-.headerUser .detailTitle {
+.headerCel .headerUser .detailTitle {
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -681,7 +715,7 @@
   font-weight: 600;
   line-height: 32px;
 }
-.headerUser .detailTrainer {
+.headerCel .headerUser .detailTrainer {
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -703,6 +737,133 @@
   align-self: flex-start;
 }
 .desktopMode .headerCel .headerContent {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.desktopMode .rightCel .headerItem {
+  display: flex;
+  column-gap: 24px;
+  height: 120px;
+}
+.desktopMode .rightCel .headerItem:not(:last-child) {
+  margin-bottom: 32px;
+}
+.desktopMode .rightCel .headerPhoto {
+  width: 140px;
+  height: 20px;
+}
+.desktopMode .rightCel .headerPhoto img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.desktopMode .rightCel .headerItem .headerDescription {
+  align-self: center;
+}
+.desktopMode .rightCel .headerItem .headerStatus {
+  padding: 8px;
+  display: inline-block;
+  color: var(--Neutrals-8, #fcfcfd);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.desktopMode .rightCel .headerItem .headerStatus.yoga {
+  background-color: var(--Primary-4);
+}
+.desktopMode .rightCel .headerItem .headerStatus.mindfullness {
+  background-color: var(--Primary-2);
+}
+.desktopMode .rightCel .headerItem .headerStatus.fitness {
+  background-color: var(--Primary-1);
+}
+.desktopMode .rightCel .headerItem .headerUser {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 12px;
+}
+.desktopMode .rightCel .headerItem .headerAvatar {
+  width: 40px;
+  height: 40px;
+}
+.desktopMode .rightCel .headerItem .headerAvatar img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.desktopMode .rightCel .headerItem .headerTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+.desktopMode .rightCel .headerItem .headerTrainer {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.desktopMode .desHeaderFoot .headerAvatar img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+.desktopMode .desHeaderFoot .headerAvatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.desktopMode .desHeaderFoot {
+  padding: 40px;
+}
+.desktopMode .desHeaderFoot .footStage {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.desktopMode .desHeaderFoot .footList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desktopMode .desHeaderFoot .headerUser {
+  display: flex;
+  column-gap: 16px;
+}
+
+.desktopMode .desHeaderFoot .headerUser .footTitle {
+  color: var(--Neutrals-2, #23262f);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.desktopMode .desHeaderFoot .headerUser .footTrainer {
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
