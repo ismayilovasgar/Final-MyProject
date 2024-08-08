@@ -1,0 +1,37 @@
+/* Desktop  Start*/
+@media screen and (max-width: 1165px) {
+  .headerCenter .headerLinksWrap {
+    padding-left: 20px;
+  }
+  .headerCenter a.headerLogo {
+    margin-right: 20px;
+  }
+  .header .headerCenter .headerTrialBtn {
+    margin-left: 20px;
+  }
+  .headerCenter .headerLinksWrap .headerNav {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .headerCenter .headerLinksWrap {
+    display: none;
+  }
+  .header .some-hidden-icon.bars {
+    display: block;
+  }
+  .headerCenter a.headerLogo {
+    margin-right: auto;
+  }
+  .header .headerCenter .headerTrialBtn {
+    margin: 0px 40px 0px 0px;
+  }
+}
+
+/* Tablet Start */
+@media screen and (max-width: 375px) {
+  .header .headerTrialBtn {
+    display: none;
+  }
+}
