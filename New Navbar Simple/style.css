@@ -97,10 +97,11 @@
 }
 .headerBody {
   display: none;
-  /* position: absolute; */
-  /* top: 100px; */
-  /* left: 10px; */
-  z-index: 20;
+  position: absolute;
+  top: 99%;
+  left: 0px;
+  z-index: 200;
+  width: 100%;
   transition: all 0.4s ease-in;
 }
 .headerBody.active {
@@ -437,4 +438,353 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+/** <!-- Table Mode --> */
+.tabletMenu {
+  display: none;
+  position: absolute;
+
+  left: 0px;
+  top: 99%;
+  width: 100%;
+}
+
+.tabletMenu .overlap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.tabletMenu .overlap .menu {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 200px;
+}
+.tabletMenu .overlap .menu nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 48px;
+}
+.tabletMenu .overlap .menu nav ul li {
+  width: 181px;
+}
+.tabletMenu .overlap .menu nav ul li a {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.4px;
+}
+.tabletMenu .overlap .menu nav ul a:hover {
+  color: var(--Neutrals-2, #23262f);
+}
+
+.tabletMenu .overlap .menu .navlinks ul .tClassDropdown a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabletMenu .overlap .menu .contact {
+  min-width: 336px;
+}
+.tabletMenu .overlap .menu .contact > ul.rightside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.tabletMenu .overlap .menu .contact .tIcons .iconItem {
+  display: flex;
+  column-gap: 48px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tabletMenu .overlap .menu .contact .tIcons .iconItem a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabletMenu .overlap .menu .contact > ul.rightside p {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  margin: 0px 0px 8px 0px;
+}
+.tabletMenu .overlap .menu .contact > ul.rightside span {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tabletMenu .subMenu {
+  height: 521px;
+}
+.tabletMenu ul.tabletLifestyle a {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+}
+.tabletMenu ul.tabletLifestyle a:hover {
+  color: var(--Neutrals-2, #23262f);
+}
+/* SubMenu */
+.tabletMenu .subMenu .tframe .toverlap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+}
+.tabletMenu .subMenu .tframe .topMenu {
+  display: flex;
+  justify-content: space-between;
+}
+.subMenu .tframe .topMenu .achieves {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  width: 50%;
+}
+.subMenu .tframe .topMenu .achieves .type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subMenu .tframe .topMenu .achieves .type > p {
+  color: var(--Neutrals-2, #23262f);
+  width: clamp(40%, 100%, 180px);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.subMenu .tframe .topMenu .achieves .links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.subMenu .tframe .topMenu .achieves .links ul li {
+  padding: 16px;
+}
+.subMenu .tframe .topMenu .achieves .links ul li a {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+}
+.subMenu .tframe .topMenu .achieves .links ul li .youtube {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--Secondary-1);
+}
+.subMenu .tframe .topMenu .achieves .links ul li .premium {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--Primary-1);
+}
+
+.subMenu .tframe .topMenu .menuDivider {
+  width: 1px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+  height: 338px;
+}
+
+.subMenu .tframe .topMenu .minifeatures {
+  padding: 32px;
+  width: 50%;
+}
+.subMenu .tframe .topMenu .minifeatures .featureFrame {
+  display: flex;
+  gap: 32px 40px;
+}
+.subMenu .tframe .topMenu .minifeatures .featurecard {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  height: 120px;
+}
+
+.subMenu .tframe .topMenu .minifeatures .featureContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.subMenu .tframe .topMenu .minifeatures .featureContent .top_content {
+  display: flex;
+  column-gap: 4px;
+}
+.subMenu .minifeatures .featureContent .top_content span:nth-child(1) {
+  border-radius: 4px;
+  background-color: var(--Neutrals-2, #23262f);
+  color: var(--Neutrals-8, #fcfcfd);
+  padding: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.subMenu .minifeatures .featureContent .top_content span:nth-child(2) {
+  border-radius: 4px;
+  background: var(--Primary-4, #45b26b);
+  color: var(--Neutrals-8, #fcfcfd);
+  padding: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.subMenu .tframe .topMenu .minifeatures .featureContent .detail {
+  display: flex;
+  column-gap: 16px;
+}
+.subMenu .tframe .topMenu .minifeatures .featureContent .detail .detailAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.subMenu .tframe .featureContent .detail .detailAvatar img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.subMenu .tframe .featureContent .detail .fullname {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(1) {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) {
+  display: flex;
+  column-gap: 4px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) span {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(1) {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) {
+  display: flex;
+  column-gap: 4px;
+}
+.subMenu .tframe .featureContent .detail .fullname p:nth-child(2) span {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.subMenu .tframe .trainers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 32px;
+}
+.subMenu .tframe .trainers > p {
+  color: var(--Neutrals-2, #23262f);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.subMenu .tframe .trainers .cardlist {
+  display: flex;
+  justify-content: space-between;
+}
+.subMenu .tframe .trainers .card .card_concept {
+  display: flex;
+  column-gap: 16px;
+}
+
+.subMenu .tframe .trainers .card .card_concept img {
+  border-radius: 56px;
+  background-color: var(--Neutrals-6, #e6e8ec);
+}
+.subMenu .tframe .trainers .card .card_concept .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.subMenu .tframe .trainers .card .card_concept .content .fullname {
+  display: flex;
+  column-gap: 4px;
+}
+
+.subMenu .tframe .trainers .card .card_concept .content .fullname span {
+  display: block;
+  text-align: center;
+  color: var(--Neutrals-2, #23262f);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.subMenu .tframe .trainers .card .card_concept .trainerInfo p {
+  color: var(--Neutrals-4, #777e90);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/** <!-- Table End --> */
+/*  */
+.contentBody {
+  height: 100vh;
+  background-color: teal;
+}
+
+.footer {
+  height: 50vh;
+  background-color: darkred;
 }
