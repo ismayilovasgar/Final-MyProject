@@ -1088,7 +1088,7 @@
   border: 2px solid #b1b5c3;
 }
 */
-/* 
+
 .steps .stepsList .stepsItem:nth-child(2) .stepsPreview:before,
 .steps .stepsList .stepsItem:nth-child(3) .stepsPreview:before {
   content: "";
