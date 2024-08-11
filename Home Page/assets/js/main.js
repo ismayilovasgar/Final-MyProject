@@ -13,8 +13,8 @@ const outbound = document.querySelector(".outbound");
 mobileMenu = document.querySelector(".mobileMenu");
 barsBtn.addEventListener("click", (e) => {
   closeBtn.style.display = "flex";
-
   getBtnAndBar.style.display = "none";
+  
   if (window.screen.width > 767 && window.screen.width <= 1023) {
     outbound.style.display = "block";
   } else {

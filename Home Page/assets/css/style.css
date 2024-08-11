@@ -495,7 +495,8 @@
 }
 
 /** <!-- Table Mode End --> */
-/* <!-- Mobile Mode --> */
+
+/** Mobile Mode */
 .mobileMenu {
   display: none;
 }

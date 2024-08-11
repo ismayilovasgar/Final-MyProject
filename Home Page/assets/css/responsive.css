@@ -203,7 +203,7 @@
   /*  */
   .container {
     max-width: 620px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -225,13 +225,11 @@
   }
   .navbar .navbarLeft .logo > p {
     color: var(--Neutrals-2, #23262f);
-
-    /* Body 1 (Bold) */
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px; 
     letter-spacing: -0.48px;
   }
 
@@ -259,7 +257,6 @@
   .heroHeaderFitness .wrapper .mobil_text {
     display: block;
     color: var(--Neutrals-2, #23262f);
-    /* Headline 2 */
     font-family: "SF Pro Display", sans-serif;
     font-size: 48px;
     font-style: normal;
@@ -269,13 +266,11 @@
   }
   .heroHeaderFitness .wrapper .row .trainSmart {
     color: var(--Neutrals-4, #777e90);
-
-    /* Hairline 2 */
     font-family: "Poppins", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 12px; /* 100% */
+    line-height: 12px;
     text-transform: uppercase;
   }
 
@@ -283,8 +278,6 @@
   .supports .supportSection p {
     color: var(--Neutrals-2, #23262f);
     text-align: center;
-
-    /* Caption (Bold) */
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-style: normal;
