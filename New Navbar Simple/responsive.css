@@ -15,6 +15,9 @@
   .headerCenter .headerLinksWrap .headerNav {
     margin-right: 20px;
   }
+  .mobileMenu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -29,6 +32,9 @@
   }
   .header .headerCenter .headerTrialBtn {
     margin: 0px 40px 0px 0px;
+  }
+  .mobileMenu {
+    display: none;
   }
 }
 

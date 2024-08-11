@@ -781,7 +781,7 @@
 
 /** Mobile Mode */
 .mobileMenu {
-  /* display: none; */
+  display: none;
   padding: 64px 0px 24px 0px;
 }
 
