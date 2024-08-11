@@ -1,5 +1,8 @@
 /* Desktop  Start*/
 @media screen and (max-width: 1440px) {
+  .some-hidden-icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1165px) {

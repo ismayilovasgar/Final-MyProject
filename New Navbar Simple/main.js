@@ -54,4 +54,3 @@ mobileHead.addEventListener("click", (e) => {
 
   e.preventDefault();
 });
-
