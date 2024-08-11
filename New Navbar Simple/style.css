@@ -450,14 +450,13 @@
   width: 100%;
 }
 
-.tabletMenu .overlap {
+/* .tabletMenu .overlap {
   display: flex;
   flex-direction: column;
   row-gap: 48px;
-}
+} */
 
 .tabletMenu .overlap .menu {
-  /* display: flex; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 200px;
@@ -531,6 +530,7 @@
 }
 .tabletMenu .subMenu {
   height: 521px;
+  margin: 48px 0px;
 }
 .tabletMenu ul.tabletLifestyle a {
   color: var(--Neutrals-4, #777e90);
@@ -545,11 +545,6 @@
   color: var(--Neutrals-2, #23262f);
 }
 
-.tabletMenu .subMenu .tframe .toverlap {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1px;
-}
 .tabletMenu .subMenu .tframe .topMenu {
   display: flex;
   justify-content: space-between;
@@ -718,10 +713,7 @@
 }
 
 .subMenu .tframe .trainers {
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-  padding: 32px;
+ padding: 32px ;
 }
 .subMenu .tframe .trainers > p {
   color: var(--Neutrals-2, #23262f);
