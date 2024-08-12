@@ -44,7 +44,7 @@ btnClose.addEventListener("click", (e) => {
 });
 
 dropdownLink.addEventListener("click", (e) => {
-  dropdownLink.querySelector("i").classList.toggle("rotate_180");
+  dropdownLink.querySelector("i").classList.toggle("active");
   dropdownBody.classList.toggle("active");
 });
 

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,43 +20,62 @@
     <section class="header">
         <div class="container">
             <div class="headerCenter">
-                <a href="#" class="headerLogo">
-                    <img class="some-icon" src="./assets/images/navbarlogo/logo-dark.svg" alt="">
-                    <img class="some-icon-dark" src="./assets/images/navbarlogo/logo-dark.svg" alt="">
-                </a>
 
                 <div class="headerLinksWrap">
-                    <nav class="headerNav">
-                        <a href="#" class="headerLink">Features</a>
-                        <a href="#" class="headerLink">Pricing</a>
-                        <a href="#" class="headerLink">Download</a>
-                        <div class="headerDropdown">
-                            <div class="headerHead">
-                                <div class="classLink">Class</div>
-                                <!-- <img src="./assets/images/dropdown/angledownarrow.svg" alt=""> -->
-                                <i class="active fa-solid  fa-angle-down "></i>
-                                <i class=" fa-solid fa-angle-up"></i>
-                            </div>
-
-                        </div>
-                        <a href="#" class="headerLink">Lifestyle</a>
-
-                    </nav>
-                    <div class="headerSocials">
-                        <a href="#"><img src="./assets/images/socials/facebook.svg" alt=""></a>
-                        <a href="#"><img src="./assets/images/socials/instagram.svg" alt=""></a>
-                        <a href="#"><img src="./assets/images/socials/twitter.svg" alt=""></a>
+                    <div class="navbarLogo">
+                        <a href="#" class="headerLogo">
+                            <img class="some-icon" src="./assets/images/navbarlogo/logo-dark.svg" alt="">
+                            <img class="some-icon-dark" src="./assets/images/navbarlogo/logo-dark.svg" alt="">
+                        </a>
                     </div>
+
+                    <nav>
+                        <ul class="headerNav">
+                            <li>
+                                <a href="#" class="headerLink">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="headerLink">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#" class="headerLink">Download</a>
+                            </li>
+                            <li>
+                                <a href="#" class="headerLink">Class
+                                    <i class="fa-solid fa-angle-down active"></i>
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="headerLink">Lifestyle</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                 </div>
 
+                <div class="headerGroups">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="ri-twitter-line"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                        </li>
+                    </ul>
 
-                <!-- <div class="buttonGroups"> -->
-                <button class="headerTrialBtn ">get free trial</button>
-                <button class="some-hidden-icon bars"><img src="./assets/images/btnGrps/bars.svg" alt=""></button>
-                <button class="some-hidden-icon close"><img src="./assets/images/btnGrps/close.svg" alt=""></button>
-                <!-- </div> -->
+                    <div class="buttonGroups">
+                        <button class="headerTrialBtn">Get free trial</button>
+                        <button class="some-hidden-icon bars"><i class="fa-solid fa-bars"></i></button>
+                        <button class="some-hidden-icon close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
             </div>
+
         </div>
         <!--  -->
         <!--  -->
@@ -427,7 +448,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottomMenuLink">
+                <div class="bottomMenuLink lastElement">
                     <a href="#">Lifestyle</a>
                 </div>
             </div>
