@@ -8,9 +8,12 @@
 }
 /*  */
 .header {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0px;
   padding: 48px 0px;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--Neutrals-8);
 }
 
 .headerCenter {
@@ -59,41 +62,59 @@
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
-.headerLinksWrap .headerNav li a i:not(.active) {
-  display: none;
+
+.headerLinksWrap .headerNav .drop {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+.headerLinksWrap .headerNav .drop i {
+  color: var(--Neutrals-4);
+}
+.headerLinksWrap .headerNav .drop i.rotate_180 {
+  transform: rotate(180deg);
+}
+.headerLinksWrap .headerNav .drop a:hover,
+.headerGroups ul li a:hover i {
+  color: var(--Neutrals-2);
 }
 
 .headerCenter .headerTrialBtn {
   padding: 12px 16px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6);
-
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
 }
-.buttonGroups i {
+
+.buttonGroups button i {
+  width: 21px;
   font-size: 24px;
 }
 /*  */
+
 .headerBody {
   display: none;
   position: absolute;
-  top: 99%;
+  top: 100%;
   left: 0px;
-  z-index: 200;
+  z-index: 1;
   width: 100%;
   transition: all 0.4s ease-in;
 }
-.headerBody.active {
+li.drop:hover .headerBody {
   display: block;
 }
+/* li:has(.dropdownMenu:hover) .headerBody {
+  display: block;
+} */
 
 /* ?-- Desktop Mode --> */
 :root {
