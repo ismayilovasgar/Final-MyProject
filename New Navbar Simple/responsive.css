@@ -39,6 +39,19 @@
   .buttonGroups .bars {
     display: block;
   }
+  /** Footer */
+  footer .frame .top-menu .left-menu ul {
+    width: 80px;
+  }
+  footer .frame .frameItem {
+    flex-grow: 1;
+  }
+  footer .frame .top-menu .left-menu {
+    justify-content: space-between;
+  }
+  footer .frame .top-menu .left-menu i {
+    margin: 0px 48px 136px 0px;
+  }
 }
 
 /* Mobil Start */

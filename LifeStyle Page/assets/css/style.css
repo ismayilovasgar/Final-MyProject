@@ -32,12 +32,13 @@
 .history .historyItem {
   display: flex;
 }
-.history .historyItem .col {
-  width: 50%;
+.history .historyItem .col:nth-child(1) {
+  width: 45%;
 }
-.history .historyItem .historyPreview {
-  width: 50%;
+.history .historyItem .col:nth-child(2) {
+  width: 55%;
 }
+
 .history .historyItem .historyPreview img {
   width: 100%;
   object-fit: cover;
