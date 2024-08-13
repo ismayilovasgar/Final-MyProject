@@ -828,6 +828,16 @@ footer .wrapper {
 .footerNav {
   display: none;
 }
+.footerNav span {
+  color: var(--Neutrals-2, #23262f);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
 footer .frameItem {
   /* width: calc((100% - 3px) / 3); */
 }
@@ -846,7 +856,7 @@ footer .frame .top-menu .left-menu {
   padding-top: 80px;
 }
 
-footer .frame .top-menu .left-menu i {
+footer .frame .top-menu .left-menu i.fa-basketball {
   font-size: 32px;
   margin: 0px 128px 136px 0px;
 }
@@ -866,6 +876,7 @@ footer .frame .top-menu .left-menu ul li a {
 }
 
 footer .middle-menu {
+  min-width: 192px;
   padding-top: 80px;
   /* padding: 80px 86px 0px 86px; */
   /* border-left: 1px solid var(--Neutrals-6); */
@@ -878,7 +889,7 @@ footer .middle-menu p {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 100% */
+  line-height: 12px;
   text-transform: uppercase;
 }
 footer .middle-menu ul li {
@@ -893,7 +904,7 @@ footer .middle-menu ul.main-ul li:not(:last-child) {
   margin-bottom: 8px;
 }
 footer .middle-menu ul.main-ul li.phoneInfo {
-  margin-top: 11px;
+  padding-top: 3px;
 }
 footer .right-menu {
   padding: 80px 0px 64px 0px;

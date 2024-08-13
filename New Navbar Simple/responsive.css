@@ -40,22 +40,64 @@
     display: block;
   }
   /** Footer */
+  footer .frame .top-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
   footer .frame .top-menu .left-menu ul {
     width: 80px;
   }
-  footer .frame .frameItem {
-    flex-grow: 1;
-  }
+
   footer .frame .top-menu .left-menu {
     justify-content: space-between;
   }
   footer .frame .top-menu .left-menu i {
     margin: 0px 48px 136px 0px;
   }
+  footer .right-menu {
+    min-width: 192px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  footer .frame .top-menu .left-menu i {
+    margin: 0px 20px 130px 0px;
+  }
+  footer span.divider {
+    display: none;
+  }
 }
 
 /* Mobil Start */
 @media screen and (max-width: 768px) {
+  /* ? Footer */
+  footer .top-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .frame .top-menu .left-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .frame .top-menu .left-menu ul {
+    display: none;
+  }
+  .footerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .wrapper {
+    border: none;
+  }
+  footer .frame .top-menu .left-menu i.fa-basketball {
+    font-size: 24px;
+    padding: 0px;
+  }
+  footer .right-menu {
+    align-self: stretch;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -72,4 +114,5 @@
   .header .headerTrialBtn {
     display: none;
   }
+  /*? Footer */
 }
