@@ -1,14 +1,8 @@
 /* Desktop  Start*/
 @media screen and (max-width: 1440px) {
-  .some-hidden-icon {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1150px) {
-  .mobileMenu {
-    display: none;
-  }
   .headerCenter .headerLinksWrap .navbarLogo {
     padding-right: 30px;
     border-right: 1px solid var(--Neutrals-6);
@@ -25,10 +19,8 @@
   }
 }
 
+/* Tablet Start */
 @media screen and (max-width: 1024px) {
-  .mobileMenu {
-    display: none;
-  }
   .headerCenter nav {
     display: none;
   }
@@ -49,7 +41,10 @@
   }
 }
 
-/* Tablet Start */
+/* Mobil Start */
+@media screen and (max-width: 768px) {
+}
+
 @media screen and (max-width: 390px) {
   .container {
     width: 100%;
