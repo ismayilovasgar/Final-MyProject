@@ -106,7 +106,7 @@ button {
 }
 
 .display_flex {
-  display: block;
+  display: flex;
 }
 
 .some-icon-dark {

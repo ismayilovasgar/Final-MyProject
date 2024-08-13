@@ -6,36 +6,16 @@ dropdown.addEventListener("mouseover", (e) => {
   dropdownArrow.classList.toggle("rotate_180");
 });
 
-// Tablet
-const btnBars = document.querySelector(".headerCenter button.bars i");
-const btnClose = document.querySelector(".headerCenter button.bars i.fa-xmark");
-const tabletMenu = document.querySelector(".header .tabletMenu");
-const mobilMenu = document.querySelector("section.header .mobileMenu");
-const dropdownLink = document.querySelector(".tabletMenu ul > li.dropdownLink");
-const dropdownBody = document.querySelector(".tabletMenu .dropdownBody");
+// Bars Menu
+const btnHidden = document.querySelector("button.hidden i");
+const tabletMenu = document.querySelector(".tabletMenu");
+const dropdownMenu = document.querySelector(".dropdownBody");
+const dropdownBtn = document.querySelector(".dropdownLink");
 
-btnBars.addEventListener("click", (e) => {
-  btnBars.classList.toggle("fa-xmark");
-
-  if (window.screen.width > 767) {
-
-    if (!btnBars.classList.contains("fa-xmark")) {
-      tabletMenu.classList.add("active");
-    } else {
-      tabletMenu.classList.remove("active");
-    }
-  } else {
-    console.log("else");
-    if (!btnBars.classList.contains("fa-xmark")) {
-      mobilMenu.style.display = "none";
-    } else {
-      mobilMenu.style.display = "block";
-    }
-  }
-  e.preventDefault();
+btnHidden.addEventListener("click", (e) => {
+  btnHidden.classList.toggle("fa-xmark");
+  tabletMenu.classList.toggle("show");
 });
-
-dropdownLink.addEventListener("click", (e) => {
-  dropdownLink.querySelector("i").classList.toggle("active");
-  dropdownBody.classList.toggle("active");
+dropdownBtn.addEventListener("click", (e) => {
+  dropdownMenu.classList.toggle("active");
 });

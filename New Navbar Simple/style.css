@@ -1,10 +1,4 @@
 /*  */
-.bars {
-  display: none;
-}
-.close {
-  display: none;
-}
 
 .some-show-arrow {
   display: block;
@@ -99,7 +93,11 @@
 
 .buttonGroups button i {
   width: 21px;
-  font-size: 24px;
+  font-size: 21px;
+  display: block;
+}
+.buttonGroups button.hidden {
+  display: none;
 }
 /*  */
 
@@ -115,9 +113,6 @@
 li.drop:hover .headerBody {
   display: block;
 }
-/* li:has(.dropdownMenu:hover) .headerBody {
-  display: block;
-} */
 
 /* ?-- Desktop Mode --> */
 :root {
@@ -453,9 +448,7 @@ li.drop:hover .headerBody {
   top: 99%;
   width: 100%;
 }
-.tabletMenu.active {
-  display: block;
-}
+
 .tabletMenu .wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -816,11 +809,14 @@ li.drop:hover .headerBody {
 }
 /*  */
 .contentBody {
-  height: 100vh;
-  background-color: rgb(232, 232, 232);
+  height: 200vh;
+  background-color: #45b26b;
 }
 
 /* ? Footer Start */
+footer {
+  display: none;
+}
 footer .wrapper {
   border-top: 1px solid var(--Neutrals-6);
   border-bottom: 1px solid var(--Neutrals-6);

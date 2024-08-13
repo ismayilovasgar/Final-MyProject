@@ -1,5 +1,11 @@
 /* Desktop  Start*/
 @media screen and (max-width: 1440px) {
+  .tabletMenu.active {
+    display: none;
+  }
+  button.hidden {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -21,6 +27,12 @@
 
 /* Tablet Start */
 @media screen and (max-width: 1024px) {
+  .show {
+    display: block;
+  }
+  .buttonGroups button.hidden {
+    display: block;
+  }
   .headerCenter nav {
     display: none;
   }
@@ -71,6 +83,41 @@
 
 /* Mobil Start */
 @media screen and (max-width: 768px) {
+  /*? Header */
+
+  .tabletMenu .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabletMenu .menuContact {
+    display: none;
+  }
+
+  .tabletMenu .dropdownBody .headRow .headRightCol {
+    display: none;
+  }
+  .tabletMenu .dropdownBody .headLeftCol a.headerDirection {
+    display: none;
+  }
+  .tabletMenu .dropdownBody .headRow .headLeftCol {
+    width: 100%;
+    border: none;
+  }
+  .tabletMenu .dropdownBody .headRow {
+    display: block;
+  }
+  .tabletMenu .dropdownBody {
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+  }
+  .tabletHeaderFoot {
+    display: none;
+  }
+  .tabletMenu .dropdownBody .headRow .headCol {
+    padding: 0px;
+  }
+
   /* ? Footer */
   footer .top-menu {
     display: flex;
