@@ -726,7 +726,7 @@ li.drop:hover .headerBody {
 }
 /** <!-- Desktop Mode End --> */
 
-/* ! Header Start */
+
 
 /* ? Footer Start */
 footer {
@@ -897,3 +897,4 @@ footer .divider {
   height: 384px;
   background-color: var(--Neutrals-6, #e6e8ec);
 }
+/* ! Footer End */

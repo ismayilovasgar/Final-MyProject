@@ -1,242 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pricing Page</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <!-- ? pricing Start -->
-    <section class="pricing">
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!--? Header Start  -->
+  <section class="header">
+    <div class="wrapper">
+
       <div class="container">
-        <div class="stage">get stronger with fitness pro</div>
-        <div class="pricingTitle">Choose a plan that&#39;s right for you</div>
+        <div class="headerCenter">
 
-        <table>
-          <thead>
-            <tr>
-              <th class="pricingCategory">
-                <p>Main Features</p>
-              </th>
+          <div class="headerLinksWrap">
+            <div class="navbarLogo">
+              <a href="#" class="headerLogo">
+                <img class="some-icon" src="./assets/images/navbarlogo/logo-dark.svg" alt="">
+                <img class="some-icon-dark" src="./assets/images/navbarlogo/logo-dark.svg" alt="">
+              </a>
+            </div>
 
-              <th>
-                <div class="pricingPackage">Free Trial</div>
-                <div class="pricingDescription">14 days of free trial</div>
-                <div class="pricingCost">
-                  <span class="pricingSign">$</span>
-                  <span class="pricingPrice">0</span>
+            <nav>
+              <ul class="headerNav">
+                <li>
+                  <a href="#" class="headerLink">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="headerLink">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" class="headerLink">Download</a>
+                </li>
+                <li class="drop">
+                  <a href="#" class="headerLink dropdownMenu">Class</a>
+                  <!-- <i class="fa-solid fa-angle-down"></i> -->
+                  <!-- <i class="fa-solid fa-angle-up"></i> -->
+                  <!-- <div class="headerBody">
+                                      <div class="desktopMode">
+                                          <div class="container">
+                                              <div class="borderWrapper">
+
+                                                  <div class="headerRow">
+                                                      <div class="col leftCol">
+                                                          <div class="text">
+                                                              <p>Find a class to achieve your goals 🔥</p>
+                                                              <img class="ball-icon"
+                                                                  src="./assets/images/desktopMode/frame908.png"
+                                                                  alt="">
+                                                          </div>
+                                                          <ul class="linksItem">
+                                                              <li>
+                                                                  <a href="#">
+                                                                      <img src="./assets/images/desktopMode/youtube.svg"
+                                                                          alt="">
+                                                                      <p>Programs Videos</p>
+                                                                  </a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href="#">
+                                                                      <img src="./assets/images/desktopMode/lighyhing.svg"
+                                                                          alt="">
+                                                                      <p>Programs Videos</p>
+                                                                  </a>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+                                                      <div class="col rightCol">
+                                                          <div class="headerLine">
+                                                              <div class="headerCel leftCel">
+                                                                  <div class="imagePreview">
+                                                                      <img src="./assets/images/desktopMode/header-pic-1@2x.png"
+                                                                          alt="">
+                                                                      <div class="statusBlack">Featured Class</div>
+                                                                  </div>
+                                                                  <div class="headerUser">
+                                                                      <div class="headerAvatar">
+                                                                          <img src="./assets/images/desktopMode/avatar-1.png"
+                                                                              alt="">
+                                                                      </div>
+                                                                      <div class="headerUserDetails">
+                                                                          <div class="detailTitle">
+                                                                              Sweet and Tone
+                                                                          </div>
+                                                                          <div class="detailTrainer">
+                                                                              Zack Belier
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="headerUserStatus">
+                                                                          Beginner
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="headerContent">
+                                                                      Sweet and Tone is a seven-day bodyweight
+                                                                      training
+                                                                      program designed to boost your
+                                                                      strength and endurance over the course of a
+                                                                      week.
+                                                                  </div>
+                                                              </div>
+                                                              <div class="headerCel rightCel">
+                                                                  <a class="headerItem" href="#">
+                                                                      <div class="headerPhoto">
+                                                                          <img src="./assets/images/desktopMode/header-pic-2@2x.png"
+                                                                              alt="">
+                                                                      </div>
+                                                                      <div class="headerDescription">
+                                                                          <div class="headerStatus yoga">
+                                                                              Yoga
+                                                                          </div>
+                                                                          <div class="headerUser">
+                                                                              <div class="headerAvatar">
+                                                                                  <img src="./assets/images/desktopMode/avatar-2.png"
+                                                                                      alt="">
+                                                                              </div>
+                                                                              <div class="headerDetail">
+                                                                                  <div class="headerTitle">Sweet and
+                                                                                      Tome
+                                                                                  </div>
+                                                                                  <div class="headerTrainer">Zack
+                                                                                      Beier
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </a>
+                                                                  <a class="headerItem" href="#">
+                                                                      <div class="headerPhoto">
+                                                                          <img src="./assets/images/desktopMode/header-pic-3@2x.png"
+                                                                              alt="">
+                                                                      </div>
+                                                                      <div class="headerDescription">
+                                                                          <div class="headerStatus mindfullness">
+                                                                              mindfullness
+                                                                          </div>
+                                                                          <div class="headerUser">
+                                                                              <div class="headerAvatar">
+                                                                                  <img src="./assets/images/desktopMode/avatar-3.png"
+                                                                                      alt="">
+                                                                              </div>
+                                                                              <div class="headerDetail">
+                                                                                  <div class="headerTitle">Sweet and
+                                                                                      Tome
+                                                                                  </div>
+                                                                                  <div class="headerTrainer">Zack
+                                                                                      Beier
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </a>
+                                                                  <a class="headerItem" href="#">
+                                                                      <div class="headerPhoto">
+                                                                          <img src="./assets/images/desktopMode/header-pic-4@2x.png"
+                                                                              alt="">
+                                                                      </div>
+                                                                      <div class="headerDescription">
+                                                                          <div class="headerStatus fitness">
+                                                                              Fitness
+                                                                          </div>
+                                                                          <div class="headerUser">
+                                                                              <div class="headerAvatar">
+                                                                                  <img src="./assets/images/desktopMode/avatar-2.png"
+                                                                                      alt="">
+                                                                              </div>
+                                                                              <div class="headerDetail">
+                                                                                  <div class="headerTitle">Sweet and
+                                                                                      Tome
+                                                                                  </div>
+                                                                                  <div class="headerTrainer">Zack
+                                                                                      Beier
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="desHeaderFoot">
+                                                      <div class="footStage">
+                                                          Pro Trainers
+                                                      </div>
+                                                      <div class="footList">
+
+                                                          <div class="headerUser">
+                                                              <div class="headerAvatar">
+                                                                  <img src="./assets/images/desktopMode/footerAvatar-1.png"
+                                                                      alt="">
+                                                              </div>
+                                                              <div class="headerDetails">
+                                                                  <div class="footTitle">Boyd Reigner</div>
+                                                                  <div class="footTrainer">personal Trainer</div>
+
+                                                              </div>
+                                                          </div>
+                                                          <div class="headerUser">
+                                                              <div class="headerAvatar">
+                                                                  <img src="./assets/images/desktopMode/footerAvatar-2.png"
+                                                                      alt="">
+                                                              </div>
+                                                              <div class="headerDetails">
+                                                                  <div class="footTitle">Randal Jacobsan</div>
+                                                                  <div class="footTrainer">personal Trainer</div>
+
+                                                              </div>
+                                                          </div>
+                                                          <div class="headerUser">
+                                                              <div class="headerAvatar">
+                                                                  <img src="./assets/images/desktopMode/footerAvatar-3.png"
+                                                                      alt="">
+                                                              </div>
+                                                              <div class="headerDetails">
+                                                                  <div class="footTitle">Dwight Schamberger</div>
+                                                                  <div class="footTrainer">personal Trainer</div>
+
+                                                              </div>
+                                                          </div>
+                                                          <div class="headerUser">
+                                                              <div class="headerAvatar">
+                                                                  <img src="./assets/images/desktopMode/footerAvatar-4.png"
+                                                                      alt="">
+                                                              </div>
+                                                              <div class="headerDetails">
+                                                                  <div class="footTitle">Omari Gulgowski</div>
+                                                                  <div class="footTrainer">personal Trainer</div>
+
+                                                              </div>
+                                                          </div>
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                  </div> -->
+
+                </li>
+                <li>
+                  <a href="#" class="headerLink">Lifestyle</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="headerGroups">
+            <ul>
+              <li>
+                <a href="#"><i class="ri-facebook-circle-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+            </ul>
+
+            <div class="buttonGroups">
+              <button class="headerTrialBtn">Get free trial</button>
+              <button class="hidden"><i class="fa-solid fa-bars"></i></button>
+              <!-- <button class="close hidden"><i class="fa-solid fa-xmark"></i></button> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tablet Mode -->
+      <div class="tabletMenu">
+        <div class="container">
+          <div class="wrap">
+            <ul class="menuLinks">
+              <li class="menuLink">
+                <a href="#">Features</a>
+              </li>
+              <li class="menuLink">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="menuLink">
+                <a href="#">Download</a>
+              </li>
+              <li class="dropdownLink">
+                <a href="#">Class</a>
+                <i class="fa-solid fa-angle-down"></i>
+              </li>
+            </ul>
+            <div class="menuContact">
+              <ul class="contactInfo">
+                <li>
+                  <div class="infoTitle">Montanachester</div>
+                  <div class="infoText">06787 Block Estates</div>
+                </li>
+                <li>
+                  <div class="infoTitle">Lake Gene</div>
+                  <div class="infoText">167 Emard River</div>
+                </li>
+                <li>
+                  <div class="infoTitle">North Hassiefort</div>
+                  <div class="infoText">032 Leonora Spurs</div>
+                </li>
+                <li>
+                  <div class="socials">
+                    <a href="#">
+                      <img src="./assets/images/tabletMode/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./assets/images/tabletMode/instgram.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./assets/images/tabletMode/ball.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./assets/images/tabletMode/behance.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdownBody">
+            <div class="bodyHead">
+              <div class="headRow">
+                <div class="headCol headLeftCol">
+                  <a href="#" class="headerDirection">
+                    <div class="headerInfo">
+                      Find a class to achieve your goals &#128293;
+                    </div>
+                    <img src="./assets/images/tabletMode/ball_80_80.png" alt="">
+                  </a>
+                  <div class="headerMenu">
+                    <a class="headerBox" href="#">
+                      <div class="headerIcon">
+                        <img src="./assets/images/tabletMode/youtube.svg" alt="">
+                      </div>
+                      <div class="headerText">Programs Videos</div>
+                    </a>
+                    <a class="headerBox" href="#">
+                      <div class="headerIcon">
+                        <img src="./assets/images/tabletMode/lightning.svg" alt="">
+                      </div>
+                      <div class="headerText">Premium Class</div>
+                    </a>
+                  </div>
                 </div>
-                <div class="pricingNote">per month</div>
-              </th>
+                <div class="headCol headRightCol">
+                  <a class="headerItem" href="#">
+                    <div class="headerPhoto">
+                      <img src="./assets/images/desktopMode/header-pic-2@2x.png" alt="">
+                    </div>
+                    <div class="headerDescription">
+                      <div class="headerStatus yoga">
+                        Yoga
+                      </div>
+                      <div class="headerUser">
+                        <div class="headerAvatar">
+                          <img src="./assets/images/desktopMode/avatar-2.png" alt="">
+                        </div>
+                        <div class="headerDetail">
+                          <div class="headerTitle">Sweet and Tome
+                          </div>
+                          <div class="headerTrainer">Zack Beier</div>
+                        </div>
+                      </div>
+                    </div>
 
-              <th>
-                <div class="pricingPackage">Premium</div>
-                <div class="pricingDescription">Fit with everyone</div>
-                <div class="pricingCost">
-                  <span class="pricingSign">$</span>
-                  <span class="pricingPrice">20.88</span>
+                  </a>
+                  <a class="headerItem" href="#">
+                    <div class="headerPhoto">
+                      <img src="./assets/images/desktopMode/header-pic-3@2x.png" alt="">
+                    </div>
+                    <div class="headerDescription">
+                      <div class="headerStatus mindfullness">
+                        mindfullness
+                      </div>
+                      <div class="headerUser">
+                        <div class="headerAvatar">
+                          <img src="./assets/images/desktopMode/avatar-3.png" alt="">
+                        </div>
+                        <div class="headerDetail">
+                          <div class="headerTitle">
+                            Sweet and Tome
+                          </div>
+                          <div class="headerTrainer">Zack Beier</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </a>
                 </div>
-                <div class="pricingNote">per month</div>
-              </th>
+              </div>
+            </div>
 
-              <th>
-                <div class="overlap">
-                  <div class="pricingPackage">Unlimited Access</div>
-                  <div class="pricingDescription">Are you pro? Let's do it</div>
+            <div class="tabletHeaderFoot">
+              <div class="footStage">
+                Pro Trainers
+              </div>
+              <div class="footList">
+
+                <div class="headerUser">
+                  <div class="headerAvatar">
+                    <img src="./assets/images/desktopMode/footerAvatar-1.png" alt="">
+                  </div>
+                  <div class="headerDetails">
+                    <div class="footTitle">Boyd Reigner</div>
+                    <div class="footTrainer">personal Trainer</div>
+
+                  </div>
                 </div>
-              </th>
-            </tr>
-          </thead>
+                <div class="headerUser">
+                  <div class="headerAvatar">
+                    <img src="./assets/images/desktopMode/footerAvatar-2.png" alt="">
+                  </div>
+                  <div class="headerDetails">
+                    <div class="footTitle">Randal Jacobsan</div>
+                    <div class="footTrainer">personal Trainer</div>
 
-          <tbody>
-            <tr>
-              <td>
-                <p>Time-Trackers</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+                  </div>
+                </div>
+                <div class="headerUser">
+                  <div class="headerAvatar">
+                    <img src="./assets/images/desktopMode/footerAvatar-3.png" alt="">
+                  </div>
+                  <div class="headerDetails">
+                    <div class="footTitle">Dwight Schamberger</div>
+                    <div class="footTrainer">personal Trainer</div>
 
-            <tr>
-              <td>
-                <p>Exclusive Music</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+                  </div>
+                </div>
 
-            <tr>
-              <td>
-                <p>E-books</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
 
-            <tr>
-              <td>
-                <p>Documents</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+              </div>
+            </div>
+          </div>
+          <div class="bottomMenuLink lastElement">
+            <a href="#">Lifestyle</a>
+          </div>
+        </div>
+      </div>
 
-            <tr>
-              <td>
-                <p>Premium Tutorial</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
 
-            <tr>
-              <td>
-                <p>Client Support</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+    </div>
 
-            <tr>
-              <td>
-                <p>Premium Courses</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+  </section>
+  <!--! Header End -->
+  <!-- ? pricing Start -->
+  <section class="pricing">
+    <div class="container">
+      <div class="stage">get stronger with fitness pro</div>
+      <div class="pricingTitle">Choose a plan that&#39;s right for you</div>
 
-            <tr>
-              <td>
-                <p>User support</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+      <table>
+        <thead>
+          <tr>
+            <th class="pricingCategory">
+              <p>Main Features</p>
+            </th>
 
-            <tr>
-              <td>
-                <p>Chat to trainers</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
+            <th>
+              <div class="pricingPackage">Free Trial</div>
+              <div class="pricingDescription">14 days of free trial</div>
+              <div class="pricingCost">
+                <span class="pricingSign">$</span>
+                <span class="pricingPrice">0</span>
+              </div>
+              <div class="pricingNote">per month</div>
+            </th>
 
-            <tr>
-              <td>
-                <p>Unlimited Videos</p>
-                <img src="./assets/images/pricingTable/info.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/minus.svg" alt="" />
-              </td>
-              <td>
-                <img src="./assets/images/pricingTable/check.svg" alt="" />
-              </td>
-            </tr>
-          </tbody>
+            <th>
+              <div class="pricingPackage">Premium</div>
+              <div class="pricingDescription">Fit with everyone</div>
+              <div class="pricingCost">
+                <span class="pricingSign">$</span>
+                <span class="pricingPrice">20.88</span>
+              </div>
+              <div class="pricingNote">per month</div>
+            </th>
 
-          <tfoot>
-            <tr>
-              <td></td>
-              <td><button class="btn btn_orange ">Start free trial</button></td>
-              <td><button class="btn btn_orange">get started</button></td>
-              <td><button class="btn">contact sale</button></td>
-            </tr>
-          </tfoot>
-        </table>
+            <th>
+              <div class="overlap">
+                <div class="pricingPackage">Unlimited Access</div>
+                <div class="pricingDescription">Are you pro? Let's do it</div>
+              </div>
+            </th>
+          </tr>
+        </thead>
 
-        <!-- <div class="pricingTable">
+        <tbody>
+          <tr>
+            <td>
+              <p>Time-Trackers</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Exclusive Music</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>E-books</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Documents</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Premium Tutorial</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Client Support</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Premium Courses</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>User support</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Chat to trainers</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Unlimited Videos</p>
+              <img src="./assets/images/pricingTable/info.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/minus.svg" alt="" />
+            </td>
+            <td>
+              <img src="./assets/images/pricingTable/check.svg" alt="" />
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td></td>
+            <td><button class="btn btn_orange ">Start free trial</button></td>
+            <td><button class="btn btn_orange">get started</button></td>
+            <td><button class="btn">contact sale</button></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- <div class="pricingTable">
                 <div class="row">
 
                     <div class="pricingCol">
@@ -447,372 +886,431 @@
 
                 </div>
             </div> -->
+    </div>
+  </section>
+  <!-- !pricing End -->
+  <!--? comment Start  -->
+  <section class="comment">
+    <div class="container">
+      <div class="commentWrapper">
+        <div class="commentHead">
+          <h2 class="commentTitle">Find what moves you</h2>
+          <div class="commentInfo">
+            Whether you're a complete beginner or you want to step up your
+            routine, get the full studio experience at home with thousands of
+            classes for body, mind, and spirit.
+          </div>
+        </div>
+        <div class="commentWrap">
+          <div class="commentList">
+            <div class="commentItem">
+              <div class="commentPreview">
+                <img src="./assets/images/comment/weightplatescolor.png" alt="" />
+              </div>
+              <div class="commentSubtitle">Fitness</div>
+              <div class="commentContent">Great physique</div>
+            </div>
+            <!--  -->
+            <div class="commentItem">
+              <div class="commentPreview">
+                <img src="./assets/images/comment/yogamatcolor.png" alt="" />
+              </div>
+              <div class="commentSubtitle">Gymnastic</div>
+              <div class="commentContent">Enhanced strength</div>
+            </div>
+            <!--  -->
+            <div class="commentItem">
+              <div class="commentPreview">
+                <img src="./assets/images/comment/basketballcolor.png" alt="" />
+              </div>
+              <div class="commentSubtitle">Basketball</div>
+              <div class="commentContent">Relax $ work efficiently</div>
+            </div>
+            <!--  -->
+            <div class="commentItem">
+              <div class="commentPreview">
+                <img src="./assets/images/comment/yogamatcolor.png" alt="" />
+              </div>
+              <div class="commentSubtitle">Yoga</div>
+              <div class="commentContent">Perfect physique</div>
+            </div>
+          </div>
+          <button class="sliderBtn btnPrevious">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="sliderBtn btnNext">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
-    </section>
-    <!-- !pricing End -->
-    <!--? comment Start  -->
-    <section class="comment">
+    </div>
+  </section>
+  <!--!comment End  -->
+  <!--? faq Start  -->
+  <section class="faq">
+    <div class="container">
+      <div class="faqTop">
+        <div class="stageSmall">learn how to get started</div>
+        <div class="faqTitle">Frequently Asked Questions</div>
+        <div class="faqInfo">
+          Join Fitness Pro community now to get free updates and also alot of
+          freebies are waiting for you or <span> Contact Support</span>
+        </div>
+        <select name="" id="" style="display: none">
+          <option value="general">General</option>
+          <option value="Trainer">Trainer</option>
+          <option value="Subscription">Subscription</option>
+          <option value="Class">Class</option>
+        </select>
+        <div class="faqNav">
+          <ul>
+            <li><a href="#">General</a></li>
+            <li><a href="#">Trainer</a></li>
+            <li><a href="#">Subscription</a></li>
+            <li><a href="#">Class</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="faqWrap">
+        <div class="faqList">
+          <div class="faqItem" data-name="p-1">
+            <div class="faqItemHead">
+              <p>How do I register for an in-person class?</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <!-- <i class="fa-solid fa-angle-up"></i> -->
+            </div>
+            <div class="faqItemBody" data-target="p-1">
+              <div class="faqRow">
+                <div class="faqPreview">
+                  <img src="./assets/images/faq/video.png" alt="" />
+                </div>
+                <div class="faqContext">
+                  <div class="faqSubtitle">
+                    You don't need to do anything else
+                  </div>
+                  <div class="faqContent">
+                    <p>
+                      Mix-and-match dozens of responsive elements to quickly
+                      configure your favorite landing page layouts.
+                    </p>
+                    <p>
+                      Or hit the ground running with 10 pre-built templates,
+                      all in light or dark mode."
+                    </p>
+                  </div>
+                  <button class="btn">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faqItem">
+            <div class="faqItemHead">
+              <p>What is the status of my Fitness Pro membership?</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="faqItemBody">
+              <div class="faqRow">
+                <div class="faqPreview">
+                  <img src="./assets/images/faq/video.png" alt="" />
+                </div>
+                <div class="faqContext">
+                  <div class="faqSubtitle">
+                    You don't need to do anything else
+                  </div>
+                  <div class="faqContent">
+                    <p>
+                      Mix-and-match dozens of responsive elements to quickly
+                      configure your favorite landing page layouts.
+                    </p>
+                    <p>
+                      Or hit the ground running with 10 pre-built templates,
+                      all in light or dark mode."
+                    </p>
+                  </div>
+                  <button class="btn">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faqItem">
+            <div class="faqItemHead">
+              <p>How old does my child need to be to participate in class?</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="faqItemBody">
+              <div class="faqRow">
+                <div class="faqPreview">
+                  <img src="./assets/images/faq/video.png" alt="" />
+                </div>
+                <div class="faqContext">
+                  <div class="faqSubtitle">
+                    You don't need to do anything else
+                  </div>
+                  <div class="faqContent">
+                    <p>
+                      Mix-and-match dozens of responsive elements to quickly
+                      configure your favorite landing page layouts.
+                    </p>
+                    <p>
+                      Or hit the ground running with 10 pre-built templates,
+                      all in light or dark mode."
+                    </p>
+                  </div>
+                  <button class="btn">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faqItem">
+            <div class="faqItemHead">
+              <p>Do I have to be a member to take class?</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="faqItemBody">
+              <div class="faqRow">
+                <div class="faqPreview">
+                  <img src="./assets/images/faq/video.png" alt="" />
+                </div>
+                <div class="faqContext">
+                  <div class="faqSubtitle">
+                    You don't need to do anything else
+                  </div>
+                  <div class="faqContent">
+                    <p>
+                      Mix-and-match dozens of responsive elements to quickly
+                      configure your favorite landing page layouts.
+                    </p>
+                    <p>
+                      Or hit the ground running with 10 pre-built templates,
+                      all in light or dark mode."
+                    </p>
+                  </div>
+                  <button class="btn">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faqItem">
+            <div class="faqItemHead">
+              <p>Can I join a class once it's in session?</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="faqItemBody">
+              <div class="faqRow">
+                <div class="faqPreview">
+                  <img src="./assets/images/faq/video.png" alt="" />
+                </div>
+                <div class="faqContext">
+                  <div class="faqSubtitle">
+                    You don't need to do anything else
+                  </div>
+                  <div class="faqContent">
+                    <p>
+                      Mix-and-match dozens of responsive elements to quickly
+                      configure your favorite landing page layouts.
+                    </p>
+                    <p>
+                      Or hit the ground running with 10 pre-built templates,
+                      all in light or dark mode."
+                    </p>
+                  </div>
+                  <button class="btn">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faqItem">
+            <div class="faqItemHead">
+              <p>Do I need to buy a yoga mat, towel, or equipment?</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="faqItemBody">
+              <div class="faqRow">
+                <div class="faqPreview">
+                  <img src="./assets/images/faq/video.png" alt="" />
+                </div>
+                <div class="faqContext">
+                  <div class="faqSubtitle">
+                    You don't need to do anything else
+                  </div>
+                  <div class="faqContent">
+                    <p>
+                      Mix-and-match dozens of responsive elements to quickly
+                      configure your favorite landing page layouts.
+                    </p>
+                    <p>
+                      Or hit the ground running with 10 pre-built templates,
+                      all in light or dark mode."
+                    </p>
+                  </div>
+                  <button class="btn">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--! faq End  -->
+  <!--? testimonials Start  -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="wrap">
+        <div class="testmonialsItem">
+          <div class="testimonialsRow">
+            <div class="testimonialsCol">
+              <div class="testimonialsLogo">
+                <img src="./assets/images/testimonials/logo.png" alt="" />
+              </div>
+              <div class="testimonialsComment">
+                “ Fitness Pro is the greatest fitness app. It's clear the
+                makers behind this thing use it every week, because it is so
+                perfect. “
+              </div>
+              <div class="testimonialsDetails">
+                <div class="detailsIcon">
+                  <img src="./assets/images/testimonials/details_icon.png" alt="" />
+                </div>
+                <div class="detailsAuthor">Megane Schumm</div>
+                <span class="detailsDivider"></span>
+                <div class="detailsDescription">Legacy Data Coordinator</div>
+              </div>
+              <button class="btn readmore">Read full story</button>
+            </div>
+            <div class="testimonialsCol">
+              <div class="testimonialsPreview">
+                <img src="./assets/images/testimonials/preview.png" alt="" />
+                <button class="play">
+                  <img src="./assets/images/testimonials/play.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testmonialsNav">
+          <div class="sliderWrapper">
+            <a href="#">
+              <div class="testimonialsAvatar">
+                <img src="./assets/images/nav/user1.png" alt="" />
+              </div>
+              <div class="testimonialsGroup">
+                <div class="testmonialsName">Jazmin Grady</div>
+                <div class="testmonialsPosition">Personal Trainer</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="testimonialsAvatar">
+                <img src="./assets/images/nav/user2.png" alt="" />
+              </div>
+              <div class="testimonialsGroup">
+                <div class="testmonialsName">Kaylah Botsford</div>
+                <div class="testmonialsPosition">Personal Trainer</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="testimonialsAvatar">
+                <img src="./assets/images/nav/user3.png" alt="" />
+              </div>
+              <div class="testimonialsGroup">
+                <div class="testmonialsName">Reinhold Ullrich</div>
+                <div class="testmonialsPosition">Personal Trainer</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="testimonialsAvatar">
+                <img src="./assets/images/nav/user4.png" alt="" />
+              </div>
+              <div class="testimonialsGroup">
+                <div class="testmonialsName">Josh Bartoletti</div>
+                <div class="testmonialsPosition">Personal Trainer</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--! testimonials End  -->
+  <!--? Footer Start  -->
+  <footer class="lightmode">
+    <div class="wrapper">
       <div class="container">
-        <div class="commentWrapper">
-          <div class="commentHead">
-            <h2 class="commentTitle">Find what moves you</h2>
-            <div class="commentInfo">
-              Whether you're a complete beginner or you want to step up your
-              routine, get the full studio experience at home with thousands of
-              classes for body, mind, and spirit.
-            </div>
-          </div>
-          <div class="commentWrap">
-            <div class="commentList">
-              <div class="commentItem">
-                <div class="commentPreview">
-                  <img
-                    src="./assets/images/comment/weightplatescolor.png"
-                    alt=""
-                  />
-                </div>
-                <div class="commentSubtitle">Fitness</div>
-                <div class="commentContent">Great physique</div>
-              </div>
-              <!--  -->
-              <div class="commentItem">
-                <div class="commentPreview">
-                  <img src="./assets/images/comment/yogamatcolor.png" alt="" />
-                </div>
-                <div class="commentSubtitle">Gymnastic</div>
-                <div class="commentContent">Enhanced strength</div>
-              </div>
-              <!--  -->
-              <div class="commentItem">
-                <div class="commentPreview">
-                  <img
-                    src="./assets/images/comment/basketballcolor.png"
-                    alt=""
-                  />
-                </div>
-                <div class="commentSubtitle">Basketball</div>
-                <div class="commentContent">Relax $ work efficiently</div>
-              </div>
-              <!--  -->
-              <div class="commentItem">
-                <div class="commentPreview">
-                  <img src="./assets/images/comment/yogamatcolor.png" alt="" />
-                </div>
-                <div class="commentSubtitle">Yoga</div>
-                <div class="commentContent">Perfect physique</div>
-              </div>
-            </div>
-            <button class="sliderBtn btnPrevious">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button class="sliderBtn btnNext">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--!comment End  -->
-    <!--? faq Start  -->
-    <section class="faq">
-      <div class="container">
-        <div class="faqTop">
-          <div class="stageSmall">learn how to get started</div>
-          <div class="faqTitle">Frequently Asked Questions</div>
-          <div class="faqInfo">
-            Join Fitness Pro community now to get free updates and also alot of
-            freebies are waiting for you or <span> Contact Support</span>
-          </div>
-          <select name="" id="" style="display: none">
-            <option value="general">General</option>
-            <option value="Trainer">Trainer</option>
-            <option value="Subscription">Subscription</option>
-            <option value="Class">Class</option>
-          </select>
-          <div class="faqNav">
-            <ul>
-              <li><a href="#">General</a></li>
-              <li><a href="#">Trainer</a></li>
-              <li><a href="#">Subscription</a></li>
-              <li><a href="#">Class</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="faqWrap">
-          <div class="faqList">
-            <div class="faqItem" data-name="p-1">
-              <div class="faqItemHead">
-                <p>How do I register for an in-person class?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <!-- <i class="fa-solid fa-angle-up"></i> -->
-              </div>
-              <div class="faqItemBody" data-target="p-1">
-                <div class="faqRow">
-                  <div class="faqPreview">
-                    <img src="./assets/images/faq/video.png" alt="" />
-                  </div>
-                  <div class="faqContext">
-                    <div class="faqSubtitle">
-                      You don't need to do anything else
-                    </div>
-                    <div class="faqContent">
-                      <p>
-                        Mix-and-match dozens of responsive elements to quickly
-                        configure your favorite landing page layouts.
-                      </p>
-                      <p>
-                        Or hit the ground running with 10 pre-built templates,
-                        all in light or dark mode."
-                      </p>
-                    </div>
-                    <button class="btn">Learn more</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="frame">
 
-            <div class="faqItem">
-              <div class="faqItemHead">
-                <p>What is the status of my Fitness Pro membership?</p>
+          <div class="top-menu ">
+            <div class="left-menu frameItem">
+              <div class="iconPreview">
+                <i class="fa-solid fa-basketball"></i>
+                <span class="iconInfo">Fitness Pro</span>
+              </div>
+              <div class="footerNav">
+                <span>Footer Nav</span>
                 <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
               </div>
-              <div class="faqItemBody">
-                <div class="faqRow">
-                  <div class="faqPreview">
-                    <img src="./assets/images/faq/video.png" alt="" />
-                  </div>
-                  <div class="faqContext">
-                    <div class="faqSubtitle">
-                      You don't need to do anything else
-                    </div>
-                    <div class="faqContent">
-                      <p>
-                        Mix-and-match dozens of responsive elements to quickly
-                        configure your favorite landing page layouts.
-                      </p>
-                      <p>
-                        Or hit the ground running with 10 pre-built templates,
-                        all in light or dark mode."
-                      </p>
-                    </div>
-                    <button class="btn">Learn more</button>
-                  </div>
-                </div>
-              </div>
+              <ul>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Class</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Donwload</a></li>
+              </ul>
             </div>
-
-            <div class="faqItem">
-              <div class="faqItemHead">
-                <p>How old does my child need to be to participate in class?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
-              </div>
-              <div class="faqItemBody">
-                <div class="faqRow">
-                  <div class="faqPreview">
-                    <img src="./assets/images/faq/video.png" alt="" />
-                  </div>
-                  <div class="faqContext">
-                    <div class="faqSubtitle">
-                      You don't need to do anything else
-                    </div>
-                    <div class="faqContent">
-                      <p>
-                        Mix-and-match dozens of responsive elements to quickly
-                        configure your favorite landing page layouts.
-                      </p>
-                      <p>
-                        Or hit the ground running with 10 pre-built templates,
-                        all in light or dark mode."
-                      </p>
-                    </div>
-                    <button class="btn">Learn more</button>
-                  </div>
-                </div>
-              </div>
+            <div class="middle-menu frameItem">
+              <p>CONTACT</p>
+              <ul class="main-ul">
+                <li>43252 Borer Mountains</li>
+                <li>Zackerychester</li>
+                <li>Bahamas</li>
+                <li class="phoneInfo">732-528-4945</li>
+              </ul>
             </div>
+            <div class="right-menu frameItem">
+              <p>NEWSLETTER</p>
+              <div class="footerInfo">
+                Subscribe our newsletter to get more
+                free design course and resource.
+              </div>
 
-            <div class="faqItem">
-              <div class="faqItemHead">
-                <p>Do I have to be a member to take class?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
-              </div>
-              <div class="faqItemBody">
-                <div class="faqRow">
-                  <div class="faqPreview">
-                    <img src="./assets/images/faq/video.png" alt="" />
-                  </div>
-                  <div class="faqContext">
-                    <div class="faqSubtitle">
-                      You don't need to do anything else
-                    </div>
-                    <div class="faqContent">
-                      <p>
-                        Mix-and-match dozens of responsive elements to quickly
-                        configure your favorite landing page layouts.
-                      </p>
-                      <p>
-                        Or hit the ground running with 10 pre-built templates,
-                        all in light or dark mode."
-                      </p>
-                    </div>
-                    <button class="btn">Learn more</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <form action="" method="post">
+                <input type="email" placeholder="Enter your mail">
+                <button type="submit">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
 
-            <div class="faqItem">
-              <div class="faqItemHead">
-                <p>Can I join a class once it's in session?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
-              </div>
-              <div class="faqItemBody">
-                <div class="faqRow">
-                  <div class="faqPreview">
-                    <img src="./assets/images/faq/video.png" alt="" />
-                  </div>
-                  <div class="faqContext">
-                    <div class="faqSubtitle">
-                      You don't need to do anything else
-                    </div>
-                    <div class="faqContent">
-                      <p>
-                        Mix-and-match dozens of responsive elements to quickly
-                        configure your favorite landing page layouts.
-                      </p>
-                      <p>
-                        Or hit the ground running with 10 pre-built templates,
-                        all in light or dark mode."
-                      </p>
-                    </div>
-                    <button class="btn">Learn more</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="faqItem">
-              <div class="faqItemHead">
-                <p>Do I need to buy a yoga mat, towel, or equipment?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
-              </div>
-              <div class="faqItemBody">
-                <div class="faqRow">
-                  <div class="faqPreview">
-                    <img src="./assets/images/faq/video.png" alt="" />
-                  </div>
-                  <div class="faqContext">
-                    <div class="faqSubtitle">
-                      You don't need to do anything else
-                    </div>
-                    <div class="faqContent">
-                      <p>
-                        Mix-and-match dozens of responsive elements to quickly
-                        configure your favorite landing page layouts.
-                      </p>
-                      <p>
-                        Or hit the ground running with 10 pre-built templates,
-                        all in light or dark mode."
-                      </p>
-                    </div>
-                    <button class="btn">Learn more</button>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--! faq End  -->
-    <!--? testimonials Start  -->
-    <section class="testimonials">
-      <div class="container">
-        <div class="wrap">
-          <div class="testmonialsItem">
-            <div class="testimonialsRow">
-              <div class="testimonialsCol">
-                <div class="testimonialsLogo">
-                  <img src="./assets/images/testimonials/logo.png" alt="" />
-                </div>
-                <div class="testimonialsComment">
-                  “ Fitness Pro is the greatest fitness app. It's clear the
-                  makers behind this thing use it every week, because it is so
-                  perfect. “
-                </div>
-                <div class="testimonialsDetails">
-                  <div class="detailsIcon">
-                    <img
-                      src="./assets/images/testimonials/details_icon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="detailsAuthor">Megane Schumm</div>
-                  <span class="detailsDivider"></span>
-                  <div class="detailsDescription">Legacy Data Coordinator</div>
-                </div>
-                <button class="btn readmore">Read full story</button>
-              </div>
-              <div class="testimonialsCol">
-                <div class="testimonialsPreview">
-                  <img src="./assets/images/testimonials/preview.png" alt="" />
-                  <button class="play">
-                    <img src="./assets/images/testimonials/play.svg" alt="" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testmonialsNav">
-            <div class="sliderWrapper">
-              <a href="#">
-                <div class="testimonialsAvatar">
-                  <img src="./assets/images/nav/user1.png" alt="" />
-                </div>
-                <div class="testimonialsGroup">
-                  <div class="testmonialsName">Jazmin Grady</div>
-                  <div class="testmonialsPosition">Personal Trainer</div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="testimonialsAvatar">
-                  <img src="./assets/images/nav/user2.png" alt="" />
-                </div>
-                <div class="testimonialsGroup">
-                  <div class="testmonialsName">Kaylah Botsford</div>
-                  <div class="testmonialsPosition">Personal Trainer</div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="testimonialsAvatar">
-                  <img src="./assets/images/nav/user3.png" alt="" />
-                </div>
-                <div class="testimonialsGroup">
-                  <div class="testmonialsName">Reinhold Ullrich</div>
-                  <div class="testmonialsPosition">Personal Trainer</div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="testimonialsAvatar">
-                  <img src="./assets/images/nav/user4.png" alt="" />
-                </div>
-                <div class="testimonialsGroup">
-                  <div class="testmonialsName">Josh Bartoletti</div>
-                  <div class="testmonialsPosition">Personal Trainer</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--! testimonials End  -->
+    </div>
+    <div class="container">
+      <div class="bottom-bar">
 
-    <script src="./assets/js/main.js"></script>
-  </body>
+        <span>Copyright © 2021 UI8 LLC. All rights reserved</span>
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <!--! Footer End -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
