@@ -433,6 +433,9 @@ li.drop:hover .headerBody {
 .heroHeader .wrap .contentCol .mainTitle {
   margin: 12px 0px 40px 0px;
 }
+.heroHeader .wrap .contentCol h3 {
+  display: none;
+}
 .heroHeader .wrap .contentCol .mainTitle p {
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display";
@@ -463,13 +466,7 @@ li.drop:hover .headerBody {
   color: var(--Neutrals-8);
 }
 .heroHeader .wrap .contentCol .button_arrow_bottom {
-  /* margin: 140px 0 0 0; */
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  margin: 140px 0 0 0;
   padding: 20px;
   border-radius: 64px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
@@ -798,7 +795,7 @@ li.drop:hover .headerBody {
 .bookPoster .wrapper .bookList .bookItem {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-gap: 24px;
   padding: 24px;
 }

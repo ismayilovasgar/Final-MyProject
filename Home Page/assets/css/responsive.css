@@ -245,7 +245,7 @@
   /* ? heroHeader Start */
   .heroHeader .buttons_bottomm {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .heroHeader .buttons_bottomm button {
     font-size: 14px;
@@ -511,27 +511,76 @@
     width: 100%;
     margin: 0 auto;
   }
+
   .heroHeader .wrap .contentCol .overlap {
     display: flex;
     flex-direction: column;
-    max-width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+  }
+  .heroHeader .wrap .contentCol .mainTitle p {
+    display: none;
+  }
+  .heroHeader .wrap .contentCol .mainText {
+    padding: 0px 10px;
+    max-width: 100%;
     margin: 0 auto;
   }
-  .heroHeader .wrap .contentCol .button_arrow_bottom {
-    position: static;
+  .heroHeader .wrap .contentCol h3 {
+    display: block;
+    color: var(--Neutrals-2, #23262f);
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.96px;
   }
-
+  .heroHeader .wrap .contentCol .button_arrow_bottom {
+    margin-top: 40px;
+  }
   .heroHeader .buttons_bottomm {
     flex-direction: column;
   }
-
   .heroHeader .buttons_bottomm button {
-    display: block;
-    margin-top: 10px;
+    width: 70%;
+    margin: 10px auto 0 auto;
+  }
+  /*! heroHeader End */
+
+  /*? intro Start  */
+  .intro .wrapper {
+    flex-direction: column-reverse;
+  }
+  .intro .wrapper .introGallery {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .intro .wrapper .introContent {
     width: 100%;
   }
-
-  /*! heroHeader End */
+  /*! intro End  */
+  /*!? bookPoster Star  */
+  .bookPoster .wrapper {
+    flex-direction: column;
+  }
+  .bookPoster .bookMenu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+  .bookPoster .wrapper .bookList .bookItem {
+    column-gap: 24px;
+    padding: 16px;
+  }
+  .bookPoster .bookGallery {
+    width: 100%;
+  }
+  /*! bookPoster End  */
 }
 
 /* *********************************************************** */
