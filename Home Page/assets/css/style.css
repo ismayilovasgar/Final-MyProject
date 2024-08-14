@@ -739,7 +739,6 @@ li.drop:hover .headerBody {
 
 .bookPoster .wrapper {
   display: flex;
-  /* align-items: center; */
   column-gap: var(--poster_column-gap);
 }
 
@@ -795,7 +794,7 @@ li.drop:hover .headerBody {
 .bookPoster .wrapper .bookList .bookItem {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   column-gap: 24px;
   padding: 24px;
 }

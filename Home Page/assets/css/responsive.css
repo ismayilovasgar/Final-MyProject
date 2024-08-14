@@ -580,11 +580,65 @@
   .bookPoster .bookGallery {
     width: 100%;
   }
+  .bookPoster .bookMenu button.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+  }
   /*! bookPoster End  */
+
+  .details .detailsList {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+  }
+
+  /** Intro start */
+  .topRow {
+    flex-direction: column;
+  }
+  .bottomRow {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+  .homeAbout .leftCol {
+    width: 100%;
+  }
+  .homeAbout .rightCol {
+    width: 100%;
+  }
+
+  /*  */
+  :root {
+    --trainer-col-gap: 32px;
+    --trainer-row-gap: 64px;
+    --trainer-col-count: 2;
+  }
+  /*  */
+  .workouts .workoutsFrame {
+    flex-direction: column-reverse;
+    align-items: unset;
+    row-gap: 24px;
+  }
+  .workouts .workoutsFrame .workoutsWrap {
+    width: 100%;
+  }
+  .workouts .workoutsFrame .workoutsGallery {
+    width: 100%;
+  }
+  .workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: unset;
+  }
 }
 
 /* *********************************************************** */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 395px) {
   .container {
     width: 100%;
     max-width: 100%;
@@ -598,5 +652,24 @@
   .header .headerTrialBtn {
     display: none;
   }
-  /*? Footer */
+
+  .quality .qualityList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .advantages .advantagesList {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .advantages .advantagesItem {
+    width: 100%;
+  }
+
+  .trainers .trainersList .listWrap {
+    flex-direction: column;
+  }
+  .trainers .trainersList .listWrap .trainerItem {
+    width: 100%;
+  }
 }
