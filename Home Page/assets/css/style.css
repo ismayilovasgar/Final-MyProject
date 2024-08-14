@@ -430,6 +430,9 @@ li.drop:hover .headerBody {
   text-transform: uppercase;
 }
 .heroHeader .wrap .contentCol .mainTitle {
+  margin: 12px 0px 40px 0px;
+}
+.heroHeader .wrap .contentCol .mainTitle p {
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display";
   font-size: 64px;
@@ -437,7 +440,6 @@ li.drop:hover .headerBody {
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -1.28px;
-  margin: 12px 0px 40px 0px;
 }
 
 .heroHeader .wrap .contentCol .mainText {
@@ -526,7 +528,6 @@ li.drop:hover .headerBody {
   grid-template-columns: repeat(4, 1fr); */
   display: flex;
   column-gap: var(--steps_column-gap);
-  /* align-items: center; */
 }
 .steps .stepsList .stepsItem {
   position: relative;
@@ -865,6 +866,7 @@ li.drop:hover .headerBody {
   --details_column-gap: 83px;
   --details_column-count: 5;
   --details_divider-width: 1px;
+  --detail_item-distance: 83px;
 }
 .details {
   padding: 136px 0px;
@@ -898,15 +900,34 @@ li.drop:hover .headerBody {
 .details .detailsList {
   display: flex;
   align-items: center;
-  column-gap: var(--details_column-gap);
+  justify-content: space-between;
+  padding: 38px 0px;
+  /* column-gap: var(--details_column-gap); */
 }
-.details .detailsList span.divider {
+
+.detailItemLeft {
+  padding-right: var(--detail_item-distance);
+  /* margin-right: var(--detail_item-distance); */
+  /* border-right: 1px solid var(--Neutrals-6); */
+}
+.detailItemMiddle {
+  padding-right: var(--detail_item-distance);
+  padding-left: var(--detail_item-distance);
+  border-right: 1px solid var(--Neutrals-6);
+  border-left: 1px solid var(--Neutrals-6);
+}
+.detailItemRight {
+  padding-left: var(--detail_item-distance);
+  /* margin-right: var(--detail_item-distance); */
+  /* border-right: 1px solid var(--Neutrals-6); */
+}
+/* .details .detailsList span.divider {
   width: var(--details_divider-width);
   height: 300px;
   background-color: var(--Neutrals-6);
-}
+} */
 
-.details .detailsList .detailsItem {
+/* .details .detailsList .detailsItem {
   width: calc(
     (
         100% -
@@ -916,7 +937,7 @@ li.drop:hover .headerBody {
           )
       ) / 3
   );
-}
+} */
 .details .detailsList .detailsItem .detailsIcon img {
   display: block;
 }

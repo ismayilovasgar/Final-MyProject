@@ -1,4 +1,4 @@
-/* Desktop  Start*/
+/** Desktop  Start*/
 @media screen and (max-width: 1440px) {
   .tabletMenu.active {
     display: none;
@@ -9,6 +9,7 @@
 }
 
 @media screen and (max-width: 1150px) {
+  /*? Navbar Start */
   .headerCenter .headerLinksWrap .navbarLogo {
     padding-right: 30px;
     border-right: 1px solid var(--Neutrals-6);
@@ -23,10 +24,30 @@
   .headerCenter .headerGroups {
     column-gap: 40px;
   }
+  /*! Navbar End */
+  /*? heroHeader Start */
+  .heroHeader {
+    padding: 120px 0px 80px 0px;
+  }
+  .heroHeader .wrap .contentCol .mainTitle p {
+    font-size: 50px;
+  }
+  .heroHeader .wrap .contentCol .button_arrow_bottom {
+    margin: 100px 0px 0px 0px;
+  }
+  /*! heroHeader End */
 }
 
-/* Tablet Start */
+@media screen and (max-width: 1095px) {
+  .steps .stepsList .stepsItem:not(:last-child)::after {
+    right: -50px;
+    width: 60px;
+  }
+}
+
+/** Tablet Start */
 @media screen and (max-width: 1024px) {
+  /*? Header Start */
   .show {
     display: block;
   }
@@ -51,7 +72,50 @@
   .buttonGroups .bars {
     display: block;
   }
-  /** Footer */
+
+  /*! Header End */
+  /*? Steps Start */
+  :root {
+    --steps_colum-count: 2;
+    --steps_row-gap: 64px;
+  }
+  .steps .stepsList {
+    flex-wrap: wrap;
+    row-gap: var(--steps_row-gap);
+  }
+
+  .steps .stepsList .stepsItem:not(:last-child)::after {
+    content: none;
+  }
+  .steps .stepsList .stepsItem:nth-child(1) .stepsPreview:after {
+    content: none;
+  }
+  .steps .stepsList .stepsItem:nth-child(2) .stepsPreview:before,
+  .steps .stepsList .stepsItem:nth-child(3) .stepsPreview:before {
+    content: none;
+  }
+
+  .steps .stepsList .stepsItem:nth-child(2) .stepsPreview:after,
+  .steps .stepsList .stepsItem:nth-child(3) .stepsPreview:after {
+    content: none;
+  }
+
+  .steps .stepsList .stepsItem:nth-child(4) .stepsPreview:before {
+    content: none;
+  }
+
+  .steps .stepsList .stepsItem .stepsContent {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .steps .stepsList .stepsItem .stepsPreview {
+    margin: 0 auto 40px auto;
+  }
+
+  /*! Steps End */
+
+  /*? Footer Start */
   footer .frame .top-menu {
     display: flex;
     justify-content: space-between;
@@ -70,6 +134,7 @@
   footer .right-menu {
     min-width: 192px;
   }
+  /*! Footer End */
 }
 
 @media screen and (max-width: 840px) {
@@ -81,7 +146,7 @@
   }
 }
 
-/* Mobil Start */
+/** Mobil Start */
 @media screen and (max-width: 768px) {
   /*? Header */
 
