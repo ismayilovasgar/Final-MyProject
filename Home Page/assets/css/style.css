@@ -504,6 +504,10 @@ li.drop:hover .headerBody {
   justify-content: space-between;
   align-items: center;
 }
+.clients .clientsList ul li img {
+  object-fit: cover;
+  width: 100%;
+}
 
 /*! clients End */
 /*? steps Start */
@@ -520,7 +524,7 @@ li.drop:hover .headerBody {
 .steps .stepsHead {
   margin: 0 auto 80px;
   text-align: center;
-  width: 545px;
+  max-width: 545px;
 }
 .steps .stepsHead h2 {
   margin-bottom: 20px;
@@ -960,6 +964,7 @@ li.drop:hover .headerBody {
   line-height: 24px;
 }
 .details .detailsList .detailsItem .detailsContent {
+  width: 240px;
   color: var(--Neutrals-4, #777e90);
   font-family: Poppins;
   font-size: 14px;
@@ -970,135 +975,6 @@ li.drop:hover .headerBody {
 /*! details End  */
 
 /*? homeAbout Start */
-/* 
-.homeAbout {
-  padding: 136px 0px;
-}
-.homeAbout .aboutRow {
-  display: flex;
-  justify-content: space-between;
-}
-.homeAbout .aboutRow .aboutCol {
-  margin: 0px;
-  width: calc(50%);
-}
-.homeAbout .topRow .aboutCol p.stage {
-  color: var(--Neutrals-5, #b1b5c3);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-.homeAbout .topRow .aboutCol h2.aboutTitle {
-  color: var(--Neutrals-2, #23262f);
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -0.96px;
-}
-.homeAbout .topRow .aboutCol p.aboutInfo {
-  margin: 20px 0px 0px 0px;
-  max-width: 450px;
-  color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.homeAbout .bottomRow {
-  margin: 128px 0px 0px 0px;
-}
-.homeAbout .bottomRow .aboutList {
-  width: 262px;
-}
-.homeAbout .bottomRow .aboutItem:nth-child(2) {
-  margin: 48px 0px;
-}
-
-.homeAbout .bottomRow .aboutItem:nth-child(1) .aboutNumber {
-  background: var(--Primary-2, #9757d7);
-}
-.homeAbout .bottomRow .aboutItem:nth-child(2) .aboutNumber {
-  background: var(--Primary-3, #9757d7);
-}
-.homeAbout .bottomRow .aboutItem:nth-child(3) .aboutNumber {
-  background: var(--Primary-4, #9757d7);
-}
-.homeAbout .bottomRow .aboutItem .aboutNumber {
-  display: inline-block;
-  padding: 2px 12px;
-  border-radius: 100px;
-  color: var(--Neutrals-8, #fcfcfd);
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-}
-.homeAbout .bottomRow .aboutItem h2.aboutSubtitle {
-  margin: 24px 0px 16px 0px;
-  color: var(--Neutrals-2, #23262f);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-}
-.homeAbout .bottomRow .aboutItem p.aboutContent {
-  color: var(--Neutrals-4, #777e90);
-
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-.homeAbout .bottomRow .aboutCol .aboutBackground {
-  position: relative;
-  border-radius: 24px;
-  height: 100%;
-  background-color: var(--Neutrals-6, #e6e8ec);
-}
-
-.homeAbout .bottomRow .aboutBackground img.pillBox {
-  position: absolute;
-  width: 75%;
-  z-index: 5;
-  right: 0;
-  bottom: 0;
-}
-
-.homeAbout .bottomRow .aboutBackground .platePreview {
-  position: absolute;
-  top: 1.5%;
-  left: -31%;
-  width: 64.5%;
-  pointer-events: none;
-}
-.homeAbout .bottomRow .aboutBackground .platePreview img {
-  width: 100%;
-}
-.homeAbout .bottomRow .aboutBackground .playPreview {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
-  border-radius: 50%;
-  background: #fcfcfd;
-} */
-/* **** */
-
 :root {
   --about_column-gap: 32px;
 }
@@ -1206,7 +1082,7 @@ li.drop:hover .headerBody {
 .bottomRow .rightCol .aboutPreview img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 /*! homeAbout End */
 /* ? trainers Start   */
@@ -1389,26 +1265,29 @@ li.drop:hover .headerBody {
 }
 /* ! review End   */
 /* ? quality Start   */
+:root {
+  --quality_column-gap: 32px;
+  --quality_column-count: 4;
+}
 .quality {
   padding: 0px 0px 136px 0px;
 }
-/* 
-.quality .qualityList {
-  display: flex;
-  margin: 0px -16px;
-}
-.quality .qualityList .qualityItem {
-  position: relative;
-  flex: 0 0 calc(25% - 32px);
-  width: calc(25% - 32px);
-  margin: 0 16px;
-}
-*/
+
 .quality .qualityList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 32px;
-  /* align-items: start; */
+  column-gap: var(--quality_column-gap);
+  /* 
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap; 
+  */
+}
+.quality .qualityList .qualityItem {
+  /* width: calc(
+    (100% - ((var(--quality_column-count) - 1) * var(--quality_column-gap))) /
+      var(--quality_column-count)
+  ); */
 }
 
 .quality .qualityItem .qualityPreview {
@@ -1422,6 +1301,8 @@ li.drop:hover .headerBody {
   margin: 0px 0px 40px 0px;
   padding: 0px 0px 40px 0px;
   border-bottom: 1px solid var(--Neutrals-6);
+}
+.quality .qualityItem .qualityCounter p {
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
   font-size: 64px;
@@ -1429,6 +1310,9 @@ li.drop:hover .headerBody {
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -1.28px;
+}
+.quality .qualityItem .qualityCounter p.appearence_2 {
+  display: none;
 }
 .quality .qualityItem .qualityTitle {
   margin: 0px 0px 16px 0px;
@@ -1566,18 +1450,7 @@ li.drop:hover .headerBody {
   color: var(--Primary-4);
   font-size: 20px;
 }
-/* .workouts .workoutsFrame ul li:before {
-  display: inline-block;
-  vertical-align: bottom;
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin: 0px 12px 0px 0px;
-  background-image: url("../images/workouts/check.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+
 .workouts .workoutsFrame ul li:not(:last-child) {
   margin: 0px 0px 16px 0px;
 }

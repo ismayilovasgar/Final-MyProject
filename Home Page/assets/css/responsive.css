@@ -67,6 +67,9 @@
 
 /* *********************************************************** */
 @media screen and (max-width: 1024px) {
+  :root {
+    --detail_item-distance: 42px;
+  }
   /*? Header Start */
   .show {
     display: block;
@@ -235,6 +238,10 @@
 }
 /* *********************************************************** */
 @media screen and (max-width: 950px) {
+  :root {
+    --poster_column-gap: 16px;
+    --workouts_column-gap: 12px;
+  }
   /* ? heroHeader Start */
   .heroHeader .buttons_bottomm {
     display: flex;
@@ -258,9 +265,7 @@
   /*! steps End */
 
   /*? bookPoster Start */
-  :root {
-    --poster_column-gap: 16px;
-  }
+
   .bookPoster .wrapper .bookList .bookItem {
     column-gap: 20px;
     padding: 16px;
@@ -279,10 +284,6 @@
 
   /*! bookPoster End */
   /*? workouts Start */
-  :root {
-    --workouts_column-gap: 12px;
-  }
-
   .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
     font-size: 30px;
   }
@@ -295,7 +296,58 @@
   /*! workouts End */
 }
 
+@media screen and (max-width: 900px) {
+  :root {
+    --hero_column-gap: 1px;
+    --about_column-gap: 6px;
+  }
+
+  /* ? workouts Start */
+  .workouts .workoutsFrame .workoutsGallery img {
+    object-fit: unset;
+  }
+  /* ! workouts End */
+  .bookPoster .bookItem .bookDetails .bookContent {
+    min-width: 0;
+  }
+
+  .bookItem .bookDetails .bookContent br {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 840px) {
+  :root {
+    --detail_item-distance: 42px;
+  }
+
+  /* ? workouts Start */
+  .workouts .hline2 {
+    line-height: 36px;
+  }
+  .workouts .workoutsBtns {
+    padding: 10px 0px;
+  }
+  .workouts .workoutsBtns button {
+    padding: 10px 8px;
+  }
+  .workouts .workoutsBtns .btn {
+    border-radius: 40px;
+  }
+  /* ! workouts End */
+  .quality .qualityList {
+    column-gap: 16px;
+  }
+  .quality .qualityItem .qualityCounter {
+    font-size: 46px;
+  }
+  .quality .qualityItem .qualityCounter p.appearence_1 {
+    display: none;
+  }
+  .quality .qualityItem .qualityCounter p.appearence_2 {
+    display: block;
+  }
+
   footer .frame .top-menu .left-menu i {
     margin: 0px 20px 130px 0px;
   }
@@ -307,7 +359,6 @@
 /* *********************************************************** */
 @media screen and (max-width: 768px) {
   /*? Header */
-
   .tabletMenu .wrap {
     display: flex;
     flex-direction: column;
@@ -341,6 +392,50 @@
     padding: 0px;
   }
 
+  /*? heroHeader Start */
+  .heroHeader .wrap .contentCol .mainTitle p {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  /*! heroHeader End */
+  /*? quality Start */
+  .quality .qualityList {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--quality_column-gap);
+    column-gap: var(--quality_column-gap);
+  }
+  /*! quality End */
+  /*? details Start */
+  :root {
+    --detail_item-distance: 12px;
+  }
+  .details .detailsList {
+    column-gap: unset;
+  }
+  .details .detailsList .detailsItem .detailsCategory {
+    font-size: 13px;
+    max-width: 180px;
+  }
+  .details .detailsList .detailsItem .detailsContent {
+    max-width: 160px;
+    width: unset;
+    font-size: 12px;
+  }
+  .details .detailsList .detailsItem .detailsContent {
+    max-width: 200px;
+  }
+  .detailItemMiddle {
+    border: none;
+  }
+  /*! details End */
+
+  .bookPoster .wrapper .bookList .bookItem {
+    column-gap: 16px;
+    padding: 2px;
+  }
+  .workouts .workoutsBtns button {
+    padding: 8px 2px;
+  }
   /* ? Footer */
   footer .top-menu {
     display: flex;
@@ -400,6 +495,45 @@
     row-gap: 24px;
   }
 }
+
+/* *********************************************************** */
+@media screen and (max-width: 700px) {
+  /*? heroHeader Start */
+  .heroHeader .wrap {
+    flex-direction: column-reverse;
+  }
+
+  .heroHeader .wrap .previewCol {
+    width: 100%;
+  }
+
+  .heroHeader .wrap .contentCol {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .heroHeader .wrap .contentCol .overlap {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .heroHeader .wrap .contentCol .button_arrow_bottom {
+    position: static;
+  }
+
+  .heroHeader .buttons_bottomm {
+    flex-direction: column;
+  }
+
+  .heroHeader .buttons_bottomm button {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /*! heroHeader End */
+}
+
 /* *********************************************************** */
 @media screen and (max-width: 390px) {
   .container {
