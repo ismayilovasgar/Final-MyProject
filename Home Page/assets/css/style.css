@@ -409,6 +409,7 @@ li.drop:hover .headerBody {
   background: var(--Neutrals-8, #fcfcfd);
 }
 .heroHeader .wrap {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: var(--hero_column-gap);
@@ -453,7 +454,6 @@ li.drop:hover .headerBody {
 }
 .heroHeader .wrap .contentCol .buttons_bottomm {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   column-gap: 16px;
 }
@@ -463,16 +463,19 @@ li.drop:hover .headerBody {
   color: var(--Neutrals-8);
 }
 .heroHeader .wrap .contentCol .button_arrow_bottom {
-  margin: 140px 0 0 0;
-  display: inline-block;
+  /* margin: 140px 0 0 0; */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   border-radius: 64px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
 .heroHeader .wrap .contentCol .button_arrow_bottom i {
-  width: 100%;
-  display: block;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--Neutrals-4);
 }
 
@@ -735,18 +738,20 @@ li.drop:hover .headerBody {
 
 .bookPoster .wrapper {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   column-gap: var(--poster_column-gap);
 }
 
 .bookPoster .bookGallery {
+  align-self: stretch;
   width: calc(50% - (var(--poster_column-gap) * 0.5));
   /* box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1); */
 }
 
 .bookPoster .bookGallery img {
+  height: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .bookPoster .bookMenu {
@@ -1149,6 +1154,7 @@ li.drop:hover .headerBody {
 .homeAbout .rightCol {
   width: calc(70% - (var(--about_column-gap) * 0.7));
 }
+
 .homeAbout .bottomRow .aboutItem:nth-child(2) {
   margin: 48px 0px;
 }
@@ -1193,8 +1199,13 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
+
+.homeAbout .bottomRow .rightCol .aboutPreview {
+  height: 100%;
+}
 .bottomRow .rightCol .aboutPreview img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 /*! homeAbout End */
@@ -1500,7 +1511,7 @@ li.drop:hover .headerBody {
 }
 
 .advantages .advantagesItem p.advantagesSubtitle {
-  width: 293px;
+  max-width: 293px;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
 
@@ -1580,10 +1591,12 @@ li.drop:hover .headerBody {
   margin: 0px 12px 0px 0px;
 }
 .workouts .workoutsFrame .workoutsGallery {
+  align-self: stretch;
   width: calc(60% - (var(--workouts_column-gap) * 0.6));
 }
 .workouts .workoutsFrame .workoutsGallery img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 /* ! workouts End   */
