@@ -1,5 +1,8 @@
 /** Desktop  Start*/
 @media screen and (max-width: 1440px) {
+  * {
+    border: 1px solid red;
+  }
   .tabletMenu.active {
     display: none;
   }
@@ -46,6 +49,11 @@
   .intro .hline1 {
     font-size: 60px;
   }
+  /*? workouts Start */
+  .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
+    font-size: 44px;
+  }
+  /* ! workouts End   */
 }
 
 /** Tablet Start */
@@ -74,9 +82,6 @@
   }
   .buttonGroups .bars {
     display: block;
-  }
-  * {
-    border: 1px solid red;
   }
   /*! Header End */
   /*? Steps Start */
@@ -120,14 +125,30 @@
   .steps .stepsList .stepsItem .stepsPreview {
     margin: 0 auto 40px auto;
   }
-
   /*! Steps End */
-
   /*? Intro Start */
   :root {
     --intro_column-gap: 16px;
   }
   /*! intro End */
+
+  /*? bookPoster Start */
+  .bookPoster .bookMenu {
+    padding: 32px;
+  }
+  /*! bookPoster End */
+  /* ? trainers Start   */
+  :root {
+    --trainer-row-gap: 32px;
+  }
+  /* ! trainers End   */
+
+  /*? workouts Start */
+
+  .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
+    font-size: 40px;
+  }
+  /* ! workouts End   */
 
   /*? Footer Start */
   footer .frame .top-menu {

@@ -778,14 +778,18 @@ li.drop:hover .headerBody {
 }
 
 .bookPoster .wrapper .bookList {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: 4px; */
+}
+.bookPoster .wrapper .bookList .bookItem:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .bookPoster .wrapper .bookList .bookItem {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: 24px;
   padding: 24px;
 }
@@ -1099,12 +1103,10 @@ li.drop:hover .headerBody {
 
 .topRow {
   display: flex;
-}
-.topRow .topCol {
-  width: 50%;
+  column-gap: var(--about_column-gap);
 }
 
-.topRow .topCol .aboutStage {
+.topRow .aboutStage {
   color: var(--Neutrals-5, #b1b5c3);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1113,7 +1115,8 @@ li.drop:hover .headerBody {
   line-height: 16px;
   text-transform: uppercase;
 }
-.topRow .topCol .aboutTitle {
+.topRow .aboutTitle {
+  max-width: 470px;
   margin-bottom: 20px;
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
@@ -1123,7 +1126,8 @@ li.drop:hover .headerBody {
   line-height: 56px;
   letter-spacing: -0.96px;
 }
-.topRow .topCol .aboutInfo {
+.topRow .aboutInfo {
+  max-width: 450px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1136,13 +1140,13 @@ li.drop:hover .headerBody {
   column-gap: var(--about_column-gap);
   display: flex;
 }
-.bottomRow .bottomLeftCol .aboutList {
+.bottomRow .leftCol .aboutList {
   max-width: 262px;
 }
-.homeAbout .bottomRow .bottomLeftCol {
+.homeAbout .leftCol {
   width: calc(30% - (var(--about_column-gap) * 0.3));
 }
-.homeAbout .bottomRow .bottomRightCol {
+.homeAbout .rightCol {
   width: calc(70% - (var(--about_column-gap) * 0.7));
 }
 .homeAbout .bottomRow .aboutItem:nth-child(2) {
@@ -1189,7 +1193,7 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
-.bottomRow .bottomRightCol .aboutPreview img {
+.bottomRow .rightCol .aboutPreview img {
   width: 100%;
   object-fit: cover;
 }
@@ -1201,7 +1205,6 @@ li.drop:hover .headerBody {
   --trainer-col-count: 3;
 }
 .trainers .trainerHead {
-  width: 544px;
   margin: 0 auto 80px auto;
 }
 .trainers .trainerHead h2.trainerTitle {
@@ -1216,6 +1219,7 @@ li.drop:hover .headerBody {
   letter-spacing: -0.96px;
 }
 .trainers .trainerHead p.trainerInfo {
+  max-width: 544px;
   margin: 20px auto 40px auto;
   color: var(--Neutrals-3, #353945);
   text-align: center;
@@ -1261,7 +1265,6 @@ li.drop:hover .headerBody {
 .trainers .trainersList .listWrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   column-gap: var(--trainer-col-gap);
   row-gap: var(--trainer-row-gap);
@@ -1280,6 +1283,7 @@ li.drop:hover .headerBody {
 .trainers .trainersList .listWrap .trainerItem .profile {
   margin: 0px auto 24px auto;
   border-radius: 16px;
+  overflow: hidden;
   width: 160px;
   height: 160px;
   border-radius: 16px;
@@ -1289,7 +1293,8 @@ li.drop:hover .headerBody {
 }
 .trainers .trainersList .listWrap .trainerItem .profile img {
   width: 100%;
-  border-radius: 16px;
+  object-fit: cover;
+  /* border-radius: 16px; */
 }
 .trainers .trainersList .trainerItem:hover .profile {
   box-shadow: 0 0 0 2px #ff592c;
@@ -1322,13 +1327,13 @@ li.drop:hover .headerBody {
 }
 .review .reviewItem {
   margin: 0 auto;
-  width: 736px;
   text-align: center;
 }
 .review .reviewItem .reviewLogo {
   padding: 13px 7px 13.5px 7px;
 }
 .review .reviewItem .reviewTitle {
+  max-width: 736px;
   padding: 0px 0px 40px 0px;
   margin: 8px auto 40px auto;
   border-bottom: 1px solid var(--Neutrals-6);
@@ -1392,17 +1397,20 @@ li.drop:hover .headerBody {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 32px;
-  align-items: start;
+  /* align-items: start; */
 }
 
 .quality .qualityItem .qualityPreview {
   margin: 0px 0px 64px 0px;
 }
+.quality .qualityItem .qualityPreview img {
+  object-fit: cover;
+  display: block;
+}
 .quality .qualityItem .qualityCounter {
   margin: 0px 0px 40px 0px;
   padding: 0px 0px 40px 0px;
   border-bottom: 1px solid var(--Neutrals-6);
-
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
   font-size: 64px;
@@ -1441,13 +1449,12 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesHead {
   margin: 0px auto 80px auto;
-  width: 636px;
+  /* width: 636px; */
 }
 .advantages .advantagesHead h2.advantagesTitle {
   margin: 0px 0 20px 0;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -1457,7 +1464,8 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesHead p.advantagesInfo {
   margin: 0 auto;
-  width: 453px;
+  max-width: 456px;
+  padding: 0px 2px;
   color: var(--Neutrals-3, #353945);
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1483,8 +1491,14 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesItem .profile {
   text-align: center;
-  margin: 0px 0px 36px 0px;
+  margin: 0px auto 36px auto;
+  max-width: 145px;
 }
+.advantages .advantagesItem .profile img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .advantages .advantagesItem p.advantagesSubtitle {
   width: 293px;
   color: var(--Neutrals-2, #23262f);
@@ -1516,13 +1530,15 @@ li.drop:hover .headerBody {
 }
 .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
   color: var(--Neutrals-2, #23262f);
+  max-width: 420px;
 }
 .workouts .workoutsFrame .workoutsWrap p.workoutsInfo {
   color: var(--Neutrals-4, #777e90);
   margin: 32px 0px;
+  max-width: 420px;
 }
 
-.workouts .workoutsFrame ul li {
+.workouts .workoutsFrame ul li p {
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1530,7 +1546,16 @@ li.drop:hover .headerBody {
   font-weight: 600;
   line-height: 24px;
 }
-.workouts .workoutsFrame ul li:before {
+.workouts .workoutsFrame ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.workouts .workoutsFrame ul li i {
+  color: var(--Primary-4);
+  font-size: 20px;
+}
+/* .workouts .workoutsFrame ul li:before {
   display: inline-block;
   vertical-align: bottom;
   content: "";
@@ -1541,12 +1566,15 @@ li.drop:hover .headerBody {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .workouts .workoutsFrame ul li:not(:last-child) {
   margin: 0px 0px 16px 0px;
 }
 .workouts .workoutsFrame .workoutsWrap .workoutsBtns {
   margin: 48px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .workouts .workoutsFrame .workoutsWrap .workoutsBtns button:first-child {
   margin: 0px 12px 0px 0px;
@@ -1566,7 +1594,7 @@ li.drop:hover .headerBody {
 }
 .offers .frame {
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 .offers p.stage {
   margin: 136px auto 16px auto;
@@ -1581,8 +1609,9 @@ li.drop:hover .headerBody {
 }
 
 .offers h2.offersTitle {
-  width: 805px;
-  margin: 0px auto 32px auto;
+  /* max-width: 890px; */
+  padding: 0px 20px;
+  /* margin: 0px auto; */
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display";
@@ -1593,8 +1622,8 @@ li.drop:hover .headerBody {
   letter-spacing: -1.28px;
 }
 .offers p.offersText {
-  width: 450px;
-  margin: 0 auto;
+  max-width: 450px;
+  margin: 32px auto 0 auto;
   color: var(--Neutrals-4, #777e90);
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1603,9 +1632,11 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
-.offers a.offersButton {
-  display: inline-block;
-  margin: 48px auto 0px auto;
+.offers button.offersButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px auto 0 auto;
 }
 /* ! offers  End */
 
