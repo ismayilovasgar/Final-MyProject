@@ -43,6 +43,9 @@
     right: -50px;
     width: 60px;
   }
+  .intro .hline1 {
+    font-size: 60px;
+  }
 }
 
 /** Tablet Start */
@@ -72,16 +75,21 @@
   .buttonGroups .bars {
     display: block;
   }
-
+  * {
+    border: 1px solid red;
+  }
   /*! Header End */
   /*? Steps Start */
   :root {
     --steps_colum-count: 2;
-    --steps_row-gap: 64px;
   }
   .steps .stepsList {
     flex-wrap: wrap;
     row-gap: var(--steps_row-gap);
+  }
+
+  .steps .stepsList .stepsItem {
+    padding: 10px 0px;
   }
 
   .steps .stepsList .stepsItem:not(:last-child)::after {
@@ -114,6 +122,12 @@
   }
 
   /*! Steps End */
+
+  /*? Intro Start */
+  :root {
+    --intro_column-gap: 16px;
+  }
+  /*! intro End */
 
   /*? Footer Start */
   footer .frame .top-menu {

@@ -481,6 +481,7 @@ li.drop:hover .headerBody {
 }
 .heroHeader .wrap .previewCol img {
   width: 100%;
+  object-fit: cover;
 }
 /*! heroHeader End */
 
@@ -506,6 +507,7 @@ li.drop:hover .headerBody {
 :root {
   --steps_column-gap: 32px;
   --steps_colum-count: 4;
+  --steps_row-gap: 32px;
 }
 .steps {
   padding: 136px 0;
@@ -689,12 +691,11 @@ li.drop:hover .headerBody {
 }
 .intro .wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   column-gap: var(--intro_column-gap);
 }
 .intro .wrapper .introContent {
-  width: calc(40% - (var(--hero_column-gap) * 0.4));
+  width: calc(40% - (var(--intro_column-gap) * 0.4));
 }
 
 .intro .wrapper .introContent h2 {
@@ -714,7 +715,7 @@ li.drop:hover .headerBody {
 }
 
 .intro .wrapper .introGallery {
-  width: calc(60% - (var(--hero_column-gap) * 0.6));
+  width: calc(60% - (var(--intro_column-gap) * 0.6));
 }
 .intro .wrapper .introGallery img {
   width: 100%;
@@ -733,9 +734,7 @@ li.drop:hover .headerBody {
 }
 
 .bookPoster .wrapper {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   column-gap: var(--poster_column-gap);
 }
