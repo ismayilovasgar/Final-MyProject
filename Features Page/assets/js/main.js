@@ -1,10 +1,21 @@
-const barsBtn = document.querySelector(".header .openCloseBtns .bars");
-const closeBtn = document.querySelector(".closeBtn");
-const getBtnAndBar = document.querySelector(".openCloseBtns .getBtnAndBar");
+// Desktop
+const dropdown = document.querySelector("li.drop");
+const dropdownArrow = document.querySelector("li.drop > i");
 
-// Tablet
-// const tabletMenu = document.querySelector(".tabletMenu");
-const header = document.querySelector("div.header");
-const tClassDropdown = document.querySelector(".tClassDropdown");
-const subMenu = document.querySelector(".tabletMenu .subMenu ");
-const outbound = document.querySelector(".outbound");
+dropdown.addEventListener("mouseover", (e) => {
+  dropdownArrow.classList.toggle("rotate_180");
+});
+
+// Bars Menu
+const btnHidden = document.querySelector("button.hidden i");
+const tabletMenu = document.querySelector(".tabletMenu");
+const dropdownMenu = document.querySelector(".dropdownBody");
+const dropdownBtn = document.querySelector(".dropdownLink");
+
+btnHidden.addEventListener("click", (e) => {
+  btnHidden.classList.toggle("fa-xmark");
+  tabletMenu.classList.toggle("show");
+});
+dropdownBtn.addEventListener("click", (e) => {
+  dropdownMenu.classList.toggle("active");
+});
