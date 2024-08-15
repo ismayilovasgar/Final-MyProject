@@ -414,6 +414,7 @@ li.drop:hover .headerBody {
 /*? heroHeader Start */
 .heroHeader {
   background: var(--Neutrals-8, #fcfcfd);
+  padding: 120px 0px 0px 0px;
 }
 .heroHeader .wrap {
   display: flex;
@@ -526,94 +527,10 @@ li.drop:hover .headerBody {
 
 /*! intro End */
 
-/* ? ExperienceDetail Start  */
-/* 
-.expParent {
-  padding: 0px 0px 136px 0px;
-}
-.expParent .titleContent {
-  max-width: 580px;
-  margin: 0 auto 80px;
-  text-align: center;
-}
-
-.expParent .titleContent p {
-  margin: 0px 0px 12px 0px;
-  color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-.expParent .titleContent h2 {
-  color: var(--Neutrals-2, #23262f);
-  text-align: center;
-  font-family: "SFProDisplay", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -0.96px;
-}
-
-.expParent .cardList {
-  display: flex;
-  align-items: center;
-}
-
-.expParent .cardList .cardLeft {
-  padding: 34px 83px 34px 0px;
-  flex: 0 0 31%;
-}
-
-.expParent .cardList .cardMiddle {
-  padding: 34px 83px;
-  flex: 0 0 38%;
-  border-width: 0 1px;
-  border-style: solid;
-  border-color: #e6e8ec;
-}
-
-.expParent .cardList .cardRight {
-  padding: 34px 0 34px 83px;
-  flex: 0 0 31%;
-}
-.expParent .cardList .cardIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  margin: 0px 0px 32px 0px;
-}
-
-.expParent .cardList .card h3 {
-  color: var(--Neutrals-2);
-  margin: 0px 0px 32px 0px;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-.expParent .cardList .card p {
-  color: var(--Neutrals-4, #777e90);
-
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-} */
-/*! ExperienceDetail End */
-
 /*? details Start  */
 :root {
   --details_column-gap: 83px;
-  --details_column-count: 5;
+  --details_column-count: 3;
   --details_divider-width: 1px;
 }
 .details {
@@ -658,13 +575,8 @@ li.drop:hover .headerBody {
 
 .details .detailsList .detailsItem {
   width: calc(
-    (
-        100% -
-          (
-            ((var(--details_column-count) - 1) * var(--details_column-gap)) +
-              2px
-          )
-      ) / 3
+    (100% - ((var(--details_column-count) - 1) * var(--details_column-gap))) /
+      var(--details_column-count)
   );
 }
 .details .detailsList .detailsItem .detailsIcon img {
@@ -814,136 +726,6 @@ li.drop:hover .headerBody {
 /*! program End */
 
 /*? homeAbout Start */
-/* ***** */
-
-/* .homeAbout {
-  padding: 136px 0px;
-}
-.homeAbout .aboutRow {
-  display: flex;
-  justify-content: space-between;
-}
-.homeAbout .aboutRow .aboutCol {
-  margin: 0px 12px;
-  width: calc(50% - 24px);
-}
-.homeAbout .topRow .aboutCol p.stage {
-  color: var(--Neutrals-5, #b1b5c3);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-.homeAbout .topRow .aboutCol h2.aboutTitle {
-  color: var(--Neutrals-2, #23262f);
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -0.96px;
-}
-.homeAbout .topRow .aboutCol p.aboutInfo {
-  margin: 20px 0px 0px 0px;
-  max-width: 450px;
-  color: var(--Neutrals-4, #777e90);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.homeAbout .bottomRow {
-  margin: 128px 0px 0px 0px;
-}
-.homeAbout .bottomRow .aboutList {
-  width: 262px;
-}
-.homeAbout .bottomRow .aboutItem:nth-child(2) {
-  margin: 48px 0px;
-}
-
-.homeAbout .bottomRow .aboutItem:nth-child(1) .aboutNumber {
-  background: var(--Primary-2, #9757d7);
-}
-.homeAbout .bottomRow .aboutItem:nth-child(2) .aboutNumber {
-  background: var(--Primary-3, #9757d7);
-}
-.homeAbout .bottomRow .aboutItem:nth-child(3) .aboutNumber {
-  background: var(--Primary-4, #9757d7);
-}
-.homeAbout .bottomRow .aboutItem .aboutNumber {
-  display: inline-block;
-  padding: 2px 12px;
-  border-radius: 100px;
-  color: var(--Neutrals-8, #fcfcfd);
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-}
-.homeAbout .bottomRow .aboutItem h2.aboutSubtitle {
-  margin: 24px 0px 16px 0px;
-  color: var(--Neutrals-2, #23262f);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-}
-.homeAbout .bottomRow .aboutItem p.aboutContent {
-  color: var(--Neutrals-4, #777e90);
-
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-}
-.homeAbout .bottomRow .aboutCol .aboutBackground {
-  position: relative;
-  border-radius: 24px;
-  height: 100%;
-  background-color: var(--Neutrals-6, #e6e8ec);
-}
-
-.homeAbout .bottomRow .aboutBackground img.pillBox {
-  position: absolute;
-  width: 75%;
-  z-index: 5;
-  right: 0;
-  bottom: 0;
-}
-
-.homeAbout .bottomRow .aboutBackground .platePreview {
-  position: absolute;
-  top: 1.5%;
-  left: -31%;
-  width: 64.5%;
-  pointer-events: none;
-}
-.homeAbout .bottomRow .aboutBackground .platePreview img {
-  width: 100%;
-}
-.homeAbout .bottomRow .aboutBackground .playPreview {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
-  border-radius: 50%;
-  background: #fcfcfd;
-} */
-/* **** */
 
 :root {
   --about_column-gap: 32px;
