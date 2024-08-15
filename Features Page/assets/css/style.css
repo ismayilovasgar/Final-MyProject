@@ -615,7 +615,6 @@ li.drop:hover .headerBody {
   display: flex;
   align-items: center;
   column-gap: var(--program_column-gap);
-  padding: 0px 96px 64px 76px;
   border-radius: 24px;
   background-color: var(--Neutrals-8, #fcfcfd);
   box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
@@ -718,6 +717,7 @@ li.drop:hover .headerBody {
 }
 .program .programRightCol .programBookLink {
   text-align: center;
+  margin-bottom: 18px;
 }
 .program .programRightCol .programBookLink a {
   display: inline-block;
