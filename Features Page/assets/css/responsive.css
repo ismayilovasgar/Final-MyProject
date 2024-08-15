@@ -286,20 +286,247 @@
     row-gap: 24px;
   }
 }
+@media screen and (max-width: 700px) {
+  /* heroHeader Start */
+  .heroHeader .wrap {
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+  }
+  .heroHeader .wrap .contentCol {
+    width: 100%;
+    max-width: 600px;
+  }
+  .heroHeader .wrap .previewCol {
+    width: 100%;
+  }
+  .heroHeader .wrap .contentCol .buttons_bottomm {
+    flex-direction: row;
+  }
+  .heroHeader .wrap .contentCol .buttons_bottomm button {
+    flex-grow: 1;
+  }
+  .heroHeader .wrap .contentCol .mainTitle {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+  }
 
+  /* intro Start */
+  .intro .wrapper {
+    flex-direction: column-reverse;
+    row-gap: 32px;
+  }
+
+  .intro .wrapper .introGallery {
+    width: 100%;
+  }
+  .intro .wrapper .introContent {
+    width: 100%;
+  }
+  .intro .wrapper .introContent p {
+    max-width: 80%;
+    margin: 32px 0px 40px 0px;
+  }
+
+  /* details Start */
+  .details .detailsList {
+    flex-direction: column;
+  }
+  .details .detailsList .detailsItem {
+    width: 100%;
+  }
+
+  .details .detailsList .detailsItem:not(:last-child) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--Neutrals-6);
+  }
+
+  /* program Start */
+  .program .wrapper {
+    flex-direction: column;
+    padding: 48px 24px;
+  }
+  .program .programLeftCol .programList ul li:nth-child(1),
+  .program .programLeftCol .programList ul li:nth-child(3) {
+    display: none;
+  }
+  .program .programLeftCol h3 {
+    display: none;
+  }
+  .program .programRightCol .programView {
+    padding: 16px 45px;
+  }
+  .program .programList > ul li > a {
+    display: block;
+    padding: 0px;
+  }
+  .program .programList > ul li > a .programArrow {
+    display: none;
+  }
+
+  .program .programList .programIcon {
+    padding: 14px;
+    margin: 0px 0px 20px 0px;
+    position: static;
+  }
+  .program .wrapper .programLeftCol {
+    width: unset;
+  }
+  .program .programItemLeft {
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* homeAbout */
+  .homeAbout .topRow {
+    display: block;
+  }
+  .homeAbout .leftCol {
+    width: 100%;
+  }
+  .homeAbout .rightCol {
+    width: 100%;
+  }
+  .topRow .aboutTitle {
+    max-width: unset;
+    margin: 20px 0px;
+  }
+  .topRow .aboutInfo {
+    max-width: unset;
+  }
+  .homeAbout .bottomRow {
+    margin-top: 60px;
+    flex-direction: column-reverse;
+    row-gap: 60px;
+  }
+  .homeAbout .bottomRow .rightCol {
+    width: 100%;
+  }
+  .homeAbout .bottomRow .rightCol .aboutPreview {
+    height: unset;
+  }
+  .homeAbout .bottomRow .leftCol {
+    width: 100%;
+  }
+  .bottomRow .leftCol .aboutList {
+    max-width: 450px;
+  }
+  .homeAbout {
+    padding: 48px 0px;
+  }
+
+  /* review Start */
+  .review .reviewItem {
+    max-width: 736px;
+    width: unset;
+  }
+
+  /* clients Start */
+  .clients .clientsList ul li:last-child {
+    display: none;
+  }
+
+  /* lifeStyle */
+  .lifeStyle .listWrapper .row {
+    flex-direction: column-reverse;
+    row-gap: 48px;
+  }
+  .lifeStyle .listWrapper .row .col {
+    width: 100%;
+  }
+  /*  */
+  .advantages {
+    padding: 64px 0px;
+  }
+  .advantages .advantagesHead {
+    max-width: 636px;
+    width: unset;
+  }
+  .advantages .advantagesHead p.advantagesInfo {
+    max-width: 450px;
+    width: unset;
+  }
+  /* offers */
+  .offers p.stage {
+    margin: 48px auto 16px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --clients-column-count: 2;
+    --clients-column-gap: 16px;
+    --clients-row-gap: 16px;
+  }
+  .advantages .advantagesList {
+    flex-direction: column;
+    row-gap: 46px;
+  }
+  .clients .clientsList ul {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--clients-row-gap) var(--clients-column-gap);
+  }
+  .clients .clientsList ul li {
+    width: calc(50% - 16px * 0.5);
+  }
+  .clients .clientsList ul li:nth-child(3) {
+    display: block;
+  }
+  .workouts .workoutsFrame .workoutsWrap {
+    width: 100%;
+  }
+  .offers p.offersText {
+    width: unset;
+    max-width: 450px;
+  }
+  .offers h2.offersTitle {
+    display: flex;
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
 @media screen and (max-width: 390px) {
   .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0xp;
-    padding: 0px 32px;
+    width: 312px;
   }
   .header {
     padding: 48px 0px 24px 0px;
   }
-
+  .offers h2.offersTitle {
+    display: block;
+  }
   .header .headerTrialBtn {
     display: none;
+  }
+  .heroHeader .wrap .contentCol .buttons_bottomm {
+    flex-direction: column;
+  }
+
+  .program .wrapper .programRightCol {
+    width: 100%;
+  }
+  .workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+    flex-direction: column;
+  }
+  .advantages .advantagesItem {
+    width: 100%;
+  }
+  .intro .wrapper .introContent p {
+    max-width: unset;
+  }
+  .intro .wrapper .introContent button {
+    width: 100%;
+  }
+  .offers .frame {
+    text-align: unset;
+  }
+  .offers button {
+    width: 100%;
+  }
+  .offers a.offersButton {
+    width: 100%;
   }
   /*? Footer */
 }

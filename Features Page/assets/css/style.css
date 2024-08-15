@@ -911,6 +911,9 @@ li.drop:hover .headerBody {
   justify-content: space-between;
   align-items: center;
 }
+.clients .clientsList ul li:nth-child(3) {
+  display: none;
+}
 
 /*! clients End */
 
