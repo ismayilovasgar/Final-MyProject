@@ -1146,3 +1146,355 @@ footer .divider {
   background-color: var(--Neutrals-6, #e6e8ec);
 }
 /* ! Footer End */
+
+/* Nahibe */
+
+.trainer__book {
+  display: flex;
+  gap: 64px;
+}
+.trainer__class {
+  display: flex;
+  width: 60%;
+  gap: 32px;
+}
+.trainer__about {
+  display: flex;
+  width: 40%;
+  padding: 24px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 24px;
+  border: 1px solid var(--Neutrals-6, #e6e8ec);
+  background: var(--Neutrals-8, #fcfcfd);
+}
+.trainer__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+  line-height: 24px;
+  gap: 4px;
+}
+.trainer__subtitle h2 {
+  color: var(--Neutrals-2, #23262f);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.trainer__subtitle p {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.trainer__image {
+  width: 50%;
+  border-radius: 128px;
+  background: var(--Neutrals-6, #e6e8ec);
+}
+.trainer__image img {
+  width: 100%;
+}
+.class__about {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.class__parametres {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.class__details {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+.class__features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.class__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.features__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  gap: 20px;
+}
+.divider {
+  height: 1px;
+  background: var(--Neutrals-6, #e6e8ec);
+}
+.features__detail p {
+  color: var(--Neutrals-2, #23262f);
+}
+.features__detail span {
+  color: var(--Primary-4, #45b26b);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.class__icon {
+  width: 20px;
+}
+.note {
+  color: var(--Neutrals-3, #353945);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.divider__y {
+  width: 1px;
+  height: 256px;
+  border-radius: 2px;
+  background: var(--Neutrals-6, #e6e8ec);
+}
+.workout__time {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.workouttime__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.workouttime__title h1 {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.workouttime__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.workouttime__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 0 8px;
+  border-radius: 90px;
+  background: var(--Neutrals-2, #23262f);
+  width: 352px;
+}
+.date__prev,
+.date__next {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border-radius: 32px;
+  padding: 4px;
+}
+.date__options {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.date__option {
+  width: 128px;
+  padding: 16px 24px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.date__option_df {
+  width: 80px;
+  padding: 16px 24px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.workouttime__date {
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: right;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.workouttime__btns {
+  display: flex;
+  width: 352px;
+  justify-content: space-between;
+  align-items: center;
+}
+.lock__button {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.lock__button img {
+  width: 24px;
+}
+.book__button {
+  width: 292px;
+  padding: 16px 24px;
+  gap: 40px;
+  border-radius: 90px;
+  background: var(--Primary-1, #ff592c);
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.value__props {
+  padding: 0px 0px 136px;
+  background: var(--Neutrals-8, #fcfcfd);
+}
+.value__top {
+  max-width: 620px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+.value__top h2 {
+  margin-bottom: 16px;
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  width: 621px;
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+.value__head p {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #777e90;
+}
+.value__info {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.value__green {
+  color: var(--Primary-4, #45b26b);
+}
+.value__black {
+  color: var(--Neutrals-2, #23262f);
+}
+.value__cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.value__card {
+  display: flex;
+  padding: 64px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 20px;
+  background: var(--Neutrals-7, #f4f5f6);
+}
+.value__cards :nth-of-type(3) {
+  background: var(--Neutrals-8, #fcfcfd);
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+}
+.card__description {
+  margin-bottom: 16px;
+}
+.card__description h2 {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.card__description p {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.card__btn {
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  padding: 16px 24px;
+}
+.value__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+}
+.card__button__next,
+.card__button__prev {
+  background: var(--Neutrals-8, #fcfcfd);
+}
+/*  */

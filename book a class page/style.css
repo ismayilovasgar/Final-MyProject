@@ -30,6 +30,7 @@
   max-width: 95%;
   margin: 0 auto;
 }
+
 .hero__class {
   background: var(--Neutrals-8, #fcfcfd);
   margin: 40px 0px 0px 0px;
@@ -86,6 +87,7 @@
   margin: 136px 0px;
   background: var(--Neutrals-8, #fcfcfd);
 }
+
 .trainer__book {
   display: flex;
   gap: 64px;

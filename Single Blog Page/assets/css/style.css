@@ -402,14 +402,21 @@ li.drop:hover .headerBody {
 /* ! Header End */
 
 /*? artcile Start */
+
+:root {
+  --article_column-gap: 64px;
+  --article_column-count: 2;
+}
 .article {
   padding: 136px 0px;
   margin-bottom: 112px;
 }
+
 .article .articleHead {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  column-gap: 32px;
   margin-bottom: 112px;
 }
 
@@ -433,10 +440,17 @@ li.drop:hover .headerBody {
 }
 
 .article .articleRow {
-  display: grid;
-  grid-template-columns: 25% 57%;
-  column-gap: 18%;
+  display: flex;
   align-items: center;
+  column-gap: var(--article_column-gap);
+}
+.article .articleRow .articleLeftCol {
+  /* width: calc((100% - var(--article_column-gap)) * 0.4); */
+  width: calc(40% - var(--article_column-gap) * 0.4);
+}
+.article .articleRow .articleRightCol {
+  /* width: calc((100% - var(--article_column-gap)) * 0.6); */
+  width: calc(60% - var(--article_column-gap) * 0.6);
 }
 
 .article .articleRightCol h2.articleTitle {
@@ -449,8 +463,12 @@ li.drop:hover .headerBody {
   line-height: 56px;
   letter-spacing: -0.96px;
 }
+.text_justify {
+  text-align: justify;
+  padding-right: 6px;
+}
 .article .articleRightCol .articleInfo {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -459,14 +477,16 @@ li.drop:hover .headerBody {
   line-height: 32px;
   letter-spacing: -0.24px;
 }
-
+.article .articlePreview {
+  border-radius: 16px;
+  overflow: hidden;
+}
 .article .articlePreview img {
   width: 100%;
   object-fit: cover;
-  border-radius: 16px;
 }
 .article .articleRightCol .articleContent {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .article .articleRightCol .articleContent p {
@@ -489,13 +509,14 @@ li.drop:hover .headerBody {
 }
 .review .reviewItem {
   margin: 0 auto;
-  width: 736px;
   text-align: center;
 }
 .review .reviewItem .reviewLogo {
   padding: 13px 7px 13.5px 7px;
 }
 .review .reviewItem .reviewTitle {
+  max-width: 736px;
+
   padding: 0px 0px 40px 0px;
   margin: 8px auto 40px auto;
   border-bottom: 1px solid var(--Neutrals-6);
@@ -510,7 +531,6 @@ li.drop:hover .headerBody {
 }
 .review .reviewItem .reviewAuthor {
   color: var(--Neutrals-2, #23262f);
-
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -541,7 +561,8 @@ li.drop:hover .headerBody {
 /* ! review End   */
 /* ? story  Start */
 :root {
-  --story_column_gap: 128px;
+  --story_column_gap: 24px;
+  --story_margin_32: 16px;
 }
 .story {
   padding: 136px 0px;
@@ -561,24 +582,33 @@ li.drop:hover .headerBody {
   display: flex;
   column-gap: var(--story_column_gap);
 }
-.story .storyRow .storyCol:nth-child(1) {
+.story .storyRow .storyLeftCol {
   width: calc(40% - (var(--story_column_gap) * 0.4));
 }
-.story .storyRow .storyCol:nth-child(2) {
+.story .storyRow .storyRightCol {
   width: calc(60% - (var(--story_column_gap) * 0.6));
-  padding-left: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 5px;
+}
+
+.story .storyPreview {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
 }
 .story .storyPreview img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 16px;
 }
 
 .story .storyTitle {
-  margin-bottom: 32px;
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 56px;
@@ -586,6 +616,7 @@ li.drop:hover .headerBody {
 }
 
 .story .sotryInfo {
+  margin-top: 5px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -596,11 +627,10 @@ li.drop:hover .headerBody {
 .story .storyList {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 32px;
-  margin: 64px 0px;
+  column-gap: var(--story_column_gap);
 }
 .story .storyItem .storyCategory {
-  padding-bottom: 32px;
+  padding-bottom: var(--story_margin_32);
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -616,7 +646,7 @@ li.drop:hover .headerBody {
 }
 
 .story .storyItem .storyContent {
-  margin-top: 32px;
+  margin-top: var(--story_margin_32);
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
