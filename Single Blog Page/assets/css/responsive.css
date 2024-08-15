@@ -51,6 +51,23 @@
   .buttonGroups .bars {
     display: block;
   }
+
+  /*  */
+  .article {
+    padding: 112px 0px;
+  }
+  .article .articleHead {
+    margin-bottom: 80px;
+  }
+
+  .review {
+    padding: 112px 0;
+  }
+  .story {
+    padding: 112px 0;
+  }
+  /*  */
+
   /** Footer */
   footer .frame .top-menu {
     display: flex;
@@ -84,7 +101,6 @@
 /* Mobil Start */
 @media screen and (max-width: 768px) {
   /*? Header */
-
   .tabletMenu .wrap {
     display: flex;
     flex-direction: column;
@@ -177,6 +193,70 @@
     row-gap: 24px;
   }
 }
+@media screen and (max-width: 699px) {
+  .article {
+    padding: 64px 0px;
+  }
+
+  .article .articleHead {
+    flex-direction: column-reverse;
+    row-gap: 16px;
+  }
+
+  .article .articleHead {
+    margin-bottom: 64px;
+  }
+
+  .article .articleRow {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .article .articleRow .articleRightCol {
+    width: 100%;
+  }
+
+  .article .articleRow .articleLeftCol {
+    width: 100%;
+  }
+  .article .articleRightCol .articleContent {
+    margin: 48px 0px;
+  }
+
+  .review {
+    padding: 64px 0;
+  }
+  .story {
+    padding: 64px 0;
+  }
+  .story .storyRow {
+    display: block;
+  }
+  .story .storyRow .storyLeftCol {
+    width: 100%;
+  }
+  .story .storyRow .storyRightCol {
+    width: 100%;
+  }
+  .story .stageSmall {
+    margin-bottom: 32px;
+  }
+  .story .storyTitle {
+    margin: 48px 0px 32px 0px;
+  }
+  .article .articleHead .articleTitle {
+    font-size: 48px;
+  }
+  .article .articleRightCol h2.articleTitle {
+    font-size: 40px;
+  }
+  .story .storyList {
+    display: block;
+    margin: 32px 0px;
+  }
+  .story .storyList .storyItem {
+    margin-bottom: 32px;
+  }
+}
 
 @media screen and (max-width: 390px) {
   .container {
@@ -192,5 +272,8 @@
   .header .headerTrialBtn {
     display: none;
   }
+  /* .story .storyList {
+    display: block;
+  } */
   /*? Footer */
 }

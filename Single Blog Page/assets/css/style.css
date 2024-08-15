@@ -3,7 +3,7 @@
   display: block;
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   padding: 48px 0px;
   z-index: 1000;
@@ -409,14 +409,14 @@ li.drop:hover .headerBody {
 }
 .article {
   padding: 136px 0px;
-  margin-bottom: 112px;
+  /* margin-bottom: 112px; */
 }
 
 .article .articleHead {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  column-gap: 32px;
+  /* column-gap: 32px; */
   margin-bottom: 112px;
 }
 
@@ -445,12 +445,10 @@ li.drop:hover .headerBody {
   column-gap: var(--article_column-gap);
 }
 .article .articleRow .articleLeftCol {
-  /* width: calc((100% - var(--article_column-gap)) * 0.4); */
-  width: calc(40% - var(--article_column-gap) * 0.4);
+  width: calc(35% - var(--article_column-gap) * 0.35);
 }
 .article .articleRow .articleRightCol {
-  /* width: calc((100% - var(--article_column-gap)) * 0.6); */
-  width: calc(60% - var(--article_column-gap) * 0.6);
+  width: calc(65% - var(--article_column-gap) * 0.65);
 }
 
 .article .articleRightCol h2.articleTitle {
@@ -468,7 +466,7 @@ li.drop:hover .headerBody {
   padding-right: 6px;
 }
 .article .articleRightCol .articleInfo {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -486,7 +484,7 @@ li.drop:hover .headerBody {
   object-fit: cover;
 }
 .article .articleRightCol .articleContent {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .article .articleRightCol .articleContent p {
@@ -561,7 +559,7 @@ li.drop:hover .headerBody {
 /* ! review End   */
 /* ? story  Start */
 :root {
-  --story_column_gap: 24px;
+  --story_column_gap: 48px;
   --story_margin_32: 16px;
 }
 .story {
@@ -583,15 +581,15 @@ li.drop:hover .headerBody {
   column-gap: var(--story_column_gap);
 }
 .story .storyRow .storyLeftCol {
-  width: calc(40% - (var(--story_column_gap) * 0.4));
+  width: calc(50% - (var(--story_column_gap) * 0.5));
 }
 .story .storyRow .storyRightCol {
-  width: calc(60% - (var(--story_column_gap) * 0.6));
+  width: calc(50% - (var(--story_column_gap) * 0.5));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  row-gap: 5px;
+  /* justify-content: space-between; */
+  /* row-gap: 64px; */
 }
 
 .story .storyPreview {
@@ -608,7 +606,7 @@ li.drop:hover .headerBody {
 .story .storyTitle {
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
-  font-size: 36px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 56px;
@@ -616,7 +614,7 @@ li.drop:hover .headerBody {
 }
 
 .story .sotryInfo {
-  margin-top: 5px;
+  margin-top: 32px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -627,16 +625,20 @@ li.drop:hover .headerBody {
 .story .storyList {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: var(--story_column_gap);
+  column-gap: 24px;
+  margin: 64px 0px;
 }
 .story .storyItem .storyCategory {
-  padding-bottom: var(--story_margin_32);
+  text-align: justify;
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--Neutrals-6);
+  margin-bottom: 16px;
 }
 .story .storyItem span.divider {
   display: block;
@@ -646,7 +648,6 @@ li.drop:hover .headerBody {
 }
 
 .story .storyItem .storyContent {
-  margin-top: var(--story_margin_32);
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -654,9 +655,12 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
-.story a.storyBtn {
-  display: inline-block;
+.story button {
   padding: 16px 24px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.story button a {
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display";
@@ -664,14 +668,10 @@ li.drop:hover .headerBody {
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  border-radius: 90px;
-  border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
 /* ! stroy  End   */
 
 /* ? Footer Start */
-footer {
-}
 footer .wrapper {
   border-top: 1px solid var(--Neutrals-6);
   border-bottom: 1px solid var(--Neutrals-6);
