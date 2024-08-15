@@ -2,7 +2,9 @@
   --heroHeader_column-gap: 32px;
   --intro_column-gap: 32px;
 }
-
+* {
+  border: 1px solid red;
+}
 /* ? Header Start */
 .some-show-arrow {
   display: block;
@@ -414,7 +416,6 @@ li.drop:hover .headerBody {
 /*? heroHeader Start */
 .heroHeader {
   background: var(--Neutrals-8, #fcfcfd);
-  padding: 120px 0px 0px 0px;
 }
 .heroHeader .wrap {
   display: flex;
@@ -467,8 +468,7 @@ li.drop:hover .headerBody {
   color: var(--Neutrals-8);
 }
 .heroHeader .wrap .contentCol .button_arrow_bottom {
-  margin: 140px 0 0 0;
-  display: inline-block;
+  margin-top: 40px;
   padding: 20px;
   border-radius: 64px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
@@ -496,7 +496,7 @@ li.drop:hover .headerBody {
   column-gap: var(--intro_column-gap);
 }
 .intro .wrapper .introContent {
-  width: calc((100% - var(--intro_column-gap)) * 0.5);
+  width: calc(45% - var(--intro_column-gap) * 0.45);
 }
 
 .intro .wrapper .introContent h2 {
@@ -517,7 +517,7 @@ li.drop:hover .headerBody {
 }
 
 .intro .wrapper .introGallery {
-  width: calc((100% - var(--intro_column-gap)) * 0.5);
+  width: calc(55% - var(--intro_column-gap) * 0.55);
 }
 .intro .wrapper .introGallery img {
   width: 100%;
@@ -735,12 +735,17 @@ li.drop:hover .headerBody {
 
 .topRow {
   display: flex;
-}
-.topRow .topCol {
-  width: 50%;
+  column-gap: var(--about_column-gap);
 }
 
-.topRow .topCol .aboutStage {
+.homeAbout .leftCol {
+  width: calc(30% - (var(--about_column-gap) * 0.3));
+}
+.homeAbout .rightCol {
+  width: calc(70% - (var(--about_column-gap) * 0.7));
+}
+
+.topRow .aboutStage {
   color: var(--Neutrals-5, #b1b5c3);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -749,7 +754,8 @@ li.drop:hover .headerBody {
   line-height: 16px;
   text-transform: uppercase;
 }
-.topRow .topCol .aboutTitle {
+.topRow .aboutTitle {
+  max-width: 500px;
   margin-bottom: 20px;
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
@@ -759,7 +765,8 @@ li.drop:hover .headerBody {
   line-height: 56px;
   letter-spacing: -0.96px;
 }
-.topRow .topCol .aboutInfo {
+.topRow .aboutInfo {
+  max-width: 500px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -768,17 +775,17 @@ li.drop:hover .headerBody {
   line-height: 24px;
 }
 .bottomRow {
-  margin-top: 128px;
-  column-gap: var(--about_column-gap);
   display: flex;
+  column-gap: var(--about_column-gap);
+  margin-top: 128px;
 }
-.bottomRow .bottomLeftCol .aboutList {
+.bottomRow .leftCol .aboutList {
   max-width: 262px;
 }
-.homeAbout .bottomRow .bottomLeftCol {
+.homeAbout .bottomRow .leftCol {
   width: calc(30% - (var(--about_column-gap) * 0.3));
 }
-.homeAbout .bottomRow .bottomRightCol {
+.homeAbout .bottomRow .rightCol {
   width: calc(70% - (var(--about_column-gap) * 0.7));
 }
 .homeAbout .bottomRow .aboutItem:nth-child(2) {
@@ -825,7 +832,7 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
-.bottomRow .bottomRightCol .aboutPreview img {
+.bottomRow .rightCol .aboutPreview img {
   width: 100%;
   object-fit: cover;
 }
@@ -1034,9 +1041,10 @@ li.drop:hover .headerBody {
 .lifeStyle .listWrapper .row {
   display: flex;
   align-items: center;
+  column-gap: 120px;
 }
 .lifeStyle .listWrapper .row .col {
-  width: 50%;
+  width: calc(50% - 112px * 0.5);
 }
 .lifeStyle .listWrapper .row:not(:last-child) {
   margin: 0px 0px 102px 0px;
@@ -1076,31 +1084,27 @@ li.drop:hover .headerBody {
 }
 .lifeStyle .listWrapper .lifeStyleDetails span:nth-child(3) {
   color: var(--Neutrals-4, #777e90);
-
-  /* Caption */
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 }
 
 .lifeStyle .listWrapper .lifeStylePreview {
-  width: 544px;
-  height: 402px;
+  overflow: hidden;
   border-radius: 24px;
   background-color: var(--Secondary-1, #3772ff);
 }
 .lifeStyle .listWrapper .lifeStylePreview img {
   width: 100%;
   object-fit: cover;
-  border-radius: 24px;
 }
 /*! lifeStyle End */
 
 /* ? advantages  Start   */
 :root {
-  --advantages_column-gap: 24px;
+  --advantages_column-gap: 2px;
   --advantages_column-count: 3;
 }
 .advantages {
@@ -1134,40 +1138,59 @@ li.drop:hover .headerBody {
   line-height: 24px;
 }
 .advantages .advantagesList {
-  /* display: flex;
-  column-gap: var(--advantages_column-gap); */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
   column-gap: var(--advantages_column-gap);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--advantages_column-gap); */
 }
-/* .advantages .advantagesItem {
+.advantages .advantagesItem {
   width: calc(
     (
         100% -
           (var(--advantages_column-gap) * (var(--advantages_column-count) - 1))
       ) / (var(--advantages_column-count))
   );
-} */
+}
+.repeatItem {
+  display: none;
+}
 .advantages .advantagesItem .profile {
   text-align: center;
-  margin: 0px 0px 36px 0px;
+  margin-bottom: 36px;
 }
 .advantages .advantagesItem p.advantagesSubtitle {
-  width: 293px;
+  max-width: 293px;
+  margin: 0 auto;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+}
+.advantages .advantagesItem .profile {
+  height: 200px;
+  width: 200px;
+  margin: 0px auto 36px auto;
+  background-color: var(--Neutrals-5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages .advantagesItem .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* ! advantages  End   */
 
 /* ? offers  Start  */
 .offers {
-  padding: 80px 0 136px 0;
+  padding: 0px 0 136px 0;
 }
 .offers .frame {
   margin: 0 auto;
@@ -1186,7 +1209,7 @@ li.drop:hover .headerBody {
 }
 
 .offers h2.offersTitle {
-  width: 805px;
+  max-width: 805px;
   margin: 0px auto 32px auto;
   color: var(--Neutrals-2, #23262f);
   text-align: center;

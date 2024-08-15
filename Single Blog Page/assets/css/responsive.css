@@ -66,6 +66,9 @@
   .story {
     padding: 112px 0;
   }
+  .story button {
+    display: none;
+  }
   /*  */
 
   /** Footer */

@@ -1331,21 +1331,21 @@ li.drop:hover .headerBody {
 
 /* ? advantages  Start   */
 :root {
-  --advantages_column-gap: 24px;
+  --advantages_column-gap: 2px;
   --advantages_column-count: 3;
 }
 .advantages {
   padding: 136px 0px;
-  background-color: var(--Neutrals-7, #f4f5f6);
 }
 .advantages .advantagesHead {
   margin: 0px auto 80px auto;
-  /* width: 636px; */
+  width: 636px;
 }
 .advantages .advantagesHead h2.advantagesTitle {
   margin: 0px 0 20px 0;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
+
   font-family: "SF Pro Display", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -1355,8 +1355,7 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesHead p.advantagesInfo {
   margin: 0 auto;
-  max-width: 456px;
-  padding: 0px 2px;
+  width: 453px;
   color: var(--Neutrals-3, #353945);
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1367,6 +1366,7 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesList {
   display: flex;
+  align-items: center;
   column-gap: var(--advantages_column-gap);
   /* display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1382,24 +1382,33 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesItem .profile {
   text-align: center;
-  margin: 0px auto 36px auto;
-  max-width: 145px;
+  margin-bottom: 36px;
 }
-.advantages .advantagesItem .profile img {
-  object-fit: cover;
-  width: 100%;
-}
-
 .advantages .advantagesItem p.advantagesSubtitle {
   max-width: 293px;
+  margin: 0 auto;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+}
+.advantages .advantagesItem .profile {
+  height: 200px;
+  width: 200px;
+  margin: 0px auto 36px auto;
+  background-color: var(--Neutrals-5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages .advantagesItem .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* ! advantages  End   */
 

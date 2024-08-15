@@ -51,6 +51,35 @@
   .buttonGroups .bars {
     display: block;
   }
+  /*  */
+  .intro {
+    padding: 56px 0px;
+  }
+  .details {
+    padding: 0px 0px 112px 0px;
+  }
+  .program {
+    padding: 112px 0px;
+  }
+  .homeAbout {
+    padding: 112px 0px;
+  }
+  .review {
+    padding: 0px 0px 64px 0px;
+  }
+  .workouts {
+    padding: 112px 0;
+  }
+  .advantages {
+    padding: 112px 0px;
+  }
+  .offers {
+    padding: 0px 0 112px 0;
+  }
+  /*  */
+  .heroHeader .wrap .contentCol .mainTitle {
+    font-size: 56px;
+  }
   /** Footer */
   footer .frame .top-menu {
     display: flex;
@@ -71,7 +100,54 @@
     min-width: 192px;
   }
 }
+@media screen and (max-width: 950px) {
+  :root {
+    --hero_column-gap: 1px;
+    --intro_column-gap: 1px;
+    --workouts_column-gap: 1px;
+    --about_column-gap: 1px;
+    --program_column-gap: 1px;
+  }
+  /* heroHeade Start */
+  .heroHeader .wrap .contentCol .mainTitle {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  /* intro Start */
+  .intro .wrapper .introContent h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  /* workouts Start */
+  .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
+    line-height: 48px;
+  }
 
+  .workouts .workoutsFrame .workoutsWrap p.workoutsInfo {
+    margin: 12px 0px;
+  }
+  /* homeAbout Start */
+  .homeAbout .bottomRow .rightCol .aboutPreview {
+    height: 100%;
+  }
+  .homeAbout .bottomRow .rightCol .aboutPreview img {
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+  }
+  .heroHeader .wrap .contentCol .buttons_bottomm {
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: unset;
+  }
+}
 @media screen and (max-width: 840px) {
   footer .frame .top-menu .left-menu i {
     margin: 0px 20px 130px 0px;
@@ -82,7 +158,31 @@
 }
 
 /* Mobil Start */
+
+@media screen and (max-width: 820px) {
+  .workouts .workoutsFrame {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .workouts .workoutsFrame .workoutsWrap {
+    width: 80%;
+  }
+  .workouts .workoutsFrame .workoutsGallery {
+    width: 100%;
+  }
+  .workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+    flex-direction: row;
+  }
+  .workouts .workoutsFrame .workoutsWrap p.workoutsInfo {
+    margin: 24px 0px;
+  }
+}
 @media screen and (max-width: 768px) {
+  :root {
+    --advantages_column-gap: 32px;
+    --advantages_row-gap: 32px;
+    --advantages_column-count: 2;
+  }
   /*? Header */
 
   .tabletMenu .wrap {
@@ -116,6 +216,15 @@
   }
   .tabletMenu .dropdownBody .headRow .headCol {
     padding: 0px;
+  }
+
+  /* advantages Start */
+  .advantages .advantagesList {
+    flex-wrap: wrap;
+    row-gap: var(--advantages_row-gap);
+  }
+  .advantages .advantagesItem.repeatItem {
+    display: block;
   }
 
   /* ? Footer */

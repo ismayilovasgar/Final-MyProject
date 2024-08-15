@@ -3,7 +3,7 @@
   display: block;
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   padding: 48px 0px;
   z-index: 1000;
