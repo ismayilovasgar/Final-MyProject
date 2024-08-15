@@ -487,6 +487,7 @@
     line-height: 42px;
   }
 }
+
 @media screen and (max-width: 390px) {
   .container {
     width: 312px;
@@ -529,4 +530,19 @@
     width: 100%;
   }
   /*? Footer */
+}
+
+@media screen and (max-width: 320px) {
+  .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
+    display: none;
+  }
+  .clients .clientsList ul {
+    flex-direction: column;
+  }
+  .clients .clientsList ul li {
+    width: 100%;
+  }
+  .workouts {
+    padding: 64px 0;
+  }
 }

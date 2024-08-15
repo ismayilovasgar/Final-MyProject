@@ -926,8 +926,8 @@ li.drop:hover .headerBody {
   background-color: var(--Neutrals-8, #fcfcfd);
 }
 .workouts .workoutsFrame {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   column-gap: var(--workouts_column-gap);
 }
 .workouts .workoutsFrame .workoutsWrap {
