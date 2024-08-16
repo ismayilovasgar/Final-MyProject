@@ -307,6 +307,7 @@
     flex-grow: 1;
   }
   .heroHeader .wrap .contentCol .mainTitle {
+    word-wrap: break-word;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
@@ -476,6 +477,7 @@
   }
   .workouts .workoutsFrame .workoutsWrap {
     width: 100%;
+    padding: 10px 0px 40px 0px;
   }
   .offers p.offersText {
     width: unset;
@@ -488,6 +490,42 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    position: sticky;
+    top: 0px;
+    padding: 48px 0px 24px 0px;
+  }
+  .intro .wrapper {
+    display: block;
+  }
+  .intro .wrapper .introContent {
+    display: block;
+  }
+  .intro .wrapper .introContent p {
+    max-width: 95%;
+  }
+  .program .programRightCol .programBookLink a {
+    display: block;
+  }
+  .details .detailsHead .detailsTitle br {
+    display: none;
+  }
+  .workouts .workoutsFrame .workoutsWrap .workoutsBtns {
+    flex-direction: column;
+  }
+  .program .wrapper .programRightCol {
+    width: 100%;
+  }
+  .intro .wrapper .introContent button {
+    display: block;
+    width: 100%;
+  }
+
+  .heroHeader .wrap .contentCol .buttons_bottomm {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 390px) {
   .container {
     width: 312px;
@@ -544,5 +582,31 @@
   }
   .workouts {
     padding: 64px 0;
+  }
+  .heroHeader .wrap .contentCol {
+    display: block;
+  }
+  .lifeStyle .lifeStyleHead a {
+    display: flex;
+    padding: 8px;
+  }
+  .program .programRightCol .programView {
+    padding: 16px;
+  }
+  .program .wrapper {
+    flex-direction: column;
+    padding: 24px 6px;
+  }
+  .program .programItemLeft {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .details .detailsHead .detailsTitle {
+    word-wrap: break-word;
+  }
+  .offers h2.offersTitle {
+    word-wrap: break-word;
   }
 }

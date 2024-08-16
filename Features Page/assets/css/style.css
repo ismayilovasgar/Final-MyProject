@@ -2,9 +2,7 @@
   --heroHeader_column-gap: 32px;
   --intro_column-gap: 32px;
 }
-* {
-  border: 1px solid red;
-}
+
 /* ? Header Start */
 .some-show-arrow {
   display: block;

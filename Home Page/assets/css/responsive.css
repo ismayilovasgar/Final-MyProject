@@ -589,12 +589,25 @@
   /*! bookPoster End  */
 
   .details .detailsList {
-    display: grid;
+    /* display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px; */
+    flex-direction: column;
     row-gap: 32px;
+    align-items: unset;
+  }
+  .details .detailsList .detailsItem .detailsCategory {
+    /* font-size: 13px; */
+    max-width: 95%;
+  }
+  .details .detailsList .detailsItem .detailsContent {
+    max-width: 95%;
   }
 
+  .bottomRow .leftCol .aboutList {
+    max-width: unset;
+  }
   /** Intro start */
   .topRow {
     flex-direction: column;

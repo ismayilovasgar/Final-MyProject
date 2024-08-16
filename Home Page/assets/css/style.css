@@ -1339,7 +1339,7 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesHead {
   margin: 0px auto 80px auto;
-  width: 636px;
+  max-width: 636px;
 }
 .advantages .advantagesHead h2.advantagesTitle {
   margin: 0px 0 20px 0;
@@ -1355,7 +1355,7 @@ li.drop:hover .headerBody {
 }
 .advantages .advantagesHead p.advantagesInfo {
   margin: 0 auto;
-  width: 453px;
+  max-width: 453px;
   color: var(--Neutrals-3, #353945);
   text-align: center;
   font-family: "Poppins", sans-serif;
