@@ -556,19 +556,24 @@
     <section class="trainers">
         <div class="container">
             <div class="trainerHead">
-                <h2 class="trainerTitle">Meet our pro trainers</h2>
-                <p class="trainerInfo">From all over the world, we select and provide you a team of seasoned trainers.
-                    What's more, the 1-on-1 live practice mode helps you quickly get great results.
+                <h2 class="trainerTitle">Professional trainers</h2>
+                <p class="trainerInfo">Stacks is a production-ready library of stackable content blocks built in React
+                    Native.
                 </p>
-                <div class="trainerNav" style="display: none;">
-                    <ul>
-                        <li><a class="active" href="#">Yoga</a></li>
-                        <li><a href="#">Fitness & Gym</a></li>
-                        <li><a href="#">Gymnastics</a></li>
-                        <li><a href="#">Running</a></li>
+
+                <div class="select sorting" id="toggle">
+                    <input type="text" name="style" class="current" value="Yoga" />
+                    <div class="select_arrow">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="list" id="popup">
+                        <li data-value="AcroYoga" class="option selected">Yoga</li>
+                        <li data-value="Mini Yoga" class="option">Fitness & Gym</li>
+                        <li data-value="Mini Yoga" class="option">Gymnastics</li>
+                        <li data-value="Mini Yoga" class="option">Running</li>
                     </ul>
                 </div>
-                <div class="select_box">
+                <!-- <div class="select_box">
                     <select class="" style="display: block;">
                         <option>Yoga</option>
                         <option>Fitness&amp;Gym</option>
@@ -576,7 +581,7 @@
                         <option>Running</option>
                     </select>
                     <img src="./assets/images/selectBox/arrow.svg" alt="">
-                </div>
+                </div> -->
             </div>
             <div class="trainersList">
                 <div class="listWrap">
@@ -664,7 +669,7 @@
             </div>
             <div class="communityBottom">
                 <p class="subtitle">Save your time with Stacks</p>
-                <h2 class="communityTitle">Join Fitness Pro Community</h2>
+                <h2 class="communityTitle">Join Stacks Community</h2>
                 <p class="communityText">Join Stacks community now to get free updates and also alot of freebies are
                     waiting for you.
                 </p>

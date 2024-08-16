@@ -63,3 +63,40 @@ btnHidden.addEventListener("click", (e) => {
 dropdownBtn.addEventListener("click", (e) => {
   dropdownMenu.classList.toggle("active");
 });
+
+
+//*! Sorting-select New Way
+const popup = document.getElementById("popup");
+const toggleButton = document.getElementById("toggle");
+const inputField = document.querySelector("input.current");
+
+function togglePopup() {
+  const isDisplayed = popup.style.display === "block";
+  popup.style.display = isDisplayed ? "none" : "block";
+
+  changeArrow();
+  changeCurrent(document.querySelectorAll("ul.list li"));
+}
+
+function clickOutside(event) {
+  if (!popup.contains(event.target) && !toggleButton.contains(event.target)) {
+    popup.style.display = "none";
+
+    changeArrow();
+  }
+}
+
+function changeArrow() {
+  document.querySelector(".sorting .select_arrow  i").classList.toggle("up");
+}
+
+function changeCurrent(items) {
+  items.forEach((item) => {
+    item.addEventListener("click", function () {
+      inputField.value = this.textContent;
+    });
+  });
+}
+
+toggleButton.addEventListener("click", togglePopup);
+document.addEventListener("click", clickOutside);
