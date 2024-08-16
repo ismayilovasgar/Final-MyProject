@@ -644,6 +644,7 @@ ul.list.show {
   display: block;
 }
 /*  */
+
 .catalogTop .catalogNav ul {
   display: flex;
   column-gap: 6px;
