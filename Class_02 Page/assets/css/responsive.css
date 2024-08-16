@@ -1,4 +1,4 @@
-/* Desktop  Start*/
+/*? Desktop  Start*/
 @media screen and (max-width: 1440px) {
   .tabletMenu.active {
     display: none;
@@ -24,8 +24,8 @@
     column-gap: 40px;
   }
 }
-
-/* Tablet Start */
+/* ******************************************************** */
+/*? Tablet Start */
 @media screen and (max-width: 1024px) {
   .show {
     display: block;
@@ -51,6 +51,21 @@
   .buttonGroups .bars {
     display: block;
   }
+  /** trainers Start */
+
+  :root {
+    --trainers_columns-count: 3;
+    --programs_column-count: 2;
+  }
+
+  /*  */
+  .heroHeader .wrap .contentCol .mainTitle {
+    font-size: 56px;
+    line-height: 56px;
+    margin: 12px 0px 30px 0px;
+  }
+  /*  */
+
   /** Footer */
   footer .frame .top-menu {
     display: flex;
@@ -117,7 +132,22 @@
   .tabletMenu .dropdownBody .headRow .headCol {
     padding: 0px;
   }
-
+  .heroHeader .container {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0px 0px 0px 2.5%;
+  }
+  /** trainers Start */
+  :root {
+    --trainers_columns-count: 2;
+  }
+  .trainers .trainersList .listWrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heroHeader .wrap .contentCol .mainTitle {
+    font-size: 50px;
+    line-height: 50px;
+  }
   /* ? Footer */
   footer .top-menu {
     display: flex;
@@ -178,12 +208,88 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  :root {
+    /* --trainers_columns-count: 2; */
+    --programs_column-count: 1;
+  }
+
+  .heroHeader {
+    padding: 64px 0px;
+  }
+  .heroHeader .wrap {
+    display: block;
+    position: relative;
+  }
+  .heroHeader .container {
+    max-width: 95%;
+    margin: 0px auto;
+  }
+  .heroHeader .wrap .contentCol {
+    width: 100%;
+    display: block;
+  }
+
+  .heroHeader .wrap .contentCol .overlap button {
+    width: 100%;
+    font-size: 24px;
+    padding: 24px 0px;
+    border-radius: 32px;
+  }
+  .heroHeader .wrap .previewCol {
+    width: 100%;
+    margin: 40px 0px 10px 0px;
+  }
+
+  .heroHeader .wrap .contentCol .button_arrow_bottom {
+    position: absolute;
+    left: 0px;
+    margin-top: 20px;
+    bottom: 0px;
+  }
+
+  /*  */
+  .catalogNav > ul {
+    display: none;
+  }
+
+  .select {
+    display: flex;
+  }
+}
+
+/* ******************************************************** */
+@media screen and (max-width: 480px) {
+  :root {
+    --trainers_rows-gap: 24px;
+    --trainers_columns-gap: 8px;
+  }
+  .trainers .trainersList .listWrap .trainerItem .profile {
+    margin: 0px auto 32px auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .trainers .trainersList .listWrap .trainerItem {
+    padding: 24px;
+  }
+}
+/*? Mobile Start */
 @media screen and (max-width: 390px) {
   .container {
     width: 100%;
     max-width: 100%;
     margin: 0xp;
     padding: 0px 32px;
+  }
+  .heroHeader .wrap .contentCol .mainTitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .trainers .trainerHead h2.trainerTitle {
+    font-size: 42px;
+    line-height: 42px;
   }
   .header {
     padding: 48px 0px 24px 0px;
@@ -193,4 +299,32 @@
     display: none;
   }
   /*? Footer */
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    --trainers_columns-count: 1;
+  }
+
+  .heroHeader .wrap .contentCol .overlap button {
+    border-radius: 12px;
+  }
+  .programs .programsList .programsItem {
+    padding: 32px 16px;
+  }
+  .trainers .trainerHead h2.trainerTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .community h2.communityTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .programs .programsTop h2.programsTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 300px) {
 }
