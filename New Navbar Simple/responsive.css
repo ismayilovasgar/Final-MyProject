@@ -1,6 +1,6 @@
 /* Desktop  Start*/
 @media screen and (max-width: 1440px) {
-  .tabletMenu.active {
+  #hiddemTabletMenu.active {
     display: none;
   }
   button.hidden {

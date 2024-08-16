@@ -27,6 +27,10 @@
 /* ******************************************************** */
 /*? Tablet Start */
 @media screen and (max-width: 1024px) {
+  .container {
+    width: 864px;
+    max-width: 95%;
+  }
   .show {
     display: block;
   }
@@ -228,6 +232,7 @@
   .heroHeader .wrap .contentCol {
     width: 100%;
     display: block;
+    margin: 0px;
   }
 
   .heroHeader .wrap .contentCol .overlap button {
@@ -260,6 +265,9 @@
 
 /* ******************************************************** */
 @media screen and (max-width: 480px) {
+  .headerCenter .headerTrialBtn {
+    display: none;
+  }
   :root {
     --trainers_rows-gap: 24px;
     --trainers_columns-gap: 8px;
@@ -277,10 +285,10 @@
 /*? Mobile Start */
 @media screen and (max-width: 390px) {
   .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0xp;
-    padding: 0px 32px;
+    width: 311px;
+    max-width: 95%;
+    margin: 0px auto;
+    /* padding: 0px 32px; */
   }
   .heroHeader .wrap .contentCol .mainTitle {
     font-size: 36px;
