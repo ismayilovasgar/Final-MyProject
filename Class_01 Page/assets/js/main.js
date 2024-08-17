@@ -37,25 +37,14 @@ select_sorting.forEach((item) => {
   });
 });
 
-//
-// Desktop
-const dropdown = document.querySelector("li.drop");
-const dropdownArrow = document.querySelector("li.drop > i");
+// Form
+const catalogInput = document.getElementById("catalog_input");
+const form = document.getElementById("catalog_search");
 
-dropdown.addEventListener("mouseover", (e) => {
-  dropdownArrow.classList.toggle("rotate_180");
+catalogInput.addEventListener("focus", function () {
+  form.classList.add("active-border");
 });
 
-// Bars Menu
-const btnHidden = document.querySelector("button.hidden i");
-const tabletMenu = document.querySelector(".tabletMenu");
-const dropdownMenu = document.querySelector(".dropdownBody");
-const dropdownBtn = document.querySelector(".dropdownLink");
-
-btnHidden.addEventListener("click", (e) => {
-  btnHidden.classList.toggle("fa-xmark");
-  tabletMenu.classList.toggle("show");
-});
-dropdownBtn.addEventListener("click", (e) => {
-  dropdownMenu.classList.toggle("active");
+catalogInput.addEventListener("blur", function () {
+  form.classList.remove("active-border");
 });

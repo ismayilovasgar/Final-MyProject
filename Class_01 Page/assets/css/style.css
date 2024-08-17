@@ -480,6 +480,9 @@ li.drop:hover .headerBody {
   line-height: 32px;
   letter-spacing: -0.24px;
 }
+.catalogHead form.active-border {
+  border-color: var(--Neutrals-4);
+}
 .catalogHead form {
   padding: 8px 8px 8px 16px;
   border-radius: 90px;
@@ -1209,6 +1212,7 @@ footer .right-menu .footerInfo {
   font-weight: 400;
   line-height: 24px;
 }
+
 footer .right-menu form {
   display: flex;
   align-items: center;
@@ -1217,6 +1221,7 @@ footer .right-menu form {
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
+
 footer .right-menu form input {
   border: none;
   appearance: none;
