@@ -3,7 +3,7 @@
   display: block;
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   padding: 48px 0px;
   z-index: 1000;
@@ -403,7 +403,12 @@ li.drop:hover .headerBody {
 
 /*? hero_download Start */
 :root {
-  --hero-col-gap: 22px;
+  --hero-col-gap: 6px;
+}
+.hero_download .container {
+  /* width: 1120px;
+  max-width: 95%;
+  margin: 0px 65px 0px 0px; */
 }
 .hero_download .hero_wrap {
   display: flex;
@@ -492,6 +497,10 @@ li.drop:hover .headerBody {
 /*? platform Start */
 :root {
   --platform-col-gap: 32px;
+  --platform-preview-width: 160px;
+  --platform-preview-img-width: 40px;
+  --platform-preview-height: 160px;
+  --platform-preview-img-height: 40px;
 }
 .platform {
   padding: 136px 0px;
@@ -526,14 +535,12 @@ li.drop:hover .headerBody {
 .platform .platform_item {
   align-self: flex-start;
   width: calc((100% - var(--platform-col-gap)) / 2);
-  /* width: 100%; */
   height: 215px;
   border-bottom: 1px solid var(--Neutrals-5);
 }
 
 .platform .platform_item .platform_item_wrap {
   display: flex;
-  align-items: stretch;
   column-gap: 32px;
   margin: 0px 0px 48px 0px;
 }
@@ -543,12 +550,12 @@ li.drop:hover .headerBody {
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  width: 160px;
-  height: 160px;
+  width: var(--platform-preview-width);
+  height: var(--platform-preview-height);
 }
 .platform .platform_item .platform_item_wrap .platform_preview img {
-  width: 40px;
-  height: 40px;
+  width: var(--platform-preview-img-width);
+  height: var(--platform-preview-img-height);
 }
 .platform .platform_item .platform_item_wrap .platform_preview.apple_orange {
   background-color: var(--Primary-1);
@@ -570,6 +577,7 @@ li.drop:hover .headerBody {
 .platform .platform_item .platform_item_wrap .platform_details {
   align-self: center;
   transition: all 0.5s ease-in;
+  width: calc(100% - (var(--platform-col-gap) + var(--platform-preview-width)));
 }
 .platform .platform_item .platform_details .platform_status {
   display: inline-block;
@@ -665,6 +673,9 @@ li.drop:hover .headerBody {
   color: var(--Neutrals-8);
   cursor: pointer;
 }
+.platform .platform_see_plan a.contactUs {
+  display: none;
+}
 /*! platform End */
 
 /*? Communtiy Start */
@@ -677,11 +688,15 @@ li.drop:hover .headerBody {
 }
 
 .community .communityPreview {
-  text-align: center;
   margin: 0px auto 64px auto;
+  max-width: 586px;
+}
+.community .communityPreview img {
+  width: 100%;
+  object-fit: cover;
 }
 .community .communityBottom {
-  width: 586px;
+  max-width: 586px;
   text-align: center;
   margin: 0 auto;
 }
