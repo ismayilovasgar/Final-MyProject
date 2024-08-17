@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.swiper {
+  border: 5px solid red;
+  padding: 40px 0px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  border: 2px solid blue;
+  padding: 10px 0px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 25px;
+  background: #fff;
+  height: 400px;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  column-gap: 32px;
+  align-items: center;
+  width: calc((100% - 32px) / 2) !important;
+}
+.control {
+  position: relative;
+  padding: 40px 0px;
+}
+.direction {
+  position: absolute;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+}
+.left {
+  left: 0px;
+}
+.right {
+  right: 0px;
+}
