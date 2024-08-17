@@ -499,19 +499,21 @@
       <div class="catalogHead">
         <div class="catalogTitle">Find a class that fit with you</div>
         <form action="" class="catalogSearch">
+          <input class="catalogInput" type="text" placeholder="Find a class">
+
           <button type="submit" class="catalogResult">
             <img src="./assets/images/catalog/search.svg" alt="" />
           </button>
         </form>
 
-        <!-- 
-                <form action="" class="catalogSearch">
-                    <input class="catalogInput" type="text" placeholder="Find a class">
-                    <button type="submit" class="catalogResult">
-                        <img src="./assets/images/catalog/search.svg" alt="">
-                    </button>
-                </form> 
-                -->
+
+        <!-- <form action="" class="catalogSearch">
+          <input class="catalogInput" type="text" placeholder="Find a class">
+          <button type="submit" class="catalogResult">
+            <img src="./assets/images/catalog/search.svg" alt="">
+          </button>
+        </form> -->
+
       </div>
 
       <div class="catalogWrap">
@@ -547,7 +549,10 @@
 
           <button class="catalogFilter">
             <div class="catalogText">Filter</div>
-
+            <img class="closeFilter" src="./assets/images/catalog/close.svg" alt="" />
+          </button>
+          <button class="advancedFilter">
+            <div class="catalogText">Advanced Filter</div>
             <img class="closeFilter" src="./assets/images/catalog/close.svg" alt="" />
           </button>
         </div>
@@ -848,9 +853,13 @@
                 <div class="detailsIcon">
                   <img src="./assets/images/testimonials/details_icon.png" alt="" />
                 </div>
-                <div class="detailsAuthor">Megane Schumm</div>
-                <span class="detailsDivider"></span>
-                <div class="detailsDescription">Legacy Data Coordinator</div>
+                <div class="descriptionInfo">
+
+                  <div class="detailsAuthor">Megane Schumm</div>
+                  <span class="detailsDivider"></span>
+                  <div class="detailsDescription">Legacy Data Coordinator</div>
+
+                </div>
               </div>
               <button class="btn readmore">Read full story</button>
             </div>
