@@ -469,13 +469,13 @@ li.drop:hover .headerBody {
   padding: 8px 18px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
-  width: 300px;
+  max-width: 300px;
 }
 
 .hero_download .hero_wrap form.subscription input {
   border: none;
   appearance: none;
-  width: 226px;
+  max-width: 226px;
   height: 28px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
@@ -486,13 +486,14 @@ li.drop:hover .headerBody {
 }
 
 .hero_download .hero_wrap form.subscription button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 4px;
   border-radius: 50%;
   background-color: var(--Primary-1, #ff592c);
 }
-.hero_download .hero_wrap form.subscription button > img {
-  display: block;
-}
+
 /*! hero-download End */
 /*? platform Start */
 :root {
@@ -541,7 +542,7 @@ li.drop:hover .headerBody {
 
 .platform .platform_item .platform_item_wrap {
   display: flex;
-  column-gap: 32px;
+  column-gap: var(--platform-col-gap);
   margin: 0px 0px 48px 0px;
 }
 
