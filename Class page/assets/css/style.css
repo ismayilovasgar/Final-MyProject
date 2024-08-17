@@ -577,6 +577,9 @@ li.drop:hover .headerBody {
 }
 
 /*  */
+* {
+  /* border: 1px solid red; */
+}
 :root {
   --interesting_column_count: 3;
   --interesting_column_gap: 32px;
@@ -608,12 +611,14 @@ li.drop:hover .headerBody {
 button.direction {
   position: absolute;
   top: 16px;
-  z-index: 2;
+  z-index: 20;
   width: 24px;
   background-color: none;
+  border: none;
 }
 button.direction i {
   color: var(--Neutrals-4);
+  font-size: 16px;
 }
 .slickPrev {
   right: 44px;
