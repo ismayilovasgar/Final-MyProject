@@ -533,9 +533,9 @@ li.drop:hover .headerBody {
   margin-top: 24px;
 }
 .descriptionRightCol ul.descriptionList {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 8px; */
   margin-top: 20px;
   padding: 20px;
   border-radius: 8px;
@@ -546,6 +546,9 @@ li.drop:hover .headerBody {
   display: flex;
   align-items: flex-start;
   column-gap: 8px;
+}
+.descriptionRightCol ul.descriptionList li:nth-child(2) {
+  margin: 12px 0px;
 }
 
 .descriptionRightCol ul.descriptionList li span {
