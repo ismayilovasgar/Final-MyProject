@@ -152,6 +152,8 @@
     font-size: 50px;
     line-height: 50px;
   }
+  /** ModalContent Start  */
+
   /* ? Footer */
   footer .top-menu {
     display: flex;
@@ -217,6 +219,9 @@
     /* --trainers_columns-count: 2; */
     --programs_column-count: 1;
   }
+  .modalContent .trainerSlider a {
+    width: 100%;
+  }
 
   .heroHeader {
     padding: 64px 0px;
@@ -281,7 +286,21 @@
   .trainers .trainersList .listWrap .trainerItem {
     padding: 24px;
   }
+  /** Modal Content Start */
+  .modalContent .trainerModalWrap,
+  .modalContent .bottomBtns {
+    display: none;
+  }
+  .modalContent .trainerTop .trainerName {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .modalContent .trainerTop .trainerAvatar {
+    width: 100px;
+    height: 100px;
+  }
 }
+
 /*? Mobile Start */
 @media screen and (max-width: 390px) {
   .container {

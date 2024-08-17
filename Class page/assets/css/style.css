@@ -588,10 +588,6 @@ li.drop:hover .headerBody {
   flex-grow: 1;
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
 :root {
   --interesting_column_count: 3;
   --interesting_column_gap: 32px;
@@ -807,9 +803,6 @@ button.direction i {
 .interestingBtn {
   margin-top: 64px;
   text-align: center;
-}
-* {
-  border: 1px solid red;
 }
 
 .interestingBtn button {
