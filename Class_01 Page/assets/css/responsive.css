@@ -63,6 +63,7 @@
   :root {
     --catalog_column-count: 2;
   }
+
   /** testimonials Start  */
   .testimonials .testimonialsDetails .detailsDivider {
     display: none;
@@ -144,7 +145,6 @@
   }
 
   /*? testimonials */
-
   .testimonials .testmonialsItem .testimonialsRow {
     column-gap: 20px;
   }

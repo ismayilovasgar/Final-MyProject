@@ -932,7 +932,8 @@ ul.list.show {
 .testimonials .testmonialsItem .testimonialsRow .testimonialsCol:first-child {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
+  /* justify-content: space-between; */
 }
 .testimonials .testimonialsCol .testimonialsLogo {
   margin: 0px 0px 48px 0px;
