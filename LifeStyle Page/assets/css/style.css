@@ -3,7 +3,7 @@
   display: block;
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   padding: 48px 0px;
   z-index: 1000;
@@ -401,6 +401,9 @@ li.drop:hover .headerBody {
 /** <!-- Table End --> */
 /* ! Header End */
 
+:root {
+  --history_column-gap: 78px;
+}
 .post {
   padding: 136px 0px;
 }
@@ -434,28 +437,44 @@ li.drop:hover .headerBody {
 
 .history .historyItem {
   display: flex;
-}
-.history .historyItem .col:nth-child(1) {
-  width: 45%;
-}
-.history .historyItem .col:nth-child(2) {
-  width: 55%;
+  column-gap: var(--history_column-gap);
 }
 
+.history .historyItem .historyLeftCol {
+  width: calc(50% - (var(--history_column-gap) * 0.5));
+}
+
+.history .historyItem .historyRightCol {
+  align-self: center;
+
+  width: calc(50% - (var(--history_column-gap) * 0.5));
+}
+
+* {
+  border: 1px solid red;
+}
+
+.history .historyItem .historyPreview {
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
 .history .historyItem .historyPreview img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 20px 0 0 20px;
 }
-.history .historyItem .historyDetails {
-  padding: 64px 96px;
+.history .historyDetails {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: flex-start;
 }
 .history .historyDetails .historyStatus {
-  display: inline-block;
+  align-self: flex-start;
   padding: 6px 12px;
   border-radius: 4px;
   background-color: var(--Primary-3, #ef466f);
-  margin-bottom: 20px;
   color: var(--Neutrals-8, #fcfcfd);
   font-family: "Poppins", sans-serif;
   font-size: 12px;
@@ -465,9 +484,8 @@ li.drop:hover .headerBody {
   text-transform: uppercase;
 }
 .history .historyDetails .historyTitle {
-  margin-bottom: 20px;
+  max-width: 386px;
   color: var(--Neutrals-2, #23262f);
-
   font-family: "SF Pro Display", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -476,7 +494,7 @@ li.drop:hover .headerBody {
   letter-spacing: -0.4px;
 }
 .history .historyDetails .historyContent {
-  margin-bottom: 20px;
+  max-width: 386px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -484,17 +502,32 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
+.history .historyDetails .btnDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history .historyDetails .storyDate {
+  display: none;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
 .history .historyDetails a {
-  display: inline-block;
+  border-radius: 90px;
+  padding: 12px 16px;
   color: var(--Neutrals-8, #fcfcfd);
   text-align: center;
-
   font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
 }
+
 .post .postTabs {
   padding-bottom: 80px;
 }
@@ -628,21 +661,32 @@ li.drop:hover .headerBody {
   margin-top: 80px;
 }
 .post .postBox .postBtns button {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  margin: 0 auto;
+  padding: 12px 12px 12px 16px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.post .postBox .postBtns button span.postBtnText {
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  border-radius: 90px;
-  border: 2px solid var(--Neutrals-6, #e6e8ec);
 }
 
 .post .postBox .postBtns button:hover {
   cursor: pointer;
   box-shadow: 0 0 0 2px var(--Neutrals-2) inset;
   background-color: var(--Neutrals-2);
+}
+.post .postBox .postBtns button:hover span.postBtnText,
+.post .postBox .postBtns button:hover > i {
   color: var(--Neutrals-8);
 }
 
@@ -655,11 +699,14 @@ li.drop:hover .headerBody {
 }
 
 .community .communityPreview {
-  text-align: center;
+  max-width: 586px;
   margin: 0px auto 64px auto;
 }
+.community .communityPreview img {
+  width: 100%;
+  object-fit: cover;
+}
 .community .communityBottom {
-  width: 586px;
   text-align: center;
   margin: 0 auto;
 }
@@ -674,6 +721,7 @@ li.drop:hover .headerBody {
   text-transform: uppercase;
 }
 .community h2.communityTitle {
+  max-width: 586px;
   margin: 0px auto 20px auto;
   color: var(--Neutrals-2, #23262f);
   font-family: "SF Pro Display", sans-serif;
