@@ -69,6 +69,15 @@
   .testimonials .testimonialsDetails .detailsDescription {
     text-align: center;
   }
+  /** Comment Start */
+  .comment {
+    padding: 112px 0;
+  }
+  /** faq */
+  .faq {
+    padding: 112px 0px;
+  }
+
   /** Footer */
   footer .frame .top-menu {
     display: flex;
@@ -223,6 +232,105 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  :root {
+    --comment_column-count: 1;
+  }
+  thead tbody td:nth-child(1) img {
+    display: none;
+  }
+  tbody {
+    display: none;
+  }
+  tfoot {
+    display: none;
+  }
+
+  /*! Pricing Table Flex Row */
+  .pricing {
+    padding: 64px 0px;
+  }
+  .row {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .pricingTable .row .pricingCol:not(:first-child) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 16px 24px 16px;
+    text-align: left;
+  }
+  .pricingTable .pricingCol:not(:nth-child(1)) .pricingParameter p {
+    display: block;
+  }
+  .pricingTable .pricingHead {
+    min-height: unset;
+    width: 100%;
+    padding: 0px;
+  }
+  .pricingCost {
+    display: flex;
+  }
+
+  .pricingMore {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .pricingHead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .pricingMore i {
+    font-size: 18px;
+  }
+
+  .pricingMore i.rotate {
+    transform: rotate(180deg);
+  }
+  .row .pricingCol:nth-child(1) {
+    display: none;
+  }
+  .pricingList {
+    display: none;
+  }
+  .pricingList.active {
+    display: block;
+  }
+
+  .pricingTable .pricingList .pricingParameter {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pricingBody {
+    align-self: stretch;
+  }
+
+  /*? comment */
+  .comment .commentHead .comment_head_wrap {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  /*? faq */
+  .faq .faqItemBody .faqRow {
+    flex-direction: column;
+  }
+  .faq .faqItemBody .faqRow .faqPreview {
+    width: 100%;
+  }
+  .faq .faqItemBody .faqRow .faqContext {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .testimonials .testimonialsCol .testimonialsLogo {
     margin: 0px 0px 0px;
@@ -267,6 +375,13 @@
   .testimonials .testimonialsCol button.readmore {
     width: unset;
   }
+
+  /*? faq */
+  .faq .faqNav > ul {
+    display: none;
+  }
+  /*  */
+  /*  */
 }
 
 @media screen and (max-width: 410px) {
