@@ -33,3 +33,16 @@ btnHidden.addEventListener("click", (e) => {
 dropdownBtn.addEventListener("click", (e) => {
   dropdownMenu.classList.toggle("active");
 });
+
+// Swiper Buttons
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 4,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".myswiper-button-next",
+    prevEl: ".myswiper-button-prev",
+  },
+});

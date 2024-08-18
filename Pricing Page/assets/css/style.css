@@ -742,6 +742,10 @@ tfoot tr td:nth-child(3) {
   color: #fcfcfd;
 } */
 /*? comment Start */
+:root {
+  --comment_column-gap: 32px;
+  --comment_column-count: 4;
+}
 .comment {
   padding: 136px 0;
 }
@@ -781,18 +785,24 @@ tfoot tr td:nth-child(3) {
   font-weight: 400;
   line-height: 24px;
 }
-.comment .commentList {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 32px;
-  /* display: flex;
-  column-gap: 32px; */
-}
-.comment .commentItem {
-  text-align: center;
+.comment .swiper-wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  */
+  display: flex;
+  align-items: center;
+  column-gap: var(--comment_column-gap);
 }
 
-.comment .commentItem .commentPreview {
+.comment .swiper-slide {
+  text-align: center;
+  width: calc(
+    (100% - ((var(--comment_column-count) - 1) * var(--comment_column-gap))) /
+      var(--comment_column-count)
+  ) !important;
+}
+
+.comment .swiper-slide .commentPreview {
   position: relative;
   width: 256px;
   height: 222px;
@@ -804,7 +814,7 @@ tfoot tr td:nth-child(3) {
   margin: 0px 0px 24px 0px;
   transition: all 0.5s ease-in;
 }
-.comment .commentItem .commentPreview img {
+.comment .swiper-slide .commentPreview img {
   visibility: visible;
 }
 .comment .commentPreview::after {
@@ -827,20 +837,20 @@ tfoot tr td:nth-child(3) {
   visibility: hidden;
   transition: visibility 0.1s ease-in, opacity 0.7s ease-in-out;
 }
-.comment .commentItem:hover .commentPreview img {
+.comment .swiper-slide:hover .commentPreview img {
   visibility: hidden;
 }
-.comment .commentItem:hover .commentPreview:after {
+.comment .swiper-slide:hover .commentPreview:after {
   opacity: 1;
   visibility: visible;
 }
-.comment .commentItem:hover .commentPreview {
+.comment .swiper-slide:hover .commentPreview {
   background-color: var(--Neutrals-2);
 }
-.comment .commentItem:hover {
+.comment .swiper-slide:hover {
   cursor: pointer;
 }
-.comment .commentItem .commentSubtitle {
+.comment .swiper-slide .commentSubtitle {
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -849,7 +859,7 @@ tfoot tr td:nth-child(3) {
   line-height: 24px;
   margin: 0px 0px 8px 0px;
 }
-.comment .commentItem .commentInfo {
+.comment .swiper-slide .commentInfo {
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -864,18 +874,20 @@ tfoot tr td:nth-child(3) {
   width: 24px;
   height: 24px;
 }
-.comment button.btnPrevious {
+.comment .myswiper-button-prev {
+  content: url("../images/comment/right_arrow.svg");
   left: 0px;
 }
 
-.comment button.btnNext {
+.comment .myswiper-button-next {
   left: 44px;
 }
 .comment button i {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   color: var(--Neutrals-4);
 }
+
 /*! comment End */
 /*? faq Start */
 .faq {
