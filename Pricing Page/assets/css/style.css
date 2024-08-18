@@ -956,17 +956,17 @@ tfoot tr td:nth-child(3) {
 .faq .faqNav {
   margin: 0 auto;
 }
-.faq .faqNav ul {
+.faq .faqNav ul.desktop {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 12px;
 }
-.faq .faqNav ul li {
+.faq .faqNav ul.desktop li {
   padding: 6px 12px;
   border-radius: 100px;
 }
-.faq .faqNav ul li a {
+.faq .faqNav ul.desktop li a {
   display: block;
   color: var(--Neutrals-4, #777e90);
   font-family: "SF Pro Display", sans-serif;
@@ -975,19 +975,19 @@ tfoot tr td:nth-child(3) {
   font-weight: 700;
   line-height: 16px;
 }
-.faq .faqNav ul li:hover {
+.faq .faqNav ul.desktop li:hover {
   background: var(--Neutrals-3, #353945);
   color: var(--Neutrals-8, #fcfcfd);
 }
 
-.faq .faqNav ul li:hover a {
+.faq .faqNav ul.desktop li:hover a {
   color: var(--Neutrals-8, #fcfcfd);
 }
 /* nice select */
 
 .select {
   position: relative;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   height: 48px;
@@ -1039,9 +1039,7 @@ tfoot tr td:nth-child(3) {
   height: 24px;
   transition: all 0.3s ease-in;
 }
-* {
-  border: 1px solid red;
-}
+
 .select .select_arrow i.changeDirection {
   transform: rotate(180deg);
 }

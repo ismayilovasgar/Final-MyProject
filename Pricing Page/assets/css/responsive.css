@@ -377,8 +377,11 @@
   }
 
   /*? faq */
-  .faq .faqNav > ul {
+  .faq .faqNav > ul.desktop {
     display: none;
+  }
+  .select {
+    display: flex;
   }
   /*  */
   /*  */
