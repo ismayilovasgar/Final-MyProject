@@ -96,6 +96,17 @@ var swiper = new Swiper(".comment_swiper", {
       spaceBetween: 32,
     },
   },
+
+  // My Custom Configuration
+  // autoplay: {
+  //    delay: 1000,
+  // },
+  // effect: "fade",
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
+  // effect: "cards",
+  //
 });
 
 //! Swiper Buttons

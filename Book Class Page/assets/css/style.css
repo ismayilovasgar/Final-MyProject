@@ -663,6 +663,7 @@ li.drop:hover .headerBody {
   margin-top: 136px;
   display: flex;
   align-items: flex-start;
+  display: none;
 }
 
 .portfolio .portfolioRow .portfolioTrainer {
@@ -864,6 +865,134 @@ li.drop:hover .headerBody {
 }
 .programs .programsTop {
   margin: 0px auto 0px auto;
+  max-width: 621px;
+  text-align: center;
+}
+.programs .programsTop h2.programsTitle {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "SF Pro Display";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.32px;
+}
+.programs .programsTop p.programsInfo {
+  margin: 16px auto 0px auto;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.programs .programsTop .programsInfo .programsGreen {
+  color: var(--Primary-4, #45b26b);
+}
+.programs .programsTop .programsInfo .programsBlack {
+  color: var(--Neutrals-2, #23262f);
+}
+/* * {
+  border: 1px solid red;
+} */
+.programs .programs-content {
+  overflow: hidden;
+}
+.programs .programsWrap {
+  padding: 80px 0px;
+}
+.programs .programs_swiper {
+  overflow: hidden;
+}
+
+.programs .programsList .programsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 32px;
+  padding: 64px 32px;
+  border-radius: 20px;
+  background-color: var(--Neutrals-7, #f4f5f6);
+  transition: all 0.3s ease;
+}
+.programs .programsItem .programsIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.programs .programsItem .programsIcon.personIcon {
+  background-color: var(--Primary-4);
+}
+.programs .programsItem .programsIcon.medalIcon {
+  background-color: var(--Primary-2);
+}
+.programs .programsItem .programsIcon.lightningIcon {
+  background-color: var(--Secondary-1);
+}
+
+.programs .programsItem .programsSubtitle {
+  margin-bottom: 16px;
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.programs .programsItem .programsContent {
+  max-width: 293px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.programs .programsItem .programLink {
+  padding: 16px 24px;
+  border-radius: 90px;
+  transition: all 0.5s ease;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.programs .programsItem .program_btn {
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  transition: all 0.5s ease;
+}
+
+.programs .programsItem:hover {
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+  background-color: var(--Neutrals-8, #fcfcfd);
+}
+.programs .programsItem:hover .programLink {
+  background-color: var(--Primary-1);
+  cursor: pointer;
+}
+.programs .programsItem:hover .program_btn {
+  color: var(--Neutrals-8);
+}
+.programs .programsBtns {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * Normal */
+/* 
+.programs {
+  padding-bottom: 136px;
+}
+.programs .programsTop {
+  margin: 0px auto 0px auto;
   width: 621px;
   text-align: center;
 }
@@ -965,7 +1094,6 @@ li.drop:hover .headerBody {
   box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
 }
 .programs .programsBtns {
-  /* margin: 48px 0px 0px 0px; */
   display: flex;
   column-gap: 20px;
   align-items: center;
@@ -973,7 +1101,7 @@ li.drop:hover .headerBody {
 }
 .programs .programsBtns button img {
   display: block;
-}
+} */
 /* ! programs End */
 
 /* ? Footer Start */
