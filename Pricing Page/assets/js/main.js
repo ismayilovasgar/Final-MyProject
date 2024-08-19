@@ -62,16 +62,73 @@ seeAllFeatures.forEach((element) => {
     pricingList.classList.toggle("active");
   });
 });
+//! Swiper Cards
+var swiper = new Swiper(".comment_swiper", {
+  slidesPerView: 1,
+  spaceBetween: 32,
 
-//! Swiper Buttons
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
+    clickable: true,
   },
   navigation: {
     nextEl: ".myswiper-button-next",
     prevEl: ".myswiper-button-prev",
+  },
+
+  breakpoints: {
+    // 0: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 16,
+    // },
+
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
+  },
+});
+
+//! Swiper Buttons
+var swiper = new Swiper(".testimonials-swiper", {
+  slidesPerView: "4",
+  spaceBetween: 10,
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+    clickable: true,
+  },
+  navigation: {
+    // nextEl: ".myswiper-button-next",
+    // prevEl: ".myswiper-button-prev",
+  },
+
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
   },
 });

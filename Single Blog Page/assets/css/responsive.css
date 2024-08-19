@@ -259,6 +259,12 @@
   .story .storyList .storyItem {
     margin-bottom: 32px;
   }
+  /*? review */
+  .review .reviewItem .reviewTitle {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.32px;
+  }
 }
 
 @media screen and (max-width: 390px) {

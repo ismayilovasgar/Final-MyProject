@@ -661,6 +661,11 @@
     --clients_column-gap: 64px;
     --clients_column-count: 2;
   }
+  .review .reviewItem .reviewTitle {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.32px;
+  }
 }
 @media screen and (max-width: 395px) {
   .container {

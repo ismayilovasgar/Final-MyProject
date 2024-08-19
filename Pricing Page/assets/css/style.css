@@ -825,22 +825,26 @@ tfoot tr td:nth-child(3) {
   font-weight: 400;
   line-height: 24px;
 }
-
+.comment .comment_swiper {
+  overflow: hidden;
+}
 .comment .swiper-wrapper {
   /* display: grid;
   grid-template-columns: repeat(4, 1fr); 
   */
   display: flex;
   align-items: center;
-  column-gap: var(--comment_column-gap);
+  /* column-gap: var(--comment_column-gap); */
+  /* column-gap: 10px; */
+  /* overflow: hidden; */
 }
 
 .comment .swiper-slide {
   text-align: center;
-  width: calc(
+  /* width: calc(
     (100% - ((var(--comment_column-count) - 1) * var(--comment_column-gap))) /
       var(--comment_column-count)
-  ) !important;
+  ) !important; */
 }
 
 .comment .swiper-slide .commentPreview {
@@ -1321,10 +1325,11 @@ ul.list.show {
   display: flex;
   align-items: center;
   width: 100%;
-  column-gap: var(--testimonials_column-gap);
+  /* column-gap: var(--testimonials_column-gap); */
 }
 
 .testimonials .testmonialsNav .swiper li.swiper-slide {
+  /*
   width: calc(
     (
         100% -
@@ -1333,7 +1338,7 @@ ul.list.show {
               var(--testimonials_column-gap)
           )
       ) / var(--testimonials_column-count)
-  ) !important;
+  ) !important;*/
 }
 
 .testimonials .wrap .testmonialsNav .swiper a {

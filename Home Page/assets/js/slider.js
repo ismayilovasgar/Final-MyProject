@@ -31,16 +31,27 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-var swiper = new Swiper(".steps_swiper", {
-  slidesPerView: 3,
-  spaceBetween: 0,
+// var swiper = new Swiper(".steps_swiper", {
+//   slidesPerView: 3,
+//   spaceBetween: 0,
 
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "fraction",
+//   },
+//   navigation: {
+//     nextEl: ".steps_next_btn",
+//     prevEl: ".steps_prev_btn",
+//   },
+// });
+
+var swiper = new Swiper(".review-swiper-content", {
   pagination: {
     el: ".swiper-pagination",
-    type: "fraction",
+    type: "progressbar",
   },
   navigation: {
-    nextEl: ".steps_next_btn",
-    prevEl: ".steps_prev_btn",
+    nextEl: ".previoustBtn",
+    prevEl: ".nextBtn",
   },
 });
