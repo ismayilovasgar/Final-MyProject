@@ -1,8 +1,5 @@
 /* *********************************************************** */
 @media screen and (max-width: 1440px) {
-  * {
-    border: 1px solid red;
-  }
   .tabletMenu.active {
     display: none;
   }
@@ -113,9 +110,6 @@
   /*! heroHeader End */
 
   /*? steps Start */
-  :root {
-    --steps_colum-count: 2;
-  }
   .steps {
     padding: 112px 0;
   }
@@ -155,6 +149,10 @@
 
   .steps .stepsList .stepsItem .stepsPreview {
     margin: 0 auto 40px auto;
+  }
+
+  .steps .navigations ul {
+    display: flex;
   }
   /*! Steps End */
   /*? Intro Start */
@@ -427,14 +425,23 @@
   .detailItemMiddle {
     border: none;
   }
-  /*! details End */
-
+  /* ? bookPoster */
   .bookPoster .wrapper .bookList .bookItem {
     column-gap: 16px;
     padding: 2px;
   }
+  /* ? workouts */
   .workouts .workoutsBtns button {
     padding: 8px 2px;
+  }
+  /* ? clients */
+  :root {
+    --clients_column-gap: 64px;
+    --clients_column-count: 3;
+  }
+  /*? steps */
+  :root {
+    --steps_colum-count: 1;
   }
   /* ? Footer */
   footer .top-menu {
@@ -650,6 +657,10 @@
 
 /* *********************************************************** */
 @media screen and (max-width: 500px) {
+  :root {
+    --clients_column-gap: 64px;
+    --clients_column-count: 2;
+  }
 }
 @media screen and (max-width: 395px) {
   .container {

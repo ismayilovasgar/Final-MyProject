@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+
 </head>
 
 <body class="">
@@ -508,19 +510,110 @@
                 <p>Trusted by more than 2M users worldwide</p>
                 <p class="mobileText">We work with people from over the world</p>
             </div>
-            <div class="clientsList">
-                <ul>
-                    <li><img src="./assets/images/clients/logo01.png" alt=""></li>
-                    <li><img src="./assets/images/clients/logo02.png" alt=""></li>
-                    <!-- <li><img src="./assets/images/clients/logo03.png" alt=""></li> -->
-                    <li><img src="./assets/images/clients/logo04.png" alt=""></li>
-                    <li><img src="./assets/images/clients/logo05.png" alt=""></li>
-                    <!-- <li><img src="./assets/images/clients/logo06.png" alt=""></li> -->
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="./assets/images/clients/logo01.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./assets/images/clients/logo02.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./assets/images/clients/logo03.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./assets/images/clients/logo04.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./assets/images/clients/logo05.png" alt=""></li>
+                    <!-- <li class="swiper-slide"><img src="./assets/images/clients/logo06.png" alt=""></li> -->
                 </ul>
             </div>
         </div>
     </section>
     <!--! clients End  -->
+    <!--? steps Start  -->
+    <!-- <div class="steps lightmode">
+        <div class="container ">
+            <div class="wrapper">
+                <div class="stepsHead">
+                    <h2 class="hline2">How it work</h2>
+                    <p class="body2">
+                        Stacks is a production-ready library of stackable <br>
+                        content blocks built in React Native.
+                    </p>
+                </div>
+
+
+                <div class="swiper steps_swiper">
+
+                    <div class="swiper-wrapper" id="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/donwload.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 1</div>
+                            <div class="stepsSubtitle">Download</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be
+                                the
+                                best
+                                version of you.
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/key.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 2</div>
+                            <div class="stepsSubtitle">Choose your trainner</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be
+                                the
+                                best
+                                version of you.
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/media.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 3</div>
+                            <div class="stepsSubtitle">Set the goals</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be
+                                the
+                                best
+                                version of you.
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="stepsPreview">
+                                <img src="./assets/images/steps/stopwatch.svg" alt="">
+                            </div>
+                            <div class="stepsNumber">Step 4</div>
+                            <div class="stepsSubtitle">Workout time</div>
+                            <div class="stepsContent">Fitness Pro tracks your workouts, get better results, and be
+                                the
+                                best
+                                version of you.
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="navigations">
+                        <ul>
+                            <li class="steps_prev_btn">
+                                <img src="./assets/images/steps/left_arrow.svg" alt="">
+                            </li>
+                            <li class="steps_next_btn">
+                                <img src="./assets/images/steps/right_arrow.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ********************************* -->
     <!--? steps Start  -->
     <div class="steps lightmode">
         <div class="container ">
@@ -739,67 +832,6 @@
     </section>
     <!--! details End  -->
     <!--? homeAbout Start  -->
-    <!-- <section class="homeAbout lightmode">
-        <div class="container">
-
-            <div class="topRow aboutRow">
-                <div class="aboutCol">
-                    <p class="stage">Fitness Pro</p>
-                </div>
-                <div class="aboutCol">
-                    <h2 class="aboutTitle">Simple, powerful,<br> easy-to-use</h2>
-                    <p class="aboutInfo">Track your workouts, get better results, and be the best version of you. Less
-                        thinking, more lifting.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="bottomRow aboutRow">
-                <div class="aboutCol">
-                    <div class="aboutList">
-                        <div class="aboutItem">
-                            <div class="aboutNumber">01</div>
-                            <h2 class="aboutSubtitle">Intuitive and clean design</h2>
-                            <p class="aboutContent">Track your workouts, get better results, and be the best version of
-                                you.
-                            </p>
-                        </div>
-
-                        <div class="aboutItem">
-                            <div class="aboutNumber">02</div>
-                            <h2 class="aboutSubtitle">Intuitive and clean design</h2>
-                            <p class="aboutContent">Track your workouts, get better results, and be the best version of
-                                you.
-                            </p>
-                        </div>
-
-                        <div class="aboutItem">
-                            <div class="aboutNumber">03</div>
-                            <h2 class="aboutSubtitle">Intuitive and clean design</h2>
-                            <p class="aboutContent">Track your workouts, get better results, and be the best version of
-                                you.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="aboutCol">
-                    <div class="aboutBackground">
-                        <img class="pillBox" src="./assets/images/homeAbout/pillscolor.png" alt="">
-                        <div class="platePreview">
-                            <img src="./assets/images/homeAbout/plate_dark.png" alt="">
-                        </div>
-                        <div class="playPreview">
-                            <img src="./assets/images/homeAbout/play_icon.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section> -->
     <!-- **** -->
     <section class="homeAbout">
         <div class="container">
@@ -1194,9 +1226,12 @@
     <!--! footer End -->
 
 
-    <!-- JavaScript Links -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- Swiper Js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Javascript -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
 </body>
 
 </html>
