@@ -892,9 +892,12 @@ li.drop:hover .headerBody {
 .programs .programsTop .programsInfo .programsBlack {
   color: var(--Neutrals-2, #23262f);
 }
-/* * {
+
+/* 
+* {
   border: 1px solid red;
 } */
+
 .programs .programs-content {
   overflow: hidden;
 }

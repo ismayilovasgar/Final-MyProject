@@ -9,6 +9,8 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -283,6 +285,7 @@
     </section>
     <!--! heroHeader End  -->
     <!-- ? programs Start -->
+
     <section class="programs">
         <div class="container">
             <div class="programsTop">
@@ -294,54 +297,108 @@
                     <span class="programsBlack">Fitness Pro </span>on App Store
                 </p>
             </div>
+
             <div class="programsWrap">
-                <div class="programsList">
+                <div class="programs_swiper">
+                    <div class="programsList swiper-wrapper">
 
-                    <div class="programsItem">
-                        <div class="programsIcon">
-                            <img src="./assets/images/programs/person.svg" alt="">
+                        <div class="programsItem swiper-slide">
+                            <div class="programsIcon personIcon">
+                                <!-- <i class="fa-solid fa-user"></i> -->
+                                <img src="./assets/images/programs/person.svg" alt="">
+                            </div>
+                            <div class="programsText">
+                                <div class="programsSubtitle">Beginners</div>
+                                <div class="programsContent">A 7-days training program designed to boost your strength &
+                                    endurance over the course of a week.
+                                </div>
+                            </div>
+                            <div class="programLink">
+                                <a href="#" class="program_btn">Book a Class</a>
+                            </div>
                         </div>
-                        <div class="programsSubtitle">Beginners</div>
-                        <div class="programsContent">A 7-days training program designed to boost your strength &
-                            endurance
-                            over the course of a week.
+
+                        <div class="programsItem swiper-slide">
+                            <div class="programsIcon medalIcon">
+                                <!-- <i class="fa-solid fa-medal"></i> -->
+                                <img src="./assets/images/programs/medal.svg" alt="">
+                            </div>
+                            <div class="programsText">
+                                <div class="programsSubtitle">Advanced</div>
+                                <div class="programsContent">A 7-days training program designed to boost your strength &
+                                    endurance over the course of a week.
+                                </div>
+                            </div>
+                            <div class="programLink">
+                                <a href="#" class="program_btn">Book a Class</a>
+                            </div>
                         </div>
-                        <a class="btn" href="#">Book a Class</a>
+
+                        <div class="programsItem swiper-slide">
+                            <div class="programsIcon lightningIcon">
+                                <!-- <i class="fa-solid fa-bolt"></i> -->
+                                <img src="./assets/images/programs/lightning.svg" alt="">
+                            </div>
+                            <div class="programsText">
+                                <div class="programsSubtitle">Premium</div>
+                                <div class="programsContent">A 7-days training program designed to boost your strength &
+                                    endurance over the course of a week.
+                                </div>
+                            </div>
+                            <div class="programLink">
+                                <a href="#" class="program_btn">Book a Class</a>
+                            </div>
+                        </div>
+
+                        <!-- Repeat -->
+
+                        <div class="programsItem swiper-slide">
+                            <div class="programsIcon medalIcon">
+                                <!-- <i class="fa-solid fa-medal"></i> -->
+                                <img src="./assets/images/programs/medal.svg" alt="">
+                            </div>
+                            <div class="programsText">
+                                <div class="programsSubtitle">Advanced</div>
+                                <div class="programsContent">A 7-days training program designed to boost your strength &
+                                    endurance over the course of a week.
+                                </div>
+                            </div>
+                            <div class="programLink">
+                                <a href="#" class="program_btn">Book a Class</a>
+                            </div>
+                        </div>
+
+                        <div class="programsItem swiper-slide">
+                            <div class="programsIcon lightningIcon">
+                                <!-- <i class="fa-solid fa-bolt"></i> -->
+                                <img src="./assets/images/programs/lightning.svg" alt="">
+                            </div>
+                            <div class="programsText">
+                                <div class="programsSubtitle">Premium</div>
+                                <div class="programsContent">A 7-days training program designed to boost your strength &
+                                    endurance over the course of a week.
+                                </div>
+                            </div>
+                            <div class="programLink">
+                                <a href="#" class="program_btn">Book a Class</a>
+                            </div>
+                        </div>
+
+
                     </div>
-
-                    <div class="programsItem">
-                        <div class="programsIcon">
-                            <img src="./assets/images/programs/medal.svg" alt="">
-                        </div>
-                        <div class="programsSubtitle">Beginners</div>
-                        <div class="programsContent">A 7-days training program designed to boost your strength &
-                            endurance
-                            over the course of a week.
-                        </div>
-                        <a class="btn" href="#">Book a Class</a>
-                    </div>
-
-                    <div class="programsItem">
-                        <div class="programsIcon">
-                            <img src="./assets/images/programs/lightning.svg" alt="">
-                        </div>
-                        <div class="programsSubtitle">Beginners</div>
-                        <div class="programsContent">A 7-days training program designed to boost your strength &
-                            endurance
-                            over the course of a week.
-                        </div>
-                        <a class="btn" href="#">Book a Class</a>
-                    </div>
-
-
                 </div>
             </div>
+
+
             <div class="programsBtns">
-                <button class="previoustBtn"><img src="./assets/images/programs/previousBtn.svg" alt=""></button>
-                <button class="nextBtn"><img src="./assets/images/programs/nextBtn.svg" alt=""></button>
+                <button class="programs_prev_btn"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="programs_next_btn"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
+
+
         </div>
     </section>
+
     <!-- ! programs End -->
     <!-- ? trainers Start -->
     <section class="trainers">
@@ -660,6 +717,11 @@
 
     </footer>
     <!--! Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main Js -->
     <script src="./assets/js/main.js"></script>
 
 </body>

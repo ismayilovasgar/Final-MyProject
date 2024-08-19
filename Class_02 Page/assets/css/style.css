@@ -521,55 +521,56 @@ li.drop:hover .headerBody {
 .programs .programsTop .programsInfo .programsBlack {
   color: var(--Neutrals-2, #23262f);
 }
+
 .programs .programsWrap {
   padding: 80px 0px;
 }
-.programs .programsList {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 32px; */
 
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 64px;
-  column-gap: var(--programs_column-gap);
+/* 
+* {
+  border: 1px solid red;
+} */
+
+.programs .programs-content {
+  overflow: hidden;
 }
+.programs .programsWrap {
+  padding: 80px 0px;
+}
+.programs .programs_swiper {
+  overflow: hidden;
+}
+
 .programs .programsList .programsItem {
-  background-color: var(--Neutrals-7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 32px;
   padding: 64px 32px;
   border-radius: 20px;
-  transition: all 0.4s ease;
-  width: calc(
-    (100% - ((var(--programs_column-count) - 1) * var(--programs_column-gap))) /
-      var(--programs_column-count)
-  );
-  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+  background-color: var(--Neutrals-7, #f4f5f6);
+  transition: all 0.3s ease;
 }
 .programs .programsItem .programsIcon {
-  width: 48px;
-  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px;
   border-radius: 40px;
 }
-.programs .programsItem .programsIcon img {
-  width: 100%;
-  object-fit: cover;
-}
 
-.programs .programsItem:nth-child(1) .programsIcon {
+.programs .programsItem .programsIcon.personIcon {
   background-color: var(--Primary-4);
 }
-.programs .programsItem:nth-child(2) .programsIcon {
+.programs .programsItem .programsIcon.medalIcon {
   background-color: var(--Primary-2);
 }
-.programs .programsItem:nth-child(3) .programsIcon {
+.programs .programsItem .programsIcon.lightningIcon {
   background-color: var(--Secondary-1);
 }
+
 .programs .programsItem .programsSubtitle {
-  margin: 32px 0px 16px 0px;
+  margin-bottom: 16px;
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -578,7 +579,7 @@ li.drop:hover .headerBody {
   line-height: 32px;
 }
 .programs .programsItem .programsContent {
-  margin: 0px 0px 32px 0px;
+  max-width: 293px;
   color: var(--Neutrals-4, #777e90);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -586,8 +587,13 @@ li.drop:hover .headerBody {
   font-weight: 400;
   line-height: 24px;
 }
-.programs .programsItem a {
-  display: inline-block;
+.programs .programsItem .programLink {
+  padding: 16px 24px;
+  border-radius: 90px;
+  transition: all 0.5s ease;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.programs .programsItem .program_btn {
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display", sans-serif;
@@ -595,27 +601,25 @@ li.drop:hover .headerBody {
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  transition: all 0.4s ease;
-  border-radius: 90px;
-  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  transition: all 0.5s ease;
 }
-.programs .programsItem a:hover {
+
+.programs .programsItem:hover {
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+  background-color: var(--Neutrals-8, #fcfcfd);
+}
+.programs .programsItem:hover .programLink {
   background-color: var(--Primary-1);
-  border-color: var(--Primary-1);
-  color: var(--Neutrals-8, #fcfcfd);
+  cursor: pointer;
 }
-.programs .programsItem:has(a:hover) {
-  background-color: var(--Neutrals-8, #f4f5f6);
+.programs .programsItem:hover .program_btn {
+  color: var(--Neutrals-8);
 }
 .programs .programsBtns {
-  margin: 48px 0px 0px 0px;
   display: flex;
   column-gap: 20px;
   align-items: center;
   justify-content: center;
-}
-.programs .programsBtns button img {
-  display: block;
 }
 /*! programs End */
 /*? trainers Start */
