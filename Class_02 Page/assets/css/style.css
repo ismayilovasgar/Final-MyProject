@@ -541,7 +541,7 @@ li.drop:hover .headerBody {
   overflow: hidden;
 }
 
-.programs .programsList .programsItem {
+.programs .swiper-wrapper .programsItem {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

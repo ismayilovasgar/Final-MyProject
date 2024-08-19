@@ -20,7 +20,8 @@ window.onclick = function (event) {
 };
 
 // ! Swiper - 1
-var swiper = new Swiper(".programs_swiper", {
+let swiper_programs = new Swiper(".programs_swiper", {
+  grabCursor: true,
   slidesPerView: 3,
   spaceBetween: 24,
   pagination: {
@@ -33,7 +34,11 @@ var swiper = new Swiper(".programs_swiper", {
     prevEl: ".programs_prev_btn",
   },
   breakpoints: {
-    568: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    700: {
       slidesPerView: 2,
     },
     1024: {
