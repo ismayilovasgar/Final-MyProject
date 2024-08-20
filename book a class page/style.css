@@ -30,7 +30,6 @@
   max-width: 95%;
   margin: 0 auto;
 }
-
 .hero__class {
   background: var(--Neutrals-8, #fcfcfd);
   margin: 40px 0px 0px 0px;
@@ -38,7 +37,6 @@
 
 .hero__title {
   margin: 0 auto 27px auto;
-  width: 672px;
   text-align: center;
 }
 
@@ -47,13 +45,16 @@
   padding: 8px 8px 6px 8px;
   border-radius: 4px;
   background: var(--Primary-4, #45b26b);
-  color: var(--Neutrals-8, #fcfcfd);
+  color: var(--Neutrals-8, #FCFCFD);
   font-family: "Poppins";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 12px;
   text-transform: uppercase;
+}
+.green__label h4{
+  font-size: 10px;
 }
 
 .hero__title h1 {
@@ -67,7 +68,7 @@
   line-height: 64px;
   letter-spacing: -1.28px;
 }
-.hero__title p {
+.hero__title span {
   color: var(--Neutrals-4, #777e90);
   text-align: center;
   font-family: "Poppins";
@@ -76,9 +77,8 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.24px;
-}
-.hero__image {
-  width: 1120px;
+  max-width: 675px;
+  margin: 0 auto;
 }
 .hero__image img {
   width: 100%;
@@ -87,19 +87,18 @@
   margin: 136px 0px;
   background: var(--Neutrals-8, #fcfcfd);
 }
-
 .trainer__book {
   display: flex;
   gap: 64px;
 }
 .trainer__class {
   display: flex;
-  width: 60%;
+  width:calc(64% - 64px * 0.64);
   gap: 32px;
 }
 .trainer__about {
   display: flex;
-  width: 40%;
+  max-width:calc(42% - 32px * 0.42);
   padding: 24px 0px;
   flex-direction: column;
   justify-content: center;
@@ -119,14 +118,14 @@
 }
 .trainer__subtitle h2 {
   color: var(--Neutrals-2, #23262f);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
 }
 .trainer__subtitle p {
   color: var(--Neutrals-4, #777e90);
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
 }
@@ -140,7 +139,7 @@
 }
 .class__about {
   display: flex;
-  width: 55%;
+  max-width:calc(58% - 32px * 0.58);
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
@@ -183,7 +182,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  gap: 20px;
+  gap: 25px;
 }
 .divider {
   height: 1px;
@@ -206,10 +205,15 @@
 .note {
   color: var(--Neutrals-3, #353945);
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  max-width: 352px;
+}
+
+* {
+  border: 1px solid red;
 }
 .divider__y {
   width: 1px;
@@ -218,7 +222,7 @@
   background: var(--Neutrals-6, #e6e8ec);
 }
 .workout__time {
-  width: 33%;
+  width:calc(36% - 64px * 0.36);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -233,16 +237,18 @@
 .workouttime__title h1 {
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins";
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+  max-width: 180px;
 }
 .workouttime__body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  max-width: 100%;
 }
 .workouttime__control {
   display: flex;
@@ -252,7 +258,7 @@
   padding: 0 8px;
   border-radius: 90px;
   background: var(--Neutrals-2, #23262f);
-  width: 352px;
+  width: 100%;
 }
 .date__prev,
 .date__next {
@@ -268,27 +274,27 @@
   gap: 8px;
 }
 .date__option {
-  width: 128px;
-  padding: 16px 24px;
+  width:calc(38% - 8px * 0.38);
+  padding: 16px 20px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
 }
 .date__option_df {
-  width: 80px;
-  padding: 16px 24px;
+  width:calc(24% - 8px * 0.23);
+  padding: 16px 20px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
   color: var(--Neutrals-2, #23262f);
   text-align: center;
   font-family: "SF Pro Display";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
@@ -303,14 +309,14 @@ button {
   color: var(--Neutrals-8, #fcfcfd);
   text-align: right;
   font-family: "SF Pro Display";
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
 }
 .workouttime__btns {
   display: flex;
-  width: 352px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -326,7 +332,7 @@ button {
   width: 24px;
 }
 .book__button {
-  width: 292px;
+  width: 83%;
   padding: 16px 24px;
   gap: 40px;
   border-radius: 90px;
@@ -352,7 +358,7 @@ button {
   margin-bottom: 16px;
   color: var(--Neutrals-2, #23262f);
   text-align: center;
-  width: 621px;
+  max-width: 621px;
   font-family: "SF Pro Display";
   font-size: 48px;
   font-style: normal;
@@ -384,11 +390,11 @@ button {
 }
 .value__cards {
   display: flex;
-  align-items: flex-start;
   gap: 24px;
 }
 .value__card {
   display: flex;
+  min-width: calc((100% - (24px * 2)) / 3);
   padding: 64px 32px;
   flex-direction: column;
   align-items: flex-start;
@@ -396,14 +402,11 @@ button {
   border-radius: 20px;
   background: var(--Neutrals-7, #f4f5f6);
 }
-.value__cards :nth-of-type(3) {
-  background: var(--Neutrals-8, #fcfcfd);
-  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
-}
 .card__description {
   margin-bottom: 16px;
 }
 .card__description h2 {
+  margin-bottom: 16px;
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins";
   font-size: 24px;

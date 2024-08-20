@@ -416,7 +416,8 @@ li.drop:hover .headerBody {
   text-align: center;
 }
 .portfolioStatus {
-  display: inline-block;
+  margin: 0 auto;
+  max-width: 165px;
   padding: 8px 8px 6px 8px;
   border-radius: 4px;
   background-color: var(--Primary-4, #45b26b);
@@ -452,8 +453,8 @@ li.drop:hover .headerBody {
   letter-spacing: -0.24px;
 }
 .portfolio .portfolioGallery {
-  padding: 0px 104px 0px 216px;
-  /* padding: 0px 9.287% 0px 19.2858%; */
+  max-width: 800px;
+  margin: 0 auto;
 }
 .portfolio .portfolioGallery img {
   width: 100%;
@@ -659,6 +660,7 @@ li.drop:hover .headerBody {
   display: block;
 } */
 
+/* 
 .portfolio .portfolioRow {
   margin-top: 136px;
   display: flex;
@@ -857,6 +859,269 @@ li.drop:hover .headerBody {
 }
 .portfolioRow .portfolioDetails .portfolioBody .portfolioLock img {
   display: block;
+} */
+
+.book__class {
+  margin: 136px 0px;
+  background: var(--Neutrals-8, #fcfcfd);
+}
+.trainer__book {
+  display: flex;
+  gap: 64px;
+}
+.trainer__class {
+  display: flex;
+  width: calc(64% - 64px * 0.64);
+  gap: 32px;
+}
+.trainer__about {
+  display: flex;
+  max-width: calc(42% - 32px * 0.42);
+  padding: 24px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 24px;
+  border: 1px solid var(--Neutrals-6, #e6e8ec);
+  background: var(--Neutrals-8, #fcfcfd);
+}
+.trainer__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+  line-height: 24px;
+  gap: 4px;
+}
+.trainer__subtitle h2 {
+  color: var(--Neutrals-2, #23262f);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.trainer__subtitle p {
+  color: var(--Neutrals-4, #777e90);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+.trainer__image {
+  width: 50%;
+  border-radius: 128px;
+  background: var(--Neutrals-6, #e6e8ec);
+}
+.trainer__image img {
+  width: 100%;
+}
+.class__about {
+  display: flex;
+  max-width: calc(58% - 32px * 0.58);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.class__parametres {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.class__details {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+.class__features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: var(--Neutrals-4, #777e90);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.class__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.features__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  gap: 25px;
+}
+.divider {
+  height: 1px;
+  background: var(--Neutrals-6, #e6e8ec);
+}
+.features__detail p {
+  color: var(--Neutrals-2, #23262f);
+}
+.features__detail span {
+  color: var(--Primary-4, #45b26b);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.class__icon {
+  width: 20px;
+}
+.note {
+  color: var(--Neutrals-3, #353945);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 352px;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+.divider__y {
+  width: 1px;
+  height: 256px;
+  border-radius: 2px;
+  background: var(--Neutrals-6, #e6e8ec);
+}
+.workout__time {
+  width: calc(36% - 64px * 0.36);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.workouttime__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.workouttime__title h1 {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  max-width: 180px;
+}
+.workouttime__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 100%;
+}
+.workouttime__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 0 8px;
+  border-radius: 90px;
+  background: var(--Neutrals-2, #23262f);
+  width: 100%;
+}
+.date__prev,
+.date__next {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border-radius: 32px;
+  padding: 4px;
+}
+.date__options {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.date__option {
+  width: calc(38% - 8px * 0.38);
+  padding: 16px 20px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.date__option_df {
+  width: calc(24% - 8px * 0.23);
+  padding: 16px 20px;
+  border-radius: 90px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+  color: var(--Neutrals-2, #23262f);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.workouttime__date {
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: right;
+  font-family: "SF Pro Display";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.workouttime__btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.lock__button {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid var(--Neutrals-6, #e6e8ec);
+}
+.lock__button img {
+  width: 24px;
+}
+.book__button {
+  width: 83%;
+  padding: 16px 24px;
+  gap: 40px;
+  border-radius: 90px;
+  background: var(--Primary-1, #ff592c);
+  color: var(--Neutrals-8, #fcfcfd);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
 }
 /* ! portfolio End */
 /* ? programs Start */
