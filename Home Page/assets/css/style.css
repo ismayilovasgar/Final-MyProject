@@ -1,6 +1,6 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 /*? Header Start */
 .some-show-arrow {
   display: block;
@@ -1889,8 +1889,8 @@ ul.list.show {
 /* ! offers  End */
 
 /* ? Footer Start */
-
-footer {
+footer ul.footerNavContent {
+  display: none;
 }
 footer .wrapper {
   border-top: 1px solid var(--Neutrals-6);
@@ -1929,13 +1929,13 @@ footer .frame .top-menu .left-menu i.fa-basketball {
   font-size: 32px;
   margin: 0px 128px 136px 0px;
 }
-footer .frame .top-menu .left-menu ul {
+footer .frame .top-menu .left-menu ul:not(.footerNavContent) {
   width: 160px;
 }
 footer .frame .top-menu .left-menu ul li:not(:last-child) {
   margin-bottom: 24px;
 }
-footer .frame .top-menu .left-menu ul li a {
+footer .frame .top-menu .left-menu ul:not(.footerNavContent) li a {
   color: var(--Neutrals-4, #777e90);
   font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
@@ -1961,7 +1961,7 @@ footer .middle-menu p {
   line-height: 12px;
   text-transform: uppercase;
 }
-footer .middle-menu ul li {
+footer .middle-menu ul:not(.footerNavContent) li {
   color: var(--Neutrals-2, #23262f);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -2057,4 +2057,13 @@ footer .divider {
   width: 1px;
   height: 384px;
   background-color: var(--Neutrals-6, #e6e8ec);
+}
+
+footer .footerNavContent > li > a {
+  color: var(--Neutrals-4, #777e90);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
 }
