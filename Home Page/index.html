@@ -342,12 +342,12 @@
                         <div class="bodyHead">
                             <div class="headRow">
                                 <div class="headCol headLeftCol">
-                                    <a href="#" class="headerDirection">
+                                    <!-- <a href="#" class="headerDirection">
                                         <div class="headerInfo">
                                             Find a class to achieve your goals &#128293;
                                         </div>
                                         <img src="./assets/images/tabletMode/ball_80_80.png" alt="">
-                                    </a>
+                                    </a> -->
                                     <div class="headerMenu">
                                         <a class="headerBox" href="#">
                                             <div class="headerIcon">
@@ -411,7 +411,7 @@
                             </div>
                         </div>
 
-                        <div class="tabletHeaderFoot">
+                        <!-- <div class="tabletHeaderFoot">
                             <div class="footStage">
                                 Pro Trainers
                             </div>
@@ -450,7 +450,7 @@
 
 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="bottomMenuLink lastElement">
                         <a href="#">Lifestyle</a>
@@ -470,9 +470,7 @@
                     <div class="overlap">
                         <p class="stage">Train smarter. get stronger</p>
                         <h2 class="mainTitle">
-                            <p> Simple fitness</p>
-                            <p> experience for</p>
-                            <p> everyone.</p>
+                            <p>Simple fitness experience for everyone.</p>
                         </h2>
                         <h3 class="mainTitle">
                             Simple fitness experience for everyone.
@@ -510,7 +508,7 @@
                 <p>Trusted by more than 2M users worldwide</p>
                 <p class="mobileText">We work with people from over the world</p>
             </div>
-            <div class="swiper">
+            <div class="clients_swiper" style="overflow: hidden;">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide"><img src="./assets/images/clients/logo01.png" alt=""></li>
                     <li class="swiper-slide"><img src="./assets/images/clients/logo02.png" alt=""></li>
@@ -750,7 +748,7 @@
                             </div>
                             <div class="bookDetails">
                                 <h3 class="bookSubtitle">Advanced Classes</h3>
-                                <p class="bookContent">You never workout before, it's now a <br> good start</p>
+                                <p class="bookContent">You never workout before, it's now a good start</p>
                             </div>
                         </div>
 
@@ -760,7 +758,7 @@
                             </div>
                             <div class="bookDetails">
                                 <h3 class="bookSubtitle">Premium(limited)</h3>
-                                <p class="bookContent">You never workout before, it's now a <br> good start</p>
+                                <p class="bookContent">You never workout before, it's now a good start</p>
                             </div>
                         </div>
                     </div>
@@ -801,7 +799,7 @@
                     </p>
                 </div>
 
-                <!-- <span class="divider"></span> -->
+                <span class="divider"></span>
 
                 <div class="detailsItem detailItemMiddle">
                     <div class="detailsIcon">
@@ -814,7 +812,7 @@
                     </p>
                 </div>
 
-                <!-- <span class="divider"></span> -->
+                <span class="divider"></span>
 
                 <div class="detailsItem detailItemRight">
                     <div class="detailsIcon">
@@ -896,19 +894,26 @@
                     1-on-1 live practice mode helps you quickly get great results.
                 </p>
                 <div class="trainerNav">
-                    <ul>
+                    <ul class="desktop_view">
                         <li><a class="active" href="#">Yoga</a></li>
                         <li><a href="#">Fitness & Gym</a></li>
                         <li><a href="#">Gymnastics</a></li>
                         <li><a href="#">Running</a></li>
                     </ul>
+
+                    <div class="select sorting" id="toggle">
+                        <input type="text" name="style" class="current" value="Yoga" />
+                        <div class="select_arrow">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="list mobil_view" id="popup">
+                            <li data-value="AcroYoga" class="option selected">Yoga</li>
+                            <li data-value="Mini Yoga" class="option">Fitness & Gym</li>
+                            <li data-value="Mini Yoga" class="option">Gymnastics</li>
+                            <li data-value="Mini Yoga" class="option">Running</li>
+                        </ul>
+                    </div>
                 </div>
-                <select class="select js-tabs-select" style="display: none;">
-                    <option>Yoga</option>
-                    <option>Fitness &amp; Gym</option>
-                    <option>Gymnastics</option>
-                    <option>Running</option>
-                </select>
             </div>
             <div class="trainersList">
                 <div class="listWrap">
@@ -990,7 +995,7 @@
 
         </div>
     </section> -->
-    
+
     <!-- * Slider -->
     <section class="review lightmode">
         <div class="container">
@@ -1216,8 +1221,7 @@
 
             <div class="frame">
                 <p class="stage">try it free for 14 days &#127934;</p>
-                <h2 class="offersTitle">Anywhere you want.</h2>
-                <h2 class="offersTitle">Anytime you want.</h2>
+                <h2 class="offersTitle">Anywhere you want. Anytime you want.</h2>
                 <p class="offersText">Get started with two free weeks of unlimited yoga, fitness, and meditation
                     classes.Cancel anytime.
                 </p>

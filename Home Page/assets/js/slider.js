@@ -18,8 +18,8 @@
 //   },
 // });
 
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
+var swiper = new Swiper(".clients_swiper", {
+  slidesPerView: 2,
   spaceBetween: 0,
   pagination: {
     el: ".swiper-pagination",
@@ -28,6 +28,21 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
+  },
+
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
   },
 });
 

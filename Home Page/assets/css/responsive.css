@@ -43,7 +43,6 @@
     right: -50px;
     width: 60px;
   }
-  /*! steps End */
 
   /*? Intro Start */
   .intro .hline1 {
@@ -53,13 +52,16 @@
   .intro .wrapper .introContent p {
     margin: 24px 0px;
   }
-  /*! Intro End */
+
+  /* ? details Start */
+  :root {
+    --details_column-gap: 32px;
+  }
 
   /*? workouts Start */
   .workouts .workoutsFrame .workoutsWrap h2.workoutsTitle {
     font-size: 44px;
   }
-  /* ! workouts End   */
 }
 
 /* *********************************************************** */
@@ -366,7 +368,8 @@
   }
 
   .tabletMenu .dropdownBody .headRow .headRightCol {
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
   .tabletMenu .dropdownBody .headLeftCol a.headerDirection {
     display: none;
@@ -376,7 +379,9 @@
     border: none;
   }
   .tabletMenu .dropdownBody .headRow {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
   }
   .tabletMenu .dropdownBody {
     margin: 0px;
@@ -571,6 +576,7 @@
   /*!? bookPoster Star  */
   .bookPoster .wrapper {
     flex-direction: column;
+    row-gap: 32px;
   }
   .bookPoster .bookMenu {
     display: flex;
@@ -594,15 +600,17 @@
     column-gap: 40px;
   }
   /*! bookPoster End  */
-
+  /*? advantages Start */
+  :root {
+    --advantages_column-gap: 2px;
+    --advantages_column-count: 2;
+  }
+  /*?  details Start  */
+  :root {
+    --details_column-count: 2;
+  }
   .details .detailsList {
-    /* display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 32px; */
-    flex-direction: column;
-    row-gap: 32px;
-    align-items: unset;
+    row-gap: var(--details_column-gap);
   }
   .details .detailsList .detailsItem .detailsCategory {
     /* font-size: 13px; */
@@ -611,11 +619,20 @@
   .details .detailsList .detailsItem .detailsContent {
     max-width: 95%;
   }
+  .details .detailsList span.divider {
+    display: none;
+  }
+  .details .detailsList .detailsItem {
+    width: calc(
+      (100% - (var(--details_column-gap) * (var(--details_column-count) - 1))) /
+        var(--details_column-count)
+    );
+  }
 
   .bottomRow .leftCol .aboutList {
     max-width: unset;
   }
-  /** Intro start */
+  /*? Intro start */
   .topRow {
     flex-direction: column;
   }
@@ -657,6 +674,16 @@
 
 /* *********************************************************** */
 @media screen and (max-width: 500px) {
+  .headerCenter .headerTrialBtn {
+    display: none;
+  }
+  /*? heroHeader Start */
+  .heroHeader .wrap .contentCol .overlap {
+    max-width: 100%;
+  }
+  .heroHeader .buttons_bottomm button {
+    width: 100%;
+  }
   :root {
     --clients_column-gap: 64px;
     --clients_column-count: 2;
@@ -665,6 +692,88 @@
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.32px;
+  }
+  /*? bookPoster Start */
+  .bookPoster .bookMenu {
+    width: 100%;
+    max-width: 600px;
+    padding: 5px;
+  }
+  .bookPoster {
+    padding: 0px 0px 64px 0px;
+  }
+  /* ? details Start */
+  :root {
+    --details_column-count: 1;
+  }
+  .details {
+    padding: 64px 0px;
+  }
+  /*? homeAbout Start */
+  .homeAbout {
+    padding: 48px 0px;
+  }
+  .bottomRow {
+    margin-top: 60px;
+  }
+  /*? trainers Start */
+  .trainers {
+    padding: 64px 0px;
+  }
+
+  .trainers .trainerHead .trainerNav ul.desktop_view {
+    display: none;
+  }
+
+  .select {
+    display: flex;
+  }
+  /*? review Start */
+  .review {
+    padding: 0px;
+  }
+  /*? quality Start */
+  .quality {
+    padding: 64px 0px;
+  }
+
+  .quality .qualityList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+  }
+  .quality .qualityItem .qualityPreview {
+    margin: 0px 0px 32px 0px;
+  }
+  .quality .qualityItem .qualityContent {
+    max-width: 320px;
+  }
+  /*? Advantages Start */
+  .advantages {
+    padding: 64px 0px;
+  }
+  .advantages .advantagesItem {
+    width: 100%;
+  }
+  /*? workouts Start */
+  .workouts {
+    padding: 64px 0px;
+  }
+  /* ? offers Start */
+  .offers {
+    padding: 64px 0px;
+  }
+  .offers p.stage {
+    margin: 48px auto 16px auto;
+  }
+  .offers h2.offersTitle {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .tabletMenu .dropdownBody .headRow .headRightCol {
+    display: none;
   }
 }
 @media screen and (max-width: 395px) {
