@@ -728,12 +728,9 @@ li.drop:hover .headerBody {
 
 /* ? Footer Start */
 
-
-/* ! Footer End */
 :root {
   --main_percent: 38%;
 }
-
 
 .footer__center {
   display: flex;
@@ -957,3 +954,5 @@ footer .bar_wrapper ul i {
   font-size: 18px;
   color: var(--Neutrals-4);
 }
+
+/* ! Footer End */
