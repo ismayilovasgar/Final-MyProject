@@ -25,7 +25,6 @@
   }
 }
 
-/* Tablet Start */
 @media screen and (max-width: 1024px) {
   .show {
     display: block;
@@ -51,39 +50,12 @@
   .buttonGroups .bars {
     display: block;
   }
-  /** Footer */
-  footer .frame .top-menu {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  footer .frame .top-menu .left-menu ul {
-    width: 80px;
-  }
-
-  footer .frame .top-menu .left-menu {
-    justify-content: space-between;
-  }
-  footer .frame .top-menu .left-menu i {
-    margin: 0px 20px 80px 0px;
-  }
-  footer .right-menu {
-    min-width: 192px;
-  }
+  
 }
 
-@media screen and (max-width: 840px) {
-  footer .frame .top-menu .left-menu i {
-    margin: 0px 20px 130px 0px;
-  }
-  footer span.divider {
-    display: none;
-  }
-}
 
-/* Mobil Start */
+
 @media screen and (max-width: 768px) {
-  /*? Header */
 
   .tabletMenu .wrap {
     display: flex;
@@ -118,71 +90,13 @@
     padding: 0px;
   }
 
-  /* ? Footer */
-  footer .top-menu {
-    display: flex;
-    flex-direction: column;
-  }
-  footer .middle-menu {
-    padding-top: 32px;
-  }
-  footer .frame .top-menu .left-menu {
-    display: flex;
-    flex-direction: column;
-  }
-  footer .frame .top-menu .left-menu ul {
-    display: none;
-  }
-  footer .footerNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 90%;
-  }
-  footer .wrapper {
-    border: none;
-  }
-  footer .frame .top-menu .left-menu i.fa-basketball {
-    font-size: 32px;
-    padding: 0px;
-    margin: 0px;
-  }
-  footer .iconPreview {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    margin-bottom: 32px;
-  }
-  footer .iconPreview .iconInfo {
-    display: block;
-    color: var(--Neutrals-2, #23262f);
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: -0.48px;
-  }
-
-  footer .right-menu {
-    max-width: 90%;
-    align-self: stretch;
-    padding: 32px 0px;
-  }
-  footer .frame .top-menu .left-menu i {
-    margin: 0px;
-  }
-  footer .bottom-bar {
-    flex-direction: column;
-    row-gap: 24px;
-  }
 }
 
 @media screen and (max-width: 390px) {
   .container {
     width: 100%;
-    max-width: 100%;
-    margin: 0xp;
+    max-width: 100%;  
+    margin: 0px;
     padding: 0px 32px;
   }
   .header {
@@ -192,5 +106,4 @@
   .header .headerTrialBtn {
     display: none;
   }
-  /*? Footer */
 }

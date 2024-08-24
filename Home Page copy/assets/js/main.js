@@ -11,6 +11,7 @@ const btnHidden = document.querySelector("button.hidden i");
 const tabletMenu = document.querySelector(".tabletMenu");
 const dropdownMenu = document.querySelector(".dropdownBody");
 const dropdownBtn = document.querySelector(".dropdownLink");
+const class_arrow = document.querySelector(".dropdownLink i");
 
 btnHidden.addEventListener("click", (e) => {
   btnHidden.classList.toggle("fa-xmark");
@@ -18,6 +19,11 @@ btnHidden.addEventListener("click", (e) => {
 });
 dropdownBtn.addEventListener("click", (e) => {
   dropdownMenu.classList.toggle("active");
+});
+
+class_arrow.addEventListener("click", (e) => {
+  console.log("+++");
+  class_arrow.classList.toggle("rotate_180");
 });
 
 // Change Theme Buttons

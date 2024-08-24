@@ -8,12 +8,14 @@ dropdown.addEventListener("mouseover", (e) => {
 
 // Bars Menu
 const btnHidden = document.querySelector("button.hidden i");
+const free_trial = document.querySelector(".headerCenter .headerTrialBtn");
 const tabletMenu = document.querySelector(".tabletMenu");
 const dropdownMenu = document.querySelector(".dropdownBody");
 const dropdownBtn = document.querySelector(".dropdownLink");
 
 btnHidden.addEventListener("click", (e) => {
   btnHidden.classList.toggle("fa-xmark");
+  free_trial.classList.toggle("hidden");
   tabletMenu.classList.toggle("show");
 });
 dropdownBtn.addEventListener("click", (e) => {
@@ -38,8 +40,8 @@ select_sorting.forEach((item) => {
   });
 });
 
-//
 // change theme icon
+
 const toggle_button = document.getElementById("dark-change");
 toggle_button.addEventListener("click", function () {
   document.body.classList.add("dark_theme");

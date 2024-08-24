@@ -105,7 +105,7 @@ label.active {
 .headerLinksWrap .headerNav .drop i {
   color: var(--Neutrals-4);
 }
-.headerLinksWrap .headerNav .drop i.rotate_180 {
+ i.rotate_180 {
   transform: rotate(180deg);
 }
 .headerLinksWrap .headerNav .drop a:hover,
@@ -181,9 +181,7 @@ li.drop:hover .headerBody {
   color: var(--Neutrals-4);
   font-size: 24px;
 }
-.tabletMenu .menuLinks li.dropdownLink i.rotate_180 {
-  transform: rotate(180deg);
-}
+
 .tabletMenu .menuLinks a,
 .bottomMenuLink a {
   color: var(--Neutrals-4, #777e90);

@@ -78,10 +78,10 @@ var swiper = new Swiper(".comment_swiper", {
   },
 
   breakpoints: {
-    // 0: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 16,
-    // },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
 
     480: {
       slidesPerView: 2,

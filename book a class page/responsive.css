@@ -1,6 +1,12 @@
 @media only screen and (max-width: 1024px) {
-  .divider__y {
-    display: none;
+  .class__details ul li {
+    column-gap: 12px;
+  }
+  .class__details ul li .left {
+    width: calc(65% - 0.65 * 12px);
+  }
+  .class__details ul li .right {
+    width: calc(35% - 0.35 * 12px);
   }
   .trainer__book {
     gap: 32px;
@@ -34,7 +40,7 @@
   .value__top {
     margin: 0 auto 64px;
   }
-  
+
   .class__parametres {
     gap: 16px;
   }
@@ -104,7 +110,6 @@
   }
 }
 
-
 @media only screen and (max-width: 600px) {
   .class__about {
     gap: 26px;
@@ -113,7 +118,7 @@
     gap: 20px;
   }
 }
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 500px) {
   .trainer__class {
     flex-direction: column;
   }

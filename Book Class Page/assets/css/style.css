@@ -1,3 +1,7 @@
+* {
+  border: 1px;
+}
+
 /* ? Header Start */
 .some-show-arrow {
   display: block;

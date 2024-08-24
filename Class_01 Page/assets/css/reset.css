@@ -29,6 +29,9 @@
   --Neutrals-6: #e6e8ec;
   --Neutrals-7: #f4f5f6;
   --Neutrals-8: #fcfcfd;
+  --section_back_color: #fcfcfd;
+  --section_back_color_soft: #f4f5f6;
+  --class-filter-text:color: #23262F;
 }
 .darkMode {
   --Primary-1: #ff592c;

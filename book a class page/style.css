@@ -30,6 +30,7 @@
   max-width: 95%;
   margin: 0 auto;
 }
+
 .hero__class {
   background: var(--Neutrals-8, #fcfcfd);
   margin: 40px 0px 0px 0px;
@@ -45,7 +46,7 @@
   padding: 8px 8px 6px 8px;
   border-radius: 4px;
   background: var(--Primary-4, #45b26b);
-  color: var(--Neutrals-8, #FCFCFD);
+  color: var(--Neutrals-8, #fcfcfd);
   font-family: "Poppins";
   font-size: 12px;
   font-style: normal;
@@ -53,7 +54,7 @@
   line-height: 12px;
   text-transform: uppercase;
 }
-.green__label h4{
+.green__label h4 {
   font-size: 10px;
 }
 
@@ -93,12 +94,12 @@
 }
 .trainer__class {
   display: flex;
-  width:calc(64% - 64px * 0.64);
+  width: calc(64% - 32px * 0.64);
   gap: 32px;
 }
 .trainer__about {
   display: flex;
-  max-width:calc(42% - 32px * 0.42);
+  width: calc(42% - 32px * 0.42);
   padding: 24px 0px;
   flex-direction: column;
   justify-content: center;
@@ -139,21 +140,49 @@
 }
 .class__about {
   display: flex;
-  max-width:calc(58% - 32px * 0.58);
+  width: calc(58% - 32px * 0.58);
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 }
 .class__parametres {
+}
+.class__details ul {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  row-gap: 20px;
 }
-.class__details {
+
+.class__details ul li {
   display: flex;
+  column-gap: 32px;
   align-items: center;
-  gap: 32px;
-  align-self: stretch;
+}
+
+.class__details ul li .left {
+  width: calc(60% - 0.6 * 32px);
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.class__details ul li .left {
+  color: var(--Neutrals-4, #777e90);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.class__details ul li .right {
+  color: var(--Neutrals-2, #23262f);
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
 }
 .class__features {
   display: flex;
@@ -203,18 +232,15 @@
   width: 20px;
 }
 .note {
+  margin-top: 32px;
   color: var(--Neutrals-3, #353945);
   font-family: "Poppins";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  max-width: 352px;
 }
 
-* {
-  border: 1px solid red;
-}
 .divider__y {
   width: 1px;
   height: 256px;
@@ -222,15 +248,13 @@
   background: var(--Neutrals-6, #e6e8ec);
 }
 .workout__time {
-  width:calc(36% - 64px * 0.36);
+  width: calc(36% - 32px * 0.36);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
+  row-gap: 40px;
 }
 .workouttime__head {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 12px;
 }
@@ -241,21 +265,14 @@
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  max-width: 180px;
+  /* max-width: 180px; */
 }
-.workouttime__body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  max-width: 100%;
-}
+
 .workouttime__control {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
-  padding: 0 8px;
+  padding: 10px;
   border-radius: 90px;
   background: var(--Neutrals-2, #23262f);
   width: 100%;
@@ -272,9 +289,9 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  margin: 20px 0px;
 }
 .date__option {
-  width:calc(38% - 8px * 0.38);
   padding: 16px 20px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
@@ -285,9 +302,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  width: 100%;
 }
 .date__option_df {
-  width:calc(24% - 8px * 0.23);
+  width: calc(24% - 8px * 0.23);
   padding: 16px 20px;
   border-radius: 90px;
   border: 2px solid var(--Neutrals-6, #e6e8ec);
